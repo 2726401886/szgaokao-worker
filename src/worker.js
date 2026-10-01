@@ -19779,6 +19779,10350 @@ var junior_link_default = {
 };
 
 // src/graded_reading.json
+// src/junior_words.json
+var jwords_default = {
+  "product": "初中英语单词高效记忆",
+  "version": "1.0",
+  "schema_version": "1.0",
+  "note": "中考核心词汇按年级与主题分组；每词含音标/词性/词义/例句；支持听/读/背/记四模式；audio 为英音单词发音",
+  "groups": [
+    {
+      "id": "jw7a",
+      "grade": 7,
+      "title": "家庭与人物",
+      "words": [
+        {
+          "id": "jw7a01",
+          "word": "family",
+          "phonetic": "ˈfæməli",
+          "pos": "n.",
+          "meaning": "家庭；家人",
+          "sentence": "My family has four people.",
+          "sentenceCn": "我家有四口人。",
+          "audio": "/audio/jw/jw7a01.mp3"
+        },
+        {
+          "id": "jw7a02",
+          "word": "parent",
+          "phonetic": "ˈpeərənt",
+          "pos": "n.",
+          "meaning": "父亲；母亲（常用复数 parents）",
+          "sentence": "My parents are both teachers.",
+          "sentenceCn": "我父母都是老师。",
+          "audio": "/audio/jw/jw7a02.mp3"
+        },
+        {
+          "id": "jw7a03",
+          "word": "brother",
+          "phonetic": "ˈbrʌðə",
+          "pos": "n.",
+          "meaning": "兄；弟",
+          "sentence": "My brother is two years older than me.",
+          "sentenceCn": "我哥哥比我大两岁。",
+          "audio": "/audio/jw/jw7a03.mp3"
+        },
+        {
+          "id": "jw7a04",
+          "word": "sister",
+          "phonetic": "ˈsɪstə",
+          "pos": "n.",
+          "meaning": "姐；妹",
+          "sentence": "His sister studies in a middle school.",
+          "sentenceCn": "他姐姐在一所中学读书。",
+          "audio": "/audio/jw/jw7a04.mp3"
+        },
+        {
+          "id": "jw7a05",
+          "word": "grandma",
+          "phonetic": "ˈɡrænmɑː",
+          "pos": "n.",
+          "meaning": "奶奶；外婆",
+          "sentence": "Grandma tells me stories every night.",
+          "sentenceCn": "奶奶每晚给我讲故事。",
+          "audio": "/audio/jw/jw7a05.mp3"
+        },
+        {
+          "id": "jw7a06",
+          "word": "grandpa",
+          "phonetic": "ˈɡrænpɑː",
+          "pos": "n.",
+          "meaning": "爷爷；外公",
+          "sentence": "Grandpa takes a walk after dinner.",
+          "sentenceCn": "爷爷晚饭后去散步。",
+          "audio": "/audio/jw/jw7a06.mp3"
+        },
+        {
+          "id": "jw7a07",
+          "word": "cousin",
+          "phonetic": "ˈkʌzn",
+          "pos": "n.",
+          "meaning": "表（堂）兄弟姐妹",
+          "sentence": "My cousin and I are in the same school.",
+          "sentenceCn": "我表哥和我在同一所学校。",
+          "audio": "/audio/jw/jw7a07.mp3"
+        },
+        {
+          "id": "jw7a08",
+          "word": "uncle",
+          "phonetic": "ˈʌŋkl",
+          "pos": "n.",
+          "meaning": "叔叔；舅舅；伯父",
+          "sentence": "Uncle Li works in a hospital.",
+          "sentenceCn": "李叔叔在医院工作。",
+          "audio": "/audio/jw/jw7a08.mp3"
+        },
+        {
+          "id": "jw7a09",
+          "word": "aunt",
+          "phonetic": "ɑːnt",
+          "pos": "n.",
+          "meaning": "姑母；姨母；伯母",
+          "sentence": "Aunt Wang is a kind woman.",
+          "sentenceCn": "王阿姨是一位善良的女人。",
+          "audio": "/audio/jw/jw7a09.mp3"
+        },
+        {
+          "id": "jw7a10",
+          "word": "daughter",
+          "phonetic": "ˈdɔːtə",
+          "pos": "n.",
+          "meaning": "女儿",
+          "sentence": "Their daughter is only five years old.",
+          "sentenceCn": "他们的女儿只有五岁。",
+          "audio": "/audio/jw/jw7a10.mp3"
+        },
+        {
+          "id": "jw7a11",
+          "word": "son",
+          "phonetic": "sʌn",
+          "pos": "n.",
+          "meaning": "儿子",
+          "sentence": "His son wants to be a pilot.",
+          "sentenceCn": "他的儿子想当飞行员。",
+          "audio": "/audio/jw/jw7a11.mp3"
+        },
+        {
+          "id": "jw7a12",
+          "word": "friend",
+          "phonetic": "frend",
+          "pos": "n.",
+          "meaning": "朋友",
+          "sentence": "A real friend helps you when you are in trouble.",
+          "sentenceCn": "真正的朋友在你困难时会帮你。",
+          "audio": "/audio/jw/jw7a12.mp3"
+        },
+        {
+          "id": "jw7a13",
+          "word": "neighbour",
+          "phonetic": "ˈneɪbə",
+          "pos": "n.",
+          "meaning": "邻居",
+          "sentence": "Our neighbour often waters my flowers.",
+          "sentenceCn": "我们的邻居经常帮我浇花。",
+          "audio": "/audio/jw/jw7a13.mp3"
+        },
+        {
+          "id": "jw7a14",
+          "word": "classmate",
+          "phonetic": "ˈklɑːsmeɪt",
+          "pos": "n.",
+          "meaning": "同班同学",
+          "sentence": "My classmates are all friendly to me.",
+          "sentenceCn": "我的同学们对我都很友好。",
+          "audio": "/audio/jw/jw7a14.mp3"
+        },
+        {
+          "id": "jw7a15",
+          "word": "people",
+          "phonetic": "ˈpiːpl",
+          "pos": "n.",
+          "meaning": "人们；人",
+          "sentence": "There are many people in the park on Sunday.",
+          "sentenceCn": "星期天公园里有很多人。",
+          "audio": "/audio/jw/jw7a15.mp3"
+        },
+        {
+          "id": "jw7a16",
+          "word": "child",
+          "phonetic": "tʃaɪld",
+          "pos": "n.",
+          "meaning": "儿童（复数 children）",
+          "sentence": "Every child loves games.",
+          "sentenceCn": "每个孩子都爱游戏。",
+          "audio": "/audio/jw/jw7a16.mp3"
+        },
+        {
+          "id": "jw7a17",
+          "word": "baby",
+          "phonetic": "ˈbeɪbi",
+          "pos": "n.",
+          "meaning": "婴儿",
+          "sentence": "The baby is sleeping now.",
+          "sentenceCn": "婴儿正在睡觉。",
+          "audio": "/audio/jw/jw7a17.mp3"
+        },
+        {
+          "id": "jw7a18",
+          "word": "tall",
+          "phonetic": "tɔːl",
+          "pos": "adj.",
+          "meaning": "高的",
+          "sentence": "My father is tall and thin.",
+          "sentenceCn": "我爸爸又高又瘦。",
+          "audio": "/audio/jw/jw7a18.mp3"
+        },
+        {
+          "id": "jw7a19",
+          "word": "kind",
+          "phonetic": "kaɪnd",
+          "pos": "adj.",
+          "meaning": "善良的；友好的",
+          "sentence": "It is kind of you to help me.",
+          "sentenceCn": "你来帮我真是太好了。",
+          "audio": "/audio/jw/jw7a19.mp3"
+        },
+        {
+          "id": "jw7a20",
+          "word": "friendly",
+          "phonetic": "ˈfrendli",
+          "pos": "adj.",
+          "meaning": "友好的",
+          "sentence": "Our new teacher is very friendly.",
+          "sentenceCn": "我们的新老师非常友好。",
+          "audio": "/audio/jw/jw7a20.mp3"
+        },
+        {
+          "id": "jw7a21",
+          "word": "lovely",
+          "phonetic": "ˈlʌvli",
+          "pos": "adj.",
+          "meaning": "可爱的",
+          "sentence": "What a lovely girl!",
+          "sentenceCn": "多么可爱的女孩啊！",
+          "audio": "/audio/jw/jw7a21.mp3"
+        },
+        {
+          "id": "jw7a22",
+          "word": "helpful",
+          "phonetic": "ˈhelpfl",
+          "pos": "adj.",
+          "meaning": "乐于助人的；有用的",
+          "sentence": "He is always helpful to others.",
+          "sentenceCn": "他总是乐于助人。",
+          "audio": "/audio/jw/jw7a22.mp3"
+        },
+        {
+          "id": "jw7a23",
+          "word": "polite",
+          "phonetic": "pəˈlaɪt",
+          "pos": "adj.",
+          "meaning": "有礼貌的",
+          "sentence": "Be polite to old people.",
+          "sentenceCn": "对老人要有礼貌。",
+          "audio": "/audio/jw/jw7a23.mp3"
+        },
+        {
+          "id": "jw7a24",
+          "word": "clever",
+          "phonetic": "ˈklevə",
+          "pos": "adj.",
+          "meaning": "聪明的",
+          "sentence": "The clever boy works out the problem quickly.",
+          "sentenceCn": "这个聪明的男孩很快解出了那道题。",
+          "audio": "/audio/jw/jw7a24.mp3"
+        },
+        {
+          "id": "jw7a25",
+          "word": "hero",
+          "phonetic": "ˈhɪərəʊ",
+          "pos": "n.",
+          "meaning": "英雄；偶像",
+          "sentence": "Firefighters are heroes in our city.",
+          "sentenceCn": "消防员是我们城市的英雄。",
+          "audio": "/audio/jw/jw7a25.mp3"
+        }
+      ]
+    },
+    {
+      "id": "jw7b",
+      "grade": 7,
+      "title": "学校与学习",
+      "words": [
+        {
+          "id": "jw7b01",
+          "word": "school",
+          "phonetic": "skuːl",
+          "pos": "n.",
+          "meaning": "学校",
+          "sentence": "We go to school from Monday to Friday.",
+          "sentenceCn": "我们从周一到周五上学。",
+          "audio": "/audio/jw/jw7b01.mp3"
+        },
+        {
+          "id": "jw7b02",
+          "word": "classroom",
+          "phonetic": "ˈklɑːsruːm",
+          "pos": "n.",
+          "meaning": "教室",
+          "sentence": "Our classroom is clean and bright.",
+          "sentenceCn": "我们的教室干净又明亮。",
+          "audio": "/audio/jw/jw7b02.mp3"
+        },
+        {
+          "id": "jw7b03",
+          "word": "subject",
+          "phonetic": "ˈsʌbdʒɪkt",
+          "pos": "n.",
+          "meaning": "科目；学科",
+          "sentence": "Which subject do you like best?",
+          "sentenceCn": "你最喜欢哪个科目？",
+          "audio": "/audio/jw/jw7b03.mp3"
+        },
+        {
+          "id": "jw7b04",
+          "word": "lesson",
+          "phonetic": "ˈlesn",
+          "pos": "n.",
+          "meaning": "课；一节课",
+          "sentence": "We have four English lessons every week.",
+          "sentenceCn": "我们每周有四节英语课。",
+          "audio": "/audio/jw/jw7b04.mp3"
+        },
+        {
+          "id": "jw7b05",
+          "word": "maths",
+          "phonetic": "mæθs",
+          "pos": "n.",
+          "meaning": "数学（英式）",
+          "sentence": "Maths is my favourite subject.",
+          "sentenceCn": "数学是我最喜欢的科目。",
+          "audio": "/audio/jw/jw7b05.mp3"
+        },
+        {
+          "id": "jw7b06",
+          "word": "history",
+          "phonetic": "ˈhɪstri",
+          "pos": "n.",
+          "meaning": "历史",
+          "sentence": "We learn a lot from history.",
+          "sentenceCn": "我们从历史中学到很多。",
+          "audio": "/audio/jw/jw7b06.mp3"
+        },
+        {
+          "id": "jw7b07",
+          "word": "science",
+          "phonetic": "ˈsaɪəns",
+          "pos": "n.",
+          "meaning": "科学",
+          "sentence": "Science makes our life better.",
+          "sentenceCn": "科学让我们的生活更美好。",
+          "audio": "/audio/jw/jw7b07.mp3"
+        },
+        {
+          "id": "jw7b08",
+          "word": "teacher",
+          "phonetic": "ˈtiːtʃə",
+          "pos": "n.",
+          "meaning": "教师",
+          "sentence": "Miss Gao is a patient teacher.",
+          "sentenceCn": "高老师是一位有耐心的老师。",
+          "audio": "/audio/jw/jw7b08.mp3"
+        },
+        {
+          "id": "jw7b09",
+          "word": "student",
+          "phonetic": "ˈstjuːdnt",
+          "pos": "n.",
+          "meaning": "学生",
+          "sentence": "Every student should work hard.",
+          "sentenceCn": "每个学生都应该努力学习。",
+          "audio": "/audio/jw/jw7b09.mp3"
+        },
+        {
+          "id": "jw7b10",
+          "word": "pupil",
+          "phonetic": "ˈpjuːpl",
+          "pos": "n.",
+          "meaning": "学生（尤指小学生）",
+          "sentence": "The pupils are reading in the library.",
+          "sentenceCn": "学生们正在图书馆看书。",
+          "audio": "/audio/jw/jw7b10.mp3"
+        },
+        {
+          "id": "jw7b11",
+          "word": "homework",
+          "phonetic": "ˈhəʊmwɜːk",
+          "pos": "n.",
+          "meaning": "家庭作业",
+          "sentence": "I finish my homework before dinner.",
+          "sentenceCn": "我在晚饭前完成作业。",
+          "audio": "/audio/jw/jw7b11.mp3"
+        },
+        {
+          "id": "jw7b12",
+          "word": "exam",
+          "phonetic": "ɪɡˈzæm",
+          "pos": "n.",
+          "meaning": "考试；测验",
+          "sentence": "There will be an English exam next week.",
+          "sentenceCn": "下周有一场英语考试。",
+          "audio": "/audio/jw/jw7b12.mp3"
+        },
+        {
+          "id": "jw7b13",
+          "word": "question",
+          "phonetic": "ˈkwestʃən",
+          "pos": "n.",
+          "meaning": "问题",
+          "sentence": "May I ask you a question?",
+          "sentenceCn": "我可以问你一个问题吗？",
+          "audio": "/audio/jw/jw7b13.mp3"
+        },
+        {
+          "id": "jw7b14",
+          "word": "answer",
+          "phonetic": "ˈɑːnsə",
+          "pos": "n./v.",
+          "meaning": "回答；答案",
+          "sentence": "Please answer the question in English.",
+          "sentenceCn": "请用英语回答这个问题。",
+          "audio": "/audio/jw/jw7b14.mp3"
+        },
+        {
+          "id": "jw7b15",
+          "word": "dictionary",
+          "phonetic": "ˈdɪkʃənri",
+          "pos": "n.",
+          "meaning": "词典",
+          "sentence": "Look up the new word in your dictionary.",
+          "sentenceCn": "在词典里查一下这个生词。",
+          "audio": "/audio/jw/jw7b15.mp3"
+        },
+        {
+          "id": "jw7b16",
+          "word": "library",
+          "phonetic": "ˈlaɪbrəri",
+          "pos": "n.",
+          "meaning": "图书馆",
+          "sentence": "You can borrow three books from the library.",
+          "sentenceCn": "你可以从图书馆借三本书。",
+          "audio": "/audio/jw/jw7b16.mp3"
+        },
+        {
+          "id": "jw7b17",
+          "word": "playground",
+          "phonetic": "ˈpleɪɡraʊnd",
+          "pos": "n.",
+          "meaning": "操场",
+          "sentence": "The children are running on the playground.",
+          "sentenceCn": "孩子们正在操场上跑步。",
+          "audio": "/audio/jw/jw7b17.mp3"
+        },
+        {
+          "id": "jw7b18",
+          "word": "study",
+          "phonetic": "ˈstʌdi",
+          "pos": "v./n.",
+          "meaning": "学习；书房",
+          "sentence": "He studies English for an hour every day.",
+          "sentenceCn": "他每天学一小时英语。",
+          "audio": "/audio/jw/jw7b18.mp3"
+        },
+        {
+          "id": "jw7b19",
+          "word": "learn",
+          "phonetic": "lɜːn",
+          "pos": "v.",
+          "meaning": "学会；学习",
+          "sentence": "It is never too late to learn.",
+          "sentenceCn": "活到老学到老。",
+          "audio": "/audio/jw/jw7b19.mp3"
+        },
+        {
+          "id": "jw7b20",
+          "word": "read",
+          "phonetic": "riːd",
+          "pos": "v.",
+          "meaning": "阅读；读",
+          "sentence": "I like reading before going to bed.",
+          "sentenceCn": "我喜欢睡前阅读。",
+          "audio": "/audio/jw/jw7b20.mp3"
+        },
+        {
+          "id": "jw7b21",
+          "word": "write",
+          "phonetic": "raɪt",
+          "pos": "v.",
+          "meaning": "写；书写",
+          "sentence": "Write down your name on the paper.",
+          "sentenceCn": "把你的名字写在纸上。",
+          "audio": "/audio/jw/jw7b21.mp3"
+        },
+        {
+          "id": "jw7b22",
+          "word": "spell",
+          "phonetic": "spel",
+          "pos": "v.",
+          "meaning": "拼写",
+          "sentence": "Can you spell the word \"banana\"?",
+          "sentenceCn": "你会拼写 banana 这个词吗？",
+          "audio": "/audio/jw/jw7b22.mp3"
+        },
+        {
+          "id": "jw7b23",
+          "word": "practise",
+          "phonetic": "ˈpræktɪs",
+          "pos": "v.",
+          "meaning": "练习（美式 practice）",
+          "sentence": "Practise makes perfect.",
+          "sentenceCn": "熟能生巧。",
+          "audio": "/audio/jw/jw7b23.mp3"
+        },
+        {
+          "id": "jw7b24",
+          "word": "careful",
+          "phonetic": "ˈkeəfl",
+          "pos": "adj.",
+          "meaning": "仔细的；小心的",
+          "sentence": "Be careful with your spelling.",
+          "sentenceCn": "拼写要仔细。",
+          "audio": "/audio/jw/jw7b24.mp3"
+        },
+        {
+          "id": "jw7b25",
+          "word": "remember",
+          "phonetic": "rɪˈmembə",
+          "pos": "v.",
+          "meaning": "记住；记得",
+          "sentence": "Remember to close the window.",
+          "sentenceCn": "记得关窗。",
+          "audio": "/audio/jw/jw7b25.mp3"
+        }
+      ]
+    },
+    {
+      "id": "jw7c",
+      "grade": 7,
+      "title": "饮食与购物",
+      "words": [
+        {
+          "id": "jw7c01",
+          "word": "breakfast",
+          "phonetic": "ˈbrekfəst",
+          "pos": "n.",
+          "meaning": "早餐",
+          "sentence": "I have bread and milk for breakfast.",
+          "sentenceCn": "我早餐吃面包喝牛奶。",
+          "audio": "/audio/jw/jw7c01.mp3"
+        },
+        {
+          "id": "jw7c02",
+          "word": "lunch",
+          "phonetic": "lʌntʃ",
+          "pos": "n.",
+          "meaning": "午餐",
+          "sentence": "School lunch starts at twelve.",
+          "sentenceCn": "学校午餐十二点开始。",
+          "audio": "/audio/jw/jw7c02.mp3"
+        },
+        {
+          "id": "jw7c03",
+          "word": "dinner",
+          "phonetic": "ˈdɪnə",
+          "pos": "n.",
+          "meaning": "正餐；晚餐",
+          "sentence": "We have dinner together at seven.",
+          "sentenceCn": "我们七点一起吃晚饭。",
+          "audio": "/audio/jw/jw7c03.mp3"
+        },
+        {
+          "id": "jw7c04",
+          "word": "rice",
+          "phonetic": "raɪs",
+          "pos": "n.",
+          "meaning": "米饭；大米",
+          "sentence": "People in the south live on rice.",
+          "sentenceCn": "南方人以大米为主食。",
+          "audio": "/audio/jw/jw7c04.mp3"
+        },
+        {
+          "id": "jw7c05",
+          "word": "noodle",
+          "phonetic": "ˈnuːdl",
+          "pos": "n.",
+          "meaning": "面条（常用复数 noodles）",
+          "sentence": "The beef noodles smell good.",
+          "sentenceCn": "牛肉面条闻起来很香。",
+          "audio": "/audio/jw/jw7c05.mp3"
+        },
+        {
+          "id": "jw7c06",
+          "word": "bread",
+          "phonetic": "bred",
+          "pos": "n.",
+          "meaning": "面包",
+          "sentence": "She buys some bread for breakfast.",
+          "sentenceCn": "她买了一些面包当早餐。",
+          "audio": "/audio/jw/jw7c06.mp3"
+        },
+        {
+          "id": "jw7c07",
+          "word": "egg",
+          "phonetic": "eɡ",
+          "pos": "n.",
+          "meaning": "鸡蛋",
+          "sentence": "An egg a day is good for you.",
+          "sentenceCn": "每天一个鸡蛋对你有好处。",
+          "audio": "/audio/jw/jw7c07.mp3"
+        },
+        {
+          "id": "jw7c08",
+          "word": "vegetable",
+          "phonetic": "ˈvedʒtəbl",
+          "pos": "n.",
+          "meaning": "蔬菜",
+          "sentence": "Eating more vegetables keeps you healthy.",
+          "sentenceCn": "多吃蔬菜使你健康。",
+          "audio": "/audio/jw/jw7c08.mp3"
+        },
+        {
+          "id": "jw7c09",
+          "word": "fruit",
+          "phonetic": "fruːt",
+          "pos": "n.",
+          "meaning": "水果",
+          "sentence": "Fruit is good for our skin.",
+          "sentenceCn": "水果对我们的皮肤有好处。",
+          "audio": "/audio/jw/jw7c09.mp3"
+        },
+        {
+          "id": "jw7c10",
+          "word": "juice",
+          "phonetic": "dʒuːs",
+          "pos": "n.",
+          "meaning": "果汁",
+          "sentence": "Would you like some orange juice?",
+          "sentenceCn": "你想要些橙汁吗？",
+          "audio": "/audio/jw/jw7c10.mp3"
+        },
+        {
+          "id": "jw7c11",
+          "word": "delicious",
+          "phonetic": "dɪˈlɪʃəs",
+          "pos": "adj.",
+          "meaning": "美味的",
+          "sentence": "The dumplings taste delicious.",
+          "sentenceCn": "这饺子尝起来很美味。",
+          "audio": "/audio/jw/jw7c11.mp3"
+        },
+        {
+          "id": "jw7c12",
+          "word": "hungry",
+          "phonetic": "ˈhʌŋɡri",
+          "pos": "adj.",
+          "meaning": "饥饿的",
+          "sentence": "I am so hungry that I could eat a horse.",
+          "sentenceCn": "我饿极了。",
+          "audio": "/audio/jw/jw7c12.mp3"
+        },
+        {
+          "id": "jw7c13",
+          "word": "thirsty",
+          "phonetic": "ˈθɜːsti",
+          "pos": "adj.",
+          "meaning": "口渴的",
+          "sentence": "Give me some water because I am thirsty.",
+          "sentenceCn": "我渴了，给我一些水。",
+          "audio": "/audio/jw/jw7c13.mp3"
+        },
+        {
+          "id": "jw7c14",
+          "word": "shop",
+          "phonetic": "ʃɒp",
+          "pos": "n./v.",
+          "meaning": "商店；购物",
+          "sentence": "We often shop at the weekend.",
+          "sentenceCn": "我们经常在周末购物。",
+          "audio": "/audio/jw/jw7c14.mp3"
+        },
+        {
+          "id": "jw7c15",
+          "word": "market",
+          "phonetic": "ˈmɑːkɪt",
+          "pos": "n.",
+          "meaning": "市场；集市",
+          "sentence": "Mother buys fresh fish at the market.",
+          "sentenceCn": "妈妈在市场买新鲜的鱼。",
+          "audio": "/audio/jw/jw7c15.mp3"
+        },
+        {
+          "id": "jw7c16",
+          "word": "price",
+          "phonetic": "praɪs",
+          "pos": "n.",
+          "meaning": "价格",
+          "sentence": "The price of the coat is too high.",
+          "sentenceCn": "这件外套的价格太高了。",
+          "audio": "/audio/jw/jw7c16.mp3"
+        },
+        {
+          "id": "jw7c17",
+          "word": "cheap",
+          "phonetic": "tʃiːp",
+          "pos": "adj.",
+          "meaning": "便宜的",
+          "sentence": "This dictionary is cheap but useful.",
+          "sentenceCn": "这本词典便宜但有用。",
+          "audio": "/audio/jw/jw7c17.mp3"
+        },
+        {
+          "id": "jw7c18",
+          "word": "expensive",
+          "phonetic": "ɪkˈspensɪv",
+          "pos": "adj.",
+          "meaning": "昂贵的",
+          "sentence": "The bike is too expensive for me.",
+          "sentenceCn": "这辆自行车对我来说太贵了。",
+          "audio": "/audio/jw/jw7c18.mp3"
+        },
+        {
+          "id": "jw7c19",
+          "word": "buy",
+          "phonetic": "baɪ",
+          "pos": "v.",
+          "meaning": "买（过去式 bought）",
+          "sentence": "I want to buy a gift for my mother.",
+          "sentenceCn": "我想给妈妈买份礼物。",
+          "audio": "/audio/jw/jw7c19.mp3"
+        },
+        {
+          "id": "jw7c20",
+          "word": "sell",
+          "phonetic": "sel",
+          "pos": "v.",
+          "meaning": "卖；售",
+          "sentence": "The shop sells all kinds of fruit.",
+          "sentenceCn": "这家店卖各种各样的水果。",
+          "audio": "/audio/jw/jw7c20.mp3"
+        },
+        {
+          "id": "jw7c21",
+          "word": "money",
+          "phonetic": "ˈmʌni",
+          "pos": "n.",
+          "meaning": "钱",
+          "sentence": "Don't take too much money with you.",
+          "sentenceCn": "不要随身带太多钱。",
+          "audio": "/audio/jw/jw7c21.mp3"
+        },
+        {
+          "id": "jw7c22",
+          "word": "store",
+          "phonetic": "stɔː",
+          "pos": "n.",
+          "meaning": "商店；百货店",
+          "sentence": "There is a big store near our school.",
+          "sentenceCn": "我们学校附近有一家大商店。",
+          "audio": "/audio/jw/jw7c22.mp3"
+        },
+        {
+          "id": "jw7c23",
+          "word": "waiter",
+          "phonetic": "ˈweɪtə",
+          "pos": "n.",
+          "meaning": "（男）服务员",
+          "sentence": "The waiter brings us the menu quickly.",
+          "sentenceCn": "服务员很快给我们拿来菜单。",
+          "audio": "/audio/jw/jw7c23.mp3"
+        },
+        {
+          "id": "jw7c24",
+          "word": "menu",
+          "phonetic": "ˈmenjuː",
+          "pos": "n.",
+          "meaning": "菜单",
+          "sentence": "Let me look at the menu first.",
+          "sentenceCn": "让我先看看菜单。",
+          "audio": "/audio/jw/jw7c24.mp3"
+        },
+        {
+          "id": "jw7c25",
+          "word": "order",
+          "phonetic": "ˈɔːdə",
+          "pos": "v./n.",
+          "meaning": "点菜；订购；命令",
+          "sentence": "We ordered two bowls of noodles.",
+          "sentenceCn": "我们点了两碗面条。",
+          "audio": "/audio/jw/jw7c25.mp3"
+        }
+      ]
+    },
+    {
+      "id": "jw7d",
+      "grade": 7,
+      "title": "日常与时间",
+      "words": [
+        {
+          "id": "jw7d01",
+          "word": "morning",
+          "phonetic": "ˈmɔːnɪŋ",
+          "pos": "n.",
+          "meaning": "早晨；上午",
+          "sentence": "I get up at six in the morning.",
+          "sentenceCn": "我早上六点起床。",
+          "audio": "/audio/jw/jw7d01.mp3"
+        },
+        {
+          "id": "jw7d02",
+          "word": "afternoon",
+          "phonetic": "ɑːftəˈnuːn",
+          "pos": "n.",
+          "meaning": "下午",
+          "sentence": "We have PE class in the afternoon.",
+          "sentenceCn": "我们下午有体育课。",
+          "audio": "/audio/jw/jw7d02.mp3"
+        },
+        {
+          "id": "jw7d03",
+          "word": "evening",
+          "phonetic": "ˈiːvnɪŋ",
+          "pos": "n.",
+          "meaning": "傍晚；晚上",
+          "sentence": "My family watch TV in the evening.",
+          "sentenceCn": "我们一家人晚上看电视。",
+          "audio": "/audio/jw/jw7d03.mp3"
+        },
+        {
+          "id": "jw7d04",
+          "word": "night",
+          "phonetic": "naɪt",
+          "pos": "n.",
+          "meaning": "夜晚",
+          "sentence": "Good night and sweet dreams.",
+          "sentenceCn": "晚安，做个好梦。",
+          "audio": "/audio/jw/jw7d04.mp3"
+        },
+        {
+          "id": "jw7d05",
+          "word": "today",
+          "phonetic": "təˈdeɪ",
+          "pos": "adv./n.",
+          "meaning": "今天",
+          "sentence": "Today is my birthday.",
+          "sentenceCn": "今天是我的生日。",
+          "audio": "/audio/jw/jw7d05.mp3"
+        },
+        {
+          "id": "jw7d06",
+          "word": "tomorrow",
+          "phonetic": "təˈmɒrəʊ",
+          "pos": "adv./n.",
+          "meaning": "明天",
+          "sentence": "We will plant trees tomorrow.",
+          "sentenceCn": "我们明天要去植树。",
+          "audio": "/audio/jw/jw7d06.mp3"
+        },
+        {
+          "id": "jw7d07",
+          "word": "yesterday",
+          "phonetic": "ˈjestədeɪ",
+          "pos": "adv./n.",
+          "meaning": "昨天",
+          "sentence": "Yesterday was the coldest day this week.",
+          "sentenceCn": "昨天是本周最冷的一天。",
+          "audio": "/audio/jw/jw7d07.mp3"
+        },
+        {
+          "id": "jw7d08",
+          "word": "weekend",
+          "phonetic": "ˌwiːkˈend",
+          "pos": "n.",
+          "meaning": "周末",
+          "sentence": "I visit my grandparents at weekends.",
+          "sentenceCn": "我周末去看望祖父母。",
+          "audio": "/audio/jw/jw7d08.mp3"
+        },
+        {
+          "id": "jw7d09",
+          "word": "hour",
+          "phonetic": "ˈaʊə",
+          "pos": "n.",
+          "meaning": "小时",
+          "sentence": "An hour has sixty minutes.",
+          "sentenceCn": "一小时有六十分钟。",
+          "audio": "/audio/jw/jw7d09.mp3"
+        },
+        {
+          "id": "jw7d10",
+          "word": "minute",
+          "phonetic": "ˈmɪnɪt",
+          "pos": "n.",
+          "meaning": "分钟",
+          "sentence": "Wait a minute, please.",
+          "sentenceCn": "请等一会儿。",
+          "audio": "/audio/jw/jw7d10.mp3"
+        },
+        {
+          "id": "jw7d11",
+          "word": "early",
+          "phonetic": "ˈɜːli",
+          "pos": "adj./adv.",
+          "meaning": "早的（地）",
+          "sentence": "The early bird catches the worm.",
+          "sentenceCn": "早起的鸟儿有虫吃。",
+          "audio": "/audio/jw/jw7d11.mp3"
+        },
+        {
+          "id": "jw7d12",
+          "word": "late",
+          "phonetic": "leɪt",
+          "pos": "adj./adv.",
+          "meaning": "迟的（地）；晚的",
+          "sentence": "Don't be late for class.",
+          "sentenceCn": "上课不要迟到。",
+          "audio": "/audio/jw/jw7d12.mp3"
+        },
+        {
+          "id": "jw7d13",
+          "word": "always",
+          "phonetic": "ˈɔːlweɪz",
+          "pos": "adv.",
+          "meaning": "总是",
+          "sentence": "She is always ready to help others.",
+          "sentenceCn": "她总是乐于助人。",
+          "audio": "/audio/jw/jw7d13.mp3"
+        },
+        {
+          "id": "jw7d14",
+          "word": "usually",
+          "phonetic": "ˈjuːʒuəli",
+          "pos": "adv.",
+          "meaning": "通常",
+          "sentence": "We usually have a meeting on Monday.",
+          "sentenceCn": "我们通常周一开会。",
+          "audio": "/audio/jw/jw7d14.mp3"
+        },
+        {
+          "id": "jw7d15",
+          "word": "often",
+          "phonetic": "ˈɒfn",
+          "pos": "adv.",
+          "meaning": "经常",
+          "sentence": "How often do you exercise?",
+          "sentenceCn": "你多久锻炼一次？",
+          "audio": "/audio/jw/jw7d15.mp3"
+        },
+        {
+          "id": "jw7d16",
+          "word": "sometimes",
+          "phonetic": "ˈsʌmtaɪmz",
+          "pos": "adv.",
+          "meaning": "有时",
+          "sentence": "Sometimes I read comics for fun.",
+          "sentenceCn": "有时我为了乐趣看漫画书。",
+          "audio": "/audio/jw/jw7d16.mp3"
+        },
+        {
+          "id": "jw7d17",
+          "word": "never",
+          "phonetic": "ˈnevə",
+          "pos": "adv.",
+          "meaning": "从不",
+          "sentence": "He never tells a lie.",
+          "sentenceCn": "他从不撒谎。",
+          "audio": "/audio/jw/jw7d17.mp3"
+        },
+        {
+          "id": "jw7d18",
+          "word": "sleep",
+          "phonetic": "sliːp",
+          "pos": "v./n.",
+          "meaning": "睡觉",
+          "sentence": "Children need at least eight hours' sleep.",
+          "sentenceCn": "儿童需要至少八小时的睡眠。",
+          "audio": "/audio/jw/jw7d18.mp3"
+        },
+        {
+          "id": "jw7d19",
+          "word": "wake",
+          "phonetic": "weɪk",
+          "pos": "v.",
+          "meaning": "醒来；叫醒（wake up）",
+          "sentence": "My mother wakes me up at six.",
+          "sentenceCn": "妈妈六点叫醒我。",
+          "audio": "/audio/jw/jw7d19.mp3"
+        },
+        {
+          "id": "jw7d20",
+          "word": "rest",
+          "phonetic": "rest",
+          "pos": "v./n.",
+          "meaning": "休息",
+          "sentence": "Take a rest after long study.",
+          "sentenceCn": "长时间学习后要休息一下。",
+          "audio": "/audio/jw/jw7d20.mp3"
+        },
+        {
+          "id": "jw7d21",
+          "word": "busy",
+          "phonetic": "ˈbɪzi",
+          "pos": "adj.",
+          "meaning": "忙碌的",
+          "sentence": "Farmers are busy in autumn.",
+          "sentenceCn": "农民秋天很忙。",
+          "audio": "/audio/jw/jw7d21.mp3"
+        },
+        {
+          "id": "jw7d22",
+          "word": "free",
+          "phonetic": "friː",
+          "pos": "adj.",
+          "meaning": "空闲的；自由的",
+          "sentence": "Are you free this Sunday evening?",
+          "sentenceCn": "这周日晚上你有空吗？",
+          "audio": "/audio/jw/jw7d22.mp3"
+        },
+        {
+          "id": "jw7d23",
+          "word": "start",
+          "phonetic": "stɑːt",
+          "pos": "v./n.",
+          "meaning": "开始",
+          "sentence": "School starts at eight o'clock.",
+          "sentenceCn": "学校八点开始上课。",
+          "audio": "/audio/jw/jw7d23.mp3"
+        },
+        {
+          "id": "jw7d24",
+          "word": "finish",
+          "phonetic": "ˈfɪnɪʃ",
+          "pos": "v.",
+          "meaning": "完成；结束",
+          "sentence": "We finish class at four thirty.",
+          "sentenceCn": "我们四点半下课。",
+          "audio": "/audio/jw/jw7d24.mp3"
+        },
+        {
+          "id": "jw7d25",
+          "word": "daily",
+          "phonetic": "ˈdeɪli",
+          "pos": "adj./adv.",
+          "meaning": "每日的（地）",
+          "sentence": "Exercise is part of my daily life.",
+          "sentenceCn": "锻炼是我日常生活的一部分。",
+          "audio": "/audio/jw/jw7d25.mp3"
+        }
+      ]
+    },
+    {
+      "id": "jw8a",
+      "grade": 8,
+      "title": "旅行与交通",
+      "words": [
+        {
+          "id": "jw8a01",
+          "word": "travel",
+          "phonetic": "ˈtrævl",
+          "pos": "v./n.",
+          "meaning": "旅行",
+          "sentence": "Travel broadens the mind.",
+          "sentenceCn": "旅行开阔眼界。",
+          "audio": "/audio/jw/jw8a01.mp3"
+        },
+        {
+          "id": "jw8a02",
+          "word": "trip",
+          "phonetic": "trɪp",
+          "pos": "n.",
+          "meaning": "（短途）旅行；出行",
+          "sentence": "We took a trip to the seaside last month.",
+          "sentenceCn": "上个月我们去海边旅行了。",
+          "audio": "/audio/jw/jw8a02.mp3"
+        },
+        {
+          "id": "jw8a03",
+          "word": "journey",
+          "phonetic": "ˈdʒɜːni",
+          "pos": "n.",
+          "meaning": "（长途）旅程",
+          "sentence": "The journey to Tibet was unforgettable.",
+          "sentenceCn": "去西藏的旅程令人难忘。",
+          "audio": "/audio/jw/jw8a03.mp3"
+        },
+        {
+          "id": "jw8a04",
+          "word": "visit",
+          "phonetic": "ˈvɪzɪt",
+          "pos": "v./n.",
+          "meaning": "参观；拜访",
+          "sentence": "Thousands of people visit the Great Wall every day.",
+          "sentenceCn": "每天成千上万的人参观长城。",
+          "audio": "/audio/jw/jw8a04.mp3"
+        },
+        {
+          "id": "jw8a05",
+          "word": "ticket",
+          "phonetic": "ˈtɪkɪt",
+          "pos": "n.",
+          "meaning": "票；车票",
+          "sentence": "I bought two train tickets online.",
+          "sentenceCn": "我在网上买了两张火车票。",
+          "audio": "/audio/jw/jw8a05.mp3"
+        },
+        {
+          "id": "jw8a06",
+          "word": "station",
+          "phonetic": "ˈsteɪʃn",
+          "pos": "n.",
+          "meaning": "车站",
+          "sentence": "Meet me at the railway station at nine.",
+          "sentenceCn": "九点到火车站接我。",
+          "audio": "/audio/jw/jw8a06.mp3"
+        },
+        {
+          "id": "jw8a07",
+          "word": "airport",
+          "phonetic": "ˈeəpɔːt",
+          "pos": "n.",
+          "meaning": "机场",
+          "sentence": "His uncle will meet us at the airport.",
+          "sentenceCn": "他叔叔会到机场接我们。",
+          "audio": "/audio/jw/jw8a07.mp3"
+        },
+        {
+          "id": "jw8a08",
+          "word": "train",
+          "phonetic": "treɪn",
+          "pos": "n.",
+          "meaning": "火车",
+          "sentence": "The train arrives at Platform 2.",
+          "sentenceCn": "火车到达2号站台。",
+          "audio": "/audio/jw/jw8a08.mp3"
+        },
+        {
+          "id": "jw8a09",
+          "word": "plane",
+          "phonetic": "pleɪn",
+          "pos": "n.",
+          "meaning": "飞机",
+          "sentence": "The plane took off on time.",
+          "sentenceCn": "飞机准时起飞了。",
+          "audio": "/audio/jw/jw8a09.mp3"
+        },
+        {
+          "id": "jw8a10",
+          "word": "subway",
+          "phonetic": "ˈsʌbweɪ",
+          "pos": "n.",
+          "meaning": "地铁",
+          "sentence": "Subway is a fast way to travel in Beijing.",
+          "sentenceCn": "在北京，地铁是快捷的出行方式。",
+          "audio": "/audio/jw/jw8a10.mp3"
+        },
+        {
+          "id": "jw8a11",
+          "word": "bicycle",
+          "phonetic": "ˈbaɪsɪkl",
+          "pos": "n.",
+          "meaning": "自行车（bike）",
+          "sentence": "Riding a bicycle is good exercise.",
+          "sentenceCn": "骑自行车是很好的锻炼。",
+          "audio": "/audio/jw/jw8a11.mp3"
+        },
+        {
+          "id": "jw8a12",
+          "word": "ride",
+          "phonetic": "raɪd",
+          "pos": "v./n.",
+          "meaning": "骑；乘",
+          "sentence": "Can you ride a horse?",
+          "sentenceCn": "你会骑马吗？",
+          "audio": "/audio/jw/jw8a12.mp3"
+        },
+        {
+          "id": "jw8a13",
+          "word": "drive",
+          "phonetic": "draɪv",
+          "pos": "v.",
+          "meaning": "驾驶；开车（去）",
+          "sentence": "Father drives me to school on rainy days.",
+          "sentenceCn": "雨天爸爸开车送我上学。",
+          "audio": "/audio/jw/jw8a13.mp3"
+        },
+        {
+          "id": "jw8a14",
+          "word": "walk",
+          "phonetic": "wɔːk",
+          "pos": "v./n.",
+          "meaning": "步行；散步",
+          "sentence": "It is only ten minutes' walk from here.",
+          "sentenceCn": "离这里步行只有十分钟。",
+          "audio": "/audio/jw/jw8a14.mp3"
+        },
+        {
+          "id": "jw8a15",
+          "word": "map",
+          "phonetic": "mæp",
+          "pos": "n.",
+          "meaning": "地图",
+          "sentence": "We found the museum easily with a map.",
+          "sentenceCn": "有地图我们很容易找到了博物馆。",
+          "audio": "/audio/jw/jw8a15.mp3"
+        },
+        {
+          "id": "jw8a16",
+          "word": "hotel",
+          "phonetic": "həʊˈtel",
+          "pos": "n.",
+          "meaning": "旅馆；酒店",
+          "sentence": "The hotel room is clean and quiet.",
+          "sentenceCn": "酒店房间干净又安静。",
+          "audio": "/audio/jw/jw8a16.mp3"
+        },
+        {
+          "id": "jw8a17",
+          "word": "beach",
+          "phonetic": "biːtʃ",
+          "pos": "n.",
+          "meaning": "海滩",
+          "sentence": "We picked up shells on the beach.",
+          "sentenceCn": "我们在海滩上捡贝壳。",
+          "audio": "/audio/jw/jw8a17.mp3"
+        },
+        {
+          "id": "jw8a18",
+          "word": "mountain",
+          "phonetic": "ˈmaʊntən",
+          "pos": "n.",
+          "meaning": "山；山脉",
+          "sentence": "Climbing mountains makes you strong.",
+          "sentenceCn": "爬山使你强壮。",
+          "audio": "/audio/jw/jw8a18.mp3"
+        },
+        {
+          "id": "jw8a19",
+          "word": "island",
+          "phonetic": "ˈaɪlənd",
+          "pos": "n.",
+          "meaning": "岛；岛屿",
+          "sentence": "Hainan is a famous island in China.",
+          "sentenceCn": "海南是中国著名的岛屿。",
+          "audio": "/audio/jw/jw8a19.mp3"
+        },
+        {
+          "id": "jw8a20",
+          "word": "luggage",
+          "phonetic": "ˈlʌɡɪdʒ",
+          "pos": "n.",
+          "meaning": "行李",
+          "sentence": "Please take your luggage with you.",
+          "sentenceCn": "请随身携带您的行李。",
+          "audio": "/audio/jw/jw8a20.mp3"
+        },
+        {
+          "id": "jw8a21",
+          "word": "camera",
+          "phonetic": "ˈkæmərə",
+          "pos": "n.",
+          "meaning": "照相机",
+          "sentence": "I brought my camera to take photos.",
+          "sentenceCn": "我带了相机来拍照。",
+          "audio": "/audio/jw/jw8a21.mp3"
+        },
+        {
+          "id": "jw8a22",
+          "word": "postcard",
+          "phonetic": "ˈpəʊstkɑːd",
+          "pos": "n.",
+          "meaning": "明信片",
+          "sentence": "She sent me a postcard from Yunnan.",
+          "sentenceCn": "她从云南给我寄了一张明信片。",
+          "audio": "/audio/jw/jw8a22.mp3"
+        },
+        {
+          "id": "jw8a23",
+          "word": "abroad",
+          "phonetic": "əˈbrɔːd",
+          "pos": "adv.",
+          "meaning": "在国外；到国外",
+          "sentence": "My brother will study abroad next year.",
+          "sentenceCn": "我哥哥明年将出国留学。",
+          "audio": "/audio/jw/jw8a23.mp3"
+        },
+        {
+          "id": "jw8a24",
+          "word": "sightseeing",
+          "phonetic": "ˈsaɪtsiːɪŋ",
+          "pos": "n.",
+          "meaning": "观光；游览",
+          "sentence": "We went sightseeing around the old town.",
+          "sentenceCn": "我们在老城区观光游览。",
+          "audio": "/audio/jw/jw8a24.mp3"
+        },
+        {
+          "id": "jw8a25",
+          "word": "passenger",
+          "phonetic": "ˈpæsɪndʒə",
+          "pos": "n.",
+          "meaning": "乘客；旅客",
+          "sentence": "All passengers must fasten the seat belt.",
+          "sentenceCn": "所有乘客必须系好安全带。",
+          "audio": "/audio/jw/jw8a25.mp3"
+        }
+      ]
+    },
+    {
+      "id": "jw8b",
+      "grade": 8,
+      "title": "健康与运动",
+      "words": [
+        {
+          "id": "jw8b01",
+          "word": "health",
+          "phonetic": "helθ",
+          "pos": "n.",
+          "meaning": "健康",
+          "sentence": "Health is more important than wealth.",
+          "sentenceCn": "健康比财富更重要。",
+          "audio": "/audio/jw/jw8b01.mp3"
+        },
+        {
+          "id": "jw8b02",
+          "word": "healthy",
+          "phonetic": "ˈhelθi",
+          "pos": "adj.",
+          "meaning": "健康的",
+          "sentence": "Eating an apple a day keeps you healthy.",
+          "sentenceCn": "每天吃一个苹果使你健康。",
+          "audio": "/audio/jw/jw8b02.mp3"
+        },
+        {
+          "id": "jw8b03",
+          "word": "exercise",
+          "phonetic": "ˈeksəsaɪz",
+          "pos": "v./n.",
+          "meaning": "锻炼；练习",
+          "sentence": "Exercise for half an hour every day.",
+          "sentenceCn": "每天锻炼半小时。",
+          "audio": "/audio/jw/jw8b03.mp3"
+        },
+        {
+          "id": "jw8b04",
+          "word": "sport",
+          "phonetic": "spɔːt",
+          "pos": "n.",
+          "meaning": "体育运动",
+          "sentence": "Table tennis is a popular sport in China.",
+          "sentenceCn": "乒乓球在中国是一项受欢迎的运动。",
+          "audio": "/audio/jw/jw8b04.mp3"
+        },
+        {
+          "id": "jw8b05",
+          "word": "basketball",
+          "phonetic": "ˈbɑːskɪtbɔːl",
+          "pos": "n.",
+          "meaning": "篮球",
+          "sentence": "The boys are playing basketball on the playground.",
+          "sentenceCn": "男孩子们正在操场上打篮球。",
+          "audio": "/audio/jw/jw8b05.mp3"
+        },
+        {
+          "id": "jw8b06",
+          "word": "football",
+          "phonetic": "ˈfʊtbɔːl",
+          "pos": "n.",
+          "meaning": "足球",
+          "sentence": "Our school football team won the match.",
+          "sentenceCn": "我们学校足球队赢了比赛。",
+          "audio": "/audio/jw/jw8b06.mp3"
+        },
+        {
+          "id": "jw8b07",
+          "word": "swimming",
+          "phonetic": "ˈswɪmɪŋ",
+          "pos": "n.",
+          "meaning": "游泳",
+          "sentence": "Swimming in summer is really cool.",
+          "sentenceCn": "夏天游泳真凉爽。",
+          "audio": "/audio/jw/jw8b07.mp3"
+        },
+        {
+          "id": "jw8b08",
+          "word": "match",
+          "phonetic": "mætʃ",
+          "pos": "n.",
+          "meaning": "比赛；火柴",
+          "sentence": "I watched a wonderful match last night.",
+          "sentenceCn": "昨晚我看了一场精彩的比赛。",
+          "audio": "/audio/jw/jw8b08.mp3"
+        },
+        {
+          "id": "jw8b09",
+          "word": "team",
+          "phonetic": "tiːm",
+          "pos": "n.",
+          "meaning": "队；团队",
+          "sentence": "Teamwork makes the dream work.",
+          "sentenceCn": "团队合作成就梦想。",
+          "audio": "/audio/jw/jw8b09.mp3"
+        },
+        {
+          "id": "jw8b10",
+          "word": "win",
+          "phonetic": "wɪn",
+          "pos": "v.",
+          "meaning": "赢；获胜（过去式 won）",
+          "sentence": "Which team won the game?",
+          "sentenceCn": "哪个队赢了比赛？",
+          "audio": "/audio/jw/jw8b10.mp3"
+        },
+        {
+          "id": "jw8b11",
+          "word": "lose",
+          "phonetic": "luːz",
+          "pos": "v.",
+          "meaning": "输掉；丢失（过去式 lost）",
+          "sentence": "Don't lose heart when you lose a game.",
+          "sentenceCn": "比赛输了也不要灰心。",
+          "audio": "/audio/jw/jw8b11.mp3"
+        },
+        {
+          "id": "jw8b12",
+          "word": "score",
+          "phonetic": "skɔː",
+          "pos": "n./v.",
+          "meaning": "得分；分数",
+          "sentence": "Our team scored three goals.",
+          "sentenceCn": "我们队进了三个球。",
+          "audio": "/audio/jw/jw8b12.mp3"
+        },
+        {
+          "id": "jw8b13",
+          "word": "player",
+          "phonetic": "ˈpleɪə",
+          "pos": "n.",
+          "meaning": "运动员；选手",
+          "sentence": "Yao Ming is a great basketball player.",
+          "sentenceCn": "姚明是一位伟大的篮球运动员。",
+          "audio": "/audio/jw/jw8b13.mp3"
+        },
+        {
+          "id": "jw8b14",
+          "word": "coach",
+          "phonetic": "kəʊtʃ",
+          "pos": "n.",
+          "meaning": "教练",
+          "sentence": "The coach teaches us how to pass the ball.",
+          "sentenceCn": "教练教我们如何传球。",
+          "audio": "/audio/jw/jw8b14.mp3"
+        },
+        {
+          "id": "jw8b15",
+          "word": "headache",
+          "phonetic": "ˈhedeɪk",
+          "pos": "n.",
+          "meaning": "头痛",
+          "sentence": "I have a headache, so I will see a doctor.",
+          "sentenceCn": "我头痛，所以要去看医生。",
+          "audio": "/audio/jw/jw8b15.mp3"
+        },
+        {
+          "id": "jw8b16",
+          "word": "fever",
+          "phonetic": "ˈfiːvə",
+          "pos": "n.",
+          "meaning": "发烧",
+          "sentence": "The boy has a high fever.",
+          "sentenceCn": "这个男孩发着高烧。",
+          "audio": "/audio/jw/jw8b16.mp3"
+        },
+        {
+          "id": "jw8b17",
+          "word": "cough",
+          "phonetic": "kɒf",
+          "pos": "v./n.",
+          "meaning": "咳嗽",
+          "sentence": "You should drink more water when you cough.",
+          "sentenceCn": "咳嗽时应该多喝水。",
+          "audio": "/audio/jw/jw8b17.mp3"
+        },
+        {
+          "id": "jw8b18",
+          "word": "medicine",
+          "phonetic": "ˈmedsn",
+          "pos": "n.",
+          "meaning": "药",
+          "sentence": "Take the medicine three times a day.",
+          "sentenceCn": "这药一天服三次。",
+          "audio": "/audio/jw/jw8b18.mp3"
+        },
+        {
+          "id": "jw8b19",
+          "word": "dentist",
+          "phonetic": "ˈdentɪst",
+          "pos": "n.",
+          "meaning": "牙医",
+          "sentence": "You should see a dentist twice a year.",
+          "sentenceCn": "你应该一年看两次牙医。",
+          "audio": "/audio/jw/jw8b19.mp3"
+        },
+        {
+          "id": "jw8b20",
+          "word": "hospital",
+          "phonetic": "ˈhɒspɪtl",
+          "pos": "n.",
+          "meaning": "医院",
+          "sentence": "Grandma is in hospital, so we will visit her.",
+          "sentenceCn": "奶奶住院了，我们会去看她。",
+          "audio": "/audio/jw/jw8b20.mp3"
+        },
+        {
+          "id": "jw8b21",
+          "word": "gym",
+          "phonetic": "dʒɪm",
+          "pos": "n.",
+          "meaning": "健身房；体育馆",
+          "sentence": "There is a new gym in our school.",
+          "sentenceCn": "我们学校有一个新体育馆。",
+          "audio": "/audio/jw/jw8b21.mp3"
+        },
+        {
+          "id": "jw8b22",
+          "word": "strong",
+          "phonetic": "strɒŋ",
+          "pos": "adj.",
+          "meaning": "强壮的；坚固的",
+          "sentence": "Milk makes your bones strong.",
+          "sentenceCn": "牛奶使你的骨骼强壮。",
+          "audio": "/audio/jw/jw8b22.mp3"
+        },
+        {
+          "id": "jw8b23",
+          "word": "weak",
+          "phonetic": "wiːk",
+          "pos": "adj.",
+          "meaning": "虚弱的；弱的",
+          "sentence": "He is still weak after the illness.",
+          "sentenceCn": "他病后仍然很虚弱。",
+          "audio": "/audio/jw/jw8b23.mp3"
+        },
+        {
+          "id": "jw8b24",
+          "word": "relax",
+          "phonetic": "rɪˈlæks",
+          "pos": "v.",
+          "meaning": "放松；休息",
+          "sentence": "Listen to music to relax yourself.",
+          "sentenceCn": "听音乐放松一下自己。",
+          "audio": "/audio/jw/jw8b24.mp3"
+        },
+        {
+          "id": "jw8b25",
+          "word": "habit",
+          "phonetic": "ˈhæbɪt",
+          "pos": "n.",
+          "meaning": "习惯",
+          "sentence": "Getting up early is a good habit.",
+          "sentenceCn": "早起是一个好习惯。",
+          "audio": "/audio/jw/jw8b25.mp3"
+        }
+      ]
+    },
+    {
+      "id": "jw8c",
+      "grade": 8,
+      "title": "天气与自然",
+      "words": [
+        {
+          "id": "jw8c01",
+          "word": "weather",
+          "phonetic": "ˈweðə",
+          "pos": "n.",
+          "meaning": "天气",
+          "sentence": "What will the weather be like tomorrow?",
+          "sentenceCn": "明天天气怎么样？",
+          "audio": "/audio/jw/jw8c01.mp3"
+        },
+        {
+          "id": "jw8c02",
+          "word": "sunny",
+          "phonetic": "ˈsʌni",
+          "pos": "adj.",
+          "meaning": "晴朗的",
+          "sentence": "It is a sunny day for a picnic.",
+          "sentenceCn": "今天是适合野餐的晴天。",
+          "audio": "/audio/jw/jw8c02.mp3"
+        },
+        {
+          "id": "jw8c03",
+          "word": "rainy",
+          "phonetic": "ˈreɪni",
+          "pos": "adj.",
+          "meaning": "多雨的；下雨的",
+          "sentence": "Take an umbrella on rainy days.",
+          "sentenceCn": "雨天要带伞。",
+          "audio": "/audio/jw/jw8c03.mp3"
+        },
+        {
+          "id": "jw8c04",
+          "word": "windy",
+          "phonetic": "ˈwɪndi",
+          "pos": "adj.",
+          "meaning": "有风的",
+          "sentence": "It is too windy to fly a kite today.",
+          "sentenceCn": "今天风太大，不适合放风筝。",
+          "audio": "/audio/jw/jw8c04.mp3"
+        },
+        {
+          "id": "jw8c05",
+          "word": "cloudy",
+          "phonetic": "ˈklaʊdi",
+          "pos": "adj.",
+          "meaning": "多云的；阴天的",
+          "sentence": "The sky is cloudy, but it is not cold.",
+          "sentenceCn": "天空多云，但不冷。",
+          "audio": "/audio/jw/jw8c05.mp3"
+        },
+        {
+          "id": "jw8c06",
+          "word": "snowy",
+          "phonetic": "ˈsnəʊi",
+          "pos": "adj.",
+          "meaning": "下雪的；多雪的",
+          "sentence": "Children love snowy days.",
+          "sentenceCn": "孩子们喜欢下雪天。",
+          "audio": "/audio/jw/jw8c06.mp3"
+        },
+        {
+          "id": "jw8c07",
+          "word": "storm",
+          "phonetic": "stɔːm",
+          "pos": "n.",
+          "meaning": "暴风雨（雪）",
+          "sentence": "The storm broke many trees last night.",
+          "sentenceCn": "昨晚的暴风雨刮断了许多树。",
+          "audio": "/audio/jw/jw8c07.mp3"
+        },
+        {
+          "id": "jw8c08",
+          "word": "rain",
+          "phonetic": "reɪn",
+          "pos": "n./v.",
+          "meaning": "雨；下雨",
+          "sentence": "Heavy rain stopped the football match.",
+          "sentenceCn": "大雨使足球赛停了下来。",
+          "audio": "/audio/jw/jw8c08.mp3"
+        },
+        {
+          "id": "jw8c09",
+          "word": "snow",
+          "phonetic": "snəʊ",
+          "pos": "n./v.",
+          "meaning": "雪；下雪",
+          "sentence": "The ground is white with snow.",
+          "sentenceCn": "大地被雪覆盖成白色。",
+          "audio": "/audio/jw/jw8c09.mp3"
+        },
+        {
+          "id": "jw8c10",
+          "word": "sky",
+          "phonetic": "skaɪ",
+          "pos": "n.",
+          "meaning": "天空",
+          "sentence": "The stars shine brightly in the night sky.",
+          "sentenceCn": "星星在夜空中明亮地闪烁。",
+          "audio": "/audio/jw/jw8c10.mp3"
+        },
+        {
+          "id": "jw8c11",
+          "word": "rainbow",
+          "phonetic": "ˈreɪnbəʊ",
+          "pos": "n.",
+          "meaning": "彩虹",
+          "sentence": "A rainbow appears after the rain.",
+          "sentenceCn": "雨后出现了彩虹。",
+          "audio": "/audio/jw/jw8c11.mp3"
+        },
+        {
+          "id": "jw8c12",
+          "word": "temperature",
+          "phonetic": "ˈtemprətʃə",
+          "pos": "n.",
+          "meaning": "温度；气温",
+          "sentence": "The temperature stays below zero in winter.",
+          "sentenceCn": "冬季气温保持在零度以下。",
+          "audio": "/audio/jw/jw8c12.mp3"
+        },
+        {
+          "id": "jw8c13",
+          "word": "degree",
+          "phonetic": "dɪˈɡriː",
+          "pos": "n.",
+          "meaning": "度；度数",
+          "sentence": "Water boils at 100 degrees.",
+          "sentenceCn": "水在100度沸腾。",
+          "audio": "/audio/jw/jw8c13.mp3"
+        },
+        {
+          "id": "jw8c14",
+          "word": "season",
+          "phonetic": "ˈsiːzn",
+          "pos": "n.",
+          "meaning": "季节",
+          "sentence": "Autumn is the best season for travel.",
+          "sentenceCn": "秋天是旅行的好季节。",
+          "audio": "/audio/jw/jw8c14.mp3"
+        },
+        {
+          "id": "jw8c15",
+          "word": "spring",
+          "phonetic": "sprɪŋ",
+          "pos": "n.",
+          "meaning": "春天；泉水",
+          "sentence": "Flowers come out in spring.",
+          "sentenceCn": "春天百花盛开。",
+          "audio": "/audio/jw/jw8c15.mp3"
+        },
+        {
+          "id": "jw8c16",
+          "word": "summer",
+          "phonetic": "ˈsʌmə",
+          "pos": "n.",
+          "meaning": "夏天",
+          "sentence": "We often swim in the river in summer.",
+          "sentenceCn": "夏天我们经常在河里游泳。",
+          "audio": "/audio/jw/jw8c16.mp3"
+        },
+        {
+          "id": "jw8c17",
+          "word": "autumn",
+          "phonetic": "ˈɔːtəm",
+          "pos": "n.",
+          "meaning": "秋天（美式 fall）",
+          "sentence": "Leaves turn yellow in autumn.",
+          "sentenceCn": "秋天树叶变黄。",
+          "audio": "/audio/jw/jw8c17.mp3"
+        },
+        {
+          "id": "jw8c18",
+          "word": "winter",
+          "phonetic": "ˈwɪntə",
+          "pos": "n.",
+          "meaning": "冬天",
+          "sentence": "It often snows here in winter.",
+          "sentenceCn": "这里冬天经常下雪。",
+          "audio": "/audio/jw/jw8c18.mp3"
+        },
+        {
+          "id": "jw8c19",
+          "word": "nature",
+          "phonetic": "ˈneɪtʃə",
+          "pos": "n.",
+          "meaning": "大自然；本性",
+          "sentence": "We should get close to nature.",
+          "sentenceCn": "我们应该亲近大自然。",
+          "audio": "/audio/jw/jw8c19.mp3"
+        },
+        {
+          "id": "jw8c20",
+          "word": "tree",
+          "phonetic": "triː",
+          "pos": "n.",
+          "meaning": "树",
+          "sentence": "Old trees give us cool shade.",
+          "sentenceCn": "老树给我们阴凉。",
+          "audio": "/audio/jw/jw8c20.mp3"
+        },
+        {
+          "id": "jw8c21",
+          "word": "flower",
+          "phonetic": "ˈflaʊə",
+          "pos": "n.",
+          "meaning": "花",
+          "sentence": "The garden is full of beautiful flowers.",
+          "sentenceCn": "花园里开满美丽的花。",
+          "audio": "/audio/jw/jw8c21.mp3"
+        },
+        {
+          "id": "jw8c22",
+          "word": "river",
+          "phonetic": "ˈrɪvə",
+          "pos": "n.",
+          "meaning": "河；江",
+          "sentence": "The river runs through our city.",
+          "sentenceCn": "这条河穿过我们的城市。",
+          "audio": "/audio/jw/jw8c22.mp3"
+        },
+        {
+          "id": "jw8c23",
+          "word": "forest",
+          "phonetic": "ˈfɒrɪst",
+          "pos": "n.",
+          "meaning": "森林",
+          "sentence": "Many wild animals live in the forest.",
+          "sentenceCn": "许多野生动物生活在森林里。",
+          "audio": "/audio/jw/jw8c23.mp3"
+        },
+        {
+          "id": "jw8c24",
+          "word": "protect",
+          "phonetic": "prəˈtekt",
+          "pos": "v.",
+          "meaning": "保护",
+          "sentence": "We must protect wild animals.",
+          "sentenceCn": "我们必须保护野生动物。",
+          "audio": "/audio/jw/jw8c24.mp3"
+        },
+        {
+          "id": "jw8c25",
+          "word": "earth",
+          "phonetic": "ɜːθ",
+          "pos": "n.",
+          "meaning": "地球；大地",
+          "sentence": "The earth is our only home.",
+          "sentenceCn": "地球是我们唯一的家园。",
+          "audio": "/audio/jw/jw8c25.mp3"
+        }
+      ]
+    },
+    {
+      "id": "jw8d",
+      "grade": 8,
+      "title": "情感与交往",
+      "words": [
+        {
+          "id": "jw8d01",
+          "word": "happy",
+          "phonetic": "ˈhæpi",
+          "pos": "adj.",
+          "meaning": "高兴的；幸福的",
+          "sentence": "Nothing makes me happier than your success.",
+          "sentenceCn": "没有什么比你的成功更让我高兴。",
+          "audio": "/audio/jw/jw8d01.mp3"
+        },
+        {
+          "id": "jw8d02",
+          "word": "sad",
+          "phonetic": "sæd",
+          "pos": "adj.",
+          "meaning": "悲伤的",
+          "sentence": "Why does the little girl look so sad?",
+          "sentenceCn": "为什么这个小女孩看起来这么伤心？",
+          "audio": "/audio/jw/jw8d02.mp3"
+        },
+        {
+          "id": "jw8d03",
+          "word": "angry",
+          "phonetic": "ˈæŋɡri",
+          "pos": "adj.",
+          "meaning": "生气的",
+          "sentence": "Don't be angry with him; he is only a child.",
+          "sentenceCn": "别生他的气，他只是个孩子。",
+          "audio": "/audio/jw/jw8d03.mp3"
+        },
+        {
+          "id": "jw8d04",
+          "word": "excited",
+          "phonetic": "ɪkˈsaɪtɪd",
+          "pos": "adj.",
+          "meaning": "兴奋的；激动的",
+          "sentence": "Everyone got excited at the good news.",
+          "sentenceCn": "听到好消息大家都很兴奋。",
+          "audio": "/audio/jw/jw8d04.mp3"
+        },
+        {
+          "id": "jw8d05",
+          "word": "worried",
+          "phonetic": "ˈwʌrid",
+          "pos": "adj.",
+          "meaning": "担心的；烦恼的",
+          "sentence": "Mother is worried about my eyes.",
+          "sentenceCn": "妈妈担心我的眼睛。",
+          "audio": "/audio/jw/jw8d05.mp3"
+        },
+        {
+          "id": "jw8d06",
+          "word": "nervous",
+          "phonetic": "ˈnɜːvəs",
+          "pos": "adj.",
+          "meaning": "紧张的；神经紧张的",
+          "sentence": "I felt nervous before the exam.",
+          "sentenceCn": "考试前我感到紧张。",
+          "audio": "/audio/jw/jw8d06.mp3"
+        },
+        {
+          "id": "jw8d07",
+          "word": "afraid",
+          "phonetic": "əˈfreɪd",
+          "pos": "adj.",
+          "meaning": "害怕的；担心的",
+          "sentence": "Don't be afraid of making mistakes.",
+          "sentenceCn": "不要害怕犯错误。",
+          "audio": "/audio/jw/jw8d07.mp3"
+        },
+        {
+          "id": "jw8d08",
+          "word": "proud",
+          "phonetic": "praʊd",
+          "pos": "adj.",
+          "meaning": "自豪的；骄傲的",
+          "sentence": "We are proud of our country.",
+          "sentenceCn": "我们为我们的国家感到自豪。",
+          "audio": "/audio/jw/jw8d08.mp3"
+        },
+        {
+          "id": "jw8d09",
+          "word": "lonely",
+          "phonetic": "ˈləʊnli",
+          "pos": "adj.",
+          "meaning": "孤独的；寂寞的",
+          "sentence": "The old man feels lonely sometimes.",
+          "sentenceCn": "这位老人有时感到孤独。",
+          "audio": "/audio/jw/jw8d09.mp3"
+        },
+        {
+          "id": "jw8d10",
+          "word": "surprised",
+          "phonetic": "səˈpraɪzd",
+          "pos": "adj.",
+          "meaning": "感到惊讶的",
+          "sentence": "I was surprised at the exam result.",
+          "sentenceCn": "我对考试结果感到惊讶。",
+          "audio": "/audio/jw/jw8d10.mp3"
+        },
+        {
+          "id": "jw8d11",
+          "word": "smile",
+          "phonetic": "smaɪl",
+          "pos": "v./n.",
+          "meaning": "微笑",
+          "sentence": "A smile costs nothing but gives much.",
+          "sentenceCn": "微笑不花分文却给予很多。",
+          "audio": "/audio/jw/jw8d11.mp3"
+        },
+        {
+          "id": "jw8d12",
+          "word": "laugh",
+          "phonetic": "lɑːf",
+          "pos": "v./n.",
+          "meaning": "笑；大笑",
+          "sentence": "We all laughed at his funny story.",
+          "sentenceCn": "我们都因他有趣的故事而大笑。",
+          "audio": "/audio/jw/jw8d12.mp3"
+        },
+        {
+          "id": "jw8d13",
+          "word": "cry",
+          "phonetic": "kraɪ",
+          "pos": "v.",
+          "meaning": "哭；喊叫",
+          "sentence": "The baby stopped crying when it saw its mother.",
+          "sentenceCn": "婴儿看到妈妈就不哭了。",
+          "audio": "/audio/jw/jw8d13.mp3"
+        },
+        {
+          "id": "jw8d14",
+          "word": "shout",
+          "phonetic": "ʃaʊt",
+          "pos": "v./n.",
+          "meaning": "喊；高声呼喊",
+          "sentence": "Don't shout at me. I can hear you.",
+          "sentenceCn": "别对我喊，我听得见。",
+          "audio": "/audio/jw/jw8d14.mp3"
+        },
+        {
+          "id": "jw8d15",
+          "word": "care",
+          "phonetic": "keə",
+          "pos": "v./n.",
+          "meaning": "关心；在意（care about）",
+          "sentence": "A true friend cares about your feelings.",
+          "sentenceCn": "真正的朋友在意你的感受。",
+          "audio": "/audio/jw/jw8d15.mp3"
+        },
+        {
+          "id": "jw8d16",
+          "word": "share",
+          "phonetic": "ʃeə",
+          "pos": "v.",
+          "meaning": "分享；共用",
+          "sentence": "Good friends share happiness and sadness.",
+          "sentenceCn": "好朋友分享快乐与悲伤。",
+          "audio": "/audio/jw/jw8d16.mp3"
+        },
+        {
+          "id": "jw8d17",
+          "word": "trust",
+          "phonetic": "trʌst",
+          "pos": "v./n.",
+          "meaning": "信任",
+          "sentence": "Trust yourself and you will succeed.",
+          "sentenceCn": "相信自己，你就会成功。",
+          "audio": "/audio/jw/jw8d17.mp3"
+        },
+        {
+          "id": "jw8d18",
+          "word": "understand",
+          "phonetic": "ˌʌndəˈstænd",
+          "pos": "v.",
+          "meaning": "理解；懂得（过去式 understood）",
+          "sentence": "Now I understand why you were late.",
+          "sentenceCn": "现在我明白你为什么迟到了。",
+          "audio": "/audio/jw/jw8d18.mp3"
+        },
+        {
+          "id": "jw8d19",
+          "word": "argue",
+          "phonetic": "ˈɑːɡjuː",
+          "pos": "v.",
+          "meaning": "争论；辩论",
+          "sentence": "They often argue about small things.",
+          "sentenceCn": "他们经常为小事争吵。",
+          "audio": "/audio/jw/jw8d19.mp3"
+        },
+        {
+          "id": "jw8d20",
+          "word": "agree",
+          "phonetic": "əˈɡriː",
+          "pos": "v.",
+          "meaning": "同意；一致",
+          "sentence": "I agree with what you said.",
+          "sentenceCn": "我同意你说的话。",
+          "audio": "/audio/jw/jw8d20.mp3"
+        },
+        {
+          "id": "jw8d21",
+          "word": "miss",
+          "phonetic": "mɪs",
+          "pos": "v.",
+          "meaning": "想念；错过",
+          "sentence": "I miss my friends in the primary school.",
+          "sentenceCn": "我想念小学的朋友们。",
+          "audio": "/audio/jw/jw8d21.mp3"
+        },
+        {
+          "id": "jw8d22",
+          "word": "hug",
+          "phonetic": "hʌɡ",
+          "pos": "v./n.",
+          "meaning": "拥抱",
+          "sentence": "Mother gave me a warm hug.",
+          "sentenceCn": "妈妈给了我一个温暖的拥抱。",
+          "audio": "/audio/jw/jw8d22.mp3"
+        },
+        {
+          "id": "jw8d23",
+          "word": "thank",
+          "phonetic": "θæŋk",
+          "pos": "v./n.",
+          "meaning": "感谢",
+          "sentence": "Thank you for helping me with my maths.",
+          "sentenceCn": "谢谢你帮我学数学。",
+          "audio": "/audio/jw/jw8d23.mp3"
+        },
+        {
+          "id": "jw8d24",
+          "word": "sorry",
+          "phonetic": "ˈsɒri",
+          "pos": "adj.",
+          "meaning": "抱歉的；难过的",
+          "sentence": "I am sorry to keep you waiting.",
+          "sentenceCn": "对不起让你久等了。",
+          "audio": "/audio/jw/jw8d24.mp3"
+        },
+        {
+          "id": "jw8d25",
+          "word": "encourage",
+          "phonetic": "ɪnˈkʌrɪdʒ",
+          "pos": "v.",
+          "meaning": "鼓励",
+          "sentence": "My teacher encourages me to speak English bravely.",
+          "sentenceCn": "老师鼓励我勇敢地说英语。",
+          "audio": "/audio/jw/jw8d25.mp3"
+        }
+      ]
+    },
+    {
+      "id": "jw9a",
+      "grade": 9,
+      "title": "环保与社会",
+      "words": [
+        {
+          "id": "jw9a01",
+          "word": "environment",
+          "phonetic": "ɪnˈvaɪrənmənt",
+          "pos": "n.",
+          "meaning": "环境",
+          "sentence": "We should do something to protect the environment.",
+          "sentenceCn": "我们应该为保护环境做些事。",
+          "audio": "/audio/jw/jw9a01.mp3"
+        },
+        {
+          "id": "jw9a02",
+          "word": "pollution",
+          "phonetic": "pəˈluːʃn",
+          "pos": "n.",
+          "meaning": "污染",
+          "sentence": "Air pollution is a serious problem in big cities.",
+          "sentenceCn": "空气污染是大城市的严重问题。",
+          "audio": "/audio/jw/jw9a02.mp3"
+        },
+        {
+          "id": "jw9a03",
+          "word": "recycle",
+          "phonetic": "ˌriːˈsaɪkl",
+          "pos": "v.",
+          "meaning": "回收利用",
+          "sentence": "We recycle old paper to save trees.",
+          "sentenceCn": "我们回收旧纸来拯救树木。",
+          "audio": "/audio/jw/jw9a03.mp3"
+        },
+        {
+          "id": "jw9a04",
+          "word": "rubbish",
+          "phonetic": "ˈrʌbɪʃ",
+          "pos": "n.",
+          "meaning": "垃圾",
+          "sentence": "Please put the rubbish into the bin.",
+          "sentenceCn": "请把垃圾放进垃圾桶。",
+          "audio": "/audio/jw/jw9a04.mp3"
+        },
+        {
+          "id": "jw9a05",
+          "word": "plastic",
+          "phonetic": "ˈplæstɪk",
+          "pos": "n./adj.",
+          "meaning": "塑料（的）",
+          "sentence": "Don't use too many plastic bags.",
+          "sentenceCn": "不要使用太多塑料袋。",
+          "audio": "/audio/jw/jw9a05.mp3"
+        },
+        {
+          "id": "jw9a06",
+          "word": "save",
+          "phonetic": "seɪv",
+          "pos": "v.",
+          "meaning": "节省；拯救；储蓄",
+          "sentence": "Turn off the lights to save electricity.",
+          "sentenceCn": "关灯以节约用电。",
+          "audio": "/audio/jw/jw9a06.mp3"
+        },
+        {
+          "id": "jw9a07",
+          "word": "energy",
+          "phonetic": "ˈenədʒi",
+          "pos": "n.",
+          "meaning": "能源；能量",
+          "sentence": "Solar energy is clean and cheap.",
+          "sentenceCn": "太阳能清洁又便宜。",
+          "audio": "/audio/jw/jw9a07.mp3"
+        },
+        {
+          "id": "jw9a08",
+          "word": "solar",
+          "phonetic": "ˈsəʊlə",
+          "pos": "adj.",
+          "meaning": "太阳的；太阳能的",
+          "sentence": "This is a solar-powered car.",
+          "sentenceCn": "这是一辆太阳能汽车。",
+          "audio": "/audio/jw/jw9a08.mp3"
+        },
+        {
+          "id": "jw9a09",
+          "word": "waste",
+          "phonetic": "weɪst",
+          "pos": "v./n.",
+          "meaning": "浪费；废物",
+          "sentence": "Don't waste water.",
+          "sentenceCn": "不要浪费水。",
+          "audio": "/audio/jw/jw9a09.mp3"
+        },
+        {
+          "id": "jw9a10",
+          "word": "reduce",
+          "phonetic": "rɪˈdjuːs",
+          "pos": "v.",
+          "meaning": "减少；降低",
+          "sentence": "We can reduce air pollution by taking buses.",
+          "sentenceCn": "乘公交车可以减少空气污染。",
+          "audio": "/audio/jw/jw9a10.mp3"
+        },
+        {
+          "id": "jw9a11",
+          "word": "society",
+          "phonetic": "səˈsaɪəti",
+          "pos": "n.",
+          "meaning": "社会",
+          "sentence": "Everyone should follow the rules of society.",
+          "sentenceCn": "每个人都应遵守社会规则。",
+          "audio": "/audio/jw/jw9a11.mp3"
+        },
+        {
+          "id": "jw9a12",
+          "word": "volunteer",
+          "phonetic": "ˌvɒlənˈtɪə",
+          "pos": "n./v.",
+          "meaning": "志愿者；自愿做",
+          "sentence": "The volunteers clean the beach every month.",
+          "sentenceCn": "志愿者每个月清理海滩。",
+          "audio": "/audio/jw/jw9a12.mp3"
+        },
+        {
+          "id": "jw9a13",
+          "word": "charity",
+          "phonetic": "ˈtʃærəti",
+          "pos": "n.",
+          "meaning": "慈善机构；慈善",
+          "sentence": "She gave her old books to charity.",
+          "sentenceCn": "她把旧书捐给了慈善机构。",
+          "audio": "/audio/jw/jw9a13.mp3"
+        },
+        {
+          "id": "jw9a14",
+          "word": "community",
+          "phonetic": "kəˈmjuːnəti",
+          "pos": "n.",
+          "meaning": "社区；社团",
+          "sentence": "Our community has a library and a gym.",
+          "sentenceCn": "我们社区有一个图书馆和一个健身房。",
+          "audio": "/audio/jw/jw9a14.mp3"
+        },
+        {
+          "id": "jw9a15",
+          "word": "government",
+          "phonetic": "ˈɡʌvənmənt",
+          "pos": "n.",
+          "meaning": "政府",
+          "sentence": "The government builds new schools every year.",
+          "sentenceCn": "政府每年建新学校。",
+          "audio": "/audio/jw/jw9a15.mp3"
+        },
+        {
+          "id": "jw9a16",
+          "word": "law",
+          "phonetic": "lɔː",
+          "pos": "n.",
+          "meaning": "法律",
+          "sentence": "Everyone is equal before the law.",
+          "sentenceCn": "法律面前人人平等。",
+          "audio": "/audio/jw/jw9a16.mp3"
+        },
+        {
+          "id": "jw9a17",
+          "word": "rule",
+          "phonetic": "ruːl",
+          "pos": "n./v.",
+          "meaning": "规则；统治",
+          "sentence": "Follow the school rules, please.",
+          "sentenceCn": "请遵守校规。",
+          "audio": "/audio/jw/jw9a17.mp3"
+        },
+        {
+          "id": "jw9a18",
+          "word": "safety",
+          "phonetic": "ˈseɪfti",
+          "pos": "n.",
+          "meaning": "安全",
+          "sentence": "Safety comes first when we swim.",
+          "sentenceCn": "游泳时安全第一。",
+          "audio": "/audio/jw/jw9a18.mp3"
+        },
+        {
+          "id": "jw9a19",
+          "word": "danger",
+          "phonetic": "ˈdeɪndʒə",
+          "pos": "n.",
+          "meaning": "危险",
+          "sentence": "The sign says \"Danger! Keep out!\"",
+          "sentenceCn": "牌子上写着\"危险，请勿入内\"。",
+          "audio": "/audio/jw/jw9a19.mp3"
+        },
+        {
+          "id": "jw9a20",
+          "word": "warn",
+          "phonetic": "wɔːn",
+          "pos": "v.",
+          "meaning": "警告；提醒",
+          "sentence": "The teacher warned us not to swim in the river.",
+          "sentenceCn": "老师警告我们不要在河里游泳。",
+          "audio": "/audio/jw/jw9a20.mp3"
+        },
+        {
+          "id": "jw9a21",
+          "word": "planet",
+          "phonetic": "ˈplænɪt",
+          "pos": "n.",
+          "meaning": "行星；地球",
+          "sentence": "There is no planet B for humans.",
+          "sentenceCn": "人类没有第二个星球可去。",
+          "audio": "/audio/jw/jw9a21.mp3"
+        },
+        {
+          "id": "jw9a22",
+          "word": "traffic",
+          "phonetic": "ˈtræfɪk",
+          "pos": "n.",
+          "meaning": "交通",
+          "sentence": "There is heavy traffic at eight in the morning.",
+          "sentenceCn": "早上八点交通很拥堵。",
+          "audio": "/audio/jw/jw9a22.mp3"
+        },
+        {
+          "id": "jw9a23",
+          "word": "crowded",
+          "phonetic": "ˈkraʊdɪd",
+          "pos": "adj.",
+          "meaning": "拥挤的",
+          "sentence": "The bus was so crowded that I had to stand.",
+          "sentenceCn": "公交车太挤，我只好站着。",
+          "audio": "/audio/jw/jw9a23.mp3"
+        },
+        {
+          "id": "jw9a24",
+          "word": "green",
+          "phonetic": "ɡriːn",
+          "pos": "adj.",
+          "meaning": "环保的；绿色的",
+          "sentence": "A green lifestyle helps the earth.",
+          "sentenceCn": "绿色生活方式有助于地球。",
+          "audio": "/audio/jw/jw9a24.mp3"
+        },
+        {
+          "id": "jw9a25",
+          "word": "responsibility",
+          "phonetic": "rɪˌspɒnsəˈbɪləti",
+          "pos": "n.",
+          "meaning": "责任；职责",
+          "sentence": "Keeping the classroom clean is everyone's responsibility.",
+          "sentenceCn": "保持教室整洁是每个人的责任。",
+          "audio": "/audio/jw/jw9a25.mp3"
+        }
+      ]
+    },
+    {
+      "id": "jw9b",
+      "grade": 9,
+      "title": "科技与发明",
+      "words": [
+        {
+          "id": "jw9b01",
+          "word": "technology",
+          "phonetic": "tekˈnɒlədʒi",
+          "pos": "n.",
+          "meaning": "科技；技术",
+          "sentence": "Technology changes our life quickly.",
+          "sentenceCn": "科技迅速改变着我们的生活。",
+          "audio": "/audio/jw/jw9b01.mp3"
+        },
+        {
+          "id": "jw9b02",
+          "word": "computer",
+          "phonetic": "kəmˈpjuːtə",
+          "pos": "n.",
+          "meaning": "计算机；电脑",
+          "sentence": "Don't play computer games for too long.",
+          "sentenceCn": "不要玩太长时间电脑游戏。",
+          "audio": "/audio/jw/jw9b02.mp3"
+        },
+        {
+          "id": "jw9b03",
+          "word": "internet",
+          "phonetic": "ˈɪntənet",
+          "pos": "n.",
+          "meaning": "互联网",
+          "sentence": "The Internet makes the world a small village.",
+          "sentenceCn": "互联网使世界变成了小村庄。",
+          "audio": "/audio/jw/jw9b03.mp3"
+        },
+        {
+          "id": "jw9b04",
+          "word": "mobile",
+          "phonetic": "ˈməʊbaɪl",
+          "pos": "adj./n.",
+          "meaning": "移动的；手机（mobile phone）",
+          "sentence": "Mobile phones are useful but also distracting.",
+          "sentenceCn": "手机有用但也让人分心。",
+          "audio": "/audio/jw/jw9b04.mp3"
+        },
+        {
+          "id": "jw9b05",
+          "word": "robot",
+          "phonetic": "ˈrəʊbɒt",
+          "pos": "n.",
+          "meaning": "机器人",
+          "sentence": "Robots will do more housework in the future.",
+          "sentenceCn": "将来机器人会做更多家务。",
+          "audio": "/audio/jw/jw9b05.mp3"
+        },
+        {
+          "id": "jw9b06",
+          "word": "machine",
+          "phonetic": "məˈʃiːn",
+          "pos": "n.",
+          "meaning": "机器",
+          "sentence": "This washing machine is easy to use.",
+          "sentenceCn": "这台洗衣机很容易使用。",
+          "audio": "/audio/jw/jw9b06.mp3"
+        },
+        {
+          "id": "jw9b07",
+          "word": "invent",
+          "phonetic": "ɪnˈvent",
+          "pos": "v.",
+          "meaning": "发明",
+          "sentence": "Edison invented the light bulb.",
+          "sentenceCn": "爱迪生发明了灯泡。",
+          "audio": "/audio/jw/jw9b07.mp3"
+        },
+        {
+          "id": "jw9b08",
+          "word": "invention",
+          "phonetic": "ɪnˈvenʃn",
+          "pos": "n.",
+          "meaning": "发明；发明物",
+          "sentence": "The paper is one of the four great inventions of China.",
+          "sentenceCn": "纸是中国四大发明之一。",
+          "audio": "/audio/jw/jw9b08.mp3"
+        },
+        {
+          "id": "jw9b09",
+          "word": "discover",
+          "phonetic": "dɪˈskʌvə",
+          "pos": "v.",
+          "meaning": "发现",
+          "sentence": "Who discovered the new continent?",
+          "sentenceCn": "谁发现了新大陆？",
+          "audio": "/audio/jw/jw9b09.mp3"
+        },
+        {
+          "id": "jw9b10",
+          "word": "scientist",
+          "phonetic": "ˈsaɪəntɪst",
+          "pos": "n.",
+          "meaning": "科学家",
+          "sentence": "The scientist spent ten years on the research.",
+          "sentenceCn": "这位科学家花了十年做研究。",
+          "audio": "/audio/jw/jw9b10.mp3"
+        },
+        {
+          "id": "jw9b11",
+          "word": "experiment",
+          "phonetic": "ɪkˈsperɪmənt",
+          "pos": "n./v.",
+          "meaning": "实验",
+          "sentence": "We did an interesting experiment in the science class.",
+          "sentenceCn": "我们在科学课上做了一个有趣的实验。",
+          "audio": "/audio/jw/jw9b11.mp3"
+        },
+        {
+          "id": "jw9b12",
+          "word": "digital",
+          "phonetic": "ˈdɪdʒɪtl",
+          "pos": "adj.",
+          "meaning": "数字的；数码的",
+          "sentence": "Digital cameras are popular now.",
+          "sentenceCn": "数码相机现在很流行。",
+          "audio": "/audio/jw/jw9b12.mp3"
+        },
+        {
+          "id": "jw9b13",
+          "word": "online",
+          "phonetic": "ˌɒnˈlaɪn",
+          "pos": "adj./adv.",
+          "meaning": "在线的（地）",
+          "sentence": "More and more people shop online.",
+          "sentenceCn": "越来越多的人网上购物。",
+          "audio": "/audio/jw/jw9b13.mp3"
+        },
+        {
+          "id": "jw9b14",
+          "word": "website",
+          "phonetic": "ˈwebsaɪt",
+          "pos": "n.",
+          "meaning": "网站",
+          "sentence": "You can find the answer on this website.",
+          "sentenceCn": "你可以在这个网站上找到答案。",
+          "audio": "/audio/jw/jw9b14.mp3"
+        },
+        {
+          "id": "jw9b15",
+          "word": "software",
+          "phonetic": "ˈsɒftweə",
+          "pos": "n.",
+          "meaning": "软件",
+          "sentence": "This software helps you learn English.",
+          "sentenceCn": "这款软件帮助你学英语。",
+          "audio": "/audio/jw/jw9b15.mp3"
+        },
+        {
+          "id": "jw9b16",
+          "word": "data",
+          "phonetic": "ˈdeɪtə",
+          "pos": "n.",
+          "meaning": "数据",
+          "sentence": "The data show that students sleep less.",
+          "sentenceCn": "数据表明学生睡眠更少了。",
+          "audio": "/audio/jw/jw9b16.mp3"
+        },
+        {
+          "id": "jw9b17",
+          "word": "screen",
+          "phonetic": "skriːn",
+          "pos": "n.",
+          "meaning": "屏幕",
+          "sentence": "Don't look at the screen for too long.",
+          "sentenceCn": "不要看屏幕太久。",
+          "audio": "/audio/jw/jw9b17.mp3"
+        },
+        {
+          "id": "jw9b18",
+          "word": "keyboard",
+          "phonetic": "ˈkiːbɔːd",
+          "pos": "n.",
+          "meaning": "键盘",
+          "sentence": "He types very fast on the keyboard.",
+          "sentenceCn": "他打字非常快。",
+          "audio": "/audio/jw/jw9b18.mp3"
+        },
+        {
+          "id": "jw9b19",
+          "word": "search",
+          "phonetic": "sɜːtʃ",
+          "pos": "v./n.",
+          "meaning": "搜索；搜查",
+          "sentence": "Search the word on the Internet.",
+          "sentenceCn": "在网上搜索这个词。",
+          "audio": "/audio/jw/jw9b19.mp3"
+        },
+        {
+          "id": "jw9b20",
+          "word": "download",
+          "phonetic": "ˌdaʊnˈləʊd",
+          "pos": "v./n.",
+          "meaning": "下载",
+          "sentence": "You can download the song for free.",
+          "sentenceCn": "你可以免费下载这首歌。",
+          "audio": "/audio/jw/jw9b20.mp3"
+        },
+        {
+          "id": "jw9b21",
+          "word": "update",
+          "phonetic": "ˌʌpˈdeɪt",
+          "pos": "v./n.",
+          "meaning": "更新",
+          "sentence": "Remember to update your app regularly.",
+          "sentenceCn": "记得定期更新你的应用。",
+          "audio": "/audio/jw/jw9b21.mp3"
+        },
+        {
+          "id": "jw9b22",
+          "word": "electric",
+          "phonetic": "ɪˈlektrɪk",
+          "pos": "adj.",
+          "meaning": "电动的；电的",
+          "sentence": "More and more people drive electric cars.",
+          "sentenceCn": "越来越多的人开电动汽车。",
+          "audio": "/audio/jw/jw9b22.mp3"
+        },
+        {
+          "id": "jw9b23",
+          "word": "convenient",
+          "phonetic": "kənˈviːniənt",
+          "pos": "adj.",
+          "meaning": "方便的；便利的",
+          "sentence": "It is convenient to pay by phone.",
+          "sentenceCn": "用手机支付很方便。",
+          "audio": "/audio/jw/jw9b23.mp3"
+        },
+        {
+          "id": "jw9b24",
+          "word": "wireless",
+          "phonetic": "ˈwaɪələs",
+          "pos": "adj.",
+          "meaning": "无线的",
+          "sentence": "The mouse is wireless, so there are no wires.",
+          "sentenceCn": "这个鼠标是无线的，所以没有电线。",
+          "audio": "/audio/jw/jw9b24.mp3"
+        },
+        {
+          "id": "jw9b25",
+          "word": "create",
+          "phonetic": "kriˈeɪt",
+          "pos": "v.",
+          "meaning": "创造；创作",
+          "sentence": "Young people should learn to create, not just copy.",
+          "sentenceCn": "年轻人应该学会创造，而不只是复制。",
+          "audio": "/audio/jw/jw9b25.mp3"
+        }
+      ]
+    },
+    {
+      "id": "jw9c",
+      "grade": 9,
+      "title": "文化与节日",
+      "words": [
+        {
+          "id": "jw9c01",
+          "word": "festival",
+          "phonetic": "ˈfestɪvl",
+          "pos": "n.",
+          "meaning": "节日",
+          "sentence": "The Spring Festival is the most important festival in China.",
+          "sentenceCn": "春节是中国最重要的节日。",
+          "audio": "/audio/jw/jw9c01.mp3"
+        },
+        {
+          "id": "jw9c02",
+          "word": "culture",
+          "phonetic": "ˈkʌltʃə",
+          "pos": "n.",
+          "meaning": "文化",
+          "sentence": "Learning English helps us understand other cultures.",
+          "sentenceCn": "学英语帮助我们理解其他文化。",
+          "audio": "/audio/jw/jw9c02.mp3"
+        },
+        {
+          "id": "jw9c03",
+          "word": "tradition",
+          "phonetic": "trəˈdɪʃn",
+          "pos": "n.",
+          "meaning": "传统",
+          "sentence": "It is a tradition to eat dumplings at Spring Festival.",
+          "sentenceCn": "春节吃饺子是一个传统。",
+          "audio": "/audio/jw/jw9c03.mp3"
+        },
+        {
+          "id": "jw9c04",
+          "word": "custom",
+          "phonetic": "ˈkʌstəm",
+          "pos": "n.",
+          "meaning": "习俗；风俗",
+          "sentence": "Every country has its own customs.",
+          "sentenceCn": "每个国家都有自己的习俗。",
+          "audio": "/audio/jw/jw9c04.mp3"
+        },
+        {
+          "id": "jw9c05",
+          "word": "celebrate",
+          "phonetic": "ˈselɪbreɪt",
+          "pos": "v.",
+          "meaning": "庆祝",
+          "sentence": "How do you celebrate your birthday?",
+          "sentenceCn": "你怎么庆祝生日？",
+          "audio": "/audio/jw/jw9c05.mp3"
+        },
+        {
+          "id": "jw9c06",
+          "word": "dragon",
+          "phonetic": "ˈdræɡən",
+          "pos": "n.",
+          "meaning": "龙",
+          "sentence": "The dragon is a symbol of China.",
+          "sentenceCn": "龙是中国的象征。",
+          "audio": "/audio/jw/jw9c06.mp3"
+        },
+        {
+          "id": "jw9c07",
+          "word": "mooncake",
+          "phonetic": "ˈmuːnkeɪk",
+          "pos": "n.",
+          "meaning": "月饼",
+          "sentence": "People eat mooncakes at Mid-Autumn Festival.",
+          "sentenceCn": "人们在中秋节吃月饼。",
+          "audio": "/audio/jw/jw9c07.mp3"
+        },
+        {
+          "id": "jw9c08",
+          "word": "dumpling",
+          "phonetic": "ˈdʌmplɪŋ",
+          "pos": "n.",
+          "meaning": "饺子；汤团",
+          "sentence": "My grandmother makes dumplings every winter.",
+          "sentenceCn": "我奶奶每年冬天都包饺子。",
+          "audio": "/audio/jw/jw9c08.mp3"
+        },
+        {
+          "id": "jw9c09",
+          "word": "lantern",
+          "phonetic": "ˈlæntən",
+          "pos": "n.",
+          "meaning": "灯笼；提灯",
+          "sentence": "Children carry lanterns at the Lantern Festival.",
+          "sentenceCn": "孩子们在元宵节提灯笼。",
+          "audio": "/audio/jw/jw9c09.mp3"
+        },
+        {
+          "id": "jw9c10",
+          "word": "firework",
+          "phonetic": "ˈfaɪəwɜːk",
+          "pos": "n.",
+          "meaning": "烟花（常用复数 fireworks）",
+          "sentence": "We watched the fireworks by the river.",
+          "sentenceCn": "我们在河边看了烟花。",
+          "audio": "/audio/jw/jw9c10.mp3"
+        },
+        {
+          "id": "jw9c11",
+          "word": "gift",
+          "phonetic": "ɡɪft",
+          "pos": "n.",
+          "meaning": "礼物",
+          "sentence": "Thank you for the lovely gift.",
+          "sentenceCn": "谢谢你送我可爱的礼物。",
+          "audio": "/audio/jw/jw9c11.mp3"
+        },
+        {
+          "id": "jw9c12",
+          "word": "card",
+          "phonetic": "kɑːd",
+          "pos": "n.",
+          "meaning": "卡片；纸牌",
+          "sentence": "I made a birthday card for my best friend.",
+          "sentenceCn": "我为最好的朋友做了一张生日贺卡。",
+          "audio": "/audio/jw/jw9c12.mp3"
+        },
+        {
+          "id": "jw9c13",
+          "word": "party",
+          "phonetic": "ˈpɑːti",
+          "pos": "n.",
+          "meaning": "聚会；派对",
+          "sentence": "Welcome to my birthday party this Saturday.",
+          "sentenceCn": "欢迎这周六来我的生日聚会。",
+          "audio": "/audio/jw/jw9c13.mp3"
+        },
+        {
+          "id": "jw9c14",
+          "word": "dance",
+          "phonetic": "dɑːns",
+          "pos": "v./n.",
+          "meaning": "跳舞；舞蹈",
+          "sentence": "Square dancing is popular among old people.",
+          "sentenceCn": "广场舞在老年人中很流行。",
+          "audio": "/audio/jw/jw9c14.mp3"
+        },
+        {
+          "id": "jw9c15",
+          "word": "sing",
+          "phonetic": "sɪŋ",
+          "pos": "v.",
+          "meaning": "唱歌（过去式 sang）",
+          "sentence": "She sings English songs very well.",
+          "sentenceCn": "她英语歌唱得很好。",
+          "audio": "/audio/jw/jw9c15.mp3"
+        },
+        {
+          "id": "jw9c16",
+          "word": "concert",
+          "phonetic": "ˈkɒnsət",
+          "pos": "n.",
+          "meaning": "音乐会",
+          "sentence": "We went to a concert last weekend.",
+          "sentenceCn": "上周末我们去听了一场音乐会。",
+          "audio": "/audio/jw/jw9c16.mp3"
+        },
+        {
+          "id": "jw9c17",
+          "word": "museum",
+          "phonetic": "mjuˈziːəm",
+          "pos": "n.",
+          "meaning": "博物馆",
+          "sentence": "The museum is free for students.",
+          "sentenceCn": "博物馆对学生免费。",
+          "audio": "/audio/jw/jw9c17.mp3"
+        },
+        {
+          "id": "jw9c18",
+          "word": "ancient",
+          "phonetic": "ˈeɪnʃənt",
+          "pos": "adj.",
+          "meaning": "古代的；古老的",
+          "sentence": "The Great Wall is an ancient building.",
+          "sentenceCn": "长城是一座古老的建筑。",
+          "audio": "/audio/jw/jw9c18.mp3"
+        },
+        {
+          "id": "jw9c19",
+          "word": "poem",
+          "phonetic": "ˈpəʊɪm",
+          "pos": "n.",
+          "meaning": "诗；诗歌",
+          "sentence": "Li Bai wrote many famous poems.",
+          "sentenceCn": "李白写了许多著名的诗。",
+          "audio": "/audio/jw/jw9c19.mp3"
+        },
+        {
+          "id": "jw9c20",
+          "word": "artist",
+          "phonetic": "ˈɑːtɪst",
+          "pos": "n.",
+          "meaning": "艺术家；画家",
+          "sentence": "The artist paints beautiful pictures.",
+          "sentenceCn": "这位画家画出了美丽的画。",
+          "audio": "/audio/jw/jw9c20.mp3"
+        },
+        {
+          "id": "jw9c21",
+          "word": "painting",
+          "phonetic": "ˈpeɪntɪŋ",
+          "pos": "n.",
+          "meaning": "绘画；油画",
+          "sentence": "This painting was drawn by a child.",
+          "sentenceCn": "这幅画是一个孩子画的。",
+          "audio": "/audio/jw/jw9c21.mp3"
+        },
+        {
+          "id": "jw9c22",
+          "word": "tourist",
+          "phonetic": "ˈtʊərɪst",
+          "pos": "n.",
+          "meaning": "游客；旅游者",
+          "sentence": "Thousands of tourists come to Beijing every year.",
+          "sentenceCn": "每年有成千上万的游客来北京。",
+          "audio": "/audio/jw/jw9c22.mp3"
+        },
+        {
+          "id": "jw9c23",
+          "word": "performance",
+          "phonetic": "pəˈfɔːməns",
+          "pos": "n.",
+          "meaning": "表演；演出",
+          "sentence": "The children gave a wonderful performance.",
+          "sentenceCn": "孩子们进行了一场精彩的表演。",
+          "audio": "/audio/jw/jw9c23.mp3"
+        },
+        {
+          "id": "jw9c24",
+          "word": "traditional",
+          "phonetic": "trəˈdɪʃənl",
+          "pos": "adj.",
+          "meaning": "传统的",
+          "sentence": "Qipao is a traditional Chinese dress.",
+          "sentenceCn": "旗袍是传统的中国服装。",
+          "audio": "/audio/jw/jw9c24.mp3"
+        },
+        {
+          "id": "jw9c25",
+          "word": "national",
+          "phonetic": "ˈnæʃnəl",
+          "pos": "adj.",
+          "meaning": "国家的；民族的",
+          "sentence": "National Day is on the first of October.",
+          "sentenceCn": "国庆节是十月一日。",
+          "audio": "/audio/jw/jw9c25.mp3"
+        }
+      ]
+    },
+    {
+      "id": "jw9d",
+      "grade": 9,
+      "title": "职业与理想",
+      "words": [
+        {
+          "id": "jw9d01",
+          "word": "job",
+          "phonetic": "dʒɒb",
+          "pos": "n.",
+          "meaning": "工作；职业",
+          "sentence": "What kind of job do you want in the future?",
+          "sentenceCn": "你将来想做什么样的工作？",
+          "audio": "/audio/jw/jw9d01.mp3"
+        },
+        {
+          "id": "jw9d02",
+          "word": "career",
+          "phonetic": "kəˈrɪə",
+          "pos": "n.",
+          "meaning": "事业；职业生涯",
+          "sentence": "She plans her career as a teacher.",
+          "sentenceCn": "她规划自己当教师的事业。",
+          "audio": "/audio/jw/jw9d02.mp3"
+        },
+        {
+          "id": "jw9d03",
+          "word": "dream",
+          "phonetic": "driːm",
+          "pos": "n./v.",
+          "meaning": "梦想；做梦（dream of/about）",
+          "sentence": "Follow your dream and never give up.",
+          "sentenceCn": "追随你的梦想，永不放弃。",
+          "audio": "/audio/jw/jw9d03.mp3"
+        },
+        {
+          "id": "jw9d04",
+          "word": "goal",
+          "phonetic": "ɡəʊl",
+          "pos": "n.",
+          "meaning": "目标；进球",
+          "sentence": "Set a small goal first, like reading ten pages.",
+          "sentenceCn": "先定一个小目标，比如读十页书。",
+          "audio": "/audio/jw/jw9d04.mp3"
+        },
+        {
+          "id": "jw9d05",
+          "word": "future",
+          "phonetic": "ˈfjuːtʃə",
+          "pos": "n.",
+          "meaning": "未来；将来",
+          "sentence": "What will schools be like in the future?",
+          "sentenceCn": "将来的学校会是什么样？",
+          "audio": "/audio/jw/jw9d05.mp3"
+        },
+        {
+          "id": "jw9d06",
+          "word": "success",
+          "phonetic": "səkˈses",
+          "pos": "n.",
+          "meaning": "成功",
+          "sentence": "Hard work leads to success.",
+          "sentenceCn": "努力工作通向成功。",
+          "audio": "/audio/jw/jw9d06.mp3"
+        },
+        {
+          "id": "jw9d07",
+          "word": "achieve",
+          "phonetic": "əˈtʃiːv",
+          "pos": "v.",
+          "meaning": "实现；达到",
+          "sentence": "You can achieve your dream through hard work.",
+          "sentenceCn": "通过努力你能实现梦想。",
+          "audio": "/audio/jw/jw9d07.mp3"
+        },
+        {
+          "id": "jw9d08",
+          "word": "effort",
+          "phonetic": "ˈefət",
+          "pos": "n.",
+          "meaning": "努力；尽力（make an effort）",
+          "sentence": "Make an effort and you will pass the exam.",
+          "sentenceCn": "尽一份力，你就会通过考试。",
+          "audio": "/audio/jw/jw9d08.mp3"
+        },
+        {
+          "id": "jw9d09",
+          "word": "practice",
+          "phonetic": "ˈpræktɪs",
+          "pos": "n.",
+          "meaning": "实践；练习",
+          "sentence": "Practice makes perfect.",
+          "sentenceCn": "熟能生巧。",
+          "audio": "/audio/jw/jw9d09.mp3"
+        },
+        {
+          "id": "jw9d10",
+          "word": "skill",
+          "phonetic": "skɪl",
+          "pos": "n.",
+          "meaning": "技能；技巧",
+          "sentence": "Swimming is a useful life skill.",
+          "sentenceCn": "游泳是一项有用的生活技能。",
+          "audio": "/audio/jw/jw9d10.mp3"
+        },
+        {
+          "id": "jw9d11",
+          "word": "ability",
+          "phonetic": "əˈbɪləti",
+          "pos": "n.",
+          "meaning": "能力",
+          "sentence": "She has the ability to solve hard problems.",
+          "sentenceCn": "她有解决难题的能力。",
+          "audio": "/audio/jw/jw9d11.mp3"
+        },
+        {
+          "id": "jw9d12",
+          "word": "engineer",
+          "phonetic": "ˌendʒɪˈnɪə",
+          "pos": "n.",
+          "meaning": "工程师",
+          "sentence": "His father is a computer engineer.",
+          "sentenceCn": "他爸爸是一名计算机工程师。",
+          "audio": "/audio/jw/jw9d12.mp3"
+        },
+        {
+          "id": "jw9d13",
+          "word": "pilot",
+          "phonetic": "ˈpaɪlət",
+          "pos": "n.",
+          "meaning": "飞行员",
+          "sentence": "The pilot flies planes all over the world.",
+          "sentenceCn": "飞行员驾驶飞机飞遍世界。",
+          "audio": "/audio/jw/jw9d13.mp3"
+        },
+        {
+          "id": "jw9d14",
+          "word": "driver",
+          "phonetic": "ˈdraɪvə",
+          "pos": "n.",
+          "meaning": "司机；驾驶员",
+          "sentence": "The bus driver waits for the old man every day.",
+          "sentenceCn": "公交车司机每天等那位老人。",
+          "audio": "/audio/jw/jw9d14.mp3"
+        },
+        {
+          "id": "jw9d15",
+          "word": "farmer",
+          "phonetic": "ˈfɑːmə",
+          "pos": "n.",
+          "meaning": "农民；农场主",
+          "sentence": "Farmers grow rice and vegetables.",
+          "sentenceCn": "农民种植水稻和蔬菜。",
+          "audio": "/audio/jw/jw9d15.mp3"
+        },
+        {
+          "id": "jw9d16",
+          "word": "worker",
+          "phonetic": "ˈwɜːkə",
+          "pos": "n.",
+          "meaning": "工人",
+          "sentence": "The workers built the bridge in two years.",
+          "sentenceCn": "工人们两年建成了那座桥。",
+          "audio": "/audio/jw/jw9d16.mp3"
+        },
+        {
+          "id": "jw9d17",
+          "word": "manager",
+          "phonetic": "ˈmænɪdʒə",
+          "pos": "n.",
+          "meaning": "经理",
+          "sentence": "The manager talks with every customer.",
+          "sentenceCn": "经理与每位顾客交谈。",
+          "audio": "/audio/jw/jw9d17.mp3"
+        },
+        {
+          "id": "jw9d18",
+          "word": "designer",
+          "phonetic": "dɪˈzaɪnə",
+          "pos": "n.",
+          "meaning": "设计师",
+          "sentence": "She wants to be a clothes designer.",
+          "sentenceCn": "她想成为一名服装设计师。",
+          "audio": "/audio/jw/jw9d18.mp3"
+        },
+        {
+          "id": "jw9d19",
+          "word": "reporter",
+          "phonetic": "rɪˈpɔːtə",
+          "pos": "n.",
+          "meaning": "记者",
+          "sentence": "The reporter is interviewing a doctor.",
+          "sentenceCn": "记者正在采访一位医生。",
+          "audio": "/audio/jw/jw9d19.mp3"
+        },
+        {
+          "id": "jw9d20",
+          "word": "policeman",
+          "phonetic": "pəˈliːsmən",
+          "pos": "n.",
+          "meaning": "男警察（复数 policemen）",
+          "sentence": "The policeman helps children cross the road.",
+          "sentenceCn": "警察帮助孩子们过马路。",
+          "audio": "/audio/jw/jw9d20.mp3"
+        },
+        {
+          "id": "jw9d21",
+          "word": "firefighter",
+          "phonetic": "ˈfaɪəfaɪtə",
+          "pos": "n.",
+          "meaning": "消防员",
+          "sentence": "Firefighters save people from fires.",
+          "sentenceCn": "消防员把人们从火中救出来。",
+          "audio": "/audio/jw/jw9d21.mp3"
+        },
+        {
+          "id": "jw9d22",
+          "word": "lawyer",
+          "phonetic": "ˈlɔːjə",
+          "pos": "n.",
+          "meaning": "律师",
+          "sentence": "The lawyer knows the law very well.",
+          "sentenceCn": "这位律师非常懂法律。",
+          "audio": "/audio/jw/jw9d22.mp3"
+        },
+        {
+          "id": "jw9d23",
+          "word": "programmer",
+          "phonetic": "ˈprəʊɡræmə",
+          "pos": "n.",
+          "meaning": "程序员",
+          "sentence": "A programmer writes computer programs.",
+          "sentenceCn": "程序员编写计算机程序。",
+          "audio": "/audio/jw/jw9d23.mp3"
+        },
+        {
+          "id": "jw9d24",
+          "word": "author",
+          "phonetic": "ˈɔːθə",
+          "pos": "n.",
+          "meaning": "作者；作家",
+          "sentence": "Mo Yan is a famous author in China.",
+          "sentenceCn": "莫言是中国著名的作家。",
+          "audio": "/audio/jw/jw9d24.mp3"
+        },
+        {
+          "id": "jw9d25",
+          "word": "serve",
+          "phonetic": "sɜːv",
+          "pos": "v.",
+          "meaning": "服务；服役（serve the people）",
+          "sentence": "We should serve the people wholeheartedly.",
+          "sentenceCn": "我们应该全心全意为人民服务。",
+          "audio": "/audio/jw/jw9d25.mp3"
+        }
+      ]
+    }
+  ]
+};
+
+// src/junior_textbook.json
+var jbook_default = {
+  "product": "初中英语课本章节同步训练",
+  "version": "1.0",
+  "schema_version": "1.0",
+  "note": "人教版 Go for it 七至九年级共 58 单元；每单元含重点词汇、语法要点与同步练习；词汇音频来自单词库或 /audio/jw/x<word>.mp3",
+  "books": [
+    {
+      "code": "7a",
+      "title": "七年级上册",
+      "units": [
+        {
+          "id": "7a01",
+          "title": "Starter Unit 1 Good morning!",
+          "topic": "打招呼与问候",
+          "words": [
+            {
+              "word": "hello",
+              "phonetic": "həˈləʊ",
+              "pos": "int.",
+              "meaning": "你好",
+              "audio": "/audio/jw/xhello.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "morning",
+              "phonetic": "ˈmɔːnɪŋ",
+              "pos": "n.",
+              "meaning": "早晨；上午",
+              "audio": "/audio/jw/jw7d01.mp3",
+              "sentence": "I get up at six in the morning.",
+              "sentenceCn": "我早上六点起床。"
+            },
+            {
+              "word": "fine",
+              "phonetic": "faɪn",
+              "pos": "adj.",
+              "meaning": "健康的；美好的",
+              "audio": "/audio/jw/xfine.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "thank",
+              "phonetic": "θæŋk",
+              "pos": "v./n.",
+              "meaning": "感谢",
+              "audio": "/audio/jw/jw8d23.mp3",
+              "sentence": "Thank you for helping me with my maths.",
+              "sentenceCn": "谢谢你帮我学数学。"
+            },
+            {
+              "word": "goodbye",
+              "phonetic": "ˌɡʊdˈbaɪ",
+              "pos": "int.",
+              "meaning": "再见",
+              "audio": "/audio/jw/xgoodbye.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "打招呼用语按时间分为 Good morning! / Good afternoon! / Good evening!，回答重复原句即可。",
+              "example": "Good morning, Miss Gao!",
+              "exampleCn": "早上好，高老师！"
+            },
+            {
+              "point": "初次见面用 I'm... 或 My name is... 自我介绍，用 This is... 介绍他人。",
+              "example": "Hello! I'm Gina. Nice to meet you!",
+              "exampleCn": "你好！我是吉娜。很高兴认识你！"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "早上 8 点见到老师，你应该说：___",
+              "options": [
+                "Good morning!",
+                "Good evening!",
+                "Good night!"
+              ],
+              "answer": 0,
+              "analysis": "早上用 Good morning，晚上分别用 evening / night。"
+            },
+            {
+              "stem": "—How are you? —___, thank you.",
+              "options": [
+                "Fine",
+                "Hello",
+                "Goodbye"
+              ],
+              "answer": 0,
+              "analysis": "How are you 问身体好吗，用 Fine 回答。"
+            },
+            {
+              "stem": "\"这是我的朋友。\" 的英文是：___",
+              "options": [
+                "This is my friend.",
+                "I am your friend.",
+                "That friend is me."
+              ],
+              "answer": 0,
+              "analysis": "介绍他人用 This is + 人。"
+            }
+          ]
+        },
+        {
+          "id": "7a02",
+          "title": "Starter Unit 2 What's this in English?",
+          "topic": "指示代词与学习用品",
+          "words": [
+            {
+              "word": "this",
+              "phonetic": "ðɪs",
+              "pos": "pron.",
+              "meaning": "这；这个",
+              "audio": "/audio/jw/xthis.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "that",
+              "phonetic": "ðæt",
+              "pos": "pron.",
+              "meaning": "那；那个",
+              "audio": "/audio/jw/xthat.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "English",
+              "phonetic": "ˈɪŋɡlɪʃ",
+              "pos": "n.",
+              "meaning": "英语；英国的",
+              "audio": "/audio/jw/xEnglish.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "pen",
+              "phonetic": "pen",
+              "pos": "n.",
+              "meaning": "钢笔",
+              "audio": "/audio/jw/xpen.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "map",
+              "phonetic": "mæp",
+              "pos": "n.",
+              "meaning": "地图",
+              "audio": "/audio/jw/jw8a15.mp3",
+              "sentence": "We found the museum easily with a map.",
+              "sentenceCn": "有地图我们很容易找到了博物馆。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "问\"这个用英语怎么说\"用 What's this in English? 回答用 It's a/an...。",
+              "example": "What's this in English? It's an orange.",
+              "exampleCn": "这个用英语怎么说？是一个橙子。"
+            },
+            {
+              "point": "单数名词前用 a 或 an：辅音音素开头用 a，元音音素开头用 an。",
+              "example": "a pen, a map, an apple, an egg",
+              "exampleCn": "一支钢笔、一张地图、一个苹果、一个鸡蛋"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "___ is a ruler. 指着远处的东西应该说：___",
+              "options": [
+                "That",
+                "This",
+                "These"
+              ],
+              "answer": 0,
+              "analysis": "that 指远处，this 指近处。"
+            },
+            {
+              "stem": "___ apple（选冠词）",
+              "options": [
+                "an",
+                "a",
+                "the"
+              ],
+              "answer": 0,
+              "analysis": "apple 以元音音素 /æ/ 开头，用 an。"
+            },
+            {
+              "stem": "—What's this in English? —___ a key.",
+              "options": [
+                "It's",
+                "This is",
+                "That's"
+              ],
+              "answer": 0,
+              "analysis": "回答 What's this 用 It's a/an..."
+            }
+          ]
+        },
+        {
+          "id": "7a03",
+          "title": "Starter Unit 3 What color is it?",
+          "topic": "颜色与字母",
+          "words": [
+            {
+              "word": "colour",
+              "phonetic": "ˈkʌlə",
+              "pos": "n.",
+              "meaning": "颜色（美式 color）",
+              "audio": "/audio/jw/xcolour.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "red",
+              "phonetic": "red",
+              "pos": "adj./n.",
+              "meaning": "红色的；红色",
+              "audio": "/audio/jw/xred.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "blue",
+              "phonetic": "bluː",
+              "pos": "adj./n.",
+              "meaning": "蓝色的；蓝色",
+              "audio": "/audio/jw/xblue.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "white",
+              "phonetic": "waɪt",
+              "pos": "adj./n.",
+              "meaning": "白色的；白色",
+              "audio": "/audio/jw/xwhite.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "black",
+              "phonetic": "blæk",
+              "pos": "adj./n.",
+              "meaning": "黑色的；黑色",
+              "audio": "/audio/jw/xblack.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "问颜色用 What color is it? 回答 It's + 颜色。",
+              "example": "What color is the pen? It's blue.",
+              "exampleCn": "这支钢笔是什么颜色？是蓝色的。"
+            },
+            {
+              "point": "颜色词既可作表语（The car is black.）也可作定语（a black car）。",
+              "example": "The quilt is white. It's a white quilt.",
+              "exampleCn": "这床被子是白色的。是一床白色的被子。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "—What color is the orange? —It's ___.",
+              "options": [
+                "orange",
+                "an orange",
+                "the orange"
+              ],
+              "answer": 0,
+              "analysis": "orange 作颜色时是形容词，前面不加冠词。"
+            },
+            {
+              "stem": "黑白相间的英语是：___",
+              "options": [
+                "black and white",
+                "white and black",
+                "black or white"
+              ],
+              "answer": 0,
+              "analysis": "固定表达为 black and white。"
+            },
+            {
+              "stem": "The sky（天空）is ___.",
+              "options": [
+                "blue",
+                "green",
+                "black"
+              ],
+              "answer": 0,
+              "analysis": "天空是蓝色的。"
+            }
+          ]
+        },
+        {
+          "id": "7a04",
+          "title": "Unit 1 My name's Gina.",
+          "topic": "自我介绍与 be 动词",
+          "words": [
+            {
+              "word": "name",
+              "phonetic": "neɪm",
+              "pos": "n.",
+              "meaning": "名字",
+              "audio": "/audio/jw/xname.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "meet",
+              "phonetic": "miːt",
+              "pos": "v.",
+              "meaning": "遇见；结识",
+              "audio": "/audio/jw/xmeet.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "family",
+              "phonetic": "ˈfæməli",
+              "pos": "n.",
+              "meaning": "家庭；家人",
+              "audio": "/audio/jw/jw7a01.mp3",
+              "sentence": "My family has four people.",
+              "sentenceCn": "我家有四口人。"
+            },
+            {
+              "word": "friend",
+              "phonetic": "frend",
+              "pos": "n.",
+              "meaning": "朋友",
+              "audio": "/audio/jw/jw7a12.mp3",
+              "sentence": "A real friend helps you when you are in trouble.",
+              "sentenceCn": "真正的朋友在你困难时会帮你。"
+            },
+            {
+              "word": "boy",
+              "phonetic": "bɔɪ",
+              "pos": "n.",
+              "meaning": "男孩",
+              "audio": "/audio/jw/xboy.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "be 动词搭配口诀：我用 am，你用 are，is 跟着他她它；单数名词用 is，复数名词全用 are。",
+              "example": "I am a student. She is my teacher. They are my friends.",
+              "exampleCn": "我是学生。她是我的老师。他们是我的朋友。"
+            },
+            {
+              "point": "形容词性物主代词 my/your/his/her 后面必须跟名词。",
+              "example": "My name is Jack. Her name is Alice.",
+              "exampleCn": "我的名字叫杰克。她的名字叫爱丽丝。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "I ___ Gina. 选be动词",
+              "options": [
+                "am",
+                "is",
+                "are"
+              ],
+              "answer": 0,
+              "analysis": "I 后面用 am。"
+            },
+            {
+              "stem": "___ name is Bob.___ is my friend.",
+              "options": [
+                "His; He",
+                "He; His",
+                "His; His"
+              ],
+              "answer": 0,
+              "analysis": "第一空后有名词 name 用形容词性 His，第二空作主语用主格 He。"
+            },
+            {
+              "stem": "—Is she your sister? —Yes, ___ is.",
+              "options": [
+                "she",
+                "he",
+                "it"
+              ],
+              "answer": 0,
+              "analysis": "问 she 答 she。"
+            }
+          ]
+        },
+        {
+          "id": "7a05",
+          "title": "Unit 2 This is my sister.",
+          "topic": "家庭成员与名词复数",
+          "words": [
+            {
+              "word": "sister",
+              "phonetic": "ˈsɪstə",
+              "pos": "n.",
+              "meaning": "姐；妹",
+              "audio": "/audio/jw/jw7a04.mp3",
+              "sentence": "His sister studies in a middle school.",
+              "sentenceCn": "他姐姐在一所中学读书。"
+            },
+            {
+              "word": "brother",
+              "phonetic": "ˈbrʌðə",
+              "pos": "n.",
+              "meaning": "兄；弟",
+              "audio": "/audio/jw/jw7a03.mp3",
+              "sentence": "My brother is two years older than me.",
+              "sentenceCn": "我哥哥比我大两岁。"
+            },
+            {
+              "word": "parent",
+              "phonetic": "ˈpeərənt",
+              "pos": "n.",
+              "meaning": "父亲；母亲（常用复数 parents）",
+              "audio": "/audio/jw/jw7a02.mp3",
+              "sentence": "My parents are both teachers.",
+              "sentenceCn": "我父母都是老师。"
+            },
+            {
+              "word": "grandma",
+              "phonetic": "ˈɡrænmɑː",
+              "pos": "n.",
+              "meaning": "奶奶；外婆",
+              "audio": "/audio/jw/jw7a05.mp3",
+              "sentence": "Grandma tells me stories every night.",
+              "sentenceCn": "奶奶每晚给我讲故事。"
+            },
+            {
+              "word": "cousin",
+              "phonetic": "ˈkʌzn",
+              "pos": "n.",
+              "meaning": "表（堂）兄弟姐妹",
+              "audio": "/audio/jw/jw7a07.mp3",
+              "sentence": "My cousin and I are in the same school.",
+              "sentenceCn": "我表哥和我在同一所学校。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "介绍多人用 These are... / Those are...，后面的名词要用复数。",
+              "example": "These are my parents. Those are my grandparents.",
+              "exampleCn": "这些是我的父母。那些是我的祖父母。"
+            },
+            {
+              "point": "名词复数规则变化：一般加 -s；以 s/x/ch/sh 结尾加 -es；辅音字母+y 结尾变 y 为 i 加 -es。",
+              "example": "book→books, box→boxes, family→families",
+              "exampleCn": "书→books，盒子→boxes，家庭→families"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "This is my ___ and those are my ___.（姐妹们；父母）",
+              "options": [
+                "sister; parent",
+                "sisters; parents",
+                "sister; parents"
+              ],
+              "answer": 1,
+              "analysis": "those 后用复数，this is 后用单数。"
+            },
+            {
+              "stem": "I have three ___（钥匙）。",
+              "options": [
+                "keys",
+                "keyes",
+                "key"
+              ],
+              "answer": 0,
+              "analysis": "以辅音音素结尾加 s，key 直接加 s。"
+            },
+            {
+              "stem": "___ are my brothers.",
+              "options": [
+                "Those",
+                "This",
+                "That"
+              ],
+              "answer": 0,
+              "analysis": "brothers 是复数，指示代词用 Those。"
+            }
+          ]
+        },
+        {
+          "id": "7a06",
+          "title": "Unit 3 Is this your pencil?",
+          "topic": "一般疑问句与物主代词",
+          "words": [
+            {
+              "word": "pencil",
+              "phonetic": "ˈpensl",
+              "pos": "n.",
+              "meaning": "铅笔",
+              "audio": "/audio/jw/xpencil.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "eraser",
+              "phonetic": "ɪˈreɪzə",
+              "pos": "n.",
+              "meaning": "橡皮",
+              "audio": "/audio/jw/xeraser.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "schoolbag",
+              "phonetic": "ˈskuːlbæɡ",
+              "pos": "n.",
+              "meaning": "书包",
+              "audio": "/audio/jw/xschoolbag.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "dictionary",
+              "phonetic": "ˈdɪkʃənri",
+              "pos": "n.",
+              "meaning": "词典",
+              "audio": "/audio/jw/jw7b15.mp3",
+              "sentence": "Look up the new word in your dictionary.",
+              "sentenceCn": "在词典里查一下这个生词。"
+            },
+            {
+              "word": "library",
+              "phonetic": "ˈlaɪbrəri",
+              "pos": "n.",
+              "meaning": "图书馆",
+              "audio": "/audio/jw/jw7b16.mp3",
+              "sentence": "You can borrow three books from the library.",
+              "sentenceCn": "你可以从图书馆借三本书。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "一般疑问句 Is this/that your...? 肯定回答 Yes, it is. 否定回答 No, it isn't.",
+              "example": "Is this your schoolbag? Yes, it is. It's mine.",
+              "exampleCn": "这是你的书包吗？是的。是我的。"
+            },
+            {
+              "point": "名词性物主代词 mine/yours/his/hers 单独使用，后面不再跟名词；= 形容词性物主代词 + 名词。",
+              "example": "This pen is mine. That one is yours.",
+              "exampleCn": "这支钢笔是我的。那支是你的。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Is that your eraser? —No, it isn't. It's ___（她的）。",
+              "options": [
+                "hers",
+                "her",
+                "she"
+              ],
+              "answer": 0,
+              "analysis": "空后无名词，用名词性物主代词 hers。"
+            },
+            {
+              "stem": "___ that your dictionary?",
+              "options": [
+                "Is",
+                "Are",
+                "Am"
+              ],
+              "answer": 0,
+              "analysis": "that 是单数，用 Is。"
+            },
+            {
+              "stem": "This is ___ schoolbag.（我的）",
+              "options": [
+                "my",
+                "mine",
+                "me"
+              ],
+              "answer": 0,
+              "analysis": "空后有名词 schoolbag，用形容词性 my。"
+            }
+          ]
+        },
+        {
+          "id": "7a07",
+          "title": "Unit 4 Where's my schoolbag?",
+          "topic": "地点介词",
+          "words": [
+            {
+              "word": "where",
+              "phonetic": "weə",
+              "pos": "adv.",
+              "meaning": "在哪里",
+              "audio": "/audio/jw/xwhere.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "table",
+              "phonetic": "ˈteɪbl",
+              "pos": "n.",
+              "meaning": "桌子",
+              "audio": "/audio/jw/xtable.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "bed",
+              "phonetic": "bed",
+              "pos": "n.",
+              "meaning": "床",
+              "audio": "/audio/jw/xbed.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "chair",
+              "phonetic": "tʃeə",
+              "pos": "n.",
+              "meaning": "椅子",
+              "audio": "/audio/jw/xchair.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "room",
+              "phonetic": "ruːm",
+              "pos": "n.",
+              "meaning": "房间",
+              "audio": "/audio/jw/xroom.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "where 引导特殊疑问句问地点，回答用方位介词短语。",
+              "example": "Where are my keys? They're on the table.",
+              "exampleCn": "我的钥匙在哪里？在桌子上。"
+            },
+            {
+              "point": "方位介词 in（在……里）、on（在……上）、under（在……下）。",
+              "example": "The ball is in the box, on the box and under the chair.",
+              "exampleCn": "球在盒子里、盒子上和椅子下面。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "The cat is ___ the bed.（在床底下）",
+              "options": [
+                "under",
+                "on",
+                "in"
+              ],
+              "answer": 0,
+              "analysis": "在……下面用 under。"
+            },
+            {
+              "stem": "—___ is my hat? —It's on your head.",
+              "options": [
+                "Where",
+                "What",
+                "Who"
+              ],
+              "answer": 0,
+              "analysis": "问地点用 Where。"
+            },
+            {
+              "stem": "His keys are ___ the drawer（抽屉）.",
+              "options": [
+                "in",
+                "under",
+                "on"
+              ],
+              "answer": 0,
+              "analysis": "在抽屉里用 in。"
+            }
+          ]
+        },
+        {
+          "id": "7a08",
+          "title": "Unit 5 Do you have a soccer ball?",
+          "topic": "have/has 与一般现在时",
+          "words": [
+            {
+              "word": "ball",
+              "phonetic": "bɔːl",
+              "pos": "n.",
+              "meaning": "球",
+              "audio": "/audio/jw/xball.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "soccer",
+              "phonetic": "ˈsɒkə",
+              "pos": "n.",
+              "meaning": "英式足球",
+              "audio": "/audio/jw/xsoccer.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "basketball",
+              "phonetic": "ˈbɑːskɪtbɔːl",
+              "pos": "n.",
+              "meaning": "篮球",
+              "audio": "/audio/jw/jw8b05.mp3",
+              "sentence": "The boys are playing basketball on the playground.",
+              "sentenceCn": "男孩子们正在操场上打篮球。"
+            },
+            {
+              "word": "interesting",
+              "phonetic": "ˈɪntrəstɪŋ",
+              "pos": "adj.",
+              "meaning": "有趣的",
+              "audio": "/audio/jw/xinteresting.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "fun",
+              "phonetic": "fʌn",
+              "pos": "adj./n.",
+              "meaning": "有趣的；乐趣",
+              "audio": "/audio/jw/xfun.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "have 表示\"拥有\"，第三人称单数用 has；一般疑问句用 Do/Does 提前。",
+              "example": "I have a basketball. She has a soccer ball. Do you have a ping-pong bat?",
+              "exampleCn": "我有一个篮球。她有一个足球。你有乒乓球拍吗？"
+            },
+            {
+              "point": "助动词 do/does 构成否定和疑问：主语三单用 does，其余用 do；后接动词原形。",
+              "example": "He doesn't have a volleyball. Does Tom have a tennis ball?",
+              "exampleCn": "他没有排球。汤姆有网球吗？"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "She ___ a nice schoolbag.",
+              "options": [
+                "has",
+                "have",
+                "haves"
+              ],
+              "answer": 0,
+              "analysis": "第三人称单数用 has。"
+            },
+            {
+              "stem": "___ you have a soccer ball? —Yes, I do.",
+              "options": [
+                "Do",
+                "Does",
+                "Are"
+              ],
+              "answer": 0,
+              "analysis": "主语 you 用 Do。"
+            },
+            {
+              "stem": "Tom ___ have a tennis ball.（否定）",
+              "options": [
+                "doesn't",
+                "don't",
+                "isn't"
+              ],
+              "answer": 0,
+              "analysis": "主语 Tom 是三单，否定用 doesn't + 动词原形。"
+            }
+          ]
+        },
+        {
+          "id": "7a09",
+          "title": "Unit 6 Do you like bananas?",
+          "topic": "可数与不可数名词",
+          "words": [
+            {
+              "word": "banana",
+              "phonetic": "bəˈnɑːnə",
+              "pos": "n.",
+              "meaning": "香蕉",
+              "audio": "/audio/jw/xbanana.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "apple",
+              "phonetic": "ˈæpl",
+              "pos": "n.",
+              "meaning": "苹果",
+              "audio": "/audio/jw/xapple.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "carrot",
+              "phonetic": "ˈkærət",
+              "pos": "n.",
+              "meaning": "胡萝卜",
+              "audio": "/audio/jw/xcarrot.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "rice",
+              "phonetic": "raɪs",
+              "pos": "n.",
+              "meaning": "米饭；大米",
+              "audio": "/audio/jw/jw7c04.mp3",
+              "sentence": "People in the south live on rice.",
+              "sentenceCn": "南方人以大米为主食。"
+            },
+            {
+              "word": "chicken",
+              "phonetic": "ˈtʃɪkɪn",
+              "pos": "n.",
+              "meaning": "鸡肉；小鸡",
+              "audio": "/audio/jw/xchicken.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "like 表示喜好，三单用 likes；可数名词复数表示一类事物。",
+              "example": "I like apples. He likes ice-cream.",
+              "exampleCn": "我喜欢苹果。他喜欢冰淇淋。"
+            },
+            {
+              "point": "可数名词有单复数（an apple / two apples）；不可数名词没有复数（rice, milk, chicken 鸡肉）。",
+              "example": "I have two eggs and some rice.",
+              "exampleCn": "我有两个鸡蛋和一些米饭。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Tom likes ___（草莓）very much.",
+              "options": [
+                "strawberries",
+                "strawberrys",
+                "strawberry"
+              ],
+              "answer": 0,
+              "analysis": "以辅音字母+y 结尾，变 y 为 i 加 es。"
+            },
+            {
+              "stem": "Do you like ___?（鸡肉）",
+              "options": [
+                "chicken",
+                "chickens",
+                "a chicken"
+              ],
+              "answer": 0,
+              "analysis": "鸡肉不可数，用原形。"
+            },
+            {
+              "stem": "___ she like carrots? —Yes, she does.",
+              "options": [
+                "Does",
+                "Do",
+                "Is"
+              ],
+              "answer": 0,
+              "analysis": "主语 she 是三单，用 Does。"
+            }
+          ]
+        },
+        {
+          "id": "7a10",
+          "title": "Unit 7 How much are these socks?",
+          "topic": "价格与购物",
+          "words": [
+            {
+              "word": "sock",
+              "phonetic": "sɒk",
+              "pos": "n.",
+              "meaning": "短袜",
+              "audio": "/audio/jw/xsock.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "sweater",
+              "phonetic": "ˈswetə",
+              "pos": "n.",
+              "meaning": "毛衣",
+              "audio": "/audio/jw/xsweater.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "trousers",
+              "phonetic": "ˈtraʊzəz",
+              "pos": "n.",
+              "meaning": "裤子（复数）",
+              "audio": "/audio/jw/xtrousers.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "dollar",
+              "phonetic": "ˈdɒlə",
+              "pos": "n.",
+              "meaning": "美元",
+              "audio": "/audio/jw/xdollar.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "cheap",
+              "phonetic": "tʃiːp",
+              "pos": "adj.",
+              "meaning": "便宜的",
+              "audio": "/audio/jw/jw7c17.mp3",
+              "sentence": "This dictionary is cheap but useful.",
+              "sentenceCn": "这本词典便宜但有用。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "how much 问价格：单数用 How much is...?，复数用 How much are...?",
+              "example": "How much is this sweater? How much are these socks?",
+              "exampleCn": "这件毛衣多少钱？这些短袜多少钱？"
+            },
+            {
+              "point": "成双成对的名词（socks, trousers, shoes）作主语时谓语动词用复数。",
+              "example": "The trousers are thirty dollars.",
+              "exampleCn": "这条裤子三十美元。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "—How much ___ the trousers? —___ twenty dollars.",
+              "options": [
+                "are; They're",
+                "is; It's",
+                "are; It's"
+              ],
+              "answer": 0,
+              "analysis": "trousers 复数，用 are，代词用 They're。"
+            },
+            {
+              "stem": "The socks are only two ___（美元）。",
+              "options": [
+                "dollars",
+                "dollar",
+                "dollar's"
+              ],
+              "answer": 0,
+              "analysis": "two 后用复数 dollars。"
+            },
+            {
+              "stem": "This hat is nice. I'll take ___.",
+              "options": [
+                "it",
+                "them",
+                "one"
+              ],
+              "answer": 0,
+              "analysis": "hat 单数，用 it 代替。"
+            }
+          ]
+        },
+        {
+          "id": "7a11",
+          "title": "Unit 8 When is your birthday?",
+          "topic": "日期与序数词",
+          "words": [
+            {
+              "word": "birthday",
+              "phonetic": "ˈbɜːθdeɪ",
+              "pos": "n.",
+              "meaning": "生日",
+              "audio": "/audio/jw/xbirthday.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "month",
+              "phonetic": "mʌnθ",
+              "pos": "n.",
+              "meaning": "月份",
+              "audio": "/audio/jw/xmonth.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "party",
+              "phonetic": "ˈpɑːti",
+              "pos": "n.",
+              "meaning": "聚会；派对",
+              "audio": "/audio/jw/jw9c13.mp3",
+              "sentence": "Welcome to my birthday party this Saturday.",
+              "sentenceCn": "欢迎这周六来我的生日聚会。"
+            },
+            {
+              "word": "old",
+              "phonetic": "əʊld",
+              "pos": "adj.",
+              "meaning": "年老的；……岁的",
+              "audio": "/audio/jw/xold.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "December",
+              "phonetic": "dɪˈsembə",
+              "pos": "n.",
+              "meaning": "十二月",
+              "audio": "/audio/jw/xDecember.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "日期用序数词表达：first(1st), second(2nd), third(3rd), twelfth(12th), twentieth(20th)。",
+              "example": "My birthday is on June third./on June 3rd.",
+              "exampleCn": "我的生日在六月三日。"
+            },
+            {
+              "point": "问生日用 When is your birthday? 回答用 on + 日期；月份首字母必须大写。",
+              "example": "When is your birthday? It's on May 1st.",
+              "exampleCn": "你的生日是什么时候？五月一日。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Teachers' Day is in ___.（九月）",
+              "options": [
+                "September",
+                "December",
+                "October"
+              ],
+              "answer": 0,
+              "analysis": "九月是 September。"
+            },
+            {
+              "stem": "Today is her ___ birthday.（十二岁）",
+              "options": [
+                "twelfth",
+                "twelveth",
+                "twelve"
+              ],
+              "answer": 0,
+              "analysis": "序数词 twelfth 表示第十二个生日。"
+            },
+            {
+              "stem": "—___ is the school trip? —It's on October 10th.",
+              "options": [
+                "When",
+                "Where",
+                "What"
+              ],
+              "answer": 0,
+              "analysis": "问日期用 When。"
+            }
+          ]
+        },
+        {
+          "id": "7a12",
+          "title": "Unit 9 My favorite subject is science.",
+          "topic": "喜好与原因",
+          "words": [
+            {
+              "word": "favourite",
+              "phonetic": "ˈfeɪvərɪt",
+              "pos": "adj.",
+              "meaning": "最喜爱的（美式 favorite）",
+              "audio": "/audio/jw/xfavourite.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "busy",
+              "phonetic": "ˈbɪzi",
+              "pos": "adj.",
+              "meaning": "忙碌的",
+              "audio": "/audio/jw/jw7d21.mp3",
+              "sentence": "Farmers are busy in autumn.",
+              "sentenceCn": "农民秋天很忙。"
+            },
+            {
+              "word": "free",
+              "phonetic": "friː",
+              "pos": "adj.",
+              "meaning": "空闲的；自由的",
+              "audio": "/audio/jw/jw7d22.mp3",
+              "sentence": "Are you free this Sunday evening?",
+              "sentenceCn": "这周日晚上你有空吗？"
+            },
+            {
+              "word": "useful",
+              "phonetic": "ˈjuːsfl",
+              "pos": "adj.",
+              "meaning": "有用的",
+              "audio": "/audio/jw/xuseful.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "difficult",
+              "phonetic": "ˈdɪfɪkəlt",
+              "pos": "adj.",
+              "meaning": "困难的",
+              "audio": "/audio/jw/xdifficult.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "What's your favorite subject? = What subject do you like best?",
+              "example": "What's your favorite subject? My favorite subject is P.E.",
+              "exampleCn": "你最喜欢的科目是什么？我最喜欢的科目是体育。"
+            },
+            {
+              "point": "why 问原因，because 回答；because 后跟完整的句子。",
+              "example": "Why do you like music? Because it's relaxing.",
+              "exampleCn": "你为什么喜欢音乐？因为它令人放松。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "___ do you like science? —Because it's interesting.",
+              "options": [
+                "Why",
+                "When",
+                "What"
+              ],
+              "answer": 0,
+              "analysis": "because 回答的是原因，提问用 Why。"
+            },
+            {
+              "stem": "My favorite subject ___ English.",
+              "options": [
+                "is",
+                "are",
+                "am"
+              ],
+              "answer": 0,
+              "analysis": "subject 单数用 is。"
+            },
+            {
+              "stem": "Music is ___. I like it very much.",
+              "options": [
+                "relaxing",
+                "difficult",
+                "boring"
+              ],
+              "answer": 0,
+              "analysis": "前后语义一致，喜欢说明音乐令人放松。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "7b",
+      "title": "七年级下册",
+      "units": [
+        {
+          "id": "7b01",
+          "title": "Unit 1 Can you play the guitar?",
+          "topic": "情态动词 can",
+          "words": [
+            {
+              "word": "guitar",
+              "phonetic": "ɡɪˈtɑː",
+              "pos": "n.",
+              "meaning": "吉他",
+              "audio": "/audio/jw/xguitar.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "sing",
+              "phonetic": "sɪŋ",
+              "pos": "v.",
+              "meaning": "唱歌（过去式 sang）",
+              "audio": "/audio/jw/jw9c15.mp3",
+              "sentence": "She sings English songs very well.",
+              "sentenceCn": "她英语歌唱得很好。"
+            },
+            {
+              "word": "swim",
+              "phonetic": "swɪm",
+              "pos": "v.",
+              "meaning": "游泳（过去式 swam）",
+              "audio": "/audio/jw/xswim.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "piano",
+              "phonetic": "piˈænəʊ",
+              "pos": "n.",
+              "meaning": "钢琴",
+              "audio": "/audio/jw/xpiano.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "club",
+              "phonetic": "klʌb",
+              "pos": "n.",
+              "meaning": "俱乐部",
+              "audio": "/audio/jw/xclub.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "can 表能力，后接动词原形，没有人称和数的变化；否定 can't，疑问把 can 提前。",
+              "example": "She can sing and dance. Can you play chess? No, I can't.",
+              "exampleCn": "她会唱歌跳舞。你会下棋吗？不会。"
+            },
+            {
+              "point": "play + the + 乐器（play the piano）；play + 球类（play football）不加 the。",
+              "example": "Tom can play the guitar but he can't play the drums.",
+              "exampleCn": "汤姆会弹吉他但不会打架子鼓。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Can you ___ the piano?",
+              "options": [
+                "play",
+                "plays",
+                "playing"
+              ],
+              "answer": 0,
+              "analysis": "can 后接动词原形。"
+            },
+            {
+              "stem": "The boys often ___ basketball after school.",
+              "options": [
+                "play",
+                "play the",
+                "plays"
+              ],
+              "answer": 0,
+              "analysis": "球类前不加 the。"
+            },
+            {
+              "stem": "—Can Mary swim? —___. She is afraid of water.",
+              "options": [
+                "No, she can't",
+                "Yes, she can",
+                "No, she doesn't"
+              ],
+              "answer": 0,
+              "analysis": "can 引导的问句用 can 回答；怕水说明不会。"
+            }
+          ]
+        },
+        {
+          "id": "7b02",
+          "title": "Unit 2 What time do you go to school?",
+          "topic": "时间与频率",
+          "words": [
+            {
+              "word": "usually",
+              "phonetic": "ˈjuːʒuəli",
+              "pos": "adv.",
+              "meaning": "通常",
+              "audio": "/audio/jw/jw7d14.mp3",
+              "sentence": "We usually have a meeting on Monday.",
+              "sentenceCn": "我们通常周一开会。"
+            },
+            {
+              "word": "early",
+              "phonetic": "ˈɜːli",
+              "pos": "adj./adv.",
+              "meaning": "早的（地）",
+              "audio": "/audio/jw/jw7d11.mp3",
+              "sentence": "The early bird catches the worm.",
+              "sentenceCn": "早起的鸟儿有虫吃。"
+            },
+            {
+              "word": "never",
+              "phonetic": "ˈnevə",
+              "pos": "adv.",
+              "meaning": "从不",
+              "audio": "/audio/jw/jw7d17.mp3",
+              "sentence": "He never tells a lie.",
+              "sentenceCn": "他从不撒谎。"
+            },
+            {
+              "word": "shower",
+              "phonetic": "ˈʃaʊə",
+              "pos": "n.",
+              "meaning": "淋浴",
+              "audio": "/audio/jw/xshower.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "thirty",
+              "phonetic": "ˈθɜːti",
+              "pos": "num.",
+              "meaning": "三十",
+              "audio": "/audio/jw/xthirty.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "what time 问具体时刻；整点用 o'clock，半小时可用 half past 或直接\"数字+thirty\"。",
+              "example": "What time do you usually get up? At six thirty.",
+              "exampleCn": "你通常几点起床？六点半。"
+            },
+            {
+              "point": "频率副词（always/usually/often/sometimes/never）位于实义动词之前、be 动词之后。",
+              "example": "He never eats breakfast. She is always late.",
+              "exampleCn": "他从不吃早餐。她总是迟到。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "I usually go to school ___ seven o'clock.",
+              "options": [
+                "at",
+                "in",
+                "on"
+              ],
+              "answer": 0,
+              "analysis": "具体时刻前用 at。"
+            },
+            {
+              "stem": "My father ___ watches TV at night.（从不）",
+              "options": [
+                "never",
+                "always",
+                "usually"
+              ],
+              "answer": 0,
+              "analysis": "从不 = never。"
+            },
+            {
+              "stem": "6:45 读作：___",
+              "options": [
+                "a quarter to seven",
+                "a quarter past seven",
+                "seven quarter"
+              ],
+              "answer": 0,
+              "analysis": "差一刻到七点用 a quarter to seven。"
+            }
+          ]
+        },
+        {
+          "id": "7b03",
+          "title": "Unit 3 How do you get to school?",
+          "topic": "交通方式",
+          "words": [
+            {
+              "word": "subway",
+              "phonetic": "ˈsʌbweɪ",
+              "pos": "n.",
+              "meaning": "地铁",
+              "audio": "/audio/jw/jw8a10.mp3",
+              "sentence": "Subway is a fast way to travel in Beijing.",
+              "sentenceCn": "在北京，地铁是快捷的出行方式。"
+            },
+            {
+              "word": "train",
+              "phonetic": "treɪn",
+              "pos": "n.",
+              "meaning": "火车",
+              "audio": "/audio/jw/jw8a08.mp3",
+              "sentence": "The train arrives at Platform 2.",
+              "sentenceCn": "火车到达2号站台。"
+            },
+            {
+              "word": "bicycle",
+              "phonetic": "ˈbaɪsɪkl",
+              "pos": "n.",
+              "meaning": "自行车（bike）",
+              "audio": "/audio/jw/jw8a11.mp3",
+              "sentence": "Riding a bicycle is good exercise.",
+              "sentenceCn": "骑自行车是很好的锻炼。"
+            },
+            {
+              "word": "minute",
+              "phonetic": "ˈmɪnɪt",
+              "pos": "n.",
+              "meaning": "分钟",
+              "audio": "/audio/jw/jw7d10.mp3",
+              "sentence": "Wait a minute, please.",
+              "sentenceCn": "请等一会儿。"
+            },
+            {
+              "word": "river",
+              "phonetic": "ˈrɪvə",
+              "pos": "n.",
+              "meaning": "河；江",
+              "audio": "/audio/jw/jw8c22.mp3",
+              "sentence": "The river runs through our city.",
+              "sentenceCn": "这条河穿过我们的城市。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "问交通方式用 How do you get to...? 回答用 by + 交通工具或 take + the + 交通工具。",
+              "example": "How does Mary get to school? She rides a bike. / She goes by bike.",
+              "exampleCn": "玛丽怎么去上学？她骑自行车。"
+            },
+            {
+              "point": "how long 问时长，how far 问距离。",
+              "example": "How long does it take? About 15 minutes. How far is it from home to school? About two kilometers.",
+              "exampleCn": "花多长时间？大约15分钟。从家到学校多远？大约两公里。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "I go to school ___ bus every day.",
+              "options": [
+                "by",
+                "on",
+                "in"
+              ],
+              "answer": 0,
+              "analysis": "by + 交通工具中间不加任何词。"
+            },
+            {
+              "stem": "___ does it take to get to the station?",
+              "options": [
+                "How long",
+                "How far",
+                "How much"
+              ],
+              "answer": 0,
+              "analysis": "take 花费时间，用 How long 提问。"
+            },
+            {
+              "stem": "Some students ___ a boat to cross the river.",
+              "options": [
+                "take",
+                "by",
+                "on"
+              ],
+              "answer": 0,
+              "analysis": "作谓语动词用 take，by 是介词不能作谓语。"
+            }
+          ]
+        },
+        {
+          "id": "7b04",
+          "title": "Unit 4 Don't eat in class.",
+          "topic": "规则与祈使句",
+          "words": [
+            {
+              "word": "rule",
+              "phonetic": "ruːl",
+              "pos": "n./v.",
+              "meaning": "规则；统治",
+              "audio": "/audio/jw/jw9a17.mp3",
+              "sentence": "Follow the school rules, please.",
+              "sentenceCn": "请遵守校规。"
+            },
+            {
+              "word": "arrive",
+              "phonetic": "əˈraɪv",
+              "pos": "v.",
+              "meaning": "到达（arrive at/in）",
+              "audio": "/audio/jw/xarrive.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "dirty",
+              "phonetic": "ˈdɜːti",
+              "pos": "adj.",
+              "meaning": "脏的",
+              "audio": "/audio/jw/xdirty.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "important",
+              "phonetic": "ɪmˈpɔːtnt",
+              "pos": "adj.",
+              "meaning": "重要的",
+              "audio": "/audio/jw/ximportant.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "hallway",
+              "phonetic": "ˈhɔːlweɪ",
+              "pos": "n.",
+              "meaning": "走廊",
+              "audio": "/audio/jw/xhallway.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "祈使句以动词原形开头，否定形式 Don't + 动词原形。",
+              "example": "Listen carefully in class. Don't run in the hallways.",
+              "exampleCn": "课上认真听讲。不要在走廊里奔跑。"
+            },
+            {
+              "point": "have to 表客观必须，有人称和时态变化；must 表主观必须，没有人称变化。",
+              "example": "I have to wear a uniform at school. We must be quiet in the library.",
+              "exampleCn": "在学校我必须穿校服。在图书馆我们必须保持安静。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "___ eat in the classroom.",
+              "options": [
+                "Don't",
+                "Not",
+                "No"
+              ],
+              "answer": 0,
+              "analysis": "祈使句否定用 Don't + 动词原形。"
+            },
+            {
+              "stem": "Students ___ be on time for class.（必须）",
+              "options": [
+                "have to",
+                "has to",
+                "having to"
+              ],
+              "answer": 0,
+              "analysis": "主语 Students 复数，have to 用原形。"
+            },
+            {
+              "stem": "We must ___ in the library.",
+              "options": [
+                "be quiet",
+                "quiet",
+                "to be quiet"
+              ],
+              "answer": 0,
+              "analysis": "must 后接动词原形。"
+            }
+          ]
+        },
+        {
+          "id": "7b05",
+          "title": "Unit 5 Why do you like pandas?",
+          "topic": "动物与原因",
+          "words": [
+            {
+              "word": "panda",
+              "phonetic": "ˈpændə",
+              "pos": "n.",
+              "meaning": "熊猫",
+              "audio": "/audio/jw/xpanda.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "cute",
+              "phonetic": "kjuːt",
+              "pos": "adj.",
+              "meaning": "可爱的",
+              "audio": "/audio/jw/xcute.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "dangerous",
+              "phonetic": "ˈdeɪndʒrəs",
+              "pos": "adj.",
+              "meaning": "危险的",
+              "audio": "/audio/jw/xdangerous.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "animal",
+              "phonetic": "ˈænɪml",
+              "pos": "n.",
+              "meaning": "动物",
+              "audio": "/audio/jw/xanimal.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "friendly",
+              "phonetic": "ˈfrendli",
+              "pos": "adj.",
+              "meaning": "友好的",
+              "audio": "/audio/jw/jw7a20.mp3",
+              "sentence": "Our new teacher is very friendly.",
+              "sentenceCn": "我们的新老师非常友好。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "why 提问用 because 回答；because 后接表示原因的完整句子。",
+              "example": "Why do you like pandas? Because they're kind of interesting.",
+              "exampleCn": "你为什么喜欢熊猫？因为它们有点儿有趣。"
+            },
+            {
+              "point": "kind of 意为\"有点儿\"，修饰形容词；kinds of 意为\"种类的\"。",
+              "example": "Koalas are kind of shy. There are many kinds of animals in the zoo.",
+              "exampleCn": "考拉有点儿害羞。动物园里有许多种动物。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Lions are ___（有点吓人的）。",
+              "options": [
+                "kind of scary",
+                "kinds of scary",
+                "kind of scare"
+              ],
+              "answer": 0,
+              "analysis": "kind of + 形容词。"
+            },
+            {
+              "stem": "—___ do you like giraffes? —Because they're beautiful.",
+              "options": [
+                "Why",
+                "What",
+                "Where"
+              ],
+              "answer": 0,
+              "analysis": "because 对应用 Why 提问。"
+            },
+            {
+              "stem": "Elephants can remember places ___ food.（有）",
+              "options": [
+                "with",
+                "in",
+                "at"
+              ],
+              "answer": 0,
+              "analysis": "with 表示带有。"
+            }
+          ]
+        },
+        {
+          "id": "7b06",
+          "title": "Unit 6 I'm watching TV.",
+          "topic": "现在进行时",
+          "words": [
+            {
+              "word": "talk",
+              "phonetic": "tɔːk",
+              "pos": "v.",
+              "meaning": "谈话",
+              "audio": "/audio/jw/xtalk.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "movie",
+              "phonetic": "ˈmuːvi",
+              "pos": "n.",
+              "meaning": "电影",
+              "audio": "/audio/jw/xmovie.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "house",
+              "phonetic": "haʊs",
+              "pos": "n.",
+              "meaning": "房子",
+              "audio": "/audio/jw/xhouse.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "sleep",
+              "phonetic": "sliːp",
+              "pos": "v./n.",
+              "meaning": "睡觉",
+              "audio": "/audio/jw/jw7d18.mp3",
+              "sentence": "Children need at least eight hours' sleep.",
+              "sentenceCn": "儿童需要至少八小时的睡眠。"
+            },
+            {
+              "word": "drink",
+              "phonetic": "drɪŋk",
+              "pos": "v.",
+              "meaning": "喝（过去式 drank）",
+              "audio": "/audio/jw/xdrink.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "现在进行时 = be + V-ing，表示此刻正在进行的动作。",
+              "example": "Look! They are playing soccer. Listen! Someone is singing.",
+              "exampleCn": "看！他们正在踢足球。听！有人在唱歌。"
+            },
+            {
+              "point": "V-ing 变化：一般加 -ing；去 e 加 -ing（make→making）；双写末尾字母加 -ing（run→running, swim→swimming）。",
+              "example": "write→writing, sit→sitting, come→coming",
+              "exampleCn": "写→writing，坐→sitting，来→coming"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "It's 9 p.m. The children ___ now.",
+              "options": [
+                "are sleeping",
+                "sleep",
+                "sleeps"
+              ],
+              "answer": 0,
+              "analysis": "now 提示用现在进行时。"
+            },
+            {
+              "stem": "The boy is ___（游泳）in the pool.",
+              "options": [
+                "swimming",
+                "swiming",
+                "swim"
+              ],
+              "answer": 0,
+              "analysis": "swim 双写 m 加 ing。"
+            },
+            {
+              "stem": "—Is your mother cooking? —Yes, ___ is.",
+              "options": [
+                "she",
+                "he",
+                "it"
+              ],
+              "answer": 0,
+              "analysis": "your mother 对应 she。"
+            }
+          ]
+        },
+        {
+          "id": "7b07",
+          "title": "Unit 7 It's raining!",
+          "topic": "天气",
+          "words": [
+            {
+              "word": "rainy",
+              "phonetic": "ˈreɪni",
+              "pos": "adj.",
+              "meaning": "多雨的；下雨的",
+              "audio": "/audio/jw/jw8c03.mp3",
+              "sentence": "Take an umbrella on rainy days.",
+              "sentenceCn": "雨天要带伞。"
+            },
+            {
+              "word": "snowy",
+              "phonetic": "ˈsnəʊi",
+              "pos": "adj.",
+              "meaning": "下雪的；多雪的",
+              "audio": "/audio/jw/jw8c06.mp3",
+              "sentence": "Children love snowy days.",
+              "sentenceCn": "孩子们喜欢下雪天。"
+            },
+            {
+              "word": "windy",
+              "phonetic": "ˈwɪndi",
+              "pos": "adj.",
+              "meaning": "有风的",
+              "audio": "/audio/jw/jw8c04.mp3",
+              "sentence": "It is too windy to fly a kite today.",
+              "sentenceCn": "今天风太大，不适合放风筝。"
+            },
+            {
+              "word": "cloudy",
+              "phonetic": "ˈklaʊdi",
+              "pos": "adj.",
+              "meaning": "多云的；阴天的",
+              "audio": "/audio/jw/jw8c05.mp3",
+              "sentence": "The sky is cloudy, but it is not cold.",
+              "sentenceCn": "天空多云，但不冷。"
+            },
+            {
+              "word": "weather",
+              "phonetic": "ˈweðə",
+              "pos": "n.",
+              "meaning": "天气",
+              "audio": "/audio/jw/jw8c01.mp3",
+              "sentence": "What will the weather be like tomorrow?",
+              "sentenceCn": "明天天气怎么样？"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "问天气两种句型：How's the weather? = What's the weather like?",
+              "example": "How's the weather in Shanghai? It's cloudy.",
+              "exampleCn": "上海天气怎么样？多云。"
+            },
+            {
+              "point": "雨/雪作动词时可用于现在进行时：It's raining. It's snowing.（it 指天气）",
+              "example": "It's raining hard now. Take a raincoat.",
+              "exampleCn": "现在雨下得很大。带上雨衣。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "—___ the weather like today? —It's sunny.",
+              "options": [
+                "What's",
+                "How's",
+                "Where's"
+              ],
+              "answer": 0,
+              "analysis": "What's the weather like? 固定句型。"
+            },
+            {
+              "stem": "It often ___ in summer here.（下雨）",
+              "options": [
+                "rains",
+                "rainy",
+                "is raining"
+              ],
+              "answer": 0,
+              "analysis": "often 提示一般现在时，it 三单用 rains。"
+            },
+            {
+              "stem": "It's ___ today. Let's fly a kite.（有风的）",
+              "options": [
+                "windy",
+                "rain",
+                "sun"
+              ],
+              "answer": 0,
+              "analysis": "形容词作表语，有风的 = windy。"
+            }
+          ]
+        },
+        {
+          "id": "7b08",
+          "title": "Unit 8 Is there a post office near here?",
+          "topic": "there be 与问路",
+          "words": [
+            {
+              "word": "street",
+              "phonetic": "striːt",
+              "pos": "n.",
+              "meaning": "街道",
+              "audio": "/audio/jw/xstreet.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "near",
+              "phonetic": "nɪə",
+              "pos": "prep./adj.",
+              "meaning": "在……附近；近的",
+              "audio": "/audio/jw/xnear.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "behind",
+              "phonetic": "bɪˈhaɪnd",
+              "pos": "prep.",
+              "meaning": "在……后面",
+              "audio": "/audio/jw/xbehind.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "restaurant",
+              "phonetic": "ˈrestrɒnt",
+              "pos": "n.",
+              "meaning": "餐馆",
+              "audio": "/audio/jw/xrestaurant.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "bank",
+              "phonetic": "bæŋk",
+              "pos": "n.",
+              "meaning": "银行",
+              "audio": "/audio/jw/xbank.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "there be 表示\"某地有某物\"，be 动词与最近的名词保持一致（就近原则）。",
+              "example": "There is a bank and two restaurants near here.",
+              "exampleCn": "这附近有一家银行和两家餐馆。"
+            },
+            {
+              "point": "方位介词：across from（在……对面）、next to（紧挨着）、between...and...（在……和……之间）。",
+              "example": "The hotel is across from the bank, next to the park.",
+              "exampleCn": "旅馆在银行对面，紧挨着公园。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "___ there a hospital on Bridge Street?",
+              "options": [
+                "Is",
+                "Are",
+                "Does"
+              ],
+              "answer": 0,
+              "analysis": "a hospital 单数用 Is。"
+            },
+            {
+              "stem": "The pay phone is ___ the post office ___ the library.（在……之间）",
+              "options": [
+                "between; and",
+                "from; to",
+                "next; to"
+              ],
+              "answer": 0,
+              "analysis": "between...and... 固定搭配。"
+            },
+            {
+              "stem": "Is there a restaurant near here? —Yes, ___.",
+              "options": [
+                "there is",
+                "it is",
+                "there's"
+              ],
+              "answer": 0,
+              "analysis": "there be 问句用 there is 回答。"
+            }
+          ]
+        },
+        {
+          "id": "7b09",
+          "title": "Unit 9 What does he look like?",
+          "topic": "外貌描述",
+          "words": [
+            {
+              "word": "handsome",
+              "phonetic": "ˈhænsəm",
+              "pos": "adj.",
+              "meaning": "英俊的",
+              "audio": "/audio/jw/xhandsome.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "straight",
+              "phonetic": "streɪt",
+              "pos": "adj.",
+              "meaning": "直的",
+              "audio": "/audio/jw/xstraight.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "round",
+              "phonetic": "raʊnd",
+              "pos": "adj.",
+              "meaning": "圆的",
+              "audio": "/audio/jw/xround.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "glasses",
+              "phonetic": "ˈɡlɑːsɪz",
+              "pos": "n.",
+              "meaning": "眼镜（复数）",
+              "audio": "/audio/jw/xglasses.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "tall",
+              "phonetic": "tɔːl",
+              "pos": "adj.",
+              "meaning": "高的",
+              "audio": "/audio/jw/jw7a18.mp3",
+              "sentence": "My father is tall and thin.",
+              "sentenceCn": "我爸爸又高又瘦。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "问外貌用 What do/does + 主语 + look like?；描述身高体型用 be of medium build/height。",
+              "example": "What does your brother look like? He is tall and he has short straight hair.",
+              "exampleCn": "你哥哥长什么样？他很高，留着短直发。"
+            },
+            {
+              "point": "have/has 描述发型的部分（has long curly hair）；be 描述身高体型（is tall/thin）。",
+              "example": "She has blonde hair and she is of medium build.",
+              "exampleCn": "她留着金色头发，中等身材。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "What ___ your best friend look like?",
+              "options": [
+                "does",
+                "do",
+                "is"
+              ],
+              "answer": 0,
+              "analysis": "主语三单用 does。"
+            },
+            {
+              "stem": "The girl ___ long black hair.",
+              "options": [
+                "has",
+                "is",
+                "have"
+              ],
+              "answer": 0,
+              "analysis": "头发用 have/has，主语三单用 has。"
+            },
+            {
+              "stem": "My father always wears ___.（眼镜）",
+              "options": [
+                "glasses",
+                "glass",
+                "a glasses"
+              ],
+              "answer": 0,
+              "analysis": "glasses 恒为复数形式。"
+            }
+          ]
+        },
+        {
+          "id": "7b10",
+          "title": "Unit 10 I'd like some noodles.",
+          "topic": "点餐与 would like",
+          "words": [
+            {
+              "word": "noodle",
+              "phonetic": "ˈnuːdl",
+              "pos": "n.",
+              "meaning": "面条（常用复数 noodles）",
+              "audio": "/audio/jw/jw7c05.mp3",
+              "sentence": "The beef noodles smell good.",
+              "sentenceCn": "牛肉面条闻起来很香。"
+            },
+            {
+              "word": "beef",
+              "phonetic": "biːf",
+              "pos": "n.",
+              "meaning": "牛肉",
+              "audio": "/audio/jw/xbeef.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "cabbage",
+              "phonetic": "ˈkæbɪdʒ",
+              "pos": "n.",
+              "meaning": "卷心菜",
+              "audio": "/audio/jw/xcabbage.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "order",
+              "phonetic": "ˈɔːdə",
+              "pos": "v./n.",
+              "meaning": "点菜；订购；命令",
+              "audio": "/audio/jw/jw7c25.mp3",
+              "sentence": "We ordered two bowls of noodles.",
+              "sentenceCn": "我们点了两碗面条。"
+            },
+            {
+              "word": "menu",
+              "phonetic": "ˈmenjuː",
+              "pos": "n.",
+              "meaning": "菜单",
+              "audio": "/audio/jw/jw7c24.mp3",
+              "sentence": "Let me look at the menu first.",
+              "sentenceCn": "让我先看看菜单。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "would like 表示意愿，缩写 'd like，比 want 更礼貌； Would you like...? 的肯定回答用 Yes, please.",
+              "example": "I'd like beef noodles, please.",
+              "exampleCn": "我想要牛肉面。"
+            },
+            {
+              "point": "some 用于肯定句和希望得到肯定回答的问句；any 用于否定句和一般疑问句。",
+              "example": "There is some mutton in the soup. Do you have any tea?",
+              "exampleCn": "汤里有一些羊肉。你有茶吗？"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "—Would you like a large bowl? —___.",
+              "options": [
+                "Yes, please",
+                "I'd like",
+                "No, I wouldn't"
+              ],
+              "answer": 0,
+              "analysis": "Would you like...? 的肯定回答是 Yes, please。"
+            },
+            {
+              "stem": "I'd like ___ mutton in my noodles.（一些）",
+              "options": [
+                "some",
+                "any",
+                "many"
+              ],
+              "answer": 0,
+              "analysis": "肯定句用 some。"
+            },
+            {
+              "stem": "How ___ bowls of noodles do you need?",
+              "options": [
+                "many",
+                "much",
+                "long"
+              ],
+              "answer": 0,
+              "analysis": "bowls 可数，用 how many。"
+            }
+          ]
+        },
+        {
+          "id": "7b11",
+          "title": "Unit 11 How was your school trip?",
+          "topic": "一般过去时（一）",
+          "words": [
+            {
+              "word": "trip",
+              "phonetic": "trɪp",
+              "pos": "n.",
+              "meaning": "（短途）旅行；出行",
+              "audio": "/audio/jw/jw8a02.mp3",
+              "sentence": "We took a trip to the seaside last month.",
+              "sentenceCn": "上个月我们去海边旅行了。"
+            },
+            {
+              "word": "museum",
+              "phonetic": "mjuˈziːəm",
+              "pos": "n.",
+              "meaning": "博物馆",
+              "audio": "/audio/jw/jw9c17.mp3",
+              "sentence": "The museum is free for students.",
+              "sentenceCn": "博物馆对学生免费。"
+            },
+            {
+              "word": "farm",
+              "phonetic": "fɑːm",
+              "pos": "n.",
+              "meaning": "农场",
+              "audio": "/audio/jw/xfarm.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "excellent",
+              "phonetic": "ˈeksələnt",
+              "pos": "adj.",
+              "meaning": "极好的",
+              "audio": "/audio/jw/xexcellent.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "lovely",
+              "phonetic": "ˈlʌvli",
+              "pos": "adj.",
+              "meaning": "可爱的",
+              "audio": "/audio/jw/jw7a21.mp3",
+              "sentence": "What a lovely girl!",
+              "sentenceCn": "多么可爱的女孩啊！"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "一般过去时表示过去发生的动作，be 动词过去式 am/is→was，are→were。",
+              "example": "The trip was excellent. We were very happy.",
+              "exampleCn": "这次旅行棒极了。我们非常开心。"
+            },
+            {
+              "point": "规则动词过去式在动词后加 -ed；以 e 结尾只加 -d；辅元辅结构双写末尾字母加 -ed。",
+              "example": "watch→watched, like→liked, stop→stopped",
+              "exampleCn": "看→watched，喜欢→liked，停止→stopped"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "—How ___ your weekend? —It ___ great, thanks.",
+              "options": [
+                "was; was",
+                "were; was",
+                "is; was"
+              ],
+              "answer": 0,
+              "analysis": "过去时 be 动词用 was/were。"
+            },
+            {
+              "stem": "I ___（参观）the museum last week.",
+              "options": [
+                "visited",
+                "visit",
+                "visits"
+              ],
+              "answer": 0,
+              "analysis": "last week 提示过去时，visit 加 -ed。"
+            },
+            {
+              "stem": "___ you pick any strawberries on the farm? —Yes, I did.",
+              "options": [
+                "Did",
+                "Do",
+                "Were"
+              ],
+              "answer": 0,
+              "analysis": "实义动词过去时疑问用 Did。"
+            }
+          ]
+        },
+        {
+          "id": "7b12",
+          "title": "Unit 12 What did you do last weekend?",
+          "topic": "一般过去时（二）",
+          "words": [
+            {
+              "word": "camp",
+              "phonetic": "kæmp",
+              "pos": "v./n.",
+              "meaning": "野营；营地",
+              "audio": "/audio/jw/xcamp.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "beach",
+              "phonetic": "biːtʃ",
+              "pos": "n.",
+              "meaning": "海滩",
+              "audio": "/audio/jw/jw8a17.mp3",
+              "sentence": "We picked up shells on the beach.",
+              "sentenceCn": "我们在海滩上捡贝壳。"
+            },
+            {
+              "word": "visit",
+              "phonetic": "ˈvɪzɪt",
+              "pos": "v./n.",
+              "meaning": "参观；拜访",
+              "audio": "/audio/jw/jw8a04.mp3",
+              "sentence": "Thousands of people visit the Great Wall every day.",
+              "sentenceCn": "每天成千上万的人参观长城。"
+            },
+            {
+              "word": "ago",
+              "phonetic": "əˈɡəʊ",
+              "pos": "adv.",
+              "meaning": "以前（two days ago）",
+              "audio": "/audio/jw/xago.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "natural",
+              "phonetic": "ˈnætʃrəl",
+              "pos": "adj.",
+              "meaning": "自然的",
+              "audio": "/audio/jw/xnatural.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "实义动词过去时：否定用 didn't + 动词原形；疑问用 Did + 主语 + 动词原形。",
+              "example": "I didn't do my homework last night. Did you go to the beach?",
+              "exampleCn": "我昨晚没做作业。你去海滩了吗？"
+            },
+            {
+              "point": "常见不规则动词过去式：go→went, do→did, see→saw, eat→ate, take→took, fly→flew。",
+              "example": "We went to the zoo and saw many animals last Sunday.",
+              "exampleCn": "上周日我们去了动物园，看到了很多动物。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "What did you do last weekend? —I ___ to the mountains.",
+              "options": [
+                "went",
+                "go",
+                "goes"
+              ],
+              "answer": 0,
+              "analysis": "问句用过去时，答句动词用过去式 went。"
+            },
+            {
+              "stem": "She didn't ___ her homework yesterday evening.",
+              "options": [
+                "do",
+                "did",
+                "does"
+              ],
+              "answer": 0,
+              "analysis": "didn't 后接动词原形。"
+            },
+            {
+              "stem": "Two days ___, I visited my uncle.（以前）",
+              "options": [
+                "ago",
+                "before",
+                "later"
+              ],
+              "answer": 0,
+              "analysis": "时间段 + ago 表示多久以前。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "8a",
+      "title": "八年级上册",
+      "units": [
+        {
+          "id": "8a01",
+          "title": "Unit 1 Where did you go on vacation?",
+          "topic": "不定代词与一般过去时",
+          "words": [
+            {
+              "word": "vacation",
+              "phonetic": "vəˈkeɪʃn",
+              "pos": "n.",
+              "meaning": "假期；休假",
+              "audio": "/audio/jw/xvacation.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "anyone",
+              "phonetic": "ˈeniwʌn",
+              "pos": "pron.",
+              "meaning": "任何人",
+              "audio": "/audio/jw/xanyone.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "wonderful",
+              "phonetic": "ˈwʌndəfl",
+              "pos": "adj.",
+              "meaning": "精彩的；极好的",
+              "audio": "/audio/jw/xwonderful.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "few",
+              "phonetic": "fjuː",
+              "pos": "adj.",
+              "meaning": "很少的；不多的",
+              "audio": "/audio/jw/xfew.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "something",
+              "phonetic": "ˈsʌmθɪŋ",
+              "pos": "pron.",
+              "meaning": "某事；某物",
+              "audio": "/audio/jw/xsomething.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "复合不定代词 someone/anyone/everyone/nobody 等作主语时，谓语动词用单数。",
+              "example": "Everyone is here. Nobody knows the answer.",
+              "exampleCn": "每个人都到了。没人知道答案。"
+            },
+            {
+              "point": "一般过去时：规则动词加 -ed；常见不规则 go→went, buy→bought, see→saw, eat→ate。",
+              "example": "I went to the mountains and bought a gift.",
+              "exampleCn": "我去了山区并买了一份礼物。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "—Did you go ___ special? —No, I just stayed at home.",
+              "options": [
+                "anywhere",
+                "somewhere",
+                "nowhere"
+              ],
+              "answer": 0,
+              "analysis": "疑问句用 anywhere 表示\"任何地方\"。"
+            },
+            {
+              "stem": "Everyone ___ here, so we can start the meeting.",
+              "options": [
+                "is",
+                "are",
+                "were"
+              ],
+              "answer": 0,
+              "analysis": "复合不定代词作主语谓语用单数。"
+            },
+            {
+              "stem": "He ___ a new book yesterday.（买）",
+              "options": [
+                "bought",
+                "buyed",
+                "boughted"
+              ],
+              "answer": 0,
+              "analysis": "buy 过去式是不规则 bought。"
+            }
+          ]
+        },
+        {
+          "id": "8a02",
+          "title": "Unit 2 How often do you exercise?",
+          "topic": "频率副词与 How often",
+          "words": [
+            {
+              "word": "exercise",
+              "phonetic": "ˈeksəsaɪz",
+              "pos": "v./n.",
+              "meaning": "锻炼；练习",
+              "audio": "/audio/jw/jw8b03.mp3",
+              "sentence": "Exercise for half an hour every day.",
+              "sentenceCn": "每天锻炼半小时。"
+            },
+            {
+              "word": "hardly",
+              "phonetic": "ˈhɑːdli",
+              "pos": "adv.",
+              "meaning": "几乎不",
+              "audio": "/audio/jw/xhardly.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "twice",
+              "phonetic": "twaɪs",
+              "pos": "adv.",
+              "meaning": "两次；两倍",
+              "audio": "/audio/jw/xtwice.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "health",
+              "phonetic": "helθ",
+              "pos": "n.",
+              "meaning": "健康",
+              "audio": "/audio/jw/jw8b01.mp3",
+              "sentence": "Health is more important than wealth.",
+              "sentenceCn": "健康比财富更重要。"
+            },
+            {
+              "word": "percent",
+              "phonetic": "pəˈsent",
+              "pos": "n.",
+              "meaning": "百分之……",
+              "audio": "/audio/jw/xpercent.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "How often 询问动作发生的频率，回答用 always/usually/often/sometimes/hardly ever/never 或具体次数。",
+              "example": "—How often do you read? —Twice a week.",
+              "exampleCn": "你多久读一次书？一周两次。"
+            },
+            {
+              "point": "频度副词位于 be 动词之后、实义动词之前；hardly 本身含否定意味。",
+              "example": "He is never late. She hardly ever watches TV.",
+              "exampleCn": "他从不迟到。她几乎不看电视。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "—___ do you go to the movies? —Once a month.",
+              "options": [
+                "How often",
+                "How long",
+                "How soon"
+              ],
+              "answer": 0,
+              "analysis": "问频率用 How often。"
+            },
+            {
+              "stem": "My sister ___ exercises, so she is not very healthy.",
+              "options": [
+                "hardly ever",
+                "always",
+                "usually"
+              ],
+              "answer": 0,
+              "analysis": "hardly ever 几乎不，与\"不健康\"呼应。"
+            },
+            {
+              "stem": "About thirty ___ of the students like sports.",
+              "options": [
+                "percent",
+                "percents",
+                "percentage"
+              ],
+              "answer": 0,
+              "analysis": "percent 无复数形式。"
+            }
+          ]
+        },
+        {
+          "id": "8a03",
+          "title": "Unit 3 I'm more outgoing than my sister.",
+          "topic": "比较级",
+          "words": [
+            {
+              "word": "outgoing",
+              "phonetic": "ˈaʊtɡəʊɪŋ",
+              "pos": "adj.",
+              "meaning": "外向的",
+              "audio": "/audio/jw/xoutgoing.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "better",
+              "phonetic": "ˈbetə",
+              "pos": "adj./adv.",
+              "meaning": "更好的（地）",
+              "audio": "/audio/jw/xbetter.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "loudly",
+              "phonetic": "ˈlaʊdli",
+              "pos": "adv.",
+              "meaning": "喧闹地；大声地",
+              "audio": "/audio/jw/xloudly.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "quietly",
+              "phonetic": "ˈkwaɪətli",
+              "pos": "adv.",
+              "meaning": "安静地",
+              "audio": "/audio/jw/xquietly.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "win",
+              "phonetic": "wɪn",
+              "pos": "v.",
+              "meaning": "赢；获胜（过去式 won）",
+              "audio": "/audio/jw/jw8b10.mp3",
+              "sentence": "Which team won the game?",
+              "sentenceCn": "哪个队赢了比赛？"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "两者比较用比较级：单音节词加 -er，多音节词用 more + 原级；than 引出比较对象。",
+              "example": "Tom is taller than me. She speaks more loudly.",
+              "exampleCn": "汤姆比我高。她说话更大声。"
+            },
+            {
+              "point": "good/well 的比较级是 better，bad 的比较级是 worse。",
+              "example": "He does better than last time.",
+              "exampleCn": "他做得比上次好。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "This book is ___ than that one.",
+              "options": [
+                "more interesting",
+                "interesting",
+                "most interesting"
+              ],
+              "answer": 0,
+              "analysis": "两者比较用比较级 more interesting。"
+            },
+            {
+              "stem": "Lucy sings ___ (well) than her sister.",
+              "options": [
+                "better",
+                "good",
+                "best"
+              ],
+              "answer": 0,
+              "analysis": "well 的比较级是 better。"
+            },
+            {
+              "stem": "Who runs ___ (fast), Tom or Jim?",
+              "options": [
+                "faster",
+                "fast",
+                "fastest"
+              ],
+              "answer": 0,
+              "analysis": "两者比较用比较级 faster。"
+            }
+          ]
+        },
+        {
+          "id": "8a04",
+          "title": "Unit 4 What's the best movie theater?",
+          "topic": "最高级",
+          "words": [
+            {
+              "word": "theater",
+              "phonetic": "ˈθɪətə",
+              "pos": "n.",
+              "meaning": "戏院；剧场",
+              "audio": "/audio/jw/xtheater.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "comfortable",
+              "phonetic": "ˈkʌmftəbl",
+              "pos": "adj.",
+              "meaning": "舒适的",
+              "audio": "/audio/jw/xcomfortable.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "worst",
+              "phonetic": "wɜːst",
+              "pos": "adj./adv.",
+              "meaning": "最差的（地）",
+              "audio": "/audio/jw/xworst.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "cheaply",
+              "phonetic": "ˈtʃiːpli",
+              "pos": "adv.",
+              "meaning": "便宜地",
+              "audio": "/audio/jw/xcheaply.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "carefully",
+              "phonetic": "ˈkeəfəli",
+              "pos": "adv.",
+              "meaning": "仔细地",
+              "audio": "/audio/jw/xcarefully.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "三者或三者以上比较用最高级：the + 形容词最高级（-est 或 most + 原级）。",
+              "example": "This is the most comfortable seat.",
+              "exampleCn": "这是最舒适的座位。"
+            },
+            {
+              "point": "副词最高级前的 the 常可省略；比较范围常用 of / in 引出。",
+              "example": "He sings (the) best in our class.",
+              "exampleCn": "他在我们班唱得最好。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Which is ___ movie theater in town?",
+              "options": [
+                "the best",
+                "better",
+                "good"
+              ],
+              "answer": 0,
+              "analysis": "三者以上用最高级 the best。"
+            },
+            {
+              "stem": "She did ___ (badly) of all the students.",
+              "options": [
+                "worst",
+                "worse",
+                "badly"
+              ],
+              "answer": 0,
+              "analysis": "of all 表示范围，用最高级 worst。"
+            },
+            {
+              "stem": "You should listen to the teacher ___ (careful).",
+              "options": [
+                "most carefully",
+                "more carefully",
+                "careful"
+              ],
+              "answer": 0,
+              "analysis": "范围隐含全体，用最高级。"
+            }
+          ]
+        },
+        {
+          "id": "8a05",
+          "title": "Unit 5 Do you want to watch a game show?",
+          "topic": "动词不定式作宾语",
+          "words": [
+            {
+              "word": "news",
+              "phonetic": "njuːz",
+              "pos": "n.",
+              "meaning": "新闻；消息",
+              "audio": "/audio/jw/xnews.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "mind",
+              "phonetic": "maɪnd",
+              "pos": "v.",
+              "meaning": "介意；在乎",
+              "audio": "/audio/jw/xmind.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "stand",
+              "phonetic": "stænd",
+              "pos": "v.",
+              "meaning": "忍受；站立",
+              "audio": "/audio/jw/xstand.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "happen",
+              "phonetic": "ˈhæpn",
+              "pos": "v.",
+              "meaning": "发生",
+              "audio": "/audio/jw/xhappen.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "expect",
+              "phonetic": "ɪkˈspekt",
+              "pos": "v.",
+              "meaning": "期待；预料",
+              "audio": "/audio/jw/xexpect.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "want/hope/plan/decide 等动词后接不定式 to do 作宾语，不接动名词。",
+              "example": "I want to watch a game show. He hopes to visit Beijing.",
+              "exampleCn": "我想看比赛节目。他希望游览北京。"
+            },
+            {
+              "point": "询问看法：What do you think of...? = How do you like...? 回答用 I love / I don't mind / I can't stand。",
+              "example": "What do you think of the news? I don't mind it.",
+              "exampleCn": "你觉得这新闻怎样？我不介意。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "I can't ___ (stand) the noise.",
+              "options": [
+                "stand",
+                "to stand",
+                "standing"
+              ],
+              "answer": 0,
+              "analysis": "can't 后接动词原形。"
+            },
+            {
+              "stem": "He expects ___ (be) a reporter.",
+              "options": [
+                "to be",
+                "be",
+                "being"
+              ],
+              "answer": 0,
+              "analysis": "expect 后接不定式 to be。"
+            },
+            {
+              "stem": "—What do you ___ of the talk show? —I love it.",
+              "options": [
+                "think",
+                "like",
+                "mind"
+              ],
+              "answer": 0,
+              "analysis": "What do you think of...? 固定搭配。"
+            }
+          ]
+        },
+        {
+          "id": "8a06",
+          "title": "Unit 6 I'm going to study computer science.",
+          "topic": "be going to 将来时",
+          "words": [
+            {
+              "word": "scientist",
+              "phonetic": "ˈsaɪəntɪst",
+              "pos": "n.",
+              "meaning": "科学家",
+              "audio": "/audio/jw/jw9b10.mp3",
+              "sentence": "The scientist spent ten years on the research.",
+              "sentenceCn": "这位科学家花了十年做研究。"
+            },
+            {
+              "word": "college",
+              "phonetic": "ˈkɒlɪdʒ",
+              "pos": "n.",
+              "meaning": "学院；大学",
+              "audio": "/audio/jw/xcollege.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "education",
+              "phonetic": "ˌedʒuˈkeɪʃn",
+              "pos": "n.",
+              "meaning": "教育",
+              "audio": "/audio/jw/xeducation.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "resolution",
+              "phonetic": "ˌrezəˈluːʃn",
+              "pos": "n.",
+              "meaning": "决心；决定",
+              "audio": "/audio/jw/xresolution.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "promise",
+              "phonetic": "ˈprɒmɪs",
+              "pos": "n./v.",
+              "meaning": "承诺；许诺",
+              "audio": "/audio/jw/xpromise.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "be going to + 动词原形表示打算、计划或即将发生的事；主语随人称变 be。",
+              "example": "I am going to study medicine. She is going to be a teacher.",
+              "exampleCn": "我打算学医。她打算当老师。"
+            },
+            {
+              "point": "一般将来时的时间状语：tomorrow, next week, in the future 等。",
+              "example": "We are going to have a party next Sunday.",
+              "exampleCn": "下周日我们要开派对。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "He ___ (go) to visit his grandma this weekend.",
+              "options": [
+                "is going to go",
+                "goes",
+                "will goes"
+              ],
+              "answer": 0,
+              "analysis": "计划性将来用 be going to。"
+            },
+            {
+              "stem": "What are you going to ___ when you grow up?",
+              "options": [
+                "be",
+                "are",
+                "is"
+              ],
+              "answer": 0,
+              "analysis": "be going to 后接动词原形 be。"
+            },
+            {
+              "stem": "They ___ a meeting tomorrow afternoon.",
+              "options": [
+                "are going to have",
+                "have",
+                "has"
+              ],
+              "answer": 0,
+              "analysis": "将来计划用 are going to have。"
+            }
+          ]
+        },
+        {
+          "id": "8a07",
+          "title": "Unit 7 Will people have robots?",
+          "topic": "will 将来时",
+          "words": [
+            {
+              "word": "robot",
+              "phonetic": "ˈrəʊbɒt",
+              "pos": "n.",
+              "meaning": "机器人",
+              "audio": "/audio/jw/jw9b05.mp3",
+              "sentence": "Robots will do more housework in the future.",
+              "sentenceCn": "将来机器人会做更多家务。"
+            },
+            {
+              "word": "pollution",
+              "phonetic": "pəˈluːʃn",
+              "pos": "n.",
+              "meaning": "污染",
+              "audio": "/audio/jw/jw9a02.mp3",
+              "sentence": "Air pollution is a serious problem in big cities.",
+              "sentenceCn": "空气污染是大城市的严重问题。"
+            },
+            {
+              "word": "environment",
+              "phonetic": "ɪnˈvaɪrənmənt",
+              "pos": "n.",
+              "meaning": "环境",
+              "audio": "/audio/jw/jw9a01.mp3",
+              "sentence": "We should do something to protect the environment.",
+              "sentenceCn": "我们应该为保护环境做些事。"
+            },
+            {
+              "word": "peaceful",
+              "phonetic": "ˈpiːsfl",
+              "pos": "adj.",
+              "meaning": "和平的",
+              "audio": "/audio/jw/xpeaceful.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "impossible",
+              "phonetic": "ɪmˈpɒsəbl",
+              "pos": "adj.",
+              "meaning": "不可能的",
+              "audio": "/audio/jw/ximpossible.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "will + 动词原形表示一般将来时，无人称和数的变化，否定 won't。",
+              "example": "There will be more robots. People won't use money.",
+              "exampleCn": "会有更多机器人。人们将不用钱。"
+            },
+            {
+              "point": "There will be... 是将来存在句，be 永远用 be 原形。",
+              "example": "There will be less pollution in the future.",
+              "exampleCn": "未来污染会更少。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "I think kids ___ (not) go to school in 100 years.",
+              "options": [
+                "won't",
+                "willn't",
+                "don't will"
+              ],
+              "answer": 0,
+              "analysis": "will 的否定 won't。"
+            },
+            {
+              "stem": "___ there be more trees on the earth?",
+              "options": [
+                "Will",
+                "Are",
+                "Do"
+              ],
+              "answer": 0,
+              "analysis": "将来存在句用 Will there be。"
+            },
+            {
+              "stem": "Robots will do ___ (danger) jobs for us.",
+              "options": [
+                "dangerous",
+                "danger",
+                "more danger"
+              ],
+              "answer": 0,
+              "analysis": "修饰 jobs 用形容词 dangerous。"
+            }
+          ]
+        },
+        {
+          "id": "8a08",
+          "title": "Unit 8 How do you make a banana milk shake?",
+          "topic": "祈使句与不可数名词",
+          "words": [
+            {
+              "word": "blender",
+              "phonetic": "ˈblendə",
+              "pos": "n.",
+              "meaning": "搅拌器",
+              "audio": "/audio/jw/xblender.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "peel",
+              "phonetic": "piːl",
+              "pos": "v.",
+              "meaning": "剥皮；去皮",
+              "audio": "/audio/jw/xpeel.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "pour",
+              "phonetic": "pɔː",
+              "pos": "v.",
+              "meaning": "倾倒；倒出",
+              "audio": "/audio/jw/xpour.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "yogurt",
+              "phonetic": "ˈjɒɡət",
+              "pos": "n.",
+              "meaning": "酸奶（不可数）",
+              "audio": "/audio/jw/xyogurt.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "finally",
+              "phonetic": "ˈfaɪnəli",
+              "pos": "adv.",
+              "meaning": "最后；最终",
+              "audio": "/audio/jw/xfinally.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "祈使句以动词原形开头表示步骤或命令；turn on 打开，turn off 关闭。",
+              "example": "First, peel the bananas. Then turn on the blender.",
+              "exampleCn": "首先剥香蕉。然后打开搅拌器。"
+            },
+            {
+              "point": "不可数名词（yogurt, honey, milk）前不加 a/an，表数量用 a cup of / two spoons of。",
+              "example": "Add a cup of yogurt.",
+              "exampleCn": "加入一杯酸奶。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "___ the milk into the blender.（倒）",
+              "options": [
+                "Pour",
+                "To pour",
+                "Pouring"
+              ],
+              "answer": 0,
+              "analysis": "祈使句用动词原形开头。"
+            },
+            {
+              "stem": "We need two ___ of honey.（勺）",
+              "options": [
+                "spoons",
+                "spoon",
+                "spoonful"
+              ],
+              "answer": 0,
+              "analysis": "two 后用复数 spoons。"
+            },
+            {
+              "stem": "___ , mix it all together.",
+              "options": [
+                "Finally",
+                "Final",
+                "At final"
+              ],
+              "answer": 0,
+              "analysis": "句首用副词 Finally。"
+            }
+          ]
+        },
+        {
+          "id": "8a09",
+          "title": "Unit 9 Can you come to my party?",
+          "topic": "邀请与应答",
+          "words": [
+            {
+              "word": "invite",
+              "phonetic": "ɪnˈvaɪt",
+              "pos": "v.",
+              "meaning": "邀请",
+              "audio": "/audio/jw/xinvite.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "accept",
+              "phonetic": "əkˈsept",
+              "pos": "v.",
+              "meaning": "接受",
+              "audio": "/audio/jw/xaccept.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "refuse",
+              "phonetic": "rɪˈfjuːz",
+              "pos": "v.",
+              "meaning": "拒绝",
+              "audio": "/audio/jw/xrefuse.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "weekday",
+              "phonetic": "ˈwiːkdeɪ",
+              "pos": "n.",
+              "meaning": "工作日",
+              "audio": "/audio/jw/xweekday.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "goodbye",
+              "phonetic": "ˌɡʊdˈbaɪ",
+              "pos": "int.",
+              "meaning": "再见",
+              "audio": "/audio/jw/xgoodbye.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "用 Can you come to...? 发出邀请，肯定回答 Sure, I'd love to. 否定回答 Sorry, I can't. + 理由。",
+              "example": "—Can you come to my party? —Sure, I'd love to.",
+              "exampleCn": "你能来派对吗？当然，我很乐意。"
+            },
+            {
+              "point": "用 have to 说明无法赴约的客观理由。",
+              "example": "I can't go, because I have to study for a test.",
+              "exampleCn": "我去不了，因为我要备考。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "—Can you come to my birthday party? —___, I'd love to.",
+              "options": [
+                "Sure",
+                "Sorry",
+                "No"
+              ],
+              "answer": 0,
+              "analysis": "乐意前往用 Sure, I'd love to。"
+            },
+            {
+              "stem": "I'm afraid I ___ (can) go, I have too much homework.",
+              "options": [
+                "can't",
+                "cannot to",
+                "don't can"
+              ],
+              "answer": 0,
+              "analysis": "can 否定直接 can't。"
+            },
+            {
+              "stem": "—Would you like to join us? —___.",
+              "options": [
+                "Yes, I'd love to",
+                "Yes, I would love",
+                "No, I wouldn't love"
+              ],
+              "answer": 0,
+              "analysis": "Would you like 肯定答 Yes, I'd love to。"
+            }
+          ]
+        },
+        {
+          "id": "8a10",
+          "title": "Unit 10 If you go to the party, you'll have a great time!",
+          "topic": "if 条件句",
+          "words": [
+            {
+              "word": "organize",
+              "phonetic": "ˈɔːɡənaɪz",
+              "pos": "v.",
+              "meaning": "组织；筹办",
+              "audio": "/audio/jw/xorganize.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "advice",
+              "phonetic": "ədˈvaɪs",
+              "pos": "n.",
+              "meaning": "建议（不可数）",
+              "audio": "/audio/jw/xadvice.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "travel",
+              "phonetic": "ˈtrævl",
+              "pos": "v./n.",
+              "meaning": "旅行",
+              "audio": "/audio/jw/jw8a01.mp3",
+              "sentence": "Travel broadens the mind.",
+              "sentenceCn": "旅行开阔眼界。"
+            },
+            {
+              "word": "angry",
+              "phonetic": "ˈæŋɡri",
+              "pos": "adj.",
+              "meaning": "生气的",
+              "audio": "/audio/jw/jw8d03.mp3",
+              "sentence": "Don't be angry with him; he is only a child.",
+              "sentenceCn": "别生他的气，他只是个孩子。"
+            },
+            {
+              "word": "careless",
+              "phonetic": "ˈkeələs",
+              "pos": "adj.",
+              "meaning": "粗心的",
+              "audio": "/audio/jw/xcareless.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "if 引导条件状语从句，遵循\"主将从现\"：主句用一般将来时，if 从句用一般现在时。",
+              "example": "If it rains, we will stay at home.",
+              "exampleCn": "如果下雨，我们就待在家。"
+            },
+            {
+              "point": "advice 是不可数名词，表示\"一条建议\"用 a piece of advice，不能说 an advice。",
+              "example": "Let me give you a piece of advice.",
+              "exampleCn": "让我给你一条建议。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "If you ___ hard, you ___ get good grades.",
+              "options": [
+                "study; will",
+                "will study; will",
+                "study; won't"
+              ],
+              "answer": 0,
+              "analysis": "主将从现：从句现在时，主句将来时。"
+            },
+            {
+              "stem": "We need some ___ (advice) on this problem.",
+              "options": [
+                "advice",
+                "advices",
+                "advise"
+              ],
+              "answer": 0,
+              "analysis": "advice 不可数，无复数。"
+            },
+            {
+              "stem": "If he ___ (be) free, he will call you.",
+              "options": [
+                "is",
+                "will be",
+                "be"
+              ],
+              "answer": 0,
+              "analysis": "if 从句用一般现在时 is。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "8b",
+      "title": "八年级下册",
+      "units": [
+        {
+          "id": "8b01",
+          "title": "Unit 1 What's the matter?",
+          "topic": "身体不适与建议",
+          "words": [
+            {
+              "word": "matter",
+              "phonetic": "ˈmætə",
+              "pos": "n.",
+              "meaning": "事情；问题（What's the matter?）",
+              "audio": "/audio/jw/xmatter.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "stomachache",
+              "phonetic": "ˈstʌməkeɪk",
+              "pos": "n.",
+              "meaning": "胃痛",
+              "audio": "/audio/jw/xstomachache.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "fever",
+              "phonetic": "ˈfiːvə",
+              "pos": "n.",
+              "meaning": "发烧",
+              "audio": "/audio/jw/jw8b16.mp3",
+              "sentence": "The boy has a high fever.",
+              "sentenceCn": "这个男孩发着高烧。"
+            },
+            {
+              "word": "cough",
+              "phonetic": "kɒf",
+              "pos": "v./n.",
+              "meaning": "咳嗽",
+              "audio": "/audio/jw/jw8b17.mp3",
+              "sentence": "You should drink more water when you cough.",
+              "sentenceCn": "咳嗽时应该多喝水。"
+            },
+            {
+              "word": "rest",
+              "phonetic": "rest",
+              "pos": "v./n.",
+              "meaning": "休息",
+              "audio": "/audio/jw/jw7d20.mp3",
+              "sentence": "Take a rest after long study.",
+              "sentenceCn": "长时间学习后要休息一下。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "What's the matter (with you)? = What's wrong? 询问身体状况。",
+              "example": "What's the matter? I have a headache.",
+              "exampleCn": "怎么了？我头痛。"
+            },
+            {
+              "point": "should / shouldn't 表示建议；should 后接动词原形。",
+              "example": "You should lie down and rest. You shouldn't eat too much.",
+              "exampleCn": "你应该躺下休息。你不该吃太多。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "—What's the ___ with you? —I have a cold.",
+              "options": [
+                "matter",
+                "wrong",
+                "problem"
+              ],
+              "answer": 0,
+              "analysis": "What's the matter 固定搭配。"
+            },
+            {
+              "stem": "You ___ (should) drink some hot water.",
+              "options": [
+                "should",
+                "shouldn't",
+                "should to"
+              ],
+              "answer": 0,
+              "analysis": "should 后接动词原形。"
+            },
+            {
+              "stem": "He has a ___ (stomach), so he can't go to school.",
+              "options": [
+                "stomachache",
+                "stomachs",
+                "stomach"
+              ],
+              "answer": 0,
+              "analysis": "胃痛 stomachache。"
+            }
+          ]
+        },
+        {
+          "id": "8b02",
+          "title": "Unit 2 I'll help to clean up the city parks.",
+          "topic": "动词不定式与短语动词",
+          "words": [
+            {
+              "word": "volunteer",
+              "phonetic": "ˌvɒlənˈtɪə",
+              "pos": "n./v.",
+              "meaning": "志愿者；自愿做",
+              "audio": "/audio/jw/jw9a12.mp3",
+              "sentence": "The volunteers clean the beach every month.",
+              "sentenceCn": "志愿者每个月清理海滩。"
+            },
+            {
+              "word": "sign",
+              "phonetic": "saɪn",
+              "pos": "n.",
+              "meaning": "标志；信号",
+              "audio": "/audio/jw/xsign.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "notice",
+              "phonetic": "ˈnəʊtɪs",
+              "pos": "v./n.",
+              "meaning": "注意到；通知",
+              "audio": "/audio/jw/xnotice.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "lonely",
+              "phonetic": "ˈləʊnli",
+              "pos": "adj.",
+              "meaning": "孤独的；寂寞的",
+              "audio": "/audio/jw/jw8d09.mp3",
+              "sentence": "The old man feels lonely sometimes.",
+              "sentenceCn": "这位老人有时感到孤独。"
+            },
+            {
+              "word": "raise",
+              "phonetic": "reɪz",
+              "pos": "v.",
+              "meaning": "募集；提高",
+              "audio": "/audio/jw/xraise.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "动词不定式 to do 可作宾语或目的状语；help (to) do 中 to 可省。",
+              "example": "I want to help to clean up the park.",
+              "exampleCn": "我想帮忙打扫公园。"
+            },
+            {
+              "point": "短语动词：clean up 打扫，give out 分发，cheer up 使振奋（代词宾语放中间）。",
+              "example": "We gave them out. / We cheered him up.",
+              "exampleCn": "我们分发给了他们。我们让他振奋起来。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "We should help ___ (clean) up the city parks.",
+              "options": [
+                "clean",
+                "to clean",
+                "cleaning"
+              ],
+              "answer": 0,
+              "analysis": "help 后 to 可省略。"
+            },
+            {
+              "stem": "The boy is ___ (孤独的) because he has no friends.",
+              "options": [
+                "lonely",
+                "alone",
+                "along"
+              ],
+              "answer": 0,
+              "analysis": "lonely 强调内心孤独。"
+            },
+            {
+              "stem": "They plan ___ (raise) money for the poor kids.",
+              "options": [
+                "to raise",
+                "raise",
+                "raising"
+              ],
+              "answer": 0,
+              "analysis": "plan 后接不定式。"
+            }
+          ]
+        },
+        {
+          "id": "8b03",
+          "title": "Unit 3 Could you please clean your room?",
+          "topic": "礼貌请求",
+          "words": [
+            {
+              "word": "rubbish",
+              "phonetic": "ˈrʌbɪʃ",
+              "pos": "n.",
+              "meaning": "垃圾",
+              "audio": "/audio/jw/jw9a04.mp3",
+              "sentence": "Please put the rubbish into the bin.",
+              "sentenceCn": "请把垃圾放进垃圾桶。"
+            },
+            {
+              "word": "fold",
+              "phonetic": "fəʊld",
+              "pos": "v.",
+              "meaning": "折叠",
+              "audio": "/audio/jw/xfold.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "sweep",
+              "phonetic": "swiːp",
+              "pos": "v.",
+              "meaning": "扫；打扫（过去 swept）",
+              "audio": "/audio/jw/xsweep.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "throw",
+              "phonetic": "θrəʊ",
+              "pos": "v.",
+              "meaning": "扔；抛（过去 threw）",
+              "audio": "/audio/jw/xthrow.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "neither",
+              "phonetic": "ˈnaɪðə",
+              "pos": "pron.",
+              "meaning": "两者都不",
+              "audio": "/audio/jw/xneither.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "Could you please + 动词原形 提出礼貌请求；回答 Sure / No problem。",
+              "example": "Could you please take out the rubbish?",
+              "exampleCn": "请你把垃圾倒掉好吗？"
+            },
+            {
+              "point": "neither 表示\"两者都不\"，谓语用单数；Me neither. 表示\"我也不\"。",
+              "example": "Neither of them likes coffee. —I don't like it. —Me neither.",
+              "exampleCn": "他们俩都不喜欢咖啡。我也不喜欢。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Could you please ___ (not) make noise?",
+              "options": [
+                "not",
+                "don't",
+                "to not"
+              ],
+              "answer": 0,
+              "analysis": "Could you please 后接 not + 动词原形。"
+            },
+            {
+              "stem": "___ of the two books is interesting.",
+              "options": [
+                "Neither",
+                "None",
+                "Both"
+              ],
+              "answer": 0,
+              "analysis": "两者都不用 Neither。"
+            },
+            {
+              "stem": "He ___ (sweep) the floor yesterday.",
+              "options": [
+                "swept",
+                "sweeped",
+                "sweep"
+              ],
+              "answer": 0,
+              "analysis": "sweep 过去式 swept。"
+            }
+          ]
+        },
+        {
+          "id": "8b04",
+          "title": "Unit 4 Why don't you talk to your parents?",
+          "topic": "提建议句型",
+          "words": [
+            {
+              "word": "allow",
+              "phonetic": "əˈlaʊ",
+              "pos": "v.",
+              "meaning": "允许；准许",
+              "audio": "/audio/jw/xallow.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "wrong",
+              "phonetic": "rɒŋ",
+              "pos": "adj.",
+              "meaning": "错误的；有问题的",
+              "audio": "/audio/jw/xwrong.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "guess",
+              "phonetic": "ɡes",
+              "pos": "v.",
+              "meaning": "猜测；估计",
+              "audio": "/audio/jw/xguess.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "deal",
+              "phonetic": "diːl",
+              "pos": "n.",
+              "meaning": "协议；交易（deal with 处理）",
+              "audio": "/audio/jw/xdeal.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "relation",
+              "phonetic": "rɪˈleɪʃn",
+              "pos": "n.",
+              "meaning": "关系；联系",
+              "audio": "/audio/jw/xrelation.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "Why don't you...? = Why not...? 后接动词原形，用于提建议。",
+              "example": "Why don't you talk to your parents? = Why not talk to them?",
+              "exampleCn": "你为什么不跟你父母谈谈？"
+            },
+            {
+              "point": "提建议还可说 You should... / You could... / What about doing...?",
+              "example": "What about writing a letter?",
+              "exampleCn": "写封信怎么样？"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Why ___ you ask the teacher for help?",
+              "options": [
+                "don't",
+                "not",
+                "do"
+              ],
+              "answer": 0,
+              "analysis": "Why don't you...? 固定句型。"
+            },
+            {
+              "stem": "You ___ (should) argue with your brother.",
+              "options": [
+                "shouldn't",
+                "should",
+                "should to"
+              ],
+              "answer": 0,
+              "analysis": "提出建议\"不该争吵\"用 shouldn't。"
+            },
+            {
+              "stem": "What about ___ (go) for a walk?",
+              "options": [
+                "going",
+                "go",
+                "to go"
+              ],
+              "answer": 0,
+              "analysis": "What about 后接动名词。"
+            }
+          ]
+        },
+        {
+          "id": "8b05",
+          "title": "Unit 5 What were you doing when the rainstorm came?",
+          "topic": "过去进行时",
+          "words": [
+            {
+              "word": "rainstorm",
+              "phonetic": "ˈreɪnstɔːm",
+              "pos": "n.",
+              "meaning": "暴风雨",
+              "audio": "/audio/jw/xrainstorm.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "suddenly",
+              "phonetic": "ˈsʌdənli",
+              "pos": "adv.",
+              "meaning": "突然地",
+              "audio": "/audio/jw/xsuddenly.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "alarm",
+              "phonetic": "əˈlɑːm",
+              "pos": "n.",
+              "meaning": "闹钟；警报",
+              "audio": "/audio/jw/xalarm.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "realize",
+              "phonetic": "ˈrɪəlaɪz",
+              "pos": "v.",
+              "meaning": "认识到；意识到",
+              "audio": "/audio/jw/xrealize.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "kid",
+              "phonetic": "kɪd",
+              "pos": "n.",
+              "meaning": "小孩；v.开玩笑",
+              "audio": "/audio/jw/xkid.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "过去进行时 was/were + V-ing 表示过去某一时刻正在进行的动作。",
+              "example": "I was reading when the rainstorm came.",
+              "exampleCn": "暴风雨来时我正在读书。"
+            },
+            {
+              "point": "when 引导的从句用一般过去时，主句用过去进行时，表示\"长动作被短动作打断\"。",
+              "example": "When you called, I was taking a shower.",
+              "exampleCn": "你打电话时我正在洗澡。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "At 8 last night, I ___ (watch) TV.",
+              "options": [
+                "was watching",
+                "watched",
+                "am watching"
+              ],
+              "answer": 0,
+              "analysis": "过去某时刻用过去进行时。"
+            },
+            {
+              "stem": "What ___ you ___ (do) when it began to rain?",
+              "options": [
+                "were; doing",
+                "did; do",
+                "are; doing"
+              ],
+              "answer": 0,
+              "analysis": "when 从句过去时，主句过去进行时。"
+            },
+            {
+              "stem": "She ___ (read) a book at that time.",
+              "options": [
+                "was reading",
+                "reads",
+                "read"
+              ],
+              "answer": 0,
+              "analysis": "at that time 提示过去进行时。"
+            }
+          ]
+        },
+        {
+          "id": "8b06",
+          "title": "Unit 6 An old man tried to move the mountains.",
+          "topic": "try 与连词",
+          "words": [
+            {
+              "word": "remind",
+              "phonetic": "rɪˈmaɪnd",
+              "pos": "v.",
+              "meaning": "提醒；使想起",
+              "audio": "/audio/jw/xremind.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "silly",
+              "phonetic": "ˈsɪli",
+              "pos": "adj.",
+              "meaning": "愚蠢的；傻的",
+              "audio": "/audio/jw/xsilly.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "instead",
+              "phonetic": "ɪnˈsted",
+              "pos": "adv.",
+              "meaning": "代替；反而",
+              "audio": "/audio/jw/xinstead.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "object",
+              "phonetic": "ˈɒbdʒɪkt",
+              "pos": "n.",
+              "meaning": "物体；对象",
+              "audio": "/audio/jw/xobject.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "magic",
+              "phonetic": "ˈmædʒɪk",
+              "pos": "n./adj.",
+              "meaning": "魔法（的）",
+              "audio": "/audio/jw/xmagic.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "try to do 表示\"努力去做\"（未必成功）；try doing 表示\"试着做\"。",
+              "example": "He tried to move the mountain. Try calling him again.",
+              "exampleCn": "他努力移山。再试着打他电话。"
+            },
+            {
+              "point": "连词 unless（除非）= if...not；as soon as（一……就）；so...that（如此……以至于）。",
+              "example": "As soon as I got home, it rained. He was so tired that he slept.",
+              "exampleCn": "我一回家就下雨了。他太累以至于睡着了。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "You won't pass the exam ___ you study hard.",
+              "options": [
+                "unless",
+                "if",
+                "because"
+              ],
+              "answer": 0,
+              "analysis": "unless = if not。"
+            },
+            {
+              "stem": "He was ___ tired ___ he fell asleep.（如此……以至于）",
+              "options": [
+                "so; that",
+                "too; to",
+                "such; that"
+              ],
+              "answer": 0,
+              "analysis": "so + 形容词 + that。"
+            },
+            {
+              "stem": "My mother reminds me ___ (wear) a coat.",
+              "options": [
+                "to wear",
+                "wear",
+                "wearing"
+              ],
+              "answer": 0,
+              "analysis": "remind sb to do。"
+            }
+          ]
+        },
+        {
+          "id": "8b07",
+          "title": "Unit 7 What's the highest mountain in the world?",
+          "topic": "大数字与比较",
+          "words": [
+            {
+              "word": "square",
+              "phonetic": "skweə",
+              "pos": "n./adj.",
+              "meaning": "平方；广场",
+              "audio": "/audio/jw/xsquare.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "deep",
+              "phonetic": "diːp",
+              "pos": "adj.",
+              "meaning": "深的",
+              "audio": "/audio/jw/xdeep.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "desert",
+              "phonetic": "ˈdezət",
+              "pos": "n.",
+              "meaning": "沙漠",
+              "audio": "/audio/jw/xdesert.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "population",
+              "phonetic": "ˌpɒpjuˈleɪʃn",
+              "pos": "n.",
+              "meaning": "人口",
+              "audio": "/audio/jw/xpopulation.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "tourist",
+              "phonetic": "ˈtʊərɪst",
+              "pos": "n.",
+              "meaning": "游客；旅游者",
+              "audio": "/audio/jw/jw9c22.mp3",
+              "sentence": "Thousands of tourists come to Beijing every year.",
+              "sentenceCn": "每年有成千上万的游客来北京。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "大数表达：thousand（千）/ million（百万）/ billion（十亿），具体数字后不加 s。",
+              "example": "The river is about 6,300 kilometers long.",
+              "exampleCn": "这条河约 6300 公里长。"
+            },
+            {
+              "point": "比较级 + and + 比较级 表示\"越来越……\"；the + 比较级..., the + 比较级... 表示\"越……越……\"。",
+              "example": "Our country is getting stronger and stronger.",
+              "exampleCn": "我们的国家越来越强大。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "The population of China is ___ (large) than that of Japan.",
+              "options": [
+                "larger",
+                "more large",
+                "large"
+              ],
+              "answer": 0,
+              "analysis": "人口多用 large，比较级 larger。"
+            },
+            {
+              "stem": "It's getting ___ (warm) and ___ (warm).",
+              "options": [
+                "warmer; warmer",
+                "warm; warm",
+                "more warm; more warm"
+              ],
+              "answer": 0,
+              "analysis": "比较级叠加表\"越来越\"。"
+            },
+            {
+              "stem": "Qomolangma is the ___ (high) mountain in the world.",
+              "options": [
+                "highest",
+                "higher",
+                "most high"
+              ],
+              "answer": 0,
+              "analysis": "三者以上最高级 highest。"
+            }
+          ]
+        },
+        {
+          "id": "8b08",
+          "title": "Unit 8 Have you read Treasure Island yet?",
+          "topic": "现在完成时（一）",
+          "words": [
+            {
+              "word": "treasure",
+              "phonetic": "ˈtreʒə",
+              "pos": "n.",
+              "meaning": "财宝；宝藏",
+              "audio": "/audio/jw/xtreasure.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "island",
+              "phonetic": "ˈaɪlənd",
+              "pos": "n.",
+              "meaning": "岛；岛屿",
+              "audio": "/audio/jw/jw8a19.mp3",
+              "sentence": "Hainan is a famous island in China.",
+              "sentenceCn": "海南是中国著名的岛屿。"
+            },
+            {
+              "word": "classic",
+              "phonetic": "ˈklæsɪk",
+              "pos": "n./adj.",
+              "meaning": "经典（的）",
+              "audio": "/audio/jw/xclassic.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "page",
+              "phonetic": "peɪdʒ",
+              "pos": "n.",
+              "meaning": "页；页码",
+              "audio": "/audio/jw/xpage.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "hurry",
+              "phonetic": "ˈhʌri",
+              "pos": "v./n.",
+              "meaning": "匆忙（hurry up 快点）",
+              "audio": "/audio/jw/xhurry.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "现在完成时 have/has + 过去分词 表示过去发生、与现在有关的动作；yet 用于疑问/否定，already 用于肯定。",
+              "example": "Have you read it yet? I have already finished.",
+              "exampleCn": "你读过了吗？我已经读完了。"
+            },
+            {
+              "point": "过去分词：规则加 -ed；不规则如 read→read, write→written, see→seen。",
+              "example": "She has written three letters.",
+              "exampleCn": "她写了三封信。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "—___ you ___ (read) the book yet? —No, not yet.",
+              "options": [
+                "Have; read",
+                "Did; read",
+                "Do; read"
+              ],
+              "answer": 0,
+              "analysis": "现在完成时 yet 用 Have...read。"
+            },
+            {
+              "stem": "I have ___ (finish) my homework already.",
+              "options": [
+                "finished",
+                "finish",
+                "finishing"
+              ],
+              "answer": 0,
+              "analysis": "现在完成时 have finished。"
+            },
+            {
+              "stem": "She has ___ (write) a new song.",
+              "options": [
+                "written",
+                "wrote",
+                "writed"
+              ],
+              "answer": 0,
+              "analysis": "write 过去分词 written。"
+            }
+          ]
+        },
+        {
+          "id": "8b09",
+          "title": "Unit 9 Have you ever been to a museum?",
+          "topic": "现在完成时（二）",
+          "words": [
+            {
+              "word": "camera",
+              "phonetic": "ˈkæmərə",
+              "pos": "n.",
+              "meaning": "照相机",
+              "audio": "/audio/jw/jw8a21.mp3",
+              "sentence": "I brought my camera to take photos.",
+              "sentenceCn": "我带了相机来拍照。"
+            },
+            {
+              "word": "amusement",
+              "phonetic": "əˈmjuːzmənt",
+              "pos": "n.",
+              "meaning": "娱乐；游戏（amusement park 游乐场）",
+              "audio": "/audio/jw/xamusement.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "invention",
+              "phonetic": "ɪnˈvenʃn",
+              "pos": "n.",
+              "meaning": "发明；发明物",
+              "audio": "/audio/jw/jw9b08.mp3",
+              "sentence": "The paper is one of the four great inventions of China.",
+              "sentenceCn": "纸是中国四大发明之一。"
+            },
+            {
+              "word": "progress",
+              "phonetic": "ˈprəʊɡres",
+              "pos": "n.",
+              "meaning": "进步；进展",
+              "audio": "/audio/jw/xprogress.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "toilet",
+              "phonetic": "ˈtɔɪlət",
+              "pos": "n.",
+              "meaning": "厕所；洗手间",
+              "audio": "/audio/jw/xtoilet.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "have been to 表示\"去过某地（已回来）\"；have gone to 表示\"去了某地（未回来）\"。",
+              "example": "I have been to Beijing twice. He has gone to the library.",
+              "exampleCn": "我去过北京两次。他去图书馆了。"
+            },
+            {
+              "point": "ever（曾经）/ never（从未）常用于现在完成时；ever 多用于疑问句和肯定句。",
+              "example": "Have you ever been to a museum? I have never seen snow.",
+              "exampleCn": "你去过博物馆吗？我从未见过雪。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "—Where is Tom? —He ___ to the teacher's office.",
+              "options": [
+                "has gone",
+                "has been",
+                "went"
+              ],
+              "answer": 0,
+              "analysis": "人不在，用 has gone to。"
+            },
+            {
+              "stem": "I ___ never ___ (be) to Shanghai.",
+              "options": [
+                "have; been",
+                "has; been",
+                "am; been"
+              ],
+              "answer": 0,
+              "analysis": "现在完成时 have been。"
+            },
+            {
+              "stem": "___ you ever ___ (try) Chinese food?",
+              "options": [
+                "Have; tried",
+                "Did; try",
+                "Do; try"
+              ],
+              "answer": 0,
+              "analysis": "ever 用于现在完成时 Have...tried。"
+            }
+          ]
+        },
+        {
+          "id": "8b10",
+          "title": "Unit 10 I've had this bike for three years.",
+          "topic": "现在完成时（三）",
+          "words": [
+            {
+              "word": "yard",
+              "phonetic": "jɑːd",
+              "pos": "n.",
+              "meaning": "院子（yard sale 庭院拍卖）",
+              "audio": "/audio/jw/xyard.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "memory",
+              "phonetic": "ˈmeməri",
+              "pos": "n.",
+              "meaning": "记忆；回忆",
+              "audio": "/audio/jw/xmemory.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "scarf",
+              "phonetic": "skɑːf",
+              "pos": "n.",
+              "meaning": "围巾（复数 scarves）",
+              "audio": "/audio/jw/xscarf.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "soft",
+              "phonetic": "sɒft",
+              "pos": "adj.",
+              "meaning": "柔软的",
+              "audio": "/audio/jw/xsoft.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "regard",
+              "phonetic": "rɪˈɡɑːd",
+              "pos": "v.",
+              "meaning": "将……视为；看待",
+              "audio": "/audio/jw/xregard.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "现在完成时 + for + 时间段 / since + 时间点 表示动作或状态持续至今。",
+              "example": "I have had this bike for three years. He has lived here since 2010.",
+              "exampleCn": "这辆自行车我买了三年。他从2010年起住这。"
+            },
+            {
+              "point": "for 后接时间段（for two days），since 后接时间点（since last Monday）。",
+              "example": "She has learned English since she was ten.",
+              "exampleCn": "她从十岁起学英语。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "I have kept the book ___ two weeks.",
+              "options": [
+                "for",
+                "since",
+                "from"
+              ],
+              "answer": 0,
+              "analysis": "时间段前用 for。"
+            },
+            {
+              "stem": "He has been ill ___ last Friday.",
+              "options": [
+                "since",
+                "for",
+                "from"
+              ],
+              "answer": 0,
+              "analysis": "时间点前用 since。"
+            },
+            {
+              "stem": "We ___ (know) each other for a long time.",
+              "options": [
+                "have known",
+                "knew",
+                "know"
+              ],
+              "answer": 0,
+              "analysis": "for 段时间用现在完成时。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "title": "九年级全一册",
+      "units": [
+        {
+          "id": "9a01",
+          "title": "Unit 1 How can we become good learners?",
+          "topic": "学习方式 by doing",
+          "words": [
+            {
+              "word": "textbook",
+              "phonetic": "ˈtekstbʊk",
+              "pos": "n.",
+              "meaning": "教科书；课本",
+              "audio": "/audio/jw/xtextbook.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "conversation",
+              "phonetic": "ˌkɒnvəˈseɪʃn",
+              "pos": "n.",
+              "meaning": "交谈；谈话",
+              "audio": "/audio/jw/xconversation.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "pronounce",
+              "phonetic": "prəˈnaʊns",
+              "pos": "v.",
+              "meaning": "发音",
+              "audio": "/audio/jw/xpronounce.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "increase",
+              "phonetic": "ɪnˈkriːs",
+              "pos": "v.",
+              "meaning": "增加；增长",
+              "audio": "/audio/jw/xincrease.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "speed",
+              "phonetic": "spiːd",
+              "pos": "n.",
+              "meaning": "速度；v.加速",
+              "audio": "/audio/jw/xspeed.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "by + 动名词 表示方式、手段（by reading aloud）。",
+              "example": "I learn English by watching movies.",
+              "exampleCn": "我通过看电影学英语。"
+            },
+            {
+              "point": "疑问词 + 不定式 可作宾语：how to learn, what to do, where to go。",
+              "example": "I don't know how to pronounce this word.",
+              "exampleCn": "我不知道这个单词怎么发音。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "He improves his English ___ reading aloud.",
+              "options": [
+                "by",
+                "with",
+                "in"
+              ],
+              "answer": 0,
+              "analysis": "表方式用 by + doing。"
+            },
+            {
+              "stem": "Do you know how ___ (solve) the problem?",
+              "options": [
+                "to solve",
+                "solve",
+                "solving"
+              ],
+              "answer": 0,
+              "analysis": "疑问词 + 不定式。"
+            },
+            {
+              "stem": "We should practice ___ (speak) English every day.",
+              "options": [
+                "speaking",
+                "speak",
+                "to speak"
+              ],
+              "answer": 0,
+              "analysis": "practice 后接动名词。"
+            }
+          ]
+        },
+        {
+          "id": "9a02",
+          "title": "Unit 2 I think that mooncakes are delicious!",
+          "topic": "宾语从句（一）",
+          "words": [
+            {
+              "word": "mooncake",
+              "phonetic": "ˈmuːnkeɪk",
+              "pos": "n.",
+              "meaning": "月饼",
+              "audio": "/audio/jw/jw9c07.mp3",
+              "sentence": "People eat mooncakes at Mid-Autumn Festival.",
+              "sentenceCn": "人们在中秋节吃月饼。"
+            },
+            {
+              "word": "lantern",
+              "phonetic": "ˈlæntən",
+              "pos": "n.",
+              "meaning": "灯笼；提灯",
+              "audio": "/audio/jw/jw9c09.mp3",
+              "sentence": "Children carry lanterns at the Lantern Festival.",
+              "sentenceCn": "孩子们在元宵节提灯笼。"
+            },
+            {
+              "word": "stranger",
+              "phonetic": "ˈstreɪndʒə",
+              "pos": "n.",
+              "meaning": "陌生人",
+              "audio": "/audio/jw/xstranger.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "relative",
+              "phonetic": "ˈrelətɪv",
+              "pos": "n.",
+              "meaning": "亲戚；亲属",
+              "audio": "/audio/jw/xrelative.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "pound",
+              "phonetic": "paʊnd",
+              "pos": "n.",
+              "meaning": "英镑；磅",
+              "audio": "/audio/jw/xpound.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "that 引导宾语从句，that 在口语中常省略，从句用陈述语序。",
+              "example": "I think (that) mooncakes are delicious.",
+              "exampleCn": "我觉得月饼很好吃。"
+            },
+            {
+              "point": "whether / if 引导含\"是否\"的宾语从句；从句时态与主句呼应。",
+              "example": "I wonder whether the bank is open.",
+              "exampleCn": "我想知道银行是否开门。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "I think ___ he will come soon.",
+              "options": [
+                "that",
+                "what",
+                "if"
+              ],
+              "answer": 0,
+              "analysis": "that 引导宾语从句。"
+            },
+            {
+              "stem": "Could you tell me ___ the train leaves?",
+              "options": [
+                "if",
+                "that",
+                "what"
+              ],
+              "answer": 0,
+              "analysis": "是否用 if/whether。"
+            },
+            {
+              "stem": "She said ___ she was tired.",
+              "options": [
+                "that",
+                "which",
+                "what"
+              ],
+              "answer": 0,
+              "analysis": "陈述事实用 that。"
+            }
+          ]
+        },
+        {
+          "id": "9a03",
+          "title": "Unit 3 Could you please tell me where the restrooms are?",
+          "topic": "宾语从句（二）与礼貌问路",
+          "words": [
+            {
+              "word": "restroom",
+              "phonetic": "ˈrestruːm",
+              "pos": "n.",
+              "meaning": "洗手间；公共厕所",
+              "audio": "/audio/jw/xrestroom.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "stamp",
+              "phonetic": "stæmp",
+              "pos": "n.",
+              "meaning": "邮票",
+              "audio": "/audio/jw/xstamp.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "postcard",
+              "phonetic": "ˈpəʊstkɑːd",
+              "pos": "n.",
+              "meaning": "明信片",
+              "audio": "/audio/jw/jw8a22.mp3",
+              "sentence": "She sent me a postcard from Yunnan.",
+              "sentenceCn": "她从云南给我寄了一张明信片。"
+            },
+            {
+              "word": "pardon",
+              "phonetic": "ˈpɑːdn",
+              "pos": "int.",
+              "meaning": "请再说一遍",
+              "audio": "/audio/jw/xpardon.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "rush",
+              "phonetic": "rʌʃ",
+              "pos": "v./n.",
+              "meaning": "仓促；急促",
+              "audio": "/audio/jw/xrush.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "宾语从句必须用陈述语序（主语在前，谓语在后），即使是疑问句转换而来。",
+              "example": "Could you tell me where the bank is?",
+              "exampleCn": "你能告诉我银行在哪吗？"
+            },
+            {
+              "point": "礼貌请求：Could you please tell me...? / Do you know where...? 比直接问更得体。",
+              "example": "Excuse me, do you know how to get to the library?",
+              "exampleCn": "打扰一下，你知道怎么去图书馆吗？"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Could you tell me ___ ?",
+              "options": [
+                "where the post office is",
+                "where is the post office",
+                "the post office where is"
+              ],
+              "answer": 0,
+              "analysis": "从句用陈述语序。"
+            },
+            {
+              "stem": "I don't know ___ to get there.",
+              "options": [
+                "how",
+                "what",
+                "which"
+              ],
+              "answer": 0,
+              "analysis": "疑问词 + 不定式。"
+            },
+            {
+              "stem": "Pardon? 的意思是：___",
+              "options": [
+                "请再说一遍",
+                "对不起",
+                "谢谢"
+              ],
+              "answer": 0,
+              "analysis": "Pardon 用于没听清请重复。"
+            }
+          ]
+        },
+        {
+          "id": "9a04",
+          "title": "Unit 4 I used to be afraid of the dark.",
+          "topic": "used to",
+          "words": [
+            {
+              "word": "humorous",
+              "phonetic": "ˈhjuːmərəs",
+              "pos": "adj.",
+              "meaning": "幽默的",
+              "audio": "/audio/jw/xhumorous.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "silent",
+              "phonetic": "ˈsaɪlənt",
+              "pos": "adj.",
+              "meaning": "沉默的；不说话的",
+              "audio": "/audio/jw/xsilent.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "helpful",
+              "phonetic": "ˈhelpfl",
+              "pos": "adj.",
+              "meaning": "乐于助人的；有用的",
+              "audio": "/audio/jw/jw7a22.mp3",
+              "sentence": "He is always helpful to others.",
+              "sentenceCn": "他总是乐于助人。"
+            },
+            {
+              "word": "score",
+              "phonetic": "skɔː",
+              "pos": "n./v.",
+              "meaning": "得分；分数",
+              "audio": "/audio/jw/jw8b12.mp3",
+              "sentence": "Our team scored three goals.",
+              "sentenceCn": "我们队进了三个球。"
+            },
+            {
+              "word": "background",
+              "phonetic": "ˈbækɡraʊnd",
+              "pos": "n.",
+              "meaning": "背景",
+              "audio": "/audio/jw/xbackground.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "used to + 动词原形 表示\"过去常常（现在已不）\"；否定 used not to / didn't use to。",
+              "example": "I used to be afraid of the dark.",
+              "exampleCn": "我过去怕黑。"
+            },
+            {
+              "point": "be used to doing 表示\"习惯于做某事\"，to 是介词，后接动名词。",
+              "example": "She is used to getting up early.",
+              "exampleCn": "她习惯早起。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "He ___ (use) to play soccer after school.",
+              "options": [
+                "used",
+                "use",
+                "using"
+              ],
+              "answer": 0,
+              "analysis": "used to 表过去习惯。"
+            },
+            {
+              "stem": "My father is used to ___ (read) newspapers at night.",
+              "options": [
+                "reading",
+                "read",
+                "reads"
+              ],
+              "answer": 0,
+              "analysis": "be used to doing。"
+            },
+            {
+              "stem": "Did you use to ___ (be) short?",
+              "options": [
+                "be",
+                "being",
+                "been"
+              ],
+              "answer": 0,
+              "analysis": "used to 后接动词原形。"
+            }
+          ]
+        },
+        {
+          "id": "9a05",
+          "title": "Unit 5 What are the shirts made of?",
+          "topic": "一般现在时被动",
+          "words": [
+            {
+              "word": "chopstick",
+              "phonetic": "ˈtʃɒpstɪk",
+              "pos": "n.",
+              "meaning": "筷子（常用复数）",
+              "audio": "/audio/jw/xchopstick.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "coin",
+              "phonetic": "kɔɪn",
+              "pos": "n.",
+              "meaning": "硬币",
+              "audio": "/audio/jw/xcoin.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "fork",
+              "phonetic": "fɔːk",
+              "pos": "n.",
+              "meaning": "餐叉；叉子",
+              "audio": "/audio/jw/xfork.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "blouse",
+              "phonetic": "blaʊz",
+              "pos": "n.",
+              "meaning": "（女式）短上衣；衬衫",
+              "audio": "/audio/jw/xblouse.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "steel",
+              "phonetic": "stiːl",
+              "pos": "n.",
+              "meaning": "钢；钢铁",
+              "audio": "/audio/jw/xsteel.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "一般现在时被动语态：am/is/are + 及物动词过去分词；主语是动作承受者。",
+              "example": "The shirts are made of cotton.",
+              "exampleCn": "这些衬衫是棉制的。"
+            },
+            {
+              "point": "be made of（看出原料）/ be made from（看不出原料）区别。",
+              "example": "Paper is made from wood. The desk is made of wood.",
+              "exampleCn": "纸由木头制成（看不出）。桌子由木头制成（看出）。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "The kite ___ (make) of paper.",
+              "options": [
+                "is made",
+                "made",
+                "is making"
+              ],
+              "answer": 0,
+              "analysis": "被动 be made of。"
+            },
+            {
+              "stem": "Wine is made ___ grapes.",
+              "options": [
+                "from",
+                "of",
+                "by"
+              ],
+              "answer": 0,
+              "analysis": "看不出原料用 from。"
+            },
+            {
+              "stem": "English ___ (speak) in many countries.",
+              "options": [
+                "is spoken",
+                "speaks",
+                "is speaking"
+              ],
+              "answer": 0,
+              "analysis": "一般现在时被动 is spoken。"
+            }
+          ]
+        },
+        {
+          "id": "9a06",
+          "title": "Unit 6 When was it invented?",
+          "topic": "一般过去时被动",
+          "words": [
+            {
+              "word": "invent",
+              "phonetic": "ɪnˈvent",
+              "pos": "v.",
+              "meaning": "发明",
+              "audio": "/audio/jw/jw9b07.mp3",
+              "sentence": "Edison invented the light bulb.",
+              "sentenceCn": "爱迪生发明了灯泡。"
+            },
+            {
+              "word": "pioneer",
+              "phonetic": "ˌpaɪəˈnɪə",
+              "pos": "n.",
+              "meaning": "先锋；先驱",
+              "audio": "/audio/jw/xpioneer.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "list",
+              "phonetic": "lɪst",
+              "pos": "n./v.",
+              "meaning": "列表；列举",
+              "audio": "/audio/jw/xlist.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "mention",
+              "phonetic": "ˈmenʃn",
+              "pos": "v.",
+              "meaning": "提到；说到",
+              "audio": "/audio/jw/xmention.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "doubt",
+              "phonetic": "daʊt",
+              "pos": "v./n.",
+              "meaning": "怀疑；疑惑",
+              "audio": "/audio/jw/xdoubt.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "一般过去时被动语态：was/were + 过去分词；常用 by 引出动作执行者。",
+              "example": "The telephone was invented by Bell.",
+              "exampleCn": "电话是贝尔发明的。"
+            },
+            {
+              "point": "被动语态把动作的承受者作主语，强调事实或结果而非执行者。",
+              "example": "When was the car invented? It was invented in 1885.",
+              "exampleCn": "汽车何时发明？1885年。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "The light bulb ___ (invent) by Edison.",
+              "options": [
+                "was invented",
+                "invented",
+                "is invented"
+              ],
+              "answer": 0,
+              "analysis": "过去被动 was invented。"
+            },
+            {
+              "stem": "When ___ the Internet ___ (create)?",
+              "options": [
+                "was; created",
+                "did; create",
+                "is; created"
+              ],
+              "answer": 0,
+              "analysis": "过去时被动 was created。"
+            },
+            {
+              "stem": "Paper ___ (make) in China long ago.",
+              "options": [
+                "was made",
+                "made",
+                "is made"
+              ],
+              "answer": 0,
+              "analysis": "long ago 过去被动。"
+            }
+          ]
+        },
+        {
+          "id": "9a07",
+          "title": "Unit 7 Teenagers should be allowed to choose their own clothes.",
+          "topic": "情态动词被动",
+          "words": [
+            {
+              "word": "license",
+              "phonetic": "ˈlaɪsns",
+              "pos": "n.",
+              "meaning": "证；执照",
+              "audio": "/audio/jw/xlicense.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "safety",
+              "phonetic": "ˈseɪfti",
+              "pos": "n.",
+              "meaning": "安全",
+              "audio": "/audio/jw/jw9a18.mp3",
+              "sentence": "Safety comes first when we swim.",
+              "sentenceCn": "游泳时安全第一。"
+            },
+            {
+              "word": "smoke",
+              "phonetic": "sməʊk",
+              "pos": "v.",
+              "meaning": "吸烟",
+              "audio": "/audio/jw/xsmoke.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "harmful",
+              "phonetic": "ˈhɑːmfl",
+              "pos": "adj.",
+              "meaning": "有害的",
+              "audio": "/audio/jw/xharmful.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "regret",
+              "phonetic": "rɪˈɡret",
+              "pos": "v.",
+              "meaning": "感到遗憾；懊悔",
+              "audio": "/audio/jw/xregret.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "含情态动词的被动：情态动词 + be + 过去分词（must be done, should be allowed）。",
+              "example": "Teenagers should be allowed to choose their clothes.",
+              "exampleCn": "青少年应该被允许选择自己的衣服。"
+            },
+            {
+              "point": "be allowed to do 表示\"被允许做\"；allow sb to do 的被动形式。",
+              "example": "We are not allowed to smoke here.",
+              "exampleCn": "我们不被允许在此吸烟。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Students should ___ (allow) to wear their own clothes.",
+              "options": [
+                "be allowed",
+                "allow",
+                "be allowing"
+              ],
+              "answer": 0,
+              "analysis": "情态被动 should be allowed。"
+            },
+            {
+              "stem": "Smoking is ___ (harm) to your health.",
+              "options": [
+                "harmful",
+                "harm",
+                "harmed"
+              ],
+              "answer": 0,
+              "analysis": "be harmful to 固定。"
+            },
+            {
+              "stem": "The work must ___ (finish) today.",
+              "options": [
+                "be finished",
+                "finish",
+                "be finish"
+              ],
+              "answer": 0,
+              "analysis": "must 被动 be finished。"
+            }
+          ]
+        },
+        {
+          "id": "9a08",
+          "title": "Unit 8 It must belong to Carla.",
+          "topic": "情态动词表推测",
+          "words": [
+            {
+              "word": "truck",
+              "phonetic": "trʌk",
+              "pos": "n.",
+              "meaning": "卡车",
+              "audio": "/audio/jw/xtruck.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "rabbit",
+              "phonetic": "ˈræbɪt",
+              "pos": "n.",
+              "meaning": "兔；野兔",
+              "audio": "/audio/jw/xrabbit.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "pink",
+              "phonetic": "pɪŋk",
+              "pos": "adj.",
+              "meaning": "粉红色的",
+              "audio": "/audio/jw/xpink.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "laboratory",
+              "phonetic": "ləˈbɒrətri",
+              "pos": "n.",
+              "meaning": "实验室",
+              "audio": "/audio/jw/xlaboratory.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "coat",
+              "phonetic": "kəʊt",
+              "pos": "n.",
+              "meaning": "外套；外衣",
+              "audio": "/audio/jw/xcoat.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "情态动词表推测：must（一定，把握最大）/ might, could（可能）/ can't（不可能，把握大）。",
+              "example": "The book must be Linda's. It can't be Tom's.",
+              "exampleCn": "这书一定是琳达的。不可能是汤姆的。"
+            },
+            {
+              "point": "belong to 表示\"属于\"，无被动语态和进行时；to 后接名词或代词宾格。",
+              "example": "This coat belongs to Carla.",
+              "exampleCn": "这件外套是卡拉的。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "The hair band ___ (must) be Lily's. She loves pink.",
+              "options": [
+                "must",
+                "can't",
+                "might"
+              ],
+              "answer": 0,
+              "analysis": "把握大用 must。"
+            },
+            {
+              "stem": "It ___ be John's. He doesn't wear a coat like this.",
+              "options": [
+                "can't",
+                "must",
+                "might"
+              ],
+              "answer": 0,
+              "analysis": "否定推测用 can't。"
+            },
+            {
+              "stem": "The notebook belongs ___ Lucy.",
+              "options": [
+                "to",
+                "for",
+                "with"
+              ],
+              "answer": 0,
+              "analysis": "belong to 固定搭配。"
+            }
+          ]
+        },
+        {
+          "id": "9a09",
+          "title": "Unit 9 I like music that I can dance to.",
+          "topic": "定语从句",
+          "words": [
+            {
+              "word": "prefer",
+              "phonetic": "prɪˈfɜː",
+              "pos": "v.",
+              "meaning": "更喜欢（过去/过分 preferred）",
+              "audio": "/audio/jw/xprefer.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "lyric",
+              "phonetic": "ˈlɪrɪk",
+              "pos": "n.",
+              "meaning": "歌词（常用复数 lyrics）",
+              "audio": "/audio/jw/xlyric.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "director",
+              "phonetic": "dəˈrektə",
+              "pos": "n.",
+              "meaning": "导演；部门负责人",
+              "audio": "/audio/jw/xdirector.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "plenty",
+              "phonetic": "ˈplenti",
+              "pos": "n.",
+              "meaning": "大量；充足（plenty of）",
+              "audio": "/audio/jw/xplenty.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "shut",
+              "phonetic": "ʃʌt",
+              "pos": "v.",
+              "meaning": "关闭；关上（过去/过分 shut）",
+              "audio": "/audio/jw/xshut.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "that / which 引导定语从句修饰物，在从句中作主语或宾语。",
+              "example": "I like music that I can dance to. The book which is on the desk is mine.",
+              "exampleCn": "我喜欢能跟着跳舞的音乐。桌上的书是我的。"
+            },
+            {
+              "point": "关系代词作宾语时可省略；先行词被最高级修饰时常用 that。",
+              "example": "This is the best film (that) I have seen.",
+              "exampleCn": "这是我看过的最好的电影。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "I like the songs ___ are written by him.",
+              "options": [
+                "that",
+                "what",
+                "who"
+              ],
+              "answer": 0,
+              "analysis": "修饰物用 that/which。"
+            },
+            {
+              "stem": "He prefers ___ (listen) to quiet music.",
+              "options": [
+                "to listen",
+                "listen",
+                "listening"
+              ],
+              "answer": 0,
+              "analysis": "prefer to do。"
+            },
+            {
+              "stem": "The movie ___ we saw yesterday was boring.",
+              "options": [
+                "that/which",
+                "what",
+                "who"
+              ],
+              "answer": 0,
+              "analysis": "修饰物，that/which 作宾语可省。"
+            }
+          ]
+        },
+        {
+          "id": "9a10",
+          "title": "Unit 10 You're supposed to shake hands.",
+          "topic": "习俗与 be supposed to",
+          "words": [
+            {
+              "word": "bow",
+              "phonetic": "baʊ",
+              "pos": "v./n.",
+              "meaning": "鞠躬",
+              "audio": "/audio/jw/xbow.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "kiss",
+              "phonetic": "kɪs",
+              "pos": "v./n.",
+              "meaning": "亲吻",
+              "audio": "/audio/jw/xkiss.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "greet",
+              "phonetic": "ɡriːt",
+              "pos": "v.",
+              "meaning": "和……打招呼；迎接",
+              "audio": "/audio/jw/xgreet.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "value",
+              "phonetic": "ˈvæljuː",
+              "pos": "v./n.",
+              "meaning": "重视；价值",
+              "audio": "/audio/jw/xvalue.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "relaxed",
+              "phonetic": "rɪˈlækst",
+              "pos": "adj.",
+              "meaning": "放松的；自在的",
+              "audio": "/audio/jw/xrelaxed.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "be supposed to do 表示\"应该/被期望做\"（按习俗或规定）。",
+              "example": "You're supposed to shake hands when you meet.",
+              "exampleCn": "见面时你应该握手。"
+            },
+            {
+              "point": "be expected to do 也表示\"被期望做\"；不同国家 greeting 习俗不同（bow/kiss/hug）。",
+              "example": "In Japan people are expected to bow.",
+              "exampleCn": "在日本人们应该鞠躬。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "In China, you ___ (suppose) to shake hands.",
+              "options": [
+                "are supposed",
+                "suppose",
+                "are supposing"
+              ],
+              "answer": 0,
+              "analysis": "be supposed to。"
+            },
+            {
+              "stem": "You ___ (expect) to be on time.",
+              "options": [
+                "are expected",
+                "expect",
+                "are expecting"
+              ],
+              "answer": 0,
+              "analysis": "be expected to。"
+            },
+            {
+              "stem": "People in France often ___ (kiss) when they meet.",
+              "options": [
+                "kiss",
+                "kisses",
+                "kissing"
+              ],
+              "answer": 0,
+              "analysis": "主语复数一般现在时 kiss。"
+            }
+          ]
+        },
+        {
+          "id": "9a11",
+          "title": "Unit 11 Sad movies make me cry.",
+          "topic": "make 的使役用法",
+          "words": [
+            {
+              "word": "drive",
+              "phonetic": "draɪv",
+              "pos": "v.",
+              "meaning": "驾驶；开车（去）",
+              "audio": "/audio/jw/jw8a13.mp3",
+              "sentence": "Father drives me to school on rainy days.",
+              "sentenceCn": "雨天爸爸开车送我上学。"
+            },
+            {
+              "word": "lately",
+              "phonetic": "ˈleɪtli",
+              "pos": "adv.",
+              "meaning": "最近；不久前",
+              "audio": "/audio/jw/xlately.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "friendship",
+              "phonetic": "ˈfrendʃɪp",
+              "pos": "n.",
+              "meaning": "友谊；友情",
+              "audio": "/audio/jw/xfriendship.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "power",
+              "phonetic": "ˈpaʊə",
+              "pos": "n.",
+              "meaning": "力量；权力",
+              "audio": "/audio/jw/xpower.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "king",
+              "phonetic": "kɪŋ",
+              "pos": "n.",
+              "meaning": "国王",
+              "audio": "/audio/jw/xking.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "make + 宾语 + 形容词 / 动词原形：make me cry（使我哭），make him happy（使他开心）。",
+              "example": "Sad movies make me want to leave.",
+              "exampleCn": "悲剧让我想离开。"
+            },
+            {
+              "point": "make 作使役动词，后接不带 to 的不定式（make sb do），被动时补 to（be made to do）。",
+              "example": "The noise made me angry. He was made to clean the room.",
+              "exampleCn": "噪音使我生气。他被迫打扫房间。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "The good news made us ___ (excited).",
+              "options": [
+                "excited",
+                "to excite",
+                "exciting"
+              ],
+              "answer": 0,
+              "analysis": "make + 宾语 + 形容词。"
+            },
+            {
+              "stem": "The teacher made him ___ (stand) outside.",
+              "options": [
+                "stand",
+                "to stand",
+                "standing"
+              ],
+              "answer": 0,
+              "analysis": "make sb do 用原形。"
+            },
+            {
+              "stem": "Loud music always makes me ___ (want) to dance.",
+              "options": [
+                "want",
+                "to want",
+                "wants"
+              ],
+              "answer": 0,
+              "analysis": "make 后接动词原形。"
+            }
+          ]
+        },
+        {
+          "id": "9a12",
+          "title": "Unit 12 Life is full of the unexpected.",
+          "topic": "过去完成时",
+          "words": [
+            {
+              "word": "unexpected",
+              "phonetic": "ˌʌnɪkˈspektɪd",
+              "pos": "adj.",
+              "meaning": "出乎意料的",
+              "audio": "/audio/jw/xunexpected.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "officer",
+              "phonetic": "ˈɒfɪsə",
+              "pos": "n.",
+              "meaning": "军官；官员",
+              "audio": "/audio/jw/xofficer.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "disappear",
+              "phonetic": "ˌdɪsəˈpɪə",
+              "pos": "v.",
+              "meaning": "消失；不见",
+              "audio": "/audio/jw/xdisappear.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "embarrass",
+              "phonetic": "ɪmˈbærəs",
+              "pos": "v.",
+              "meaning": "使害羞；使尴尬",
+              "audio": "/audio/jw/xembarrass.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "announce",
+              "phonetic": "əˈnaʊns",
+              "pos": "v.",
+              "meaning": "宣布；宣告",
+              "audio": "/audio/jw/xannounce.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "过去完成时 had + 过去分词 表示\"过去的过去\"，即先于另一过去动作发生。",
+              "example": "When I got there, the bus had left.",
+              "exampleCn": "我到那时，公交车已经走了。"
+            },
+            {
+              "point": "by the time + 过去时从句，主句常用过去完成时。",
+              "example": "By the time I woke up, it had stopped raining.",
+              "exampleCn": "我醒来时雨已经停了。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "By the time she arrived, the meeting ___ (begin).",
+              "options": [
+                "had begun",
+                "began",
+                "has begun"
+              ],
+              "answer": 0,
+              "analysis": "过去的过去用过去完成时。"
+            },
+            {
+              "stem": "I ___ (never see) such a film before that day.",
+              "options": [
+                "had never seen",
+                "never saw",
+                "have never seen"
+              ],
+              "answer": 0,
+              "analysis": "before that day 用过去完成时。"
+            },
+            {
+              "stem": "The train ___ (leave) when we got to the station.",
+              "options": [
+                "had left",
+                "left",
+                "has left"
+              ],
+              "answer": 0,
+              "analysis": "got 之前用 had left。"
+            }
+          ]
+        },
+        {
+          "id": "9a13",
+          "title": "Unit 13 We're trying to save the earth!",
+          "topic": "环保与被动语态",
+          "words": [
+            {
+              "word": "litter",
+              "phonetic": "ˈlɪtə",
+              "pos": "n./v.",
+              "meaning": "垃圾；乱扔",
+              "audio": "/audio/jw/xlitter.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "bottom",
+              "phonetic": "ˈbɒtəm",
+              "pos": "n.",
+              "meaning": "底部；最下部",
+              "audio": "/audio/jw/xbottom.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "coastline",
+              "phonetic": "ˈkəʊstlaɪn",
+              "pos": "n.",
+              "meaning": "海岸线",
+              "audio": "/audio/jw/xcoastline.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "reusable",
+              "phonetic": "ˌriːˈjuːzəbl",
+              "pos": "adj.",
+              "meaning": "可重复使用的",
+              "audio": "/audio/jw/xreusable.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "transport",
+              "phonetic": "trænˈspɔːt",
+              "pos": "v./n.",
+              "meaning": "运输；输送",
+              "audio": "/audio/jw/xtransport.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "现在进行时被动：am/is/are + being + 过去分词，强调此刻正在被做。",
+              "example": "The river is being polluted.",
+              "exampleCn": "这条河正在被污染。"
+            },
+            {
+              "point": "现在完成时被动：have/has + been + 过去分词，强调动作对现在的影响。",
+              "example": "A lot of trees have been planted.",
+              "exampleCn": "已经种了很多树。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "The bridge ___ (build) now.",
+              "options": [
+                "is being built",
+                "is built",
+                "was built"
+              ],
+              "answer": 0,
+              "analysis": "此刻正在被建用现在进行时被动。"
+            },
+            {
+              "stem": "Many trees ___ (plant) since last year.",
+              "options": [
+                "have been planted",
+                "are planted",
+                "were planted"
+              ],
+              "answer": 0,
+              "analysis": "since 用现在完成时被动。"
+            },
+            {
+              "stem": "We should stop ___ (throw) litter.",
+              "options": [
+                "throwing",
+                "throw",
+                "to throw"
+              ],
+              "answer": 0,
+              "analysis": "stop doing 停止做某事。"
+            }
+          ]
+        },
+        {
+          "id": "9a14",
+          "title": "Unit 14 I remember meeting all of you in Grade 7.",
+          "topic": "动名词与毕业",
+          "words": [
+            {
+              "word": "survey",
+              "phonetic": "ˈsɜːveɪ",
+              "pos": "n./v.",
+              "meaning": "调查",
+              "audio": "/audio/jw/xsurvey.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "standard",
+              "phonetic": "ˈstændəd",
+              "pos": "n./adj.",
+              "meaning": "标准（的）",
+              "audio": "/audio/jw/xstandard.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "graduation",
+              "phonetic": "ˌɡrædʒuˈeɪʃn",
+              "pos": "n.",
+              "meaning": "毕业",
+              "audio": "/audio/jw/xgraduation.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "certificate",
+              "phonetic": "səˈtɪfɪkət",
+              "pos": "n.",
+              "meaning": "证书；文凭",
+              "audio": "/audio/jw/xcertificate.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            },
+            {
+              "word": "caring",
+              "phonetic": "ˈkeərɪŋ",
+              "pos": "adj.",
+              "meaning": "关心他人的；体贴的",
+              "audio": "/audio/jw/xcaring.mp3",
+              "sentence": "",
+              "sentenceCn": ""
+            }
+          ],
+          "grammars": [
+            {
+              "point": "remember/forget + doing 表示\"记得/忘记做过的事\"；+ to do 表示\"记得/忘记要去做的事\"。",
+              "example": "I remember meeting you. Remember to lock the door.",
+              "exampleCn": "我记得见过你。记得锁门。"
+            },
+            {
+              "point": "动名词作主语或宾语",
+              "example": "Reading is fun. I look forward to seeing you.",
+              "exampleCn": "阅读很有趣。我期待见到你。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "I remember ___ (meet) him before.",
+              "options": [
+                "meeting",
+                "to meet",
+                "meet"
+              ],
+              "answer": 0,
+              "analysis": "记得做过用 meeting。"
+            },
+            {
+              "stem": "Please remember ___ (lock) the door.",
+              "options": [
+                "to lock",
+                "locking",
+                "lock"
+              ],
+              "answer": 0,
+              "analysis": "记得去做用 to lock。"
+            },
+            {
+              "stem": "___ (read) in the sun is bad for your eyes.",
+              "options": [
+                "Reading",
+                "Read",
+                "To reading"
+              ],
+              "answer": 0,
+              "analysis": "动名词作主语。"
+            },
+            {
+              "stem": "Two days ___, I visited my uncle.（以前）",
+              "options": [
+                "ago",
+                "before",
+                "later"
+              ],
+              "answer": 0,
+              "analysis": "时间段 + ago 表示多久以前。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+// src/junior_grammar.json
+var jgram_default = {
+  "product": "初中英语语法知识点详解",
+  "version": "1.0",
+  "schema_version": "1.0",
+  "note": "中考 30 个核心语法专题；每专题含概述、讲解条目、易错提示与 3 道例题；前端渲染为知识点卡片",
+  "topics": [
+    {
+      "id": "g01",
+      "title": "名词",
+      "overview": "名词表示人、事物、地点或抽象概念。中考重点考查可数与不可数名词、名词复数变化及名词所有格。",
+      "points": [
+        {
+          "title": "可数与不可数名词",
+          "detail": "可数名词有单复数（book/books）；不可数名词无复数，表数量用 a cup of / two pieces of 等（water, advice, news, information）。"
+        },
+        {
+          "title": "名词复数规则",
+          "detail": "一般加 -s；s/x/ch/sh 结尾加 -es；辅音+y 结尾变 y 为 i 加 -es；f/fe 结尾变 v 加 -es（knife→knives）；不规则如 man→men, child→children。"
+        },
+        {
+          "title": "名词所有格",
+          "detail": "有生命名词加 's（Tom's book）；复数以 s 结尾加 '（teachers' office）；无生命常用 of（the door of the room）。"
+        }
+      ],
+      "pitfalls": [
+        "不可数名词永远不加 s，也不能直接用 a/an 修饰，需用量词。",
+        "以 o 结尾的名词：negro/hero/tomato/potato 加 -es，其余多直接加 -s（photo→photos）。"
+      ],
+      "examples": [
+        {
+          "stem": "There is some ___ on the table.",
+          "options": [
+            "milk",
+            "milks",
+            "a milk"
+          ],
+          "answer": 0,
+          "analysis": "milk 不可数，无复数、不加 a。"
+        },
+        {
+          "stem": "—How many ___ are there? —Two.",
+          "options": [
+            "box",
+            "boxes",
+            "boxs"
+          ],
+          "answer": 1,
+          "analysis": "x 结尾加 -es。"
+        },
+        {
+          "stem": "This is ___ book.",
+          "options": [
+            "Tom",
+            "Tom's",
+            "Toms'"
+          ],
+          "answer": 1,
+          "analysis": "有生命名词所有格加 's。"
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title": "代词",
+      "overview": "代词用来代替名词，中考常考人称代词、物主代词、不定代词和反身代词的辨析与用法。",
+      "points": [
+        {
+          "title": "人称代词主格与宾格",
+          "detail": "主格 I/you/he/she/it/we/they 作主语；宾格 me/you/him/her/it/us/them 作宾语（动词或介词后）。"
+        },
+        {
+          "title": "物主代词",
+          "detail": "形容词性 my/your/his/her/our/their 后必须跟名词；名词性 mine/yours/his/hers/ours/theirs 单独使用 = 形容词性 + 名词。"
+        },
+        {
+          "title": "不定代词",
+          "detail": "some/any（some 用于肯定与希望得到肯定回答的问句）；复合不定代词 someone/anyone/everything 等作主语谓语用单数。"
+        },
+        {
+          "title": "反身代词",
+          "detail": "myself/yourself/himself/ourselves 等，常用于 by oneself（独自）、enjoy oneself（玩得开心）、help oneself（随便吃）。"
+        }
+      ],
+      "pitfalls": [
+        "形容词性物主代词后必须有名词；名词性物主代词后绝不可再加名词。",
+        "复合不定代词被形容词修饰时，形容词须后置（something important）。"
+      ],
+      "examples": [
+        {
+          "stem": "This is ___ book. That one is ___ .",
+          "options": [
+            "my; yours",
+            "mine; your",
+            "my; your"
+          ],
+          "answer": 0,
+          "analysis": "第一空后有名词用 my，第二空单独使用用 yours。"
+        },
+        {
+          "stem": "Everyone ___ here today.",
+          "options": [
+            "are",
+            "is",
+            "were"
+          ],
+          "answer": 1,
+          "analysis": "复合不定代词作主语谓语用单数。"
+        },
+        {
+          "stem": "We enjoyed ___ at the party.",
+          "options": [
+            "us",
+            "ourselves",
+            "our"
+          ],
+          "answer": 1,
+          "analysis": "enjoy oneself 固定搭配。"
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title": "冠词",
+      "overview": "冠词 a/an（不定冠词）与 the（定冠词）及零冠词。中考重点在 a/an 的选择、定冠词特指与零冠词固定搭配。",
+      "points": [
+        {
+          "title": "a 与 an 的选择",
+          "detail": "看其后单词的发音而非字母：元音音素开头用 an（an hour, an apple），辅音音素开头用 a（a university, a book）。"
+        },
+        {
+          "title": "定冠词 the 的用法",
+          "detail": "特指双方都知道的人或物、上文提过、最高级/序数词前、乐器前（play the piano）、独一无二的事物（the sun）。"
+        },
+        {
+          "title": "零冠词",
+          "detail": "球类、三餐、学科、语言前不加 the（play football, have lunch, English）。"
+        }
+      ],
+      "pitfalls": [
+        "判断用 a 还是 an 看发音（hour 以元音开头用 an，university 以辅音开头用 a）。",
+        "序数词前一般加 the，但表示'再一/又一'时用 a（a second time）。"
+      ],
+      "examples": [
+        {
+          "stem": "He is ___ honest boy.",
+          "options": [
+            "a",
+            "an",
+            "the"
+          ],
+          "answer": 1,
+          "analysis": "honest 的 h 不发音，以元音开头用 an。"
+        },
+        {
+          "stem": "She can play ___ piano very well.",
+          "options": [
+            "a",
+            "the",
+            "/"
+          ],
+          "answer": 1,
+          "analysis": "乐器前加 the。"
+        },
+        {
+          "stem": "Let's play ___ basketball after school.",
+          "options": [
+            "the",
+            "a",
+            "/"
+          ],
+          "answer": 2,
+          "analysis": "球类前零冠词。"
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title": "数词",
+      "overview": "数词包括基数词与序数词。中考考查日期、分数、编号及序数词变化。",
+      "points": [
+        {
+          "title": "基数词与序数词",
+          "detail": "序数词前加 the；first/second/third 特殊，其余加 th；five→fifth, nine→ninth, twelve→twelfth, twenty→twentieth。"
+        },
+        {
+          "title": "分数表达",
+          "detail": "分子基数、分母序数，分子大于1分母加 s（one third, two thirds）。"
+        },
+        {
+          "title": "编号与年月日",
+          "detail": "编号用名词+基数词（Room 101, Class 3）；日期用序数词（May 1st / on May 1）。"
+        }
+      ],
+      "pitfalls": [
+        "hundred/thousand/million 前有具体数字时不加 s（three hundred），表泛指'数百'用 hundreds of。",
+        "分数中分子>1 时分母必须加 s。"
+      ],
+      "examples": [
+        {
+          "stem": "September is the ___ month of the year.",
+          "options": [
+            "nine",
+            "ninth",
+            "nineth"
+          ],
+          "answer": 1,
+          "analysis": "第九用序数词 ninth。"
+        },
+        {
+          "stem": "There are two ___ students in our school.",
+          "options": [
+            "hundred",
+            "hundreds",
+            "hundreds of"
+          ],
+          "answer": 0,
+          "analysis": "具体数字后 hundred 不加 s。"
+        },
+        {
+          "stem": "About two ___ of the students like reading.",
+          "options": [
+            "third",
+            "thirds",
+            "threes"
+          ],
+          "answer": 1,
+          "analysis": "分子大于1，分母加 s。"
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title": "形容词与副词",
+      "overview": "形容词修饰名词，副词修饰动词/形容词/句子。中考重点是级的变化与辨析。",
+      "points": [
+        {
+          "title": "比较级与最高级构成",
+          "detail": "单音节/少数双音节加 -er/-est；多音节加 more/most；不规则 good/well→better/best, bad→worse/worst, little→less/least, far→farther/further。"
+        },
+        {
+          "title": "比较句式",
+          "detail": "比较级+than；the+比较级..., the+比较级...（越…越…）；比较级+and+比较级（越来越…）；三者以上用最高级 the+most。"
+        },
+        {
+          "title": "形容词与副词辨析",
+          "detail": "修饰名词用形容词（a beautiful flower）；修饰动词/形容词用副词（run fast, very good→well）。"
+        }
+      ],
+      "pitfalls": [
+        "-ly 结尾的不一定都是副词（friendly, lonely 是形容词）；形容词变副词多数加 -ly。",
+        "最高级前通常加 the，但副词最高级前的 the 可省。"
+      ],
+      "examples": [
+        {
+          "stem": "This book is ___ than that one.",
+          "options": [
+            "interesting",
+            "more interesting",
+            "most interesting"
+          ],
+          "answer": 1,
+          "analysis": "多音节词比较级用 more。"
+        },
+        {
+          "stem": "He runs ___ in our class.",
+          "options": [
+            "fast",
+            "faster",
+            "(the) fastest"
+          ],
+          "answer": 2,
+          "analysis": "三者以上用最高级。"
+        },
+        {
+          "stem": "The cat is ___ . I like it.",
+          "options": [
+            "friend",
+            "friendly",
+            "friends"
+          ],
+          "answer": 1,
+          "analysis": "friendly 是形容词，作表语。"
+        }
+      ]
+    },
+    {
+      "id": "g06",
+      "title": "介词",
+      "overview": "介词表示时间、方位、方式等关系。中考常考时间/方位介词辨析及固定搭配。",
+      "points": [
+        {
+          "title": "时间介词",
+          "detail": "at（具体时刻/noon/night）、on（具体某天/某天上）、in（年/月/季节/上午下午）、since（时间点）、for（时间段）、by（截止）。"
+        },
+        {
+          "title": "方位介词",
+          "detail": "in（在…里）、on（在…上，接触）、under（在…下）、above（上方不接触）、below（下方）、between（两者之间）、among（三者以上）。"
+        },
+        {
+          "title": "方式与其他",
+          "detail": "by（交通/方式，by bus, by reading）、with（用工具/带有）、without（没有）、about（关于）。"
+        }
+      ],
+      "pitfalls": [
+        "in the morning 但 on a cold morning（有修饰语用 on）；at night 但 on the night of...",
+        "between 用于两者，among 用于三者及以上。"
+      ],
+      "examples": [
+        {
+          "stem": "We have lunch ___ noon.",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "answer": 2,
+          "analysis": "具体时刻 noon 用 at。"
+        },
+        {
+          "stem": "The book is ___ the desk.",
+          "options": [
+            "in",
+            "on",
+            "under"
+          ],
+          "answer": 1,
+          "analysis": "在桌面上用 on。"
+        },
+        {
+          "stem": "He goes to school ___ bike.",
+          "options": [
+            "by",
+            "on",
+            "with"
+          ],
+          "answer": 0,
+          "analysis": "by + 交通工具中间无词。"
+        }
+      ]
+    },
+    {
+      "id": "g07",
+      "title": "连词",
+      "overview": "连词连接词、短语或句子。中考考查并列连词与从属连词的辨析及时态配合。",
+      "points": [
+        {
+          "title": "并列连词",
+          "detail": "and（并列/顺承）、but（转折）、or（选择/否则）、so（结果）、for（原因）。"
+        },
+        {
+          "title": "从属连词",
+          "detail": "when/while（时间）、because（原因）、if（条件）、although/though（让步）、so...that（结果）、as soon as（一…就）。"
+        },
+        {
+          "title": "就近与就远",
+          "detail": "neither...nor / either...or / not only...but also 遵循就近原则；with/together with 不影响主语数（就远）。"
+        }
+      ],
+      "pitfalls": [
+        "although 与 but 不能连用；because 与 so 也不能连用（只取其一）。",
+        "or 在否定句中表'和'（I don't like tea or coffee）。"
+      ],
+      "examples": [
+        {
+          "stem": "Hurry up, ___ you will miss the bus.",
+          "options": [
+            "and",
+            "but",
+            "or"
+          ],
+          "answer": 2,
+          "analysis": "or 表'否则'。"
+        },
+        {
+          "stem": "___ he is young, he knows a lot.",
+          "options": [
+            "Although",
+            "But",
+            "Because"
+          ],
+          "answer": 0,
+          "analysis": "让步用 Although，不与 but 连用。"
+        },
+        {
+          "stem": "Either you or he ___ right.",
+          "options": [
+            "are",
+            "is",
+            "am"
+          ],
+          "answer": 1,
+          "analysis": "就近原则，he 单数用 is。"
+        }
+      ]
+    },
+    {
+      "id": "g08",
+      "title": "一般现在时",
+      "overview": "一般现在时表示经常性、习惯性动作或客观真理。中考重点是三单变化与用法。",
+      "points": [
+        {
+          "title": "基本用法",
+          "detail": "表习惯（I get up at 7）、客观真理（The sun rises in the east）、现状（He likes music）。"
+        },
+        {
+          "title": "第三人称单数",
+          "detail": "主语三单，动词加 -s/-es（go→goes, study→studies, watch→watches）；助动词用 does。"
+        },
+        {
+          "title": "句式变化",
+          "detail": "否定/疑问用 do/does；三单用 does，后接动词原形。"
+        }
+      ],
+      "pitfalls": [
+        "客观真理永远用一般现在时，即使主句过去时（He said the earth goes around the sun）。",
+        "三单助动词 does 后动词必须还原。"
+      ],
+      "examples": [
+        {
+          "stem": "Tom ___ to school by bus every day.",
+          "options": [
+            "go",
+            "goes",
+            "going"
+          ],
+          "answer": 1,
+          "analysis": "主语三单，动词加 es。"
+        },
+        {
+          "stem": "___ she like apples? —Yes.",
+          "options": [
+            "Do",
+            "Does",
+            "Is"
+          ],
+          "answer": 1,
+          "analysis": "三单用 Does。"
+        },
+        {
+          "stem": "The teacher said light ___ faster than sound.",
+          "options": [
+            "traveled",
+            "travels",
+            "travel"
+          ],
+          "answer": 1,
+          "analysis": "客观真理用一般现在时。"
+        }
+      ]
+    },
+    {
+      "id": "g09",
+      "title": "一般过去时",
+      "overview": "一般过去时表示过去某时发生的动作或状态。中考重点是规则/不规则动词过去式及时间状语。",
+      "points": [
+        {
+          "title": "动词过去式",
+          "detail": "规则加 -ed；以 e 结尾加 -d；辅元辅双写加 -ed；y 前辅音变 i 加 -ed。不规则需记忆（go→went, see→saw, do→did）。"
+        },
+        {
+          "title": "be 动词过去式",
+          "detail": "am/is→was, are→were；否定 wasn't/weren't，疑问提前。"
+        },
+        {
+          "title": "时间状语",
+          "detail": "yesterday, last week, ...ago, in 2020, just now 等。"
+        }
+      ],
+      "pitfalls": [
+        "实义动词过去时否定/疑问用 did，后接动词原形（didn't go）。",
+        "不规则动词过去式无固定规律，需专门记忆。"
+      ],
+      "examples": [
+        {
+          "stem": "I ___ a film last night.",
+          "options": [
+            "watch",
+            "watched",
+            "watching"
+          ],
+          "answer": 1,
+          "analysis": "last night 用过去式。"
+        },
+        {
+          "stem": "He didn't ___ his homework.",
+          "options": [
+            "finish",
+            "finished",
+            "finishes"
+          ],
+          "answer": 0,
+          "analysis": "didn't 后接原形。"
+        },
+        {
+          "stem": "She ___ to Beijing in 2019.",
+          "options": [
+            "go",
+            "went",
+            "goes"
+          ],
+          "answer": 1,
+          "analysis": "过去时用 went。"
+        }
+      ]
+    },
+    {
+      "id": "g10",
+      "title": "一般将来时",
+      "overview": "一般将来时表示将要发生的动作。中考考查 will 与 be going to 的区别。",
+      "points": [
+        {
+          "title": "will + 动词原形",
+          "detail": "表示将来（无人称变化），否定 won't，疑问 will 提前；There will be 将来存在句。"
+        },
+        {
+          "title": "be going to + 原形",
+          "detail": "表打算、计划或迹象表明即将发生；随主语变 be（am/is/are）。"
+        },
+        {
+          "title": "其他表达",
+          "detail": "现在进行时表将来（I am leaving tomorrow）、be about to（即将）。"
+        }
+      ],
+      "pitfalls": [
+        "will 的否定缩写是 won't，不是 willn't。",
+        "There will be 的 be 永远用原形，不随主语变化。"
+      ],
+      "examples": [
+        {
+          "stem": "I think it ___ rain tomorrow.",
+          "options": [
+            "will",
+            "won't",
+            "is"
+          ],
+          "answer": 1,
+          "analysis": "否定推测用 won't。"
+        },
+        {
+          "stem": "We ___ a picnic next Sunday.",
+          "options": [
+            "have",
+            "are having",
+            "are going to have"
+          ],
+          "answer": 2,
+          "analysis": "计划用 be going to。"
+        },
+        {
+          "stem": "There ___ more trees planted next year.",
+          "options": [
+            "will be",
+            "will have",
+            "are"
+          ],
+          "answer": 0,
+          "analysis": "将来存在句用 will be。"
+        }
+      ]
+    },
+    {
+      "id": "g11",
+      "title": "现在进行时",
+      "overview": "现在进行时表示此刻或现阶段正在进行的动作，结构 be + V-ing。",
+      "points": [
+        {
+          "title": "结构与时态",
+          "detail": "am/is/are + 现在分词；常与 now, at the moment, look, listen 连用。"
+        },
+        {
+          "title": "V-ing 变化",
+          "detail": "一般加 -ing；去 e 加 -ing（make→making）；辅元辅双写加 -ing（run→running, swim→swimming）；ie 变 y（lie→lying）。"
+        }
+      ],
+      "pitfalls": [
+        "感官/状态动词（know, like, have, belong）一般不用进行时。",
+        "swim 双写 m 加 ing，不是 swiming。"
+      ],
+      "examples": [
+        {
+          "stem": "Look! The boys ___ soccer.",
+          "options": [
+            "play",
+            "are playing",
+            "played"
+          ],
+          "answer": 1,
+          "analysis": "look 提示现在进行时。"
+        },
+        {
+          "stem": "She is ___ (write) a letter now.",
+          "options": [
+            "write",
+            "writing",
+            "writting"
+          ],
+          "answer": 1,
+          "analysis": "去 e 加 ing。"
+        },
+        {
+          "stem": "They are ___ (run) on the playground.",
+          "options": [
+            "runing",
+            "running",
+            "run"
+          ],
+          "answer": 1,
+          "analysis": "双写 n 加 ing。"
+        }
+      ]
+    },
+    {
+      "id": "g12",
+      "title": "过去进行时",
+      "overview": "过去进行时表示过去某时刻正在进行的动作，结构 was/were + V-ing。",
+      "points": [
+        {
+          "title": "结构与用法",
+          "detail": "was/were + V-ing；常与 at 8 last night, when 从句连用，表示'长动作被打断'。"
+        },
+        {
+          "title": "when 与 while",
+          "detail": "when 后接短动作（一般过去时），while 后接长动作（过去进行时）；也可 while + 过去进行时, when + 过去时。"
+        }
+      ],
+      "pitfalls": [
+        "when 引导的从句用过去时，主句用过去进行时，表示被打断。",
+        "at that time / this time yesterday 是典型标志。"
+      ],
+      "examples": [
+        {
+          "stem": "I ___ TV at 8 p.m. yesterday.",
+          "options": [
+            "watched",
+            "was watching",
+            "watch"
+          ],
+          "answer": 1,
+          "analysis": "过去某时刻用过去进行时。"
+        },
+        {
+          "stem": "While I ___ , it began to rain.",
+          "options": [
+            "slept",
+            "was sleeping",
+            "sleep"
+          ],
+          "answer": 1,
+          "analysis": "while 后接过去进行时。"
+        },
+        {
+          "stem": "What ___ you ___ when he called?",
+          "options": [
+            "were; doing",
+            "did; do",
+            "are; doing"
+          ],
+          "answer": 0,
+          "analysis": "when 从句过去时，主句过去进行时。"
+        }
+      ]
+    },
+    {
+      "id": "g13",
+      "title": "现在完成时",
+      "overview": "现在完成时表示过去发生、与现在有关的动作，结构 have/has + 过去分词。",
+      "points": [
+        {
+          "title": "基本结构",
+          "detail": "have/has + 过去分词；否定 haven't/hasn't，疑问提前 have/has。"
+        },
+        {
+          "title": "yet/already/ever/never",
+          "detail": "yet 用于疑问/否定句末，already 用于肯定句中；ever 曾经，never 从未。"
+        },
+        {
+          "title": "for 与 since",
+          "detail": "for + 时间段（for two years），since + 时间点/从句（since 2020 / since I was ten）。"
+        },
+        {
+          "title": "been to 与 gone to",
+          "detail": "have been to 去过已回；have gone to 去了未回。"
+        }
+      ],
+      "pitfalls": [
+        "现在完成时不能与具体过去时间（yesterday, last week）连用。",
+        "since 后接时间点或一般过去时从句，for 后接时间段。"
+      ],
+      "examples": [
+        {
+          "stem": "I have ___ finished my homework.",
+          "options": [
+            "yet",
+            "already",
+            "ever"
+          ],
+          "answer": 1,
+          "analysis": "肯定句用 already。"
+        },
+        {
+          "stem": "He has gone to the library. That means he ___ there now.",
+          "options": [
+            "is",
+            "was",
+            "isn't"
+          ],
+          "answer": 2,
+          "analysis": "has gone to 人未回，所以不在。"
+        },
+        {
+          "stem": "She has learned English ___ 2018.",
+          "options": [
+            "for",
+            "since",
+            "in"
+          ],
+          "answer": 1,
+          "analysis": "时间点用 since。"
+        }
+      ]
+    },
+    {
+      "id": "g14",
+      "title": "被动语态",
+      "overview": "被动语态表示主语是动作的承受者，结构 be + 过去分词（by 引出执行者）。",
+      "points": [
+        {
+          "title": "各时态被动",
+          "detail": "一般现在时 am/is/are done；一般过去时 was/were done；一般将来时 will be done；现在完成时 have/has been done。"
+        },
+        {
+          "title": "含情态动词被动",
+          "detail": "情态动词 + be + 过去分词（must be done, should be allowed to do）。"
+        },
+        {
+          "title": "主动变被动",
+          "detail": "宾语变主语，谓语变 be+done，原主语变 by 宾语；不及物动词无被动。"
+        }
+      ],
+      "pitfalls": [
+        "被动语态的 be 必须和时态、主语数一致。",
+        "不及物动词（happen, belong, appear）无被动语态。"
+      ],
+      "examples": [
+        {
+          "stem": "English ___ spoken by many people.",
+          "options": [
+            "is",
+            "was",
+            "be"
+          ],
+          "answer": 0,
+          "analysis": "一般现在时被动 is spoken。"
+        },
+        {
+          "stem": "The book ___ by Lu Xun.",
+          "options": [
+            "wrote",
+            "was written",
+            "is writing"
+          ],
+          "answer": 1,
+          "analysis": "过去被动 was written。"
+        },
+        {
+          "stem": "The work must ___ today.",
+          "options": [
+            "finish",
+            "be finished",
+            "finished"
+          ],
+          "answer": 1,
+          "analysis": "情态被动 must be finished。"
+        }
+      ]
+    },
+    {
+      "id": "g15",
+      "title": "动词不定式",
+      "overview": "动词不定式 to do 可作宾语、目的状语、补语等。中考重点是后接不定式的动词。",
+      "points": [
+        {
+          "title": "作宾语",
+          "detail": "want/hope/plan/decide/agree/refuse/learn/expect 等后接 to do；help (to) do 中 to 可省。"
+        },
+        {
+          "title": "作目的状语",
+          "detail": "To get good grades, he studies hard.（表目的，可放句首）。"
+        },
+        {
+          "title": "疑问词 + 不定式",
+          "detail": "how to do, what to do, where to go 可作宾语（I don't know how to solve it）。"
+        }
+      ],
+      "pitfalls": [
+        "make/let/have 后接不带 to 的不定式（make sb do），被动时补 to（be made to do）。",
+        "介词后接动名词不接不定式（look forward to doing）。"
+      ],
+      "examples": [
+        {
+          "stem": "He wants ___ a doctor.",
+          "options": [
+            "be",
+            "to be",
+            "being"
+          ],
+          "answer": 1,
+          "analysis": "want 后接 to do。"
+        },
+        {
+          "stem": "I don't know ___ next.",
+          "options": [
+            "what to do",
+            "what do",
+            "do what"
+          ],
+          "answer": 0,
+          "analysis": "疑问词 + 不定式。"
+        },
+        {
+          "stem": "The teacher made him ___ the room.",
+          "options": [
+            "clean",
+            "to clean",
+            "cleaning"
+          ],
+          "answer": 0,
+          "analysis": "make sb do 用原形。"
+        }
+      ]
+    },
+    {
+      "id": "g16",
+      "title": "动名词",
+      "overview": "动名词 doing 具名词性质，可作主语、宾语。中考重点在固定搭配。",
+      "points": [
+        {
+          "title": "作主语与宾语",
+          "detail": "Reading is fun.（主语）I like swimming.（宾语）。"
+        },
+        {
+          "title": "固定搭配",
+          "detail": "enjoy/mind/finish/practice/consider/keep + doing；be busy doing；look forward to doing。"
+        },
+        {
+          "title": "remember/forget + doing/to do",
+          "detail": "doing 表示'记得/忘记做过'；to do 表示'记得/忘记要去做'。"
+        }
+      ],
+      "pitfalls": [
+        "to 作介词时（look forward to, be used to）后接动名词，不是不定式。",
+        "stop doing（停止做）与 stop to do（停下来去做）意思不同。"
+      ],
+      "examples": [
+        {
+          "stem": "She enjoys ___ music.",
+          "options": [
+            "listen",
+            "listening",
+            "to listen"
+          ],
+          "answer": 1,
+          "analysis": "enjoy 后接动名词。"
+        },
+        {
+          "stem": "I look forward to ___ you.",
+          "options": [
+            "see",
+            "seeing",
+            "saw"
+          ],
+          "answer": 1,
+          "analysis": "to 是介词，后接动名词。"
+        },
+        {
+          "stem": "Please remember ___ the door.",
+          "options": [
+            "lock",
+            "to lock",
+            "locking"
+          ],
+          "answer": 1,
+          "analysis": "记得去做用 to lock。"
+        }
+      ]
+    },
+    {
+      "id": "g17",
+      "title": "情态动词",
+      "overview": "情态动词 can/may/must/should 等后接动词原形，无人称和数的变化。",
+      "points": [
+        {
+          "title": "基本辨析",
+          "detail": "can（能/会）、may（可以/可能）、must（必须）、should（应该）、need（需要）。"
+        },
+        {
+          "title": "表推测",
+          "detail": "must（一定，把握大）、may/might/could（可能）、can't（不可能，把握大）。"
+        },
+        {
+          "title": "回答方式",
+          "detail": "Must I...? 否定用 needn't（不必）；May I...? 用 Yes, you may / No, you mustn't。"
+        }
+      ],
+      "pitfalls": [
+        "must 开头的一般疑问句，否定回答用 needn't 而非 mustn't。",
+        "can't 表推测'不可能'，语气强；may not 表'可能不'。"
+      ],
+      "examples": [
+        {
+          "stem": "—Must I finish it now? —No, you ___ .",
+          "options": [
+            "mustn't",
+            "needn't",
+            "can't"
+          ],
+          "answer": 1,
+          "analysis": "must 否定回答用 needn't。"
+        },
+        {
+          "stem": "The book ___ be Lily's. She loves it.",
+          "options": [
+            "must",
+            "can't",
+            "may not"
+          ],
+          "answer": 0,
+          "analysis": "把握大用 must。"
+        },
+        {
+          "stem": "You ___ smoke here. It's dangerous.",
+          "options": [
+            "mustn't",
+            "needn't",
+            "may not"
+          ],
+          "answer": 0,
+          "analysis": "禁止用 mustn't。"
+        }
+      ]
+    },
+    {
+      "id": "g18",
+      "title": "be going to 与 will",
+      "overview": "两者都表将来，但 be going to 强调计划/迹象，will 强调临时决定或预测。",
+      "points": [
+        {
+          "title": "be going to 的用法",
+          "detail": "表示事先打算、计划或已有迹象（Look at the clouds! It's going to rain）。"
+        },
+        {
+          "title": "will 的用法",
+          "detail": "表示说话时临时决定、预测或意愿（I'll help you.）；客观将来。"
+        }
+      ],
+      "pitfalls": [
+        "已有明显迹象时用 be going to 不用 will。",
+        "承诺、临时决定常用 will。"
+      ],
+      "examples": [
+        {
+          "stem": "Look at the black sky! It ___ rain.",
+          "options": [
+            "is going to",
+            "will",
+            "is"
+          ],
+          "answer": 0,
+          "analysis": "有迹象用 be going to。"
+        },
+        {
+          "stem": "—The phone is ringing. —I ___ answer it.",
+          "options": [
+            "am going to",
+            "will",
+            "am"
+          ],
+          "answer": 1,
+          "analysis": "临时决定用 will。"
+        },
+        {
+          "stem": "We ___ a party next Sunday.",
+          "options": [
+            "have",
+            "are going to have",
+            "will have"
+          ],
+          "answer": 1,
+          "analysis": "计划用 be going to。"
+        }
+      ]
+    },
+    {
+      "id": "g19",
+      "title": "祈使句",
+      "overview": "祈使句表示请求、命令、建议，以动词原形开头，否定用 Don't + 原形。",
+      "points": [
+        {
+          "title": "肯定与否定",
+          "detail": "肯定：动词原形开头（Open the door.）；否定：Don't + 原形（Don't run.）。"
+        },
+        {
+          "title": "Let 开头",
+          "detail": "Let's + 原形（包括对方）；Let us 可仅指我们；否定 Let's not。"
+        },
+        {
+          "title": "短语动词祈使",
+          "detail": "turn on/off, clean up, pick up 等，代词宾语放中间（turn it on）。"
+        }
+      ],
+      "pitfalls": [
+        "祈使句主语 you 通常省略，谓语用原形。",
+        "No + 动名词 也可表禁止（No smoking）。"
+      ],
+      "examples": [
+        {
+          "stem": "___ late for class.",
+          "options": [
+            "Don't be",
+            "Not be",
+            "Be not"
+          ],
+          "answer": 0,
+          "analysis": "祈使否定 Don't be + 形。"
+        },
+        {
+          "stem": "Please ___ the light.",
+          "options": [
+            "turn on",
+            "turn it on",
+            "turn on it"
+          ],
+          "answer": 1,
+          "analysis": "代词放中间。"
+        },
+        {
+          "stem": "___ quiet in the library.",
+          "options": [
+            "Be",
+            "Don't",
+            "To be"
+          ],
+          "answer": 0,
+          "analysis": "祈使句用动词原形 Be。"
+        }
+      ]
+    },
+    {
+      "id": "g20",
+      "title": "感叹句",
+      "overview": "感叹句由 What 或 How 引导，考查二者辨析。",
+      "points": [
+        {
+          "title": "What 引导",
+          "detail": "What + (a/an) + 形容词 + 名词 (+ 主谓)！（What a beautiful girl! / What fine weather!）"
+        },
+        {
+          "title": "How 引导",
+          "detail": "How + 形容词/副词 (+ 主谓)！（How beautiful! / How fast he runs!）"
+        }
+      ],
+      "pitfalls": [
+        "判断关键：紧接名词用 What，紧接形容词/副词用 How。",
+        "不可数名词前 What 不加 a（What good news!）。"
+      ],
+      "examples": [
+        {
+          "stem": "___ beautiful flowers they are!",
+          "options": [
+            "What",
+            "How",
+            "What a"
+          ],
+          "answer": 0,
+          "analysis": "flowers 复数，用 What + 形容词 + 名词。"
+        },
+        {
+          "stem": "___ fast he runs!",
+          "options": [
+            "What",
+            "How",
+            "How a"
+          ],
+          "answer": 1,
+          "analysis": "紧接副词 fast 用 How。"
+        },
+        {
+          "stem": "___ good news it is!",
+          "options": [
+            "What a",
+            "What",
+            "How"
+          ],
+          "answer": 1,
+          "analysis": "news 不可数，用 What 无 a。"
+        }
+      ]
+    },
+    {
+      "id": "g21",
+      "title": "疑问句",
+      "overview": "疑问句包括一般疑问句、特殊疑问句与反意疑问句。",
+      "points": [
+        {
+          "title": "一般疑问句",
+          "detail": "be/情态/助动词提前，回答用 yes/no；some 在希望肯定回答时不变 any。"
+        },
+        {
+          "title": "特殊疑问句",
+          "detail": "疑问词(what/who/where/when/why/how) + 一般疑问句语序；how 系列：how many/much/long/far/often。"
+        },
+        {
+          "title": "反意疑问句",
+          "detail": "前肯后否、前否后肯；主语用人称代词；祈使句后多用 will you。"
+        }
+      ],
+      "pitfalls": [
+        "反意疑问句主语必须用人称代词，不用名词。",
+        "There be 的反意用 there，不用 it。"
+      ],
+      "examples": [
+        {
+          "stem": "—___ do you go to school? —By bus.",
+          "options": [
+            "What",
+            "How",
+            "When"
+          ],
+          "answer": 1,
+          "analysis": "问交通方式用 How。"
+        },
+        {
+          "stem": "He is a teacher, ___ ?",
+          "options": [
+            "is he",
+            "isn't he",
+            "does he"
+          ],
+          "answer": 1,
+          "analysis": "前肯后否 isn't he。"
+        },
+        {
+          "stem": "Let's go, ___ ?",
+          "options": [
+            "will you",
+            "shall we",
+            "don't you"
+          ],
+          "answer": 1,
+          "analysis": "Let's 后用 shall we。"
+        }
+      ]
+    },
+    {
+      "id": "g22",
+      "title": "There be 句型",
+      "overview": "There be 表示'某地有某物'，be 与最近名词保持一致（就近原则）。",
+      "points": [
+        {
+          "title": "就近原则",
+          "detail": "There is a book and two pens. / There are two pens and a book."
+        },
+        {
+          "title": "时态与数量",
+          "detail": "There was/were；There will be（将来）；How many 提问用 are there。"
+        }
+      ],
+      "pitfalls": [
+        "There be 表'存在有'，have 表'拥有'，二者不混用（不能说 There have）。",
+        "be 永远与最近的名词数一致。"
+      ],
+      "examples": [
+        {
+          "stem": "There ___ a pen and two books on the desk.",
+          "options": [
+            "are",
+            "is",
+            "have"
+          ],
+          "answer": 1,
+          "analysis": "就近原则，a pen 单数用 is。"
+        },
+        {
+          "stem": "There ___ some milk in the cup.",
+          "options": [
+            "are",
+            "is",
+            "have"
+          ],
+          "answer": 1,
+          "analysis": "milk 不可数用 is。"
+        },
+        {
+          "stem": "___ there any students in the room?",
+          "options": [
+            "Is",
+            "Are",
+            "Have"
+          ],
+          "answer": 1,
+          "analysis": "students 复数用 Are。"
+        }
+      ]
+    },
+    {
+      "id": "g23",
+      "title": "宾语从句",
+      "overview": "宾语从句作主句的宾语，考查语序、时态呼应和引导词。",
+      "points": [
+        {
+          "title": "陈述语序",
+          "detail": "从句永远用陈述语序（主语在前）：Could you tell me where he is?（不是 is he）。"
+        },
+        {
+          "title": "引导词",
+          "detail": "that（可省，陈述事实）、if/whether（是否）、疑问词 what/who/when 等。"
+        },
+        {
+          "title": "时态呼应",
+          "detail": "主句过去时，从句用相应过去时态；客观真理仍用一般现在时。"
+        }
+      ],
+      "pitfalls": [
+        "无论原句是疑问，转换后从句都用陈述语序。",
+        "if 表'是否'时不能与 whether 在宾语从句随意互换（介词后、不定式前用 whether）。"
+      ],
+      "examples": [
+        {
+          "stem": "Do you know ___ ?",
+          "options": [
+            "where is he",
+            "where he is",
+            "he is where"
+          ],
+          "answer": 1,
+          "analysis": "从句用陈述语序。"
+        },
+        {
+          "stem": "I think ___ he will come.",
+          "options": [
+            "that",
+            "if",
+            "what"
+          ],
+          "answer": 0,
+          "analysis": "陈述事实用 that。"
+        },
+        {
+          "stem": "She said the earth ___ around the sun.",
+          "options": [
+            "went",
+            "goes",
+            "will go"
+          ],
+          "answer": 1,
+          "analysis": "客观真理用一般现在时。"
+        }
+      ]
+    },
+    {
+      "id": "g24",
+      "title": "定语从句",
+      "overview": "定语从句修饰名词，由关系词引导。中考重点为 that/which/who 的用法。",
+      "points": [
+        {
+          "title": "关系代词",
+          "detail": "that/which 指物，who/whom 指人；在从句中作主语或宾语（作宾语可省略）。"
+        },
+        {
+          "title": "使用要点",
+          "detail": "先行词被最高级/序数词修饰常用 that；逗号后非限制性从句不用 that。"
+        }
+      ],
+      "pitfalls": [
+        "关系代词在从句中作主语时不可省略，且谓语数要与先行词一致。",
+        "先行词既有人又有物时用 that。"
+      ],
+      "examples": [
+        {
+          "stem": "The book ___ is on the desk is mine.",
+          "options": [
+            "who",
+            "that",
+            "what"
+          ],
+          "answer": 1,
+          "analysis": "修饰物用 that/which。"
+        },
+        {
+          "stem": "The girl ___ won the game is my friend.",
+          "options": [
+            "which",
+            "who",
+            "what"
+          ],
+          "answer": 1,
+          "analysis": "修饰人用 who。"
+        },
+        {
+          "stem": "This is the best film ___ I have seen.",
+          "options": [
+            "which",
+            "that",
+            "what"
+          ],
+          "answer": 1,
+          "analysis": "最高级修饰用 that。"
+        }
+      ]
+    },
+    {
+      "id": "g25",
+      "title": "状语从句",
+      "overview": "状语从句修饰主句，含时间、条件、原因、让步等，考查连词与时态配合。",
+      "points": [
+        {
+          "title": "时间状语从句",
+          "detail": "when/while/as/before/after/until/as soon as 引导；as soon as 主将从现。"
+        },
+        {
+          "title": "条件状语从句",
+          "detail": "if/unless 引导，遵循'主将从现'：If it rains, we will stay."
+        },
+        {
+          "title": "原因与让步",
+          "detail": "because 原因；although/though 让步（不与 but 连用）；so...that 结果。"
+        }
+      ],
+      "pitfalls": [
+        "if/unless 从句用一般现在时表将来（主将从现）。",
+        "although 不与 but 连用，because 不与 so 连用。"
+      ],
+      "examples": [
+        {
+          "stem": "I'll call you as soon as I ___ home.",
+          "options": [
+            "get",
+            "will get",
+            "got"
+          ],
+          "answer": 0,
+          "analysis": "as soon as 主将从现。"
+        },
+        {
+          "stem": "___ it is raining, we stay at home.",
+          "options": [
+            "Because",
+            "So",
+            "But"
+          ],
+          "answer": 0,
+          "analysis": "原因用 Because。"
+        },
+        {
+          "stem": "He is ___ tired ___ he falls asleep.",
+          "options": [
+            "so; that",
+            "too; to",
+            "such; that"
+          ],
+          "answer": 0,
+          "analysis": "so + 形 + that 如此…以至于。"
+        }
+      ]
+    },
+    {
+      "id": "g26",
+      "title": "if 条件句（主将从现）",
+      "overview": "if 引导的条件状语从句，主句用一般将来时，从句用一般现在时。",
+      "points": [
+        {
+          "title": "主将从现",
+          "detail": "主句将来时，if 从句现在时：If you study hard, you will pass."
+        },
+        {
+          "title": "unless = if not",
+          "detail": "Unless you hurry, you'll be late. = If you don't hurry, you'll be late."
+        }
+      ],
+      "pitfalls": [
+        "if 从句绝不出现 will（除非表'是否'宾语从句）。",
+        "主句将来时，从句现在时，不可都用将来时。"
+      ],
+      "examples": [
+        {
+          "stem": "If it ___ tomorrow, we will stay home.",
+          "options": [
+            "rains",
+            "will rain",
+            "rained"
+          ],
+          "answer": 0,
+          "analysis": "if 从句用现在时 rains。"
+        },
+        {
+          "stem": "Unless you ___ , you'll fail.",
+          "options": [
+            "study",
+            "will study",
+            "studied"
+          ],
+          "answer": 0,
+          "analysis": "unless 后接现在时。"
+        },
+        {
+          "stem": "If he ___ free, he will come.",
+          "options": [
+            "is",
+            "will be",
+            "was"
+          ],
+          "answer": 0,
+          "analysis": "if 从句用 is。"
+        }
+      ]
+    },
+    {
+      "id": "g27",
+      "title": "used to do",
+      "overview": "used to do 表示过去常常（现在已不），区分 be used to doing。",
+      "points": [
+        {
+          "title": "used to + 原形",
+          "detail": "表过去习惯/状态（I used to be short.），否定 didn't use to，疑问 Did...use to。"
+        },
+        {
+          "title": "be used to doing",
+          "detail": "表'习惯于'，to 是介词，后接动名词（He is used to getting up early）。"
+        }
+      ],
+      "pitfalls": [
+        "used to 后接动词原形；be used to 后接动名词，含义完全不同。",
+        "否定/疑问借助 did（Did you use to...?），不用 usedn't 常见写法。"
+      ],
+      "examples": [
+        {
+          "stem": "He ___ play soccer after school.",
+          "options": [
+            "used to",
+            "use to",
+            "is used to"
+          ],
+          "answer": 0,
+          "analysis": "过去习惯用 used to。"
+        },
+        {
+          "stem": "She is used to ___ early.",
+          "options": [
+            "get",
+            "getting",
+            "got"
+          ],
+          "answer": 1,
+          "analysis": "be used to doing。"
+        },
+        {
+          "stem": "Did you use to ___ short?",
+          "options": [
+            "be",
+            "being",
+            "been"
+          ],
+          "answer": 0,
+          "analysis": "used to 后接原形 be。"
+        }
+      ]
+    },
+    {
+      "id": "g28",
+      "title": "主谓一致",
+      "overview": "主语与谓语在数上保持一致。中考考查集合名词、不定代词、并列主语等。",
+      "points": [
+        {
+          "title": "不定代词作主语",
+          "detail": "everyone/something/nobody 等谓语用单数；both/each 视情况。"
+        },
+        {
+          "title": "并列与集合",
+          "detail": "and 连接两个名词谓语用复数；with/together with 就远；family/class 强调整体用单数、强调成员用复数。"
+        },
+        {
+          "title": "数量短语",
+          "detail": "a number of + 复数名词谓语复数；the number of + 名词谓语单数。"
+        }
+      ],
+      "pitfalls": [
+        "the number of 作主语谓语用单数，a number of 用复数。",
+        "each of / one of 谓语用单数。"
+      ],
+      "examples": [
+        {
+          "stem": "The number of students ___ 50.",
+          "options": [
+            "are",
+            "is",
+            "were"
+          ],
+          "answer": 1,
+          "analysis": "the number of 用单数。"
+        },
+        {
+          "stem": "Neither of them ___ right.",
+          "options": [
+            "are",
+            "is",
+            "were"
+          ],
+          "answer": 1,
+          "analysis": "neither 谓语单数。"
+        },
+        {
+          "stem": "Tom with his friends ___ playing.",
+          "options": [
+            "are",
+            "is",
+            "were"
+          ],
+          "answer": 1,
+          "analysis": "就远原则，Tom 单数用 is。"
+        }
+      ]
+    },
+    {
+      "id": "g29",
+      "title": "过去完成时",
+      "overview": "过去完成时 had + 过去分词，表示'过去的过去'。",
+      "points": [
+        {
+          "title": "基本用法",
+          "detail": "在另一过去动作之前已发生（When I got there, the bus had left）。"
+        },
+        {
+          "title": "by the time",
+          "detail": "By the time + 过去时从句，主句常用过去完成时。"
+        }
+      ],
+      "pitfalls": [
+        "必须有'两个过去动作'的时间参照，否则不用过去完成时。",
+        "与一般过去时的区别：强调'先于另一过去动作'。"
+      ],
+      "examples": [
+        {
+          "stem": "By the time I woke up, it ___ .",
+          "options": [
+            "stopped",
+            "had stopped",
+            "has stopped"
+          ],
+          "answer": 1,
+          "analysis": "过去的过去用过去完成时。"
+        },
+        {
+          "stem": "He said he ___ the film before.",
+          "options": [
+            "saw",
+            "had seen",
+            "has seen"
+          ],
+          "answer": 1,
+          "analysis": "said 之前用 had seen。"
+        },
+        {
+          "stem": "The train ___ when we arrived.",
+          "options": [
+            "left",
+            "had left",
+            "has left"
+          ],
+          "answer": 1,
+          "analysis": "arrived 之前用 had left。"
+        }
+      ]
+    },
+    {
+      "id": "g30",
+      "title": "交际用语",
+      "overview": "交际用语考查日常情景对话的得体应答，如问候、邀请、劝告、祝愿等。",
+      "points": [
+        {
+          "title": "邀请与建议",
+          "detail": "Can you...? 肯定 Sure, I'd love to.；Why not...? / You should... 提建议。"
+        },
+        {
+          "title": "感谢与道歉",
+          "detail": "Thank you. —You're welcome./My pleasure.；Sorry. —Never mind./It doesn't matter."
+        },
+        {
+          "title": "祝愿与请求",
+          "detail": "Good luck! / Have a good time!；Could you please...? 礼貌请求。"
+        }
+      ],
+      "pitfalls": [
+        "接受邀请用 Sure, I'd love to，不用 Yes, I would love（缺 to）。",
+        "道歉应答用 Never mind 而非 Don't mind。"
+      ],
+      "examples": [
+        {
+          "stem": "—Can you come to my party? —___ .",
+          "options": [
+            "Sure, I'd love to",
+            "Yes, I would love",
+            "No, I wouldn't"
+          ],
+          "answer": 0,
+          "analysis": "接受邀请用 Sure, I'd love to。"
+        },
+        {
+          "stem": "—Thank you for your help. —___ .",
+          "options": [
+            "Never mind",
+            "You're welcome",
+            "It doesn't matter"
+          ],
+          "answer": 1,
+          "analysis": "感谢应答 You're welcome。"
+        },
+        {
+          "stem": "—I'm sorry I'm late. —___ .",
+          "options": [
+            "You're welcome",
+            "Never mind",
+            "That's right"
+          ],
+          "answer": 1,
+          "analysis": "道歉应答 Never mind。"
+        }
+      ]
+    }
+  ]
+};
+
 var graded_reading_default = {"product": "小学英语分级阅读起步（3 级 12 篇）", "version": "1.0", "schema_version": "1.0", "note": "对应新课标课外阅读量要求；内容 AI 生成待创始人校对", "levels": [{"id": "r1", "name": "起步级", "desc": "适合 3-4 年级 · 每篇约 80 词", "articles": [{"id": "r1a1", "title": "My School Day", "text": "Hello! I am Ben. I am eight years old. I go to school at seven thirty. We have English, math and music today. At noon, I have lunch with my friends. After school, I play football in the playground. I love my school.", "audio": "/audio/rd/r1a1.mp3", "words": [{"word": "school", "meaning": "学校"}, {"word": "lunch", "meaning": "午餐"}, {"word": "friends", "meaning": "朋友们"}, {"word": "playground", "meaning": "操场"}, {"word": "love", "meaning": "爱"}], "questions": [{"id": "r1a1-q1", "q2": "Ben 几岁了？", "options": ["七岁", "八岁", "九岁"], "answer": 1, "tip": "I am eight years old."}, {"id": "r1a1-q2", "q2": "放学后 Ben 做什么？", "options": ["踢足球", "读书", "画画"], "answer": 0, "tip": "After school, I play football."}, {"id": "r1a1-q3", "q2": "Ben 喜欢学校吗？", "options": ["喜欢", "不喜欢", "不确定"], "answer": 0, "tip": "I love my school."}]}, {"id": "r1a2", "title": "My Pet Dog", "text": "I have a pet dog. Its name is Lucky. Lucky is white and brown. It has big eyes and a long tail. Lucky likes to run and jump. It likes eating bones. I play with Lucky every day. It is my best friend.", "audio": "/audio/rd/r1a2.mp3", "words": [{"word": "pet", "meaning": "宠物"}, {"word": "tail", "meaning": "尾巴"}, {"word": "bones", "meaning": "骨头"}, {"word": "best", "meaning": "最好的"}, {"word": "friend", "meaning": "朋友"}], "questions": [{"id": "r1a2-q1", "q2": "狗叫什么名字？", "options": ["Lucky", "Ben", "Tom"], "answer": 0, "tip": "Its name is Lucky."}, {"id": "r1a2-q2", "q2": "Lucky 喜欢做什么？", "options": ["跑和跳", "睡觉", "游泳"], "answer": 0, "tip": "Lucky likes to run and jump."}, {"id": "r1a2-q3", "q2": "狗喜欢吃什么？", "options": ["骨头", "米饭", "苹果"], "answer": 0, "tip": "eating bones 吃骨头。"}]}, {"id": "r1a3", "title": "At the Zoo", "text": "Today is Sunday. We go to the zoo. There are many animals. The monkeys are funny. They jump and climb. The pandas are fat and cute. They eat bamboo. The elephants are very big. I like the monkeys best.", "audio": "/audio/rd/r1a3.mp3", "words": [{"word": "zoo", "meaning": "动物园"}, {"word": "monkeys", "meaning": "猴子"}, {"word": "pandas", "meaning": "熊猫"}, {"word": "bamboo", "meaning": "竹子"}, {"word": "elephants", "meaning": "大象"}], "questions": [{"id": "r1a3-q1", "q2": "他们去了哪里？", "options": ["动物园", "公园", "博物馆"], "answer": 0, "tip": "go to the zoo."}, {"id": "r1a3-q2", "q2": "熊猫吃什么？", "options": ["竹子", "香蕉", "鱼"], "answer": 0, "tip": "They eat bamboo."}, {"id": "r1a3-q3", "q2": "作者最喜欢什么动物？", "options": ["猴子", "熊猫", "大象"], "answer": 0, "tip": "I like the monkeys best."}]}, {"id": "r1a4", "title": "The Weather", "text": "Look at the sky. It is cloudy today. The wind is blowing. Mum says it will rain soon. I take my umbrella to school. In the afternoon, it rains. After the rain, the sky is blue and clean. The flowers are beautiful.", "audio": "/audio/rd/r1a4.mp3", "words": [{"word": "cloudy", "meaning": "多云的"}, {"word": "wind", "meaning": "风"}, {"word": "rain", "meaning": "雨"}, {"word": "umbrella", "meaning": "雨伞"}, {"word": "flowers", "meaning": "花朵"}], "questions": [{"id": "r1a4-q1", "q2": "今天的天气怎么样？", "options": ["多云", "下雪", "晴朗"], "answer": 0, "tip": "It is cloudy today."}, {"id": "r1a4-q2", "q2": "谁说要下雨了？", "options": ["妈妈", "爸爸", "老师"], "answer": 0, "tip": "Mum says it will rain."}, {"id": "r1a4-q3", "q2": "下雨后天空怎么样？", "options": ["蓝而干净", "灰暗", "有彩虹"], "answer": 0, "tip": "the sky is blue and clean."}]}]}, {"id": "r2", "name": "进阶级", "desc": "适合 4-5 年级 · 每篇约 110 词", "articles": [{"id": "r2a1", "title": "My Favourite Season", "text": "There are four seasons in a year. My favourite season is autumn. The weather is cool and nice. The leaves turn yellow and red. They fall from the trees. I like to collect the beautiful leaves. In autumn, we also have the Mid-Autumn Festival. My family eats mooncakes and watches the bright moon together. It is a happy time.", "audio": "/audio/rd/r2a1.mp3", "words": [{"word": "season", "meaning": "季节"}, {"word": "autumn", "meaning": "秋天"}, {"word": "leaves", "meaning": "叶子"}, {"word": "collect", "meaning": "收集"}, {"word": "mooncakes", "meaning": "月饼"}], "questions": [{"id": "r2a1-q1", "q2": "作者最喜欢的季节是？", "options": ["秋天", "夏天", "春天"], "answer": 0, "tip": "favourite season is autumn."}, {"id": "r2a1-q2", "q2": "秋天树叶变成什么颜色？", "options": ["黄和红", "绿和蓝", "白和黑"], "answer": 0, "tip": "turn yellow and red."}, {"id": "r2a1-q3", "q2": "中秋节他们做什么？", "options": ["吃月饼看月亮", "放鞭炮", "吃粽子"], "answer": 0, "tip": "eats mooncakes and watches the moon."}]}, {"id": "r2a2", "title": "Helping at Home", "text": "I am a helpful child. I help my mother at home. After dinner, I wash the dishes. On weekends, I clean my room and sweep the floor. I also water the flowers on the balcony. My parents are happy. They say I am a good boy. Helping at home makes me happy too.", "audio": "/audio/rd/r2a2.mp3", "words": [{"word": "helpful", "meaning": "乐于助人的"}, {"word": "dishes", "meaning": "碗碟"}, {"word": "sweep", "meaning": "扫地"}, {"word": "balcony", "meaning": "阳台"}, {"word": "parents", "meaning": "父母"}], "questions": [{"id": "r2a2-q1", "q2": "作者帮妈妈做什么？", "options": ["洗碗", "做饭", "洗衣"], "answer": 0, "tip": "I wash the dishes."}, {"id": "r2a2-q2", "q2": "周末他做什么？", "options": ["打扫房间扫地", "去公园玩", "看电视"], "answer": 0, "tip": "clean my room and sweep the floor."}, {"id": "r2a2-q3", "q2": "父母觉得作者怎么样？", "options": ["好孩子", "淘气", "懒惰"], "answer": 0, "tip": "a good boy."}]}, {"id": "r2a3", "title": "Going to the Museum", "text": "Last Saturday, my family went to the Science Museum. It is near the city centre. We saw robots, dinosaurs and space things. The robots could dance and talk. I asked many questions. The guide was very kind. She told us the history of the museum. We had a wonderful time there.", "audio": "/audio/rd/r2a3.mp3", "words": [{"word": "museum", "meaning": "博物馆"}, {"word": "robots", "meaning": "机器人"}, {"word": "dinosaurs", "meaning": "恐龙"}, {"word": "guide", "meaning": "讲解员"}, {"word": "wonderful", "meaning": "精彩的"}], "questions": [{"id": "r2a3-q1", "q2": "他们去了哪个博物馆？", "options": ["科学博物馆", "历史博物馆", "美术博物馆"], "answer": 0, "tip": "Science Museum."}, {"id": "r2a3-q2", "q2": "机器人会做什么？", "options": ["跳舞说话", "飞行", "游泳"], "answer": 0, "tip": "dance and talk."}, {"id": "r2a3-q3", "q2": "讲解员怎么样？", "options": ["善良友好", "严厉", "沉默"], "answer": 0, "tip": "was very kind."}]}, {"id": "r2a4", "title": "Healthy Food", "text": "Eating healthy food is important. Fruit and vegetables are good for us. They give us vitamins. Milk and eggs make our bones strong. We should drink water every day. But we shouldn't eat too many sweets or chips. They are bad for our teeth. A healthy diet helps us study well and play well.", "audio": "/audio/rd/r2a4.mp3", "words": [{"word": "important", "meaning": "重要的"}, {"word": "vitamins", "meaning": "维生素"}, {"word": "strong", "meaning": "强壮的"}, {"word": "sweets", "meaning": "糖果"}, {"word": "diet", "meaning": "饮食"}], "questions": [{"id": "r2a4-q1", "q2": "什么对健康有好处？", "options": ["水果蔬菜", "糖果薯片", "汽水"], "answer": 0, "tip": "Fruit and vegetables are good."}, {"id": "r2a4-q2", "q2": "牛奶和鸡蛋有什么作用？", "options": ["让骨骼强壮", "让头发变黑", "让眼睛明亮"], "answer": 0, "tip": "make our bones strong."}, {"id": "r2a4-q3", "q2": "我们应该少吃什么？", "options": ["糖果薯片", "水果", "牛奶"], "answer": 0, "tip": "shouldn't eat too many sweets."}]}]}, {"id": "r3", "name": "提升级", "desc": "适合 5-6 年级 · 每篇约 140 词", "articles": [{"id": "r3a1", "title": "The Little Hero", "text": "Tom is a ten-year-old boy. One day, he saw smoke from the house next door. He ran to the house and shouted, \"Fire! Fire!\" People came quickly and called 119. The firemen arrived soon and put out the fire. An old woman was inside. She was saved in time. The reporter asked Tom, \"Weren't you afraid?\" Tom said, \"I just wanted to help.\" Everyone praised Tom. He is a little hero.", "audio": "/audio/rd/r3a1.mp3", "words": [{"word": "smoke", "meaning": "烟雾"}, {"word": "shouted", "meaning": "大喊"}, {"word": "firemen", "meaning": "消防员"}, {"word": "saved", "meaning": "获救"}, {"word": "hero", "meaning": "英雄"}], "questions": [{"id": "r3a1-q1", "q2": "Tom 看到了什么？", "options": ["烟雾", "火光", "小偷"], "answer": 0, "tip": "saw smoke from the house."}, {"id": "r3a1-q2", "q2": "谁救了老奶奶？", "options": ["消防员", "Tom 自己", "警察"], "answer": 0, "tip": "The firemen... She was saved."}, {"id": "r3a1-q3", "q2": "Tom 为什么去救火？", "options": ["想帮忙", "想出名", "被要求"], "answer": 0, "tip": "I just wanted to help."}]}, {"id": "r3a2", "title": "A Special Gift", "text": "Tomorrow is my mother's birthday. I want to give her a special gift. I have no money, so I decide to make a card myself. I draw a big flower and write \"Happy Birthday, Mum!\" on the card. In the evening, I also help Mum wash the dishes and clean the house. When Mum sees the card, she smiles happily. She says it is the best gift in the world.", "audio": "/audio/rd/r3a2.mp3", "words": [{"word": "gift", "meaning": "礼物"}, {"word": "birthday", "meaning": "生日"}, {"word": "decide", "meaning": "决定"}, {"word": "card", "meaning": "贺卡"}, {"word": "smiles", "meaning": "微笑"}], "questions": [{"id": "r3a2-q1", "q2": "作者为什么自己做贺卡？", "options": ["没有钱买", "喜欢画画", "商店关门"], "answer": 0, "tip": "I have no money."}, {"id": "r3a2-q2", "q2": "作者还在晚上做了什么？", "options": ["帮忙洗碗打扫", "出去买礼物", "看电视"], "answer": 0, "tip": "wash the dishes and clean."}, {"id": "r3a2-q3", "q2": "妈妈觉得贺卡怎么样？", "options": ["世界上最好的礼物", "一般", "不够好"], "answer": 0, "tip": "the best gift in the world."}]}, {"id": "r3a3", "title": "Protect the Earth", "text": "The Earth is our home. But today, our Earth is in danger. The rivers are dirty and the air is not clean. Many animals lose their homes because forests are cut down. We should do something. We can save water and electricity. We can ride bikes instead of driving cars. We can plant trees and recycle rubbish. Small actions make a big difference. Let's protect the Earth together.", "audio": "/audio/rd/r3a3.mp3", "words": [{"word": "danger", "meaning": "危险"}, {"word": "forests", "meaning": "森林"}, {"word": "electricity", "meaning": "电"}, {"word": "recycle", "meaning": "回收"}, {"word": "difference", "meaning": "改变"}], "questions": [{"id": "r3a3-q1", "q2": "地球面临什么问题？", "options": ["河流脏空气不干净", "人口太少", "天气太热"], "answer": 0, "tip": "rivers are dirty, air is not clean."}, {"id": "r3a3-q2", "q2": "我们可以怎么做？", "options": ["节水节电", "多开车", "砍树"], "answer": 0, "tip": "save water and electricity."}, {"id": "r3a3-q3", "q2": "短文告诉我们什么道理？", "options": ["小行动带来大改变", "保护地球很难", "地球不需要保护"], "answer": 0, "tip": "Small actions make a big difference."}]}, {"id": "r3a4", "title": "Graduation Day", "text": "Today is our graduation day. We wear beautiful clothes and take photos in the school garden. Our head teacher gives a speech. She says, \"You have grown up. Study hard and be kind. The world is waiting for you.\" Then we give flowers to our teachers. We thank them for their help. In the afternoon, we have a party. We sing, dance and share stories. Some of us cry, but we are happy. We will never forget this day.", "audio": "/audio/rd/r3a4.mp3", "words": [{"word": "graduation", "meaning": "毕业"}, {"word": "speech", "meaning": "演讲"}, {"word": "grown up", "meaning": "长大"}, {"word": "party", "meaning": "聚会"}, {"word": "forget", "meaning": "忘记"}], "questions": [{"id": "r3a4-q1", "q2": "毕业典礼上他们做什么？", "options": ["拍照听演讲", "考试", "打扫学校"], "answer": 0, "tip": "take photos, head teacher gives a speech."}, {"id": "r3a4-q2", "q2": "班主任说了什么？", "options": ["努力学习做个善良的人", "多看电视", "早点睡觉"], "answer": 0, "tip": "Study hard and be kind."}, {"id": "r3a4-q3", "q2": "他们给老师什么？", "options": ["花", "礼物", "贺卡"], "answer": 0, "tip": "give flowers to our teachers."}]}]}]};
 
 // src/ket_words.json
@@ -27080,6 +37424,9 @@ var TRIAL_LT = "lt3";
 var TRIAL_LW = "1a";
 var TRIAL_EX = "ex3a";
 var TRIAL_JL = "jl1";
+var TRIAL_JW = "jw7a";
+var TRIAL_JU = "7a01";
+var TRIAL_JG = "g01";
 var TRIAL_RD = "r1a1";
 var TRIAL_KW = "kw1";
 var TRIAL_KX = "kx1a";
@@ -27909,6 +38256,57 @@ var worker_default = {
       }
       const list = junior_link_default.units.map((un) => ({ id: un.id, title: un.title, grammar: un.grammar.length, words: un.words.length, practice: un.practice.length }));
       return ok({ units: authed ? list : list.filter((un) => un.id === TRIAL_JL), trial: !authed });
+    }
+    if (path === "/api/junior-words" && method === "GET") {
+      const user = await uidOf(request, env);
+      if (!user) return err(401, "\u672A\u767B\u5F55\u6216\u767B\u5F55\u5DF2\u5931\u6548\uFF0C\u8BF7\u91CD\u65B0\u767B\u5F55");
+      const dev = getDev({}, request);
+      if (!parseDevices(user).includes(dev)) return err(403, "\u5F53\u524D\u8BBE\u5907\u672A\u6388\u6743\uFF0C\u8BF7\u91CD\u65B0\u767B\u5F55");
+      const authed = modAuthed(user, "primary");
+      const gid = q.get("words") || q.get("group");
+      if (gid) {
+        const g = jwords_default.groups.find((x) => x.id === gid);
+        if (!g) return err(404, "\u4E3B\u9898\u4E0D\u5B58\u5728");
+        if (!authed && gid !== TRIAL_JW) return err(403, "\u4F53\u9A8C\u6A21\u5F0F\u4EC5\u53EF\u5B66\u4E60 " + TRIAL_JW + "\uFF0C\u8F93\u5165\u6388\u6743\u7801\u6216\u8054\u7CFB\u7BA1\u7406\u5458\u89E3\u9501\u5168\u90E8\u4E3B\u9898");
+        return ok(g);
+      }
+      const groups = jwords_default.groups.map((g) => ({ id: g.id, grade: g.grade, title: g.title, count: g.words.length }));
+      return ok({ groups: authed ? groups : groups.filter((g) => g.id === TRIAL_JW), trial: !authed });
+    }
+    if (path === "/api/junior-textbook" && method === "GET") {
+      const user = await uidOf(request, env);
+      if (!user) return err(401, "\u672A\u767B\u5F55\u6216\u767B\u5F55\u5DF2\u5931\u6548\uFF0C\u8BF7\u91CD\u65B0\u767B\u5F55");
+      const dev = getDev({}, request);
+      if (!parseDevices(user).includes(dev)) return err(403, "\u5F53\u524D\u8BBE\u5907\u672A\u6388\u6743\uFF0C\u8BF7\u91CD\u65B0\u767B\u5F55");
+      const authed = modAuthed(user, "primary");
+      const uid = q.get("unit");
+      if (uid) {
+        let uu = null;
+        for (const b of jbook_default.books) { const f = b.units.find((x) => x.id === uid); if (f) { uu = f; break; } }
+        if (!uu) return err(404, "\u5355\u5143\u4E0D\u5B58\u5728");
+        if (!authed && uid !== TRIAL_JU) return err(403, "\u4F53\u9A8C\u6A21\u5F0F\u4EC5\u53EF\u5B66\u4E60 " + TRIAL_JU + "\uFF0C\u8F93\u5165\u6388\u6743\u7801\u6216\u8054\u7CFB\u7BA1\u7406\u5458\u89E3\u9501\u5168\u90E8\u5355\u5143");
+        return ok(uu);
+      }
+      const list = jbook_default.books.map((b) => ({ code: b.code, title: b.title, units: b.units.map((un) => ({ id: un.id, title: un.title, topic: un.topic, words: un.words.length, grammars: un.grammars.length, questions: un.questions.length })) }));
+      if (authed) return ok({ books: list, trial: false });
+      const slim = list.map((b) => ({ ...b, units: b.units.filter((un) => un.id === TRIAL_JU) })).filter((b) => b.units.length > 0);
+      return ok({ books: slim, trial: true });
+    }
+    if (path === "/api/junior-grammar" && method === "GET") {
+      const user = await uidOf(request, env);
+      if (!user) return err(401, "\u672A\u767B\u5F55\u6216\u767B\u5F55\u5DF2\u5931\u6548\uFF0C\u8BF7\u91CD\u65B0\u767B\u5F55");
+      const dev = getDev({}, request);
+      if (!parseDevices(user).includes(dev)) return err(403, "\u5F53\u524D\u8BBE\u5907\u672A\u6388\u6743\uFF0C\u8BF7\u91CD\u65B0\u767B\u5F55");
+      const authed = modAuthed(user, "primary");
+      const tid = q.get("topic");
+      if (tid) {
+        const tp = jgram_default.topics.find((x) => x.id === tid);
+        if (!tp) return err(404, "\u4E13\u9898\u4E0D\u5B58\u5728");
+        if (!authed && tid !== TRIAL_JG) return err(403, "\u4F53\u9A8C\u6A21\u5F0F\u4EC5\u53EF\u5B66\u4E60 " + TRIAL_JG + "\uFF0C\u8F93\u5165\u6388\u6743\u7801\u6216\u8054\u7CFB\u7BA1\u7406\u5458\u89E3\u9501\u5168\u90E8\u4E13\u9898");
+        return ok(tp);
+      }
+      const list = jgram_default.topics.map((tp) => ({ id: tp.id, title: tp.title, points: tp.points.length }));
+      return ok({ topics: authed ? list : list.filter((tp) => tp.id === TRIAL_JG), trial: !authed });
     }
     if (path === "/api/graded-reading" && method === "GET") {
       const user = await uidOf(request, env);
