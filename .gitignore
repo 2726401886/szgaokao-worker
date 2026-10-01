@@ -1,0 +1,18 @@
+# 依赖（体积大，不入库）
+node_modules/
+
+# 密钥 / 明文凭据
+.env.token
+.env
+.env.*
+wrangler.jsonc
+
+# 临时 / 备份 / 构建产物
+*.log
+_tmp_*
+_backup_*/
+backup_*/
+.dev_null/
+.wrangler/
+src/_*
+*.bak-*
