@@ -37428,6 +37428,7 @@ var TRIAL_JL = "jl1";
 var jexam_default = {"product":"\u521d\u4e2d\u82f1\u8bed\u9898\u5e93\uff08\u4e2d\u8003\u7b14\u8bd5\u771f\u9898\u683c\u5f0f\u539f\u578b\u00b7\u539f\u521b\u7ec3\u4e60\uff09","version":"1.1","schema_version":"1.1","note":"\u9898\u578b\uff1achoice \u5355\u9009 / cloze \u5b8c\u5f62 / reading \u9605\u8bfb / vocab \u8bcd\u6c47\u8fd0\u7528 / grammar \u8bed\u6cd5\u586b\u7a7a / task \u4efb\u52a1\u578b\u9605\u8bfb / writing \u4e66\u9762\u8868\u8fbe\uff1bgrade 7/8/9\uff1bbook 7a~9\uff1bdifficulty 1-3\u3002\u7ec4\u5377\u6309 grade/type/book/unit/difficulty \u8fc7\u6ee4\u5207\u7247\uff1b\u6a21\u677f\u7ec4\u5377\u652f\u6301\u968f\u673a\u62bd\u9898\u4ee5\u751f\u6210\u591a\u5957\u4e0d\u540c\u8bd5\u5377\u3002","questions":[{"id":"je0001","grade":7,"type":"choice","book":"7a","unit":"7a01","topic":"\u57fa\u7840\u8bed\u6cd5","difficulty":1,"stem":"\u2014 ___ is that boy? \u2014 He is my cousin.","options":["What","Who","Where","How"],"answer":1,"analysis":"\u95ee\u4eba\u7528 Who\uff1b\u95ee\u7269\u7528 What\uff0c\u95ee\u5730\u70b9\u7528 Where\uff0c\u95ee\u65b9\u5f0f\u7528 How\u3002"},{"id":"je0002","grade":7,"type":"choice","book":"7a","unit":"7a02","topic":"\u4ee3\u8bcd","difficulty":1,"stem":"This is ___ apple. ___ apple is red.","options":["a; The","an; The","the; An","an; A"],"answer":1,"analysis":"apple \u4ee5\u5143\u97f3\u97f3\u7d20\u5f00\u5934\uff0c\u7528 an\uff1b\u7b2c\u4e8c\u6b21\u63d0\u5230\u7528 the \u7279\u6307\u3002"},{"id":"je0003","grade":7,"type":"choice","book":"7a","unit":"7a03","topic":"\u540d\u8bcd\u590d\u6570","difficulty":1,"stem":"There are two ___ on the desk.","options":["box","boxs","boxes","boxies"],"answer":2,"analysis":"\u4ee5 x \u7ed3\u5c3e\u7684\u540d\u8bcd\u590d\u6570\u52a0 -es\uff0cbox\u2192boxes\u3002"},{"id":"je0004","grade":7,"type":"choice","book":"7a","unit":"7a04","topic":"be\u52a8\u8bcd","difficulty":1,"stem":"I ___ a student. My friends ___ teachers.","options":["am; are","is; am","am; is","are; am"],"answer":0,"analysis":"I \u540e\u7528 am\uff1b\u590d\u6570 friends \u540e\u7528 are\u3002"},{"id":"je0005","grade":7,"type":"choice","book":"7a","unit":"7a05","topic":"\u60c5\u6001\u52a8\u8bcd","difficulty":2,"stem":"You ___ smoke here. It's not allowed.","options":["must","can","mustn't","need"],"answer":2,"analysis":"\u7981\u6b62\u505a\u67d0\u4e8b\u7528 mustn't\uff08\u5343\u4e07\u522b/\u4e0d\u8bb8\uff09\u3002"},{"id":"je0006","grade":7,"type":"choice","book":"7a","unit":"7a06","topic":"\u51a0\u8bcd","difficulty":1,"stem":"She plays ___ piano very well.","options":["a","an","the","/"],"answer":2,"analysis":"\u4e50\u5668\u524d\u52a0 the\uff1aplay the piano\u3002"},{"id":"je0007","grade":7,"type":"choice","book":"7a","unit":"7a07","topic":"\u4ecb\u8bcd","difficulty":2,"stem":"The book is ___ the desk ___ the floor.","options":["on; on","in; under","on; under","under; on"],"answer":2,"analysis":"\u4e66\u5728\u684c\u4e0a\u7528 on\uff0c\u5730\u677f\u7528 under \u8868\u793a\u5728\u684c\u5b50\u4e0b\u65b9\u7684\u5730\u677f\u4e0a\u3002"},{"id":"je0008","grade":7,"type":"choice","book":"7b","unit":"7b01","topic":"\u65f6\u6001-\u4e00\u822c\u73b0\u5728","difficulty":2,"stem":"Tom often ___ to school by bike.","options":["go","goes","going","went"],"answer":1,"analysis":"\u4e3b\u8bed\u7b2c\u4e09\u4eba\u79f0\u5355\u6570\uff0c\u4e00\u822c\u73b0\u5728\u65f6\u52a8\u8bcd\u52a0 -es\uff1ago\u2192goes\u3002"},{"id":"je0009","grade":7,"type":"choice","book":"7b","unit":"7b02","topic":"\u7591\u95ee\u8bcd","difficulty":2,"stem":"\u2014 ___ do you go to bed? \u2014 At nine o'clock.","options":["What","When","Why","Where"],"answer":1,"analysis":"\u95ee\u65f6\u95f4\u7528 When\uff1b\u7b54\u8bed\u662f\u65f6\u95f4\u70b9\u3002"},{"id":"je0010","grade":7,"type":"choice","book":"7b","unit":"7b03","topic":"\u7269\u4e3b\u4ee3\u8bcd","difficulty":1,"stem":"This isn't my pen. It's ___.","options":["your","yours","you","your's"],"answer":1,"analysis":"\u540d\u7269\u4ee3 yours = your pen\uff0c\u7701\u7565\u540d\u8bcd\u3002"},{"id":"c7a01","grade":7,"type":"cloze","book":"7a","unit":"7a06","topic":"\u8bb0\u53d9-\u6821\u56ed","difficulty":2,"title":"My First Day at School","passage":"It was my first day at a new school. I was very (1)___. A girl came to me and said, 'Hi! I am Lily. (2)___ name is Lily.' She (3)___ me to the classroom. The teacher was (4)___ and kind. We had (5)___ classes in the morning. At noon we ate (6)___ in the dining hall. I made (7)___ new friends. After school I went (8)___ happily.","blanks":[{"options":["happy","nervous","angry","tired"],"answer":1,"analysis":"\u7b2c\u4e00\u6b21\u53bb\u65b0\u5b66\u6821\u611f\u5230\u7d27\u5f20\u6700\u5408\u7406\u3002"},{"options":["Her","His","My","Your"],"answer":0,"analysis":"Lily \u662f\u5973\u751f\uff0c\u7528 Her\u3002"},{"options":["took","takes","taking","take"],"answer":0,"analysis":"\u8fc7\u53bb\u65f6 took\u3002"},{"options":["strict","tall","nice","young"],"answer":2,"analysis":"and kind \u5e76\u5217\uff0c\u9009 nice \u53cb\u5584\u3002"},{"options":["little","few","some","much"],"answer":2,"analysis":"\u51e0\u8282\u8bfe\u7528 some classes\u3002"},{"options":["breakfast","lunch","dinner","supper"],"answer":1,"analysis":"\u4e2d\u5348\u5403 lunch\u3002"},{"options":["any","some","much","a"],"answer":1,"analysis":"\u80af\u5b9a\u53e5\u7528 some \u4fee\u9970\u53ef\u6570\u590d\u6570 friends\u3002"},{"options":["home","to home","school","to school"],"answer":0,"analysis":"go home \u56de\u5bb6\uff0chome \u524d\u65e0 to\u3002"}]},{"id":"r7a01","grade":7,"type":"reading","book":"7a","unit":"7a08","topic":"\u8bf4\u660e-\u5065\u5eb7","difficulty":2,"title":"Healthy Eating","passage":"Tom is a middle school student. He likes eating hamburgers and drinking cola. He seldom eats vegetables. One day he felt ill and went to see the doctor. The doctor said, 'You should eat more fruit and vegetables, and drink more water. Don't eat too much fast food.' Tom listened and now he is healthy.","questions":[{"stem":"What does Tom like eating?","options":["Vegetables","Hamburgers","Fruit","Rice"],"answer":1,"analysis":"\u539f\u6587 likes eating hamburgers\u3002"},{"stem":"Why did Tom see the doctor?","options":["He was ill.","He was happy.","He was hungry.","He was late."],"answer":0,"analysis":"felt ill \u6240\u4ee5\u770b\u533b\u751f\u3002"},{"stem":"What did the doctor advise?","options":["Eat more fast food.","Drink more cola.","Eat more vegetables.","Sleep more."],"answer":2,"analysis":"\u5efa\u8bae\u591a\u5403\u852c\u83dc\u6c34\u679c\u3002"}]},{"id":"r7a02","grade":7,"type":"reading","book":"7b","unit":"7b05","topic":"\u8bb0\u53d9-\u8282\u65e5","difficulty":2,"title":"Spring Festival","passage":"Spring Festival is the most important festival in China. Before it, people clean their houses and buy food. On New Year's Eve, families get together and have a big dinner. Children get red packets with money. They watch TV and let off fireworks. Everyone is happy.","questions":[{"stem":"When do families have a big dinner?","options":["On New Year's Day","On New Year's Eve","On Christmas","On Mid-autumn Day"],"answer":1,"analysis":"\u65b0\u5e74\u524d\u591c\u5403\u56e2\u5706\u996d\u3002"},{"stem":"What do children get?","options":["Gifts","Red packets","Books","Cakes"],"answer":1,"analysis":"\u5b69\u5b50\u5f97\u5230\u7ea2\u5305 red packets\u3002"},{"stem":"How do people feel?","options":["Sad","Angry","Happy","Tired"],"answer":2,"analysis":"Everyone is happy\u3002"}]},{"id":"v7a01","grade":7,"type":"vocab","book":"7a","unit":"7a03","topic":"\u8bcd\u5f62-\u540d\u8bcd","difficulty":1,"mode":"form","stem":"There are three ___ (tomato) on the table.","word":"tomato","answer":"tomatoes","analysis":"\u4ee5 o \u7ed3\u5c3e\u8868\u6709\u751f\u547d\u7269\u52a0 -es\u3002"},{"id":"v7a02","grade":7,"type":"vocab","book":"7a","unit":"7b01","topic":"\u8bcd\u5f62-\u52a8\u8bcd","difficulty":1,"mode":"form","stem":"She ___ (study) English every day.","word":"study","answer":"studies","analysis":"\u7b2c\u4e09\u4eba\u79f0\u5355\u6570 study\u2192studies\u3002"},{"id":"v7a03","grade":7,"type":"vocab","book":"7a","unit":"7a04","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":2,"mode":"blank","stem":"My father is a doctor. He works in a h___.","answer":"hospital","analysis":"\u5728\u533b\u9662\u5de5\u4f5c\u586b hospital\u3002"},{"id":"v7a04","grade":7,"type":"vocab","book":"7a","unit":"7b02","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":2,"mode":"blank","stem":"It's cold outside. Please put on your c___.","answer":"coat","analysis":"\u5929\u51b7\u7a7f\u5916\u5957 coat\u3002"},{"id":"v7a05","grade":7,"type":"vocab","book":"7b","unit":"7b06","topic":"\u8bcd\u5f62-\u5f62\u5bb9\u8bcd","difficulty":1,"mode":"form","stem":"This book is ___ (interest) than that one.","word":"interest","answer":"more interesting","analysis":"\u591a\u97f3\u8282\u5f62\u5bb9\u8bcd\u6bd4\u8f83\u7ea7\u52a0 more\u3002"},{"id":"v7a06","grade":7,"type":"vocab","book":"7b","unit":"7b07","topic":"\u8bcd\u5f62-\u526f\u8bcd","difficulty":2,"mode":"form","stem":"He runs ___ (quick) than me.","word":"quick","answer":"more quickly","analysis":"\u526f\u8bcd quick\u2192quickly\uff0c\u6bd4\u8f83\u7ea7 more quickly\u3002"},{"id":"v7a07","grade":7,"type":"vocab","book":"7a","unit":"7a07","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":2,"mode":"blank","stem":"We have lunch at 12:00 at n___.","answer":"noon","analysis":"\u4e2d\u5348 at noon\u3002"},{"id":"v7a08","grade":7,"type":"vocab","book":"7b","unit":"7b08","topic":"\u8bcd\u5f62-\u540d\u8bcd","difficulty":1,"mode":"form","stem":"My ___ (friend) and I play basketball.","word":"friend","answer":"friends","analysis":"\u4e0e I \u5e76\u5217\u7528\u590d\u6570 friends\u3002"},{"id":"g7a01","grade":7,"type":"grammar","book":"7a","unit":"7b01","topic":"\u65f6\u6001\u7efc\u5408","difficulty":2,"title":"Grammar Fill-in","passage":"Look! The boy (1)___ (play) basketball. He (2)___ (like) sports very much. Yesterday he (3)___ (win) a game. Now he (4)___ (be) happy. His father (5)___ (watch) him.","blanks":[{"options":["plays","is playing","played","play"],"answer":1,"analysis":"Look! \u63d0\u793a\u73b0\u5728\u8fdb\u884c\u65f6 is playing\u3002"},{"options":["like","likes","liked","liking"],"answer":1,"analysis":"\u7b2c\u4e09\u4eba\u79f0\u5355\u6570 likes\u3002"},{"options":["wins","won","win","winning"],"answer":1,"analysis":"Yesterday \u7528\u8fc7\u53bb\u65f6 won\u3002"},{"options":["is","was","are","be"],"answer":0,"analysis":"Now \u73b0\u5728\u65f6 is\u3002"},{"options":["watch","watches","watched","watching"],"answer":1,"analysis":"\u7236\u4eb2\u7b2c\u4e09\u4eba\u79f0\u5355\u6570 watches\u3002"}]},{"id":"t7b01","grade":7,"type":"task","book":"7b","unit":"7b09","topic":"\u4efb\u52a1-\u8868\u683c","difficulty":2,"title":"My School Life","passage":"My name is Lucy. I am in Class 3, Grade 7. I have six classes a day. My favorite subject is English. I join the art club after school. I go to the library on Friday.","questions":[{"stem":"What class is Lucy in?","answer":"Class 3, Grade 7","analysis":"\u76f4\u63a5\u63d0\u53d6\u4fe1\u606f\u3002","kind":"answer"},{"stem":"What is her favorite subject?","answer":"English","analysis":"\u539f\u6587 favorite subject is English\u3002","kind":"answer"},{"stem":"When does she go to the library?","answer":"On Friday","analysis":"on Friday \u53bb\u56fe\u4e66\u9986\u3002","kind":"answer"}]},{"id":"w7b01","grade":7,"type":"writing","book":"7b","unit":"7b10","topic":"\u8bdd\u9898-\u6211\u7684\u670b\u53cb","difficulty":2,"title":"My Best Friend","prompt":"\u8bf7\u4ee5 'My Best Friend' \u4e3a\u9898\u5199\u4e00\u7bc7\u4e0d\u5c11\u4e8e 60 \u8bcd\u7684\u82f1\u8bed\u77ed\u6587\uff0c\u4ecb\u7ecd\u4f60\u6700\u597d\u670b\u53cb\u7684\u59d3\u540d\u3001\u5e74\u9f84\u3001\u5916\u8c8c\u3001\u7231\u597d\u53ca\u4f60\u4eec\u5e38\u505a\u7684\u4e8b\u3002","requirements":["\u5305\u542b\u59d3\u540d\u4e0e\u5e74\u9f84","\u63cf\u8ff0\u5916\u8c8c","\u4ecb\u7ecd\u7231\u597d","\u8bf4\u660e\u5171\u540c\u6d3b\u52a8"],"points":["\u7528\u4e00\u822c\u73b0\u5728\u65f6","\u6ce8\u610f\u7b2c\u4e09\u4eba\u79f0\u5355\u6570","\u8bed\u53e5\u8fde\u8d2f"],"wordLimit":60,"sample":"My best friend is Li Hua. He is 13 years old. He is tall and has short black hair. He likes playing basketball and reading. After school we often play basketball together. He is kind and helps me with English. I am happy to have such a good friend."},{"id":"je0025","grade":8,"type":"choice","book":"8a","unit":"8a01","topic":"\u65f6\u6001-\u8fc7\u53bb","difficulty":2,"stem":"We ___ a picnic last Sunday.","options":["have","has","had","having"],"answer":2,"analysis":"last Sunday \u8fc7\u53bb\u65f6\uff0chave\u2192had\u3002"},{"id":"je0026","grade":8,"type":"choice","book":"8a","unit":"8a02","topic":"\u6bd4\u8f83\u7ea7","difficulty":2,"stem":"This box is ___ than that one.","options":["heavy","heavier","heaviest","more heavy"],"answer":1,"analysis":"than \u7528\u6bd4\u8f83\u7ea7\uff1bheavy\u2192heavier\u3002"},{"id":"je0027","grade":8,"type":"choice","book":"8a","unit":"8a03","topic":"\u8fde\u8bcd","difficulty":2,"stem":"Hurry up, ___ you will be late.","options":["and","but","or","so"],"answer":2,"analysis":"\u7948\u4f7f\u53e5 + or \u8868\u793a\u5426\u5219\u3002"},{"id":"je0028","grade":8,"type":"choice","book":"8a","unit":"8a04","topic":"\u60c5\u6001\u52a8\u8bcd","difficulty":2,"stem":"\u2014 Must I finish it now? \u2014 No, you ___.","options":["mustn't","needn't","can't","may not"],"answer":1,"analysis":"Must \u5426\u5b9a\u56de\u7b54\u7528 needn't\uff08\u4e0d\u5fc5\uff09\u3002"},{"id":"je0029","grade":8,"type":"choice","book":"8a","unit":"8a05","topic":"\u88ab\u52a8\u8bed\u6001","difficulty":3,"stem":"English ___ in many countries.","options":["speaks","is spoken","spoke","was spoken"],"answer":1,"analysis":"\u4e00\u822c\u73b0\u5728\u88ab\u52a8 is spoken\u3002"},{"id":"je0030","grade":8,"type":"choice","book":"8a","unit":"8a06","topic":"\u5b9a\u8bed\u4ece\u53e5","difficulty":3,"stem":"The boy ___ is standing there is my brother.","options":["which","who","whom","whose"],"answer":1,"analysis":"\u6307\u4eba\u4f5c\u4e3b\u8bed\u7528 who\u3002"},{"id":"je0031","grade":8,"type":"choice","book":"8b","unit":"8b01","topic":"\u73b0\u5728\u5b8c\u6210\u65f6","difficulty":3,"stem":"I ___ already ___ my homework.","options":["have; finish","has; finished","have; finished","had; finished"],"answer":2,"analysis":"\u73b0\u5728\u5b8c\u6210\u65f6 have/has + done\uff1bI \u7528 have\u3002"},{"id":"je0032","grade":8,"type":"choice","book":"8b","unit":"8b02","topic":"\u5bbe\u8bed\u4ece\u53e5","difficulty":3,"stem":"Could you tell me ___ the station is?","options":["where","what","how","when"],"answer":0,"analysis":"\u5bbe\u8bed\u4ece\u53e5\u95ee\u5730\u70b9\u7528 where\uff0c\u8bed\u5e8f\u7528\u9648\u8ff0\u53e5\u3002"},{"id":"je0033","grade":8,"type":"choice","book":"8b","unit":"8b03","topic":"\u72b6\u8bed\u4ece\u53e5","difficulty":2,"stem":"I will call you ___ I arrive.","options":["as soon as","because","though","unless"],"answer":0,"analysis":"as soon as \u4e00\u2026\u5c31\u2026\uff0c\u4e3b\u5c06\u4ece\u73b0\u3002"},{"id":"je0034","grade":8,"type":"choice","book":"8b","unit":"8b04","topic":"\u975e\u8c13\u8bed","difficulty":3,"stem":"It's difficult ___ the problem.","options":["solve","to solve","solving","solved"],"answer":1,"analysis":"It's + adj. + to do \u56fa\u5b9a\u7ed3\u6784\u3002"},{"id":"c8a01","grade":8,"type":"cloze","book":"8a","unit":"8a07","topic":"\u8bb0\u53d9-\u5e2e\u52a9","difficulty":3,"title":"A Good Deed","passage":"Yesterday I (1)___ the bus to school. An old woman (2)___ on the bus. She had no seat. I (3)___ my seat to her. She (4)___ me and said thanks. I felt (5)___. Helping others makes me (6)___. After that I (7)___ to help more people. It was a (8)___ day.","blanks":[{"options":["take","took","taking","takes"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 took\u3002"},{"options":["get","gets","got","getting"],"answer":2,"analysis":"\u8fc7\u53bb\u65f6 got on \u4e0a\u8f66\u3002"},{"options":["give","gave","giving","gives"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 gave\u3002"},{"options":["smile","smiled","smiling","smiles"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 smiled\u3002"},{"options":["sad","happy","tired","bored"],"answer":1,"analysis":"\u5e2e\u52a9\u4eba\u611f\u5230 happy\u3002"},{"options":["sad","angry","happy","tired"],"answer":2,"analysis":"make sb + adj. happy\u3002"},{"options":["decide","decided","deciding","decides"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 decided\u3002"},{"options":["bad","good","cold","busy"],"answer":1,"analysis":"\u597d\u4eba\u597d\u4e8b a good day\u3002"}]},{"id":"r8a01","grade":8,"type":"reading","book":"8a","unit":"8a09","topic":"\u8bf4\u660e-\u73af\u4fdd","difficulty":3,"title":"Save the Earth","passage":"Our earth is in danger. People cut down too many trees and pollute rivers. We should plant more trees and save water. We can also ride bikes instead of driving cars. If we work together, the earth will be better.","questions":[{"stem":"What is in danger?","options":["The trees","The earth","The rivers","The animals"],"answer":1,"analysis":"Our earth is in danger\u3002"},{"stem":"What should we do?","options":["Cut trees","Plant trees","Drive cars","Pollute water"],"answer":1,"analysis":"\u5e94 plant more trees\u3002"},{"stem":"What can we do instead of driving?","options":["Take a bus","Ride bikes","Walk far","Fly"],"answer":1,"analysis":"ride bikes \u4ee3\u66ff\u5f00\u8f66\u3002"}]},{"id":"r8b01","grade":8,"type":"reading","book":"8b","unit":"8b05","topic":"\u8bae\u8bba-\u7f51\u7edc","difficulty":3,"title":"The Internet","passage":"The Internet is useful. We can study and shop online. But some students play games too much and forget homework. We should use the Internet in a right way. Parents and teachers should help students.","questions":[{"stem":"What can we do online?","options":["Only play games","Study and shop","Nothing","Only watch"],"answer":1,"analysis":"can study and shop online\u3002"},{"stem":"What problem do some students have?","options":["They study hard.","They play games too much.","They sleep.","They read books."],"answer":1,"analysis":"\u73a9\u592a\u591a\u6e38\u620f\u5fd8\u8bb0\u4f5c\u4e1a\u3002"},{"stem":"Who should help students?","options":["Doctors","Parents and teachers","Workers","Strangers"],"answer":1,"analysis":"\u5bb6\u957f\u548c\u6559\u5e08\u5e94\u5e2e\u52a9\u3002"}]},{"id":"v8a01","grade":8,"type":"vocab","book":"8a","unit":"8a02","topic":"\u8bcd\u5f62-\u6bd4\u8f83\u7ea7","difficulty":2,"mode":"form","stem":"This problem is ___ (easy) than that one.","word":"easy","answer":"easier","analysis":"\u8f85\u97f3+y \u53d8 i+er\uff1aeasy\u2192easier\u3002"},{"id":"v8a02","grade":8,"type":"vocab","book":"8a","unit":"8a01","topic":"\u8bcd\u5f62-\u8fc7\u53bb\u5f0f","difficulty":2,"mode":"form","stem":"They ___ (build) a library last year.","word":"build","answer":"built","analysis":"build \u8fc7\u53bb\u5f0f built\u3002"},{"id":"v8a03","grade":8,"type":"vocab","book":"8a","unit":"8a03","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":3,"mode":"blank","stem":"If you don't hurry, you'll m___ the bus.","answer":"miss","analysis":"\u9519\u8fc7 miss \u516c\u4ea4\u8f66\u3002"},{"id":"v8a04","grade":8,"type":"vocab","book":"8a","unit":"8a04","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":3,"mode":"blank","stem":"You n___ to practice more to improve.","answer":"need","analysis":"\u9700\u8981 need\u3002"},{"id":"v8b01","grade":8,"type":"vocab","book":"8b","unit":"8b01","topic":"\u8bcd\u5f62-\u5b8c\u6210\u65f6","difficulty":3,"mode":"form","stem":"She ___ (live) here since 2010.","word":"live","answer":"has lived","analysis":"since+\u8fc7\u53bb\u65f6\u95f4\u7528\u73b0\u5728\u5b8c\u6210\u65f6 has lived\u3002"},{"id":"v8b02","grade":8,"type":"vocab","book":"8b","unit":"8b06","topic":"\u8bcd\u5f62-\u540d\u8bcd","difficulty":2,"mode":"form","stem":"The ___ (invent) of the phone changed the world.","word":"invent","answer":"invention","analysis":"invent\u2192invention \u540d\u8bcd\u3002"},{"id":"v8b03","grade":8,"type":"vocab","book":"8b","unit":"8b07","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":3,"mode":"blank","stem":"He is a___ from Japan and can't speak Chinese well.","answer":"foreigner","analysis":"\u5916\u56fd\u4eba foreigner\u3002"},{"id":"v8b04","grade":8,"type":"vocab","book":"8b","unit":"8b08","topic":"\u8bcd\u5f62-\u526f\u8bcd","difficulty":3,"mode":"form","stem":"He drove ___ (careful) and arrived safely.","word":"careful","answer":"carefully","analysis":"\u526f\u8bcd carefully \u4fee\u9970 drove\u3002"},{"id":"g8a01","grade":8,"type":"grammar","book":"8a","unit":"8a05","topic":"\u88ab\u52a8\u8bed+\u65f6\u6001","difficulty":3,"title":"Grammar Fill-in","passage":"The bridge (1)___ (build) in 1990. It (2)___ (use) by many people every day. A new one (3)___ (build) next year. The road (4)___ (clean) now. Cars (5)___ (not allow) to park here.","blanks":[{"options":["built","was built","is built","builds"],"answer":1,"analysis":"1990 \u8fc7\u53bb\u88ab\u52a8 was built\u3002"},{"options":["uses","is used","used","was used"],"answer":1,"analysis":"\u6bcf\u5929\u7528\uff0c\u73b0\u5728\u88ab\u52a8 is used\u3002"},{"options":["will build","will be built","builds","is built"],"answer":1,"analysis":"next year \u5c06\u6765\u88ab\u52a8 will be built\u3002"},{"options":["cleaned","is cleaned","cleans","clean"],"answer":1,"analysis":"now \u73b0\u5728\u88ab\u52a8 is cleaned\u3002"},{"options":["are not allowed","don't allow","not allow","isn't allowed"],"answer":0,"analysis":"\u590d\u6570 cars \u73b0\u5728\u88ab\u52a8\u5426\u5b9a are not allowed\u3002"}]},{"id":"t8b01","grade":8,"type":"task","book":"8b","unit":"8b09","topic":"\u4efb\u52a1-\u95ee\u7b54","difficulty":3,"title":"Reading Habits","passage":"Jack reads for 30 minutes before sleep. He likes science books. He borrows books from the school library. He thinks reading makes him smart.","questions":[{"stem":"How long does Jack read before sleep?","answer":"30 minutes","analysis":"30 minutes \u63d0\u53d6\u3002","kind":"answer"},{"stem":"What kind of books does he like?","answer":"Science books","analysis":"science books\u3002"},{"stem":"Where does he borrow books?","answer":"From the school library","analysis":"\u5b66\u6821\u56fe\u4e66\u9986\u501f\u4e66\u3002"}]},{"id":"w8b01","grade":8,"type":"writing","book":"8b","unit":"8b05","topic":"\u8bdd\u9898-\u7f51\u7edc\u5229\u5f0a","difficulty":3,"title":"The Internet","prompt":"\u8bf7\u4ee5 'The Internet' \u4e3a\u9898\u5199\u4e00\u7bc7\u4e0d\u5c11\u4e8e 80 \u8bcd\u7684\u77ed\u6587\uff0c\u8c08\u8c08\u7f51\u7edc\u7684\u4f18\u70b9\u3001\u5b58\u5728\u7684\u95ee\u9898\u4ee5\u53ca\u4f60\u7684\u5efa\u8bae\u3002","requirements":["\u8bf4\u660e\u4f18\u70b9","\u6307\u51fa\u95ee\u9898","\u7ed9\u51fa\u5efa\u8bae","\u8868\u660e\u6001\u5ea6"],"points":["\u4f7f\u7528\u8fde\u63a5\u8bcd","\u73b0\u5728\u65f6\u4e3a\u4e3b","\u89c2\u70b9\u660e\u786e"],"wordLimit":80,"sample":"The Internet is important in our life. We can study and shop online. However, some students play games too much and hurt their eyes. In my opinion, we should use the Internet wisely. Parents and teachers should guide us. If we use it well, it will help us a lot."},{"id":"je0049","grade":9,"type":"choice","book":"9","unit":"9a01","topic":"\u5bbe\u8bed\u4ece\u53e5","difficulty":3,"stem":"I don't know ___ he will come tomorrow.","options":["if","that","what","\u4e0d\u586b"],"answer":0,"analysis":"\u662f\u5426\u6765\u7528 if \u5f15\u5bfc\u5bbe\u8bed\u4ece\u53e5\u3002"},{"id":"je0050","grade":9,"type":"choice","book":"9","unit":"9a02","topic":"\u5b9a\u8bed\u4ece\u53e5","difficulty":3,"stem":"This is the book ___ I bought yesterday.","options":["who","whom","which","whose"],"answer":2,"analysis":"\u6307\u7269\u4f5c\u5bbe\u8bed\u7528 which/that\u3002"},{"id":"je0051","grade":9,"type":"choice","book":"9","unit":"9a03","topic":"\u5012\u88c5","difficulty":3,"stem":"\u2014 He likes music. \u2014 ___.","options":["So do I","So I do","Neither do I","So am I"],"answer":0,"analysis":"So + \u52a9\u52a8\u8bcd + \u4e3b\u8bed \u8868\u793a\u524d\u8005\u60c5\u51b5\u4e5f\u9002\u7528\u4e8e\u540e\u8005\u3002"},{"id":"je0052","grade":9,"type":"choice","book":"9","unit":"9a04","topic":"\u865a\u62df\u8bed\u6c14","difficulty":3,"stem":"If I ___ you, I would take the job.","options":["am","was","were","be"],"answer":2,"analysis":"\u4e0e\u73b0\u5728\u4e8b\u5b9e\u76f8\u53cd\uff0cbe \u7528 were\u3002"},{"id":"je0053","grade":9,"type":"choice","book":"9","unit":"9a05","topic":"\u975e\u8c13\u8bed","difficulty":3,"stem":"He made us ___ the room.","options":["clean","to clean","cleaning","cleaned"],"answer":0,"analysis":"make sb do sth \u7528\u52a8\u8bcd\u539f\u5f62\u3002"},{"id":"je0054","grade":9,"type":"choice","book":"9","unit":"9a06","topic":"\u65f6\u6001","difficulty":3,"stem":"By the time he came, we ___ the work.","options":["finish","finished","had finished","have finished"],"answer":2,"analysis":"\u8fc7\u53bb\u7684\u8fc7\u53bb\u7528\u8fc7\u53bb\u5b8c\u6210\u65f6 had finished\u3002"},{"id":"je0055","grade":9,"type":"choice","book":"9","unit":"9a07","topic":"\u8bcd\u6c47\u8fa8\u6790","difficulty":3,"stem":"The ___ of the match made him sad.","options":["lose","loss","lost","losing"],"answer":1,"analysis":"the + \u540d\u8bcd loss\uff08\u5931\u8d25\uff09\u3002"},{"id":"je0056","grade":9,"type":"choice","book":"9","unit":"9a08","topic":"\u8fde\u8bcd","difficulty":3,"stem":"___ it was raining, we went on working.","options":["Though","Because","If","Unless"],"answer":0,"analysis":"\u5c3d\u7ba1\u4e0b\u96e8\u4ecd\u7ee7\u7eed\uff0c\u7528 Though \u8ba9\u6b65\u3002"},{"id":"je0057","grade":9,"type":"choice","book":"9","unit":"9a09","topic":"\u60c5\u6001\u52a8\u8bcd","difficulty":3,"stem":"The book ___ be Lily's. Her name is on it.","options":["can","must","may","could"],"answer":1,"analysis":"\u6709\u540d\u5b57\u80af\u5b9a\u63a8\u6d4b\u7528 must\u3002"},{"id":"je0058","grade":9,"type":"choice","book":"9","unit":"9a10","topic":"\u4ecb\u8bcd","difficulty":3,"stem":"He is good ___ math but weak ___ English.","options":["at; in","in; at","at; at","in; in"],"answer":0,"analysis":"be good at \u64c5\u957f\uff1bweak in \u5728\u2026\u5f31\u3002"},{"id":"c9a01","grade":9,"type":"cloze","book":"9","unit":"9a05","topic":"\u8bb0\u53d9-\u6210\u957f","difficulty":3,"title":"Never Give Up","passage":"Tom failed the exam. He felt (1)___ and wanted to give up. His teacher (2)___ him, 'Failure is the mother of success.' Tom (3)___ hard from then on. He asked teachers for (4)___. Finally he (5)___ the next exam. He learned that (6)___ is important. We should (7)___ our best and never (8)___ up.","blanks":[{"options":["happy","sad","excited","proud"],"answer":1,"analysis":"\u8003\u8bd5\u5931\u8d25\u611f\u5230 sad\u3002"},{"options":["told","said","spoke","talked"],"answer":0,"analysis":"tell sb + \u8bdd\u8bed\uff0c\u7528 told\u3002"},{"options":["works","worked","working","work"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 worked\u3002"},{"options":["help","helps","helping","helped"],"answer":0,"analysis":"for help \u6c42\u52a9\u3002"},{"options":["pass","passed","past","passes"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 passed\u3002"},{"options":["give up","hard work","luck","money"],"answer":1,"analysis":"\u52aa\u529b\u5de5\u4f5c\u91cd\u8981\u3002"},{"options":["try","tries","tried","trying"],"answer":0,"analysis":"should \u540e\u52a8\u8bcd\u539f\u5f62 try\u3002"},{"options":["give","gave","giving","gives"],"answer":0,"analysis":"never give up \u6c38\u4e0d\u653e\u5f03\u3002"}]},{"id":"r9a01","grade":9,"type":"reading","book":"9","unit":"9a07","topic":"\u8bf4\u660e-\u79d1\u6280","difficulty":3,"title":"AI in Our Life","passage":"AI is changing our life. It helps doctors find illness early. Self-driving cars may reduce accidents. But AI also brings problems, like job loss. We should learn to use AI well and make rules for it.","questions":[{"stem":"How does AI help doctors?","options":["Drive cars","Find illness early","Make rules","Lose jobs"],"answer":1,"analysis":"\u5e2e\u52a9\u65e9\u8bca\u75be\u75c5\u3002"},{"stem":"What problem may AI bring?","options":["Fewer accidents","Job loss","More illness","Better study"],"answer":1,"analysis":"\u5e26\u6765\u5931\u4e1a\u95ee\u9898\u3002"},{"stem":"What should we do?","options":["Stop AI","Use it well and make rules","Ignore it","Buy more"],"answer":1,"analysis":"\u7528\u597d\u5e76\u7acb\u89c4\u77e9\u3002"}]},{"id":"r9a02","grade":9,"type":"reading","book":"9","unit":"9a08","topic":"\u8bae\u8bba-\u73af\u4fdd","difficulty":3,"title":"Plastic Pollution","passage":"Plastic pollution is serious. Millions of plastic bottles go into the sea each day. Animals eat them by mistake. We should use reusable bags and bottles. Small actions can make a big difference.","questions":[{"stem":"Where do plastic bottles go?","options":["Into the sea","Into the sky","Into the bank","Into the school"],"answer":0,"analysis":"\u6d41\u5165\u6d77\u6d0b\u3002"},{"stem":"Why are animals in danger?","options":["They swim.","They eat plastic.","They sleep.","They fly."],"answer":1,"analysis":"\u8bef\u98df\u5851\u6599\u3002"},{"stem":"What should we use?","options":["Reusable bags","Plastic bags","More bottles","Paper only"],"answer":0,"analysis":"\u7528\u53ef\u91cd\u590d\u4f7f\u7528\u7684\u888b\u5b50\u3002"}]},{"id":"v9a01","grade":9,"type":"vocab","book":"9","unit":"9a03","topic":"\u8bcd\u5f62-\u540d\u8bcd","difficulty":3,"mode":"form","stem":"His ___ (suggest) is very useful.","word":"suggest","answer":"suggestion","analysis":"suggest\u2192suggestion \u540d\u8bcd\u3002"},{"id":"v9a02","grade":9,"type":"vocab","book":"9","unit":"9a01","topic":"\u8bcd\u5f62-\u6bd4\u8f83\u7ea7","difficulty":3,"mode":"form","stem":"This problem is the ___ (difficult) of the three.","word":"difficult","answer":"most difficult","analysis":"\u4e09\u8005\u53ca\u4ee5\u4e0a\u7528\u6700\u9ad8\u7ea7 most difficult\u3002"},{"id":"v9a03","grade":9,"type":"vocab","book":"9","unit":"9a04","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":3,"mode":"blank","stem":"The government should take a___ to protect the environment.","answer":"action","analysis":"take action \u91c7\u53d6\u884c\u52a8\u3002"},{"id":"v9a04","grade":9,"type":"vocab","book":"9","unit":"9a06","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":3,"mode":"blank","stem":"We should r___ the old things instead of throwing them.","answer":"reuse","analysis":"\u91cd\u590d\u4f7f\u7528 reuse\u3002"},{"id":"v9a05","grade":9,"type":"vocab","book":"9","unit":"9a07","topic":"\u8bcd\u5f62-\u88ab\u52a8","difficulty":3,"mode":"form","stem":"The letter ___ (write) by him yesterday.","word":"write","answer":"was written","analysis":"\u8fc7\u53bb\u88ab\u52a8 was written\u3002"},{"id":"v9a06","grade":9,"type":"vocab","book":"9","unit":"9a08","topic":"\u8bcd\u5f62-\u526f\u8bcd","difficulty":3,"mode":"form","stem":"He solved the problem ___ (success).","word":"success","answer":"successfully","analysis":"\u526f\u8bcd successfully \u4fee\u9970\u52a8\u8bcd\u3002"},{"id":"v9a07","grade":9,"type":"vocab","book":"9","unit":"9a09","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":3,"mode":"blank","stem":"It's our d___ to protect nature.","answer":"duty","analysis":"\u8d23\u4efb duty\u3002"},{"id":"v9a08","grade":9,"type":"vocab","book":"9","unit":"9a10","topic":"\u8bcd\u5f62-\u540d\u8bcd","difficulty":3,"mode":"form","stem":"We need more ___ (volunteer) for the event.","word":"volunteer","answer":"volunteers","analysis":"volunteer \u590d\u6570 volunteers\u3002"},{"id":"g9a01","grade":9,"type":"grammar","book":"9","unit":"9a02","topic":"\u7efc\u5408\u8bed\u6cd5\u586b\u7a7a","difficulty":3,"title":"Grammar Fill-in","passage":"If I (1)___ (be) a bird, I (2)___ (fly) high. He (3)___ (work) here since 2015. The letter (4)___ (write) by Mary. We (5)___ (tell) to keep quiet just now.","blanks":[{"options":["am","was","were","be"],"answer":2,"analysis":"\u865a\u62df\u8bed\u6c14\u7528 were\u3002"},{"options":["fly","would fly","flew","flying"],"answer":1,"analysis":"\u4e0e\u73b0\u5728\u76f8\u53cd\u4e3b\u53e5 would fly\u3002"},{"options":["works","worked","has worked","is working"],"answer":2,"analysis":"since 2015 \u73b0\u5728\u5b8c\u6210\u65f6 has worked\u3002"},{"options":["writes","wrote","was written","is writing"],"answer":2,"analysis":"\u8fc7\u53bb\u88ab\u52a8 was written\u3002"},{"options":["tell","told","were told","are told"],"answer":2,"analysis":"just now \u8fc7\u53bb\u88ab\u52a8 were told\u3002"}]},{"id":"t9a01","grade":9,"type":"task","book":"9","unit":"9a07","topic":"\u4efb\u52a1-\u89c2\u70b9","difficulty":3,"title":"Opinion Task","passage":"Some schools start classes at 8:30 a.m. Students say they can sleep more and study better. Teachers say it is good for health. Parents worry about traffic.","questions":[{"stem":"What time do some schools start?","answer":"8:30 a.m.","analysis":"8:30 \u4e0a\u8bfe\u3002"},{"stem":"Why do students like it?","answer":"They can sleep more and study better","analysis":"\u591a\u7761\u4e14\u5b66\u5f97\u66f4\u597d\u3002"},{"stem":"What do parents worry about?","answer":"Traffic","analysis":"\u5bb6\u957f\u62c5\u5fc3\u4ea4\u901a\u3002"}]},{"id":"w9a01","grade":9,"type":"writing","book":"9","unit":"9a08","topic":"\u8bdd\u9898-\u73af\u4fdd","difficulty":3,"title":"How to Protect the Environment","prompt":"\u8bf7\u4ee5 'How to Protect the Environment' \u4e3a\u9898\u5199\u4e00\u7bc7\u4e0d\u5c11\u4e8e 100 \u8bcd\u7684\u77ed\u6587\uff0c\u63d0\u51fa\u81f3\u5c11\u4e09\u6761\u73af\u4fdd\u5efa\u8bae\u5e76\u8bf4\u660e\u610f\u4e49\u3002","requirements":["\u4e09\u6761\u5efa\u8bae","\u8bf4\u660e\u610f\u4e49","\u6761\u7406\u6e05\u6670","\u547c\u5401\u884c\u52a8"],"points":["\u4f7f\u7528 first/second/third","\u60c5\u6001\u52a8\u8bcd should","\u73b0\u5728\u65f6\u4e3a\u4e3b"],"wordLimit":100,"sample":"It is our duty to protect the environment. First, we should reduce plastic use and take reusable bags. Second, we must save water and electricity. Third, planting more trees can make the air cleaner. If everyone takes action, the earth will be more beautiful. Let's start from small things now."},{"id":"je0073","grade":7,"type":"choice","book":"7a","unit":"7a01","topic":"there be","difficulty":1,"stem":"There ___ some milk in the glass.","options":["is","are","have","has"],"answer":0,"analysis":"milk \u4e0d\u53ef\u6570\uff0cthere be \u7528 is\u3002"},{"id":"je0074","grade":7,"type":"choice","book":"7a","unit":"7a05","topic":"\u7591\u95ee\u8bcd","difficulty":1,"stem":"\u2014 ___ books are these? \u2014 They are mine.","options":["Whose","Who","What","Which"],"answer":0,"analysis":"\u95ee\u6240\u5c5e\u7528 Whose\u3002"},{"id":"je0075","grade":7,"type":"choice","book":"7b","unit":"7b01","topic":"\u4e00\u822c\u73b0\u5728","difficulty":1,"stem":"He usually ___ up at 6:30 in the morning.","options":["get","gets","got","getting"],"answer":1,"analysis":"\u7b2c\u4e09\u4eba\u79f0\u5355\u6570 gets\u3002"},{"id":"je0076","grade":7,"type":"choice","book":"7b","unit":"7b02","topic":"\u5efa\u8bae\u53e5\u578b","difficulty":1,"stem":"Let's ___ basketball after school.","options":["play","to play","playing","plays"],"answer":0,"analysis":"Let's + \u52a8\u8bcd\u539f\u5f62\u3002"},{"id":"je0077","grade":7,"type":"choice","book":"7a","unit":"7a02","topic":"\u51a0\u8bcd","difficulty":1,"stem":"She is ___ honest girl.","options":["a","an","the","/"],"answer":1,"analysis":"honest \u4ee5\u5143\u97f3\u97f3\u7d20\u5f00\u5934\uff0c\u7528 an\u3002"},{"id":"je0078","grade":7,"type":"choice","book":"7b","unit":"7b03","topic":"\u6bd4\u8f83-\u4ee3\u8bcd","difficulty":2,"stem":"The weather in Guangzhou is hotter than ___ in Beijing.","options":["it","that","this","one"],"answer":1,"analysis":"\u6bd4\u8f83\u4e0d\u53ef\u6570/\u5355\u6570\u7528 that \u6307\u4ee3\u3002"},{"id":"je0079","grade":7,"type":"choice","book":"7b","unit":"7b04","topic":"\u9891\u7387","difficulty":2,"stem":"\u2014 How often do you read? \u2014 ___ a week.","options":["Two","Twice","Second","Two times"],"answer":1,"analysis":"\u4e24\u6b21\u7528 Twice\u3002"},{"id":"je0080","grade":7,"type":"choice","book":"7a","unit":"7a05","topic":"\u975e\u8c13\u8bed","difficulty":2,"stem":"My mother asks me ___ too many computer games.","options":["not play","not to play","to not play","don't play"],"answer":1,"analysis":"ask sb not to do sth\u3002"},{"id":"je0081","grade":7,"type":"choice","book":"7b","unit":"7b01","topic":"\u56fa\u5b9a\u53e5\u578b","difficulty":1,"stem":"It's time ___ class.","options":["to","for","of","on"],"answer":1,"analysis":"It's time for + \u540d\u8bcd\u3002"},{"id":"je0082","grade":7,"type":"choice","book":"7b","unit":"7b06","topic":"spend","difficulty":2,"stem":"He spent two hours ___ his homework.","options":["on","in","at","for"],"answer":0,"analysis":"spend time on sth\u3002"},{"id":"je0083","grade":7,"type":"vocab","book":"7a","unit":"7a03","topic":"\u8bcd\u5f62-\u540d\u8bcd","difficulty":1,"mode":"form","stem":"There are many ___ (leaf) on the tree.","word":"leaf","answer":"leaves","analysis":"leaf \u590d\u6570 leaves\u3002"},{"id":"je0084","grade":7,"type":"vocab","book":"7a","unit":"7b01","topic":"\u8bcd\u5f62-\u52a8\u8bcd","difficulty":1,"mode":"form","stem":"He ___ (brush) his teeth every morning.","word":"brush","answer":"brushes","analysis":"\u7b2c\u4e09\u4eba\u79f0\u5355\u6570 brushes\u3002"},{"id":"je0085","grade":7,"type":"vocab","book":"7a","unit":"7a03","topic":"\u8bcd\u5f62-\u540d\u8bcd","difficulty":1,"mode":"form","stem":"The baby has two ___ (tooth).","word":"tooth","answer":"teeth","analysis":"tooth \u590d\u6570 teeth\u3002"},{"id":"je0086","grade":7,"type":"vocab","book":"7b","unit":"7b04","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":2,"mode":"blank","stem":"I want to be a s___ when I grow up.","answer":"scientist","analysis":"\u79d1\u5b66\u5bb6 scientist\u3002"},{"id":"je0087","grade":7,"type":"vocab","book":"7b","unit":"7b06","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":2,"mode":"blank","stem":"Please turn off the l___ before leaving.","answer":"light","analysis":"\u5173\u706f light\u3002"},{"id":"je0088","grade":7,"type":"vocab","book":"7a","unit":"7a05","topic":"\u8bcd\u5f62-\u8fdb\u884c\u65f6","difficulty":1,"mode":"form","stem":"They are ___ (run) in the park now.","word":"run","answer":"running","analysis":"\u73b0\u5728\u8fdb\u884c\u65f6 running\u3002"},{"id":"je0089","grade":7,"type":"cloze","book":"7b","unit":"7b03","topic":"\u8bb0\u53d9-\u793c\u7269","difficulty":2,"title":"A Birthday Gift","passage":"Lucy wanted to buy a gift for her mother's (1)___. She (2)___ her pocket money and went to the shop. She (3)___ a nice scarf. Her mother was very (4)___ when she got it. 'Thank you, my (5)___,' she said. They (6)___ a big cake together. It was a (7)___ day. Lucy felt (8)___.","blanks":[{"options":["birthday","school","work","party"],"answer":0,"analysis":"\u751f\u65e5\u793c\u7269 birthday\u3002"},{"options":["save","saved","saving","saves"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 saved\u3002"},{"options":["buy","bought","buys","buying"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 bought\u3002"},{"options":["sad","happy","angry","tired"],"answer":1,"analysis":"\u6536\u5230\u793c\u7269\u9ad8\u5174\u3002"},{"options":["daughter","son","friend","teacher"],"answer":0,"analysis":"Lucy \u662f\u5973\u513f daughter\u3002"},{"options":["make","made","makes","making"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 made\u3002"},{"options":["bad","good","cold","busy"],"answer":1,"analysis":"\u7f8e\u597d\u7684\u4e00\u5929\u3002"},{"options":["sad","happy","bored","tired"],"answer":1,"analysis":"Lucy \u611f\u5230 happy\u3002"}]},{"id":"je0090","grade":7,"type":"reading","book":"7a","unit":"7a06","topic":"\u8bf4\u660e-\u52a8\u7269","difficulty":2,"title":"Pandas","passage":"Pandas are lovely animals. They are white and black. They live in China. They like eating bamboo. Baby pandas are very small. We should protect them because they are in danger.","questions":[{"stem":"What color are pandas?","options":["White and black","Red","Yellow","Green"],"answer":0,"analysis":"\u9ed1\u767d\u76f8\u95f4\u3002"},{"stem":"What do they like eating?","options":["Meat","Bamboo","Fish","Grass"],"answer":1,"analysis":"\u5403\u7af9\u5b50 bamboo\u3002"},{"stem":"Why should we protect them?","options":["They are big.","They are in danger.","They are scary.","They are fast."],"answer":1,"analysis":"\u5904\u4e8e\u5371\u9669\u4e2d\u9700\u4fdd\u62a4\u3002"}]},{"id":"je0091","grade":7,"type":"reading","book":"7b","unit":"7b07","topic":"\u8bb0\u53d9-\u65c5\u884c","difficulty":2,"title":"A Trip to the Park","passage":"Last Sunday, Tom and his friends went to the park. They flew kites and rode bikes. They had a picnic under a tree. In the afternoon they took many photos. They went home at five. It was a happy day.","questions":[{"stem":"When did they go to the park?","options":["Last Sunday","Last Monday","Yesterday","Today"],"answer":0,"analysis":"\u4e0a\u5468\u65e5\u3002"},{"stem":"What did they do there?","options":["Flew kites","Watched TV","Read books","Slept"],"answer":0,"analysis":"\u653e\u98ce\u7b5d\u3002"},{"stem":"What did they take in the afternoon?","options":["Photos","Buses","Cakes","Umbrellas"],"answer":0,"analysis":"\u62cd\u7167 photos\u3002"}]},{"id":"je0092","grade":7,"type":"grammar","book":"7b","unit":"7b02","topic":"\u8fc7\u53bb+\u5c06\u6765","difficulty":2,"title":"Grammar Fill-in","passage":"Yesterday I (1)___ (visit) my grandma. She (2)___ (cook) a big meal. We (3)___ (eat) together happily. Tomorrow I (4)___ (help) her clean the room. She (5)___ (be) very kind.","blanks":[{"options":["visit","visited","visits","visiting"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 visited\u3002"},{"options":["cook","cooked","cooks","cooking"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 cooked\u3002"},{"options":["eat","ate","eats","eating"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 ate\u3002"},{"options":["help","will help","helped","helps"],"answer":1,"analysis":"tomorrow \u5c06\u6765\u65f6 will help\u3002"},{"options":["is","was","are","be"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 was\u3002"}]},{"id":"je0093","grade":7,"type":"task","book":"7a","unit":"7a08","topic":"\u4efb\u52a1-\u901a\u77e5","difficulty":2,"title":"A Notice","passage":"NOTICE: We will have a school trip on Saturday. Meet at the school gate at 8:00 a.m. Bring your lunch and water. Wear sports shoes. Call Mr. Li at 555-1234 for more information.","questions":[{"stem":"When is the school trip?","answer":"On Saturday","analysis":"\u5468\u516d\u3002","kind":"answer"},{"stem":"Where do they meet?","answer":"At the school gate","analysis":"\u6821\u95e8\u53e3\u96c6\u5408\u3002"},{"stem":"What should they wear?","answer":"Sports shoes","analysis":"\u7a7f\u8fd0\u52a8\u978b\u3002"}]},{"id":"je0094","grade":7,"type":"writing","book":"7a","unit":"7a09","topic":"\u8bdd\u9898-\u5468\u672b","difficulty":1,"title":"My Weekend","prompt":"\u8bf7\u4ee5 'My Weekend' \u4e3a\u9898\u5199\u4e00\u7bc7\u4e0d\u5c11\u4e8e 60 \u8bcd\u7684\u82f1\u8bed\u77ed\u6587\uff0c\u63cf\u8ff0\u4f60\u4e0a\u5468\u672b\u505a\u4e86\u4ec0\u4e48\u3001\u611f\u89c9\u5982\u4f55\u3002","requirements":["\u5199\u660e\u65f6\u95f4","\u63cf\u8ff0\u6d3b\u52a8","\u8868\u8fbe\u611f\u53d7"],"points":["\u7528\u4e00\u822c\u8fc7\u53bb\u65f6","\u8bed\u53e5\u8fde\u8d2f","\u4e0d\u5c11\u4e8e 60 \u8bcd"],"wordLimit":60,"sample":"Last weekend I was very happy. On Saturday morning I did my homework. In the afternoon I played basketball with my friends. On Sunday I visited my grandparents and had lunch with them. We talked and laughed a lot. I think weekends are the best time of the week."},{"id":"je0095","grade":8,"type":"choice","book":"8a","unit":"8a01","topic":"\u975e\u8c13\u8bed","difficulty":2,"stem":"The teacher told us ___ in the classroom.","options":["not run","not to run","don't run","to not run"],"answer":1,"analysis":"tell sb not to do sth\u3002"},{"id":"je0096","grade":8,"type":"choice","book":"8b","unit":"8b01","topic":"\u73b0\u5728\u5b8c\u6210\u65f6","difficulty":2,"stem":"I have ___ seen the film, so I won't go again.","options":["yet","already","still","ever"],"answer":1,"analysis":"\u80af\u5b9a\u53e5\u5df2\u53d1\u751f\u7528 already\u3002"},{"id":"je0097","grade":8,"type":"choice","book":"8a","unit":"8a02","topic":"\u6bd4\u8f83\u7ea7","difficulty":2,"stem":"He is taller than ___ in his class.","options":["any boy","any other boy","all boys","other boys"],"answer":1,"analysis":"\u540c\u8303\u56f4\u6bd4\u8f83\u6392\u9664\u81ea\u8eab\u7528 any other boy\u3002"},{"id":"je0098","grade":8,"type":"choice","book":"8a","unit":"8a03","topic":"\u72b6\u8bed\u4ece\u53e5","difficulty":2,"stem":"If it ___ tomorrow, we will stay at home.","options":["rains","will rain","rained","is raining"],"answer":0,"analysis":"\u4e3b\u5c06\u4ece\u73b0\uff0cif \u4ece\u53e5\u7528\u4e00\u822c\u73b0\u5728\u65f6\u3002"},{"id":"je0099","grade":8,"type":"choice","book":"8b","unit":"8b01","topic":"\u65f6\u6001-\u4ecb\u8bcd","difficulty":2,"stem":"She has lived here ___ 2015.","options":["for","since","in","from"],"answer":1,"analysis":"since + \u8fc7\u53bb\u65f6\u95f4\u70b9\u3002"},{"id":"je0100","grade":8,"type":"choice","book":"8b","unit":"8b02","topic":"\u5f62\u5bb9\u8bcd","difficulty":2,"stem":"The movie was so ___ that I fell asleep.","options":["boring","bored","interesting","excited"],"answer":0,"analysis":"\u4fee\u9970\u7269\u7528 boring\uff08\u4ee4\u4eba\u538c\u70e6\u7684\uff09\u3002"},{"id":"je0101","grade":8,"type":"choice","book":"8a","unit":"8a04","topic":"\u60c5\u6001-\u8bf7\u6c42","difficulty":2,"stem":"\u2014 Could you please pass me the salt? \u2014 ___.","options":["Yes, I could","Sure","No, I couldn't","Sorry, I can't"],"answer":1,"analysis":"\u59d4\u5a49\u8bf7\u6c42\u7684\u80af\u5b9a\u56de\u7b54\u7528 Sure\u3002"},{"id":"je0102","grade":8,"type":"choice","book":"8b","unit":"8b06","topic":"spend","difficulty":2,"stem":"He spent two hours ___ the book.","options":["read","reading","to read","reads"],"answer":1,"analysis":"spend time (in) doing sth\u3002"},{"id":"je0103","grade":8,"type":"choice","book":"8a","unit":"8a05","topic":"\u770b\u75c5","difficulty":1,"stem":"\u2014 What's the matter? \u2014 I have a ___.","options":["headache","head","hair","hand"],"answer":0,"analysis":"have a headache \u5934\u75db\u3002"},{"id":"je0104","grade":8,"type":"choice","book":"8b","unit":"8b08","topic":"\u4f7f\u5f79-\u88ab\u52a8","difficulty":2,"stem":"My bike is broken. I need to have it ___.","options":["repair","repaired","repairing","to repair"],"answer":1,"analysis":"have sth done \u8ba9\u522b\u4eba\u505a\u67d0\u4e8b\u3002"},{"id":"je0105","grade":8,"type":"vocab","book":"8b","unit":"8b02","topic":"\u8bcd\u5f62-\u540d\u8bcd","difficulty":2,"mode":"form","stem":"He made a ___ (decide) to study harder.","word":"decide","answer":"decision","analysis":"decide\u2192decision \u540d\u8bcd\u3002"},{"id":"je0106","grade":8,"type":"vocab","book":"8a","unit":"8a05","topic":"\u8bcd\u5f62-\u88ab\u52a8","difficulty":3,"mode":"form","stem":"The book is ___ (write) by a famous author.","word":"write","answer":"written","analysis":"\u4e00\u822c\u73b0\u5728\u88ab\u52a8 written\u3002"},{"id":"je0107","grade":8,"type":"vocab","book":"8a","unit":"8a06","topic":"\u8bcd\u5f62-\u540d\u8bcd","difficulty":2,"mode":"form","stem":"We should eat more ___ (vegetable).","word":"vegetable","answer":"vegetables","analysis":"\u852c\u83dc\u590d\u6570 vegetables\u3002"},{"id":"je0108","grade":8,"type":"vocab","book":"8b","unit":"8b07","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":3,"mode":"blank","stem":"The t___ is very heavy because of the rain.","answer":"traffic","analysis":"\u4ea4\u901a traffic\u3002"},{"id":"je0109","grade":8,"type":"vocab","book":"8a","unit":"8a03","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":3,"mode":"blank","stem":"You should f___ the rules at school.","answer":"follow","analysis":"\u9075\u5b88 follow\u3002"},{"id":"je0110","grade":8,"type":"vocab","book":"8b","unit":"8b01","topic":"\u8bcd\u5f62-\u4e0d\u89c4\u5219","difficulty":3,"mode":"form","stem":"She has ___ (win) three prizes this term.","word":"win","answer":"won","analysis":"win \u8fc7\u53bb\u5206\u8bcd won\u3002"},{"id":"je0111","grade":8,"type":"cloze","book":"8b","unit":"8b03","topic":"\u8bb0\u53d9-\u52a9\u4eba","difficulty":3,"title":"A Helpful Boy","passage":"Li Ming is a (1)___ boy. One day he (2)___ an old man fall down on the street. He (3)___ the old man up and (4)___ a doctor. The doctor (5)___ the old man quickly. The old man's family (6)___ Li Ming and gave him a gift. Li Ming was very (7)___. He said helping others is (8)___.","blanks":[{"options":["bad","kind","lazy","rude"],"answer":1,"analysis":"\u5584\u826f\u7684\u7537\u5b69 kind\u3002"},{"options":["see","saw","seeing","sees"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 saw\u3002"},{"options":["help","helped","helping","helps"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 helped\u3002"},{"options":["call","called","calls","calling"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 called\u3002"},{"options":["save","saved","saves","saving"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 saved\u3002"},{"options":["thank","thanked","thanks","thanking"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 thanked\u3002"},{"options":["sad","happy","angry","tired"],"answer":1,"analysis":"\u53d7\u5230\u611f\u8c22\u5f88\u9ad8\u5174\u3002"},{"options":["bad","happy","boring","sorry"],"answer":1,"analysis":"\u52a9\u4eba\u5feb\u4e50 happy\u3002"}]},{"id":"je0112","grade":8,"type":"reading","book":"8b","unit":"8b04","topic":"\u8bf4\u660e-\u5fd7\u613f","difficulty":3,"title":"A Volunteer Day","passage":"Last month our school had a Volunteer Day. Students cleaned the park and planted trees. Some visited the old people's home and sang songs. Everyone worked hard and felt happy. We learned that giving is better than receiving.","questions":[{"stem":"What did students do in the park?","options":["Planted trees","Watched TV","Played games","Slept"],"answer":0,"analysis":"\u690d\u6811\u6253\u626b\u516c\u56ed\u3002"},{"stem":"Who did some students visit?","options":["Teachers","Old people","Doctors","Workers"],"answer":1,"analysis":"\u656c\u8001\u9662\u8001\u4eba\u3002"},{"stem":"What did they learn?","options":["Receiving is better.","Giving is better.","Working is hard.","Singing is fun."],"answer":1,"analysis":"\u4ed8\u51fa\u6bd4\u7d22\u53d6\u66f4\u6709\u610f\u4e49\u3002"}]},{"id":"je0113","grade":8,"type":"reading","book":"8a","unit":"8a08","topic":"\u8bae\u8bba-\u804c\u4e1a","difficulty":3,"title":"My Dream Job","passage":"I want to be a teacher when I grow up. Teachers help students learn knowledge and become good people. It is a meaningful job. To make my dream come true, I must study hard and read more books now.","questions":[{"stem":"What does the writer want to be?","options":["A doctor","A teacher","A driver","A farmer"],"answer":1,"analysis":"\u60f3\u5f53\u8001\u5e08\u3002"},{"stem":"Why is it meaningful?","options":["It pays well.","It helps students.","It is easy.","It is free."],"answer":1,"analysis":"\u5e2e\u52a9\u5b66\u751f\u6709\u610f\u4e49\u3002"},{"stem":"How to make the dream come true?","options":["Play more.","Study hard.","Sleep more.","Travel."],"answer":1,"analysis":"\u52aa\u529b\u5b66\u4e60\u3002"}]},{"id":"je0114","grade":8,"type":"grammar","book":"8b","unit":"8b05","topic":"\u5b8c\u6210+\u88ab\u52a8","difficulty":3,"title":"Grammar Fill-in","passage":"I (1)___ (finish) my homework already. The letter (2)___ (write) by my sister. We (3)___ (not see) the film yet. He (4)___ (work) here since 2018. The house (5)___ (build) last year.","blanks":[{"options":["finish","have finished","finished","finishes"],"answer":1,"analysis":"already \u73b0\u5728\u5b8c\u6210\u65f6\u3002"},{"options":["writes","wrote","was written","is writing"],"answer":2,"analysis":"\u8fc7\u53bb\u88ab\u52a8 was written\u3002"},{"options":["don't see","haven't seen","didn't see","saw"],"answer":1,"analysis":"yet \u73b0\u5728\u5b8c\u6210\u65f6\u5426\u5b9a\u3002"},{"options":["works","worked","has worked","is working"],"answer":2,"analysis":"since \u73b0\u5728\u5b8c\u6210\u65f6\u3002"},{"options":["build","built","was built","builds"],"answer":2,"analysis":"last year \u8fc7\u53bb\u88ab\u52a8\u3002"}]},{"id":"je0115","grade":8,"type":"task","book":"8a","unit":"8a09","topic":"\u4efb\u52a1-\u8c03\u67e5","difficulty":3,"title":"A Survey","passage":"We did a survey about free time. 40% of students read books. 30% play sports. 20% watch TV. 10% use the computer. Most students think reading is the best way to relax.","questions":[{"stem":"What do 30% of students do?","answer":"Play sports","analysis":"30% \u8fd0\u52a8\u3002","kind":"answer"},{"stem":"How many use the computer?","answer":"10%","analysis":"10% \u7528\u7535\u8111\u3002"},{"stem":"What is the best way to relax?","answer":"Reading","analysis":"\u591a\u6570\u8ba4\u4e3a\u9605\u8bfb\u6700\u4f73\u3002"}]},{"id":"je0116","grade":8,"type":"writing","book":"8a","unit":"8a10","topic":"\u8bdd\u9898-\u7406\u60f3","difficulty":3,"title":"My Dream Job","prompt":"\u8bf7\u4ee5 'My Dream Job' \u4e3a\u9898\u5199\u4e00\u7bc7\u4e0d\u5c11\u4e8e 80 \u8bcd\u7684\u77ed\u6587\uff0c\u8bf4\u660e\u4f60\u7684\u7406\u60f3\u804c\u4e1a\u3001\u539f\u56e0\u4ee5\u53ca\u4e3a\u5b9e\u73b0\u5b83\u8981\u505a\u7684\u4e8b\u3002","requirements":["\u70b9\u660e\u804c\u4e1a","\u8bf4\u660e\u539f\u56e0","\u5199\u660e\u884c\u52a8"],"points":["\u7528\u5c06\u6765\u65f6\u8868\u8fbe\u7406\u60f3","\u7406\u7531\u5145\u5206","\u4e0d\u5c11\u4e8e 80 \u8bcd"],"wordLimit":80,"sample":"My dream job is to be a teacher. Teachers help students grow and learn. I like children and books. To make it come true, I will study hard and read widely. I will also learn how to get on with others. I believe I can become a good teacher one day."},{"id":"je0117","grade":9,"type":"choice","book":"9","unit":"9a01","topic":"\u975e\u8c13\u8bed","difficulty":3,"stem":"The doctor advised him ___ smoking.","options":["stop","to stop","stopping","stopped"],"answer":1,"analysis":"advise sb to do sth\u3002"},{"id":"je0118","grade":9,"type":"choice","book":"9","unit":"9a02","topic":"\u5efa\u8bae\u53e5\u578b","difficulty":3,"stem":"\u2014 I'm tired. \u2014 Why not ___ a rest?","options":["have","to have","having","had"],"answer":0,"analysis":"Why not + \u52a8\u8bcd\u539f\u5f62\u3002"},{"id":"je0119","grade":9,"type":"choice","book":"9","unit":"9a03","topic":"\u6700\u9ad8\u7ea7","difficulty":3,"stem":"He is the ___ student in our class.","options":["tall","taller","tallest","most tall"],"answer":2,"analysis":"\u4e09\u8005\u53ca\u4ee5\u4e0a\u7528\u6700\u9ad8\u7ea7 tallest\u3002"},{"id":"je0120","grade":9,"type":"choice","book":"9","unit":"9a04","topic":"\u88ab\u52a8-\u8fc7\u53bb","difficulty":3,"stem":"The window is broken. It ___ yesterday.","options":["broke","was broken","broke down","breaks"],"answer":1,"analysis":"\u8fc7\u53bb\u88ab\u52a8 was broken\u3002"},{"id":"je0121","grade":9,"type":"choice","book":"9","unit":"9a05","topic":"\u8fc7\u53bb\u5b8c\u6210","difficulty":3,"stem":"By the end of last year, she ___ English for 5 years.","options":["learns","learned","had learned","has learned"],"answer":2,"analysis":"\u8fc7\u53bb\u7684\u8fc7\u53bb\u7528\u8fc7\u53bb\u5b8c\u6210\u65f6\u3002"},{"id":"je0122","grade":9,"type":"choice","book":"9","unit":"9a06","topic":"prefer","difficulty":3,"stem":"I prefer ___ to ___.","options":["read; watch TV","reading; watching TV","to read; watch TV","reading; watch TV"],"answer":1,"analysis":"prefer doing to doing\u3002"},{"id":"je0123","grade":9,"type":"choice","book":"9","unit":"9a07","topic":"encourage","difficulty":3,"stem":"The teacher encouraged us ___ hard.","options":["study","to study","studying","studied"],"answer":1,"analysis":"encourage sb to do sth\u3002"},{"id":"je0124","grade":9,"type":"choice","book":"9","unit":"9a08","topic":"\u60c5\u6001-\u5fc5\u8981","difficulty":3,"stem":"\u2014 Must I go now? \u2014 No, you ___.","options":["mustn't","needn't","can't","shouldn't"],"answer":1,"analysis":"Must \u5426\u5b9a\u56de\u7b54\u7528 needn't\u3002"},{"id":"je0125","grade":9,"type":"choice","book":"9","unit":"9a09","topic":"used to","difficulty":3,"stem":"He is used to ___ early.","options":["get up","getting up","got up","get"],"answer":1,"analysis":"be used to doing \u4e60\u60ef\u4e8e\u3002"},{"id":"je0126","grade":9,"type":"choice","book":"9","unit":"9a10","topic":"\u4ecb\u8bcd","difficulty":3,"stem":"___ the help of my teacher, I passed the exam.","options":["With","Under","By","For"],"answer":0,"analysis":"with the help of \u5728\u2026\u5e2e\u52a9\u4e0b\u3002"},{"id":"je0127","grade":9,"type":"vocab","book":"9","unit":"9a03","topic":"\u8bcd\u5f62-\u540d\u8bcd","difficulty":3,"mode":"form","stem":"His ___ (succeed) made his parents proud.","word":"succeed","answer":"success","analysis":"succeed\u2192success \u540d\u8bcd\u3002"},{"id":"je0128","grade":9,"type":"vocab","book":"9","unit":"9a01","topic":"\u8bcd\u5f62-\u540d\u8bcd","difficulty":3,"mode":"form","stem":"The ___ (invent) of the light bulb helped people a lot.","word":"invent","answer":"invention","analysis":"invent\u2192invention \u540d\u8bcd\u3002"},{"id":"je0129","grade":9,"type":"vocab","book":"9","unit":"9a02","topic":"\u8bcd\u5f62-\u4e0d\u89c4\u5219","difficulty":3,"mode":"form","stem":"She has ___ (learn) 2000 words so far.","word":"learn","answer":"learned","analysis":"learn \u8fc7\u53bb\u5206\u8bcd learned\u3002"},{"id":"je0130","grade":9,"type":"vocab","book":"9","unit":"9a04","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":3,"mode":"blank","stem":"We must p___ the environment for our children.","answer":"protect","analysis":"\u4fdd\u62a4 protect\u3002"},{"id":"je0131","grade":9,"type":"vocab","book":"9","unit":"9a09","topic":"\u53e5\u610f\u586b\u8bcd","difficulty":3,"mode":"blank","stem":"It's our d___ to help others.","answer":"duty","analysis":"\u8d23\u4efb duty\u3002"},{"id":"je0132","grade":9,"type":"vocab","book":"9","unit":"9a07","topic":"\u8bcd\u5f62-\u88ab\u52a8","difficulty":3,"mode":"form","stem":"The bridge ___ (build) by workers last year.","word":"build","answer":"was built","analysis":"\u8fc7\u53bb\u88ab\u52a8 was built\u3002"},{"id":"je0133","grade":9,"type":"cloze","book":"9","unit":"9a05","topic":"\u8bb0\u53d9-\u52c7\u6562","difficulty":3,"title":"A Brave Girl","passage":"On her way home, Lucy (1)___ a little boy crying near the river. She (2)___ his hand and (3)___ him to safety. Then she (4)___ the police. The police (5)___ the boy's parents. They thanked Lucy and said she was very (6)___. The teacher praised her in (7)___. Lucy felt (8)___ of herself.","blanks":[{"options":["see","saw","seeing","sees"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 saw\u3002"},{"options":["take","took","taking","takes"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 took\u3002"},{"options":["lead","led","leading","leads"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 led\u3002"},{"options":["call","called","calls","calling"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 called\u3002"},{"options":["find","found","finds","finding"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 found\u3002"},{"options":["brave","lazy","shy","rude"],"answer":0,"analysis":"\u52c7\u6562\u7684\u5973\u5b69 brave\u3002"},{"options":["class","home","bed","shop"],"answer":0,"analysis":"\u5728\u73ed\u4e0a\u8868\u626c in class\u3002"},{"options":["proud","sad","tired","angry"],"answer":0,"analysis":"\u4e3a\u81ea\u5df1\u81ea\u8c6a proud\u3002"}]},{"id":"je0134","grade":9,"type":"reading","book":"9","unit":"9a07","topic":"\u8bf4\u660e-\u5b66\u4e60","difficulty":3,"title":"Online Learning","passage":"Online learning is popular now. Students can watch lessons at home. They can review videos many times. But they need self-control. Some students find it hard to focus. Good time management is the key to success.","questions":[{"stem":"Where can students watch lessons?","options":["At school","At home","In the library","In the park"],"answer":1,"analysis":"\u5728\u5bb6\u770b\u8bfe\u3002"},{"stem":"What can they do with videos?","options":["Delete them","Review many times","Sell them","Ignore them"],"answer":1,"analysis":"\u53cd\u590d\u56de\u770b\u3002"},{"stem":"What is the key to success?","options":["Luck","Good time management","More money","New books"],"answer":1,"analysis":"\u826f\u597d\u7684\u65f6\u95f4\u7ba1\u7406\u3002"}]},{"id":"je0135","grade":9,"type":"reading","book":"9","unit":"9a08","topic":"\u8bf4\u660e-\u5065\u5eb7","difficulty":3,"title":"Healthy Lifestyle","passage":"A healthy lifestyle means eating well and exercising often. We should eat fruit and vegetables every day. Walking or running for 30 minutes helps the heart. Enough sleep keeps us energetic. Bad habits like smoking hurt our body.","questions":[{"stem":"What does a healthy lifestyle mean?","options":["Eating fast food","Eating well and exercising","Sleeping all day","Watching TV"],"answer":1,"analysis":"\u996e\u98df\u4e0e\u8fd0\u52a8\u3002"},{"stem":"How long is good exercise?","options":["5 minutes","30 minutes","2 hours","All day"],"answer":1,"analysis":"30 \u5206\u949f\u8fd0\u52a8\u3002"},{"stem":"Which is a bad habit?","options":["Running","Smoking","Sleeping","Eating vegetables"],"answer":1,"analysis":"\u5438\u70df\u6709\u5bb3\u3002"}]},{"id":"je0136","grade":9,"type":"grammar","book":"9","unit":"9a02","topic":"\u7efc\u5408\u65f6\u6001","difficulty":3,"title":"Grammar Fill-in","passage":"When I (1)___ (be) young, I (2)___ (live) in a small town. Now I (3)___ (study) in a big city. I (4)___ (make) many friends since I came. We (5)___ (go) to the park tomorrow.","blanks":[{"options":["am","was","were","be"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 was\u3002"},{"options":["live","lived","lives","living"],"answer":1,"analysis":"\u8fc7\u53bb\u65f6 lived\u3002"},{"options":["study","am studying","studied","studies"],"answer":1,"analysis":"\u73b0\u5728\u8fdb\u884c\u65f6 am studying\u3002"},{"options":["make","made","have made","makes"],"answer":2,"analysis":"since \u73b0\u5728\u5b8c\u6210\u65f6\u3002"},{"options":["go","went","will go","going"],"answer":2,"analysis":"tomorrow \u5c06\u6765\u65f6 will go\u3002"}]},{"id":"je0137","grade":9,"type":"task","book":"9","unit":"9a07","topic":"\u4efb\u52a1-\u6821\u89c4","difficulty":3,"title":"School Rules Survey","passage":"Our school made new rules. Students must wear uniforms. They should arrive before 8:00. Phones are not allowed in class. Homework must be handed in on time. Most students think the rules are helpful.","questions":[{"stem":"What must students wear?","answer":"Uniforms","analysis":"\u7a7f\u6821\u670d\u3002","kind":"answer"},{"stem":"When should they arrive?","answer":"Before 8:00","analysis":"8 \u70b9\u524d\u5230\u6821\u3002"},{"stem":"Are phones allowed in class?","answer":"No, they are not","analysis":"\u8bfe\u5802\u4e0a\u7981\u6b62\u624b\u673a\u3002"}]},{"id":"je0138","grade":9,"type":"writing","book":"9","unit":"9a09","topic":"\u8bdd\u9898-\u68a6\u60f3","difficulty":3,"title":"My Dream","prompt":"\u8bf7\u4ee5 'My Dream' \u4e3a\u9898\u5199\u4e00\u7bc7\u4e0d\u5c11\u4e8e 100 \u8bcd\u7684\u77ed\u6587\uff0c\u63cf\u8ff0\u4f60\u7684\u68a6\u60f3\u3001\u4e3a\u4ec0\u4e48\u4ee5\u53ca\u4f60\u6253\u7b97\u5982\u4f55\u5b9e\u73b0\u5b83\u3002","requirements":["\u70b9\u660e\u68a6\u60f3","\u8bf4\u660e\u539f\u56e0","\u89c4\u5212\u884c\u52a8","\u8868\u8fbe\u51b3\u5fc3"],"points":["\u4f7f\u7528\u5c06\u6765\u65f6","\u8fde\u63a5\u8bcd\u6e05\u6670","\u4e0d\u5c11\u4e8e 100 \u8bcd"],"wordLimit":100,"sample":"My dream is to travel around the world and learn about different cultures. I love meeting new people and seeing beautiful places. To make it come true, I will study English hard and save money. I will also keep a healthy body by exercising. I believe if I work hard, my dream will come true one day."}]};
 var TRIAL_JW = "jw7a";
 var TRIAL_JU = "7a01";
+var TRIAL_SU = "b1w";
 var TRIAL_JG = "g01";
 var TRIAL_RD = "r1a1";
 var TRIAL_KW = "kw1";
@@ -38294,6 +38295,2430 @@ var worker_default = {
       const slim = list.map((b) => ({ ...b, units: b.units.filter((un) => un.id === TRIAL_JU) })).filter((b) => b.units.length > 0);
       return ok({ books: slim, trial: true });
     }
+    // src/senior_textbook.json
+var sbook_default = {
+  "product": "高中英语课本章节同步训练",
+  "version": "1.0",
+  "schema_version": "1.0",
+  "note": "人教版（2019 版）必修第一/二/三册 + 选择性必修第一~四册共 7 册 36 单元；每单元含重点词汇、语法要点与同步练习；词汇音频约定路径 /audio/sw/<word>.mp3（暂无则优雅降级）。必修第一册与各校首单元已充实，其余单元内容整理中。",
+  "books": [
+    {
+      "code": "b1",
+      "title": "必修第一册",
+      "units": [
+        {
+          "id": "b1w",
+          "title": "Welcome Unit",
+          "topic": "高中生活启航 · 基础交际与校园词汇",
+          "words": [
+            {
+              "word": "freshman",
+              "phonetic": "ˈfreʃmən",
+              "pos": "n.",
+              "meaning": "（中学或大学的）一年级新生",
+              "audio": "/audio/sw/freshman.mp3",
+              "sentence": "As a freshman, he felt both excited and nervous.",
+              "sentenceCn": "作为高一新生，他既兴奋又紧张。"
+            },
+            {
+              "word": "campus",
+              "phonetic": "ˈkæmpəs",
+              "pos": "n.",
+              "meaning": "校园；校区",
+              "audio": "/audio/sw/campus.mp3",
+              "sentence": "The campus is beautiful in autumn.",
+              "sentenceCn": "秋天的校园很美。"
+            },
+            {
+              "word": "challenge",
+              "phonetic": "ˈtʃælɪndʒ",
+              "pos": "n./v.",
+              "meaning": "挑战；向…挑战",
+              "audio": "/audio/sw/challenge.mp3",
+              "sentence": "Learning a new language is a real challenge.",
+              "sentenceCn": "学习一门新语言是真正的挑战。"
+            },
+            {
+              "word": "confident",
+              "phonetic": "ˈkɒnfɪdənt",
+              "pos": "adj.",
+              "meaning": "自信的；有把握的",
+              "audio": "/audio/sw/confident.mp3",
+              "sentence": "She is confident about the coming exam.",
+              "sentenceCn": "她对即将到来的考试很有信心。"
+            },
+            {
+              "word": "concentrate",
+              "phonetic": "ˈkɒnsntreɪt",
+              "pos": "v.",
+              "meaning": "集中（注意力）；专注",
+              "audio": "/audio/sw/concentrate.mp3",
+              "sentence": "Please concentrate on your homework.",
+              "sentenceCn": "请专心做作业。"
+            },
+            {
+              "word": "lecture",
+              "phonetic": "ˈlektʃə(r)",
+              "pos": "n.",
+              "meaning": "讲座；讲课",
+              "audio": "/audio/sw/lecture.mp3",
+              "sentence": "We attended a lecture on science.",
+              "sentenceCn": "我们听了一场关于科学的讲座。"
+            },
+            {
+              "word": "register",
+              "phonetic": "ˈredʒɪstə(r)",
+              "pos": "v.",
+              "meaning": "登记；注册",
+              "audio": "/audio/sw/register.mp3",
+              "sentence": "You must register for the new course.",
+              "sentenceCn": "你必须注册这门新课。"
+            },
+            {
+              "word": "volunteer",
+              "phonetic": "ˌvɒlənˈtɪə(r)",
+              "pos": "n./v.",
+              "meaning": "志愿者；做志愿工作",
+              "audio": "/audio/sw/volunteer.mp3",
+              "sentence": "He volunteers at the local library.",
+              "sentenceCn": "他在当地图书馆做志愿工作。"
+            },
+            {
+              "word": "goal",
+              "phonetic": "ɡəʊl",
+              "pos": "n.",
+              "meaning": "目标；球门",
+              "audio": "/audio/sw/goal.mp3",
+              "sentence": "My goal is to study abroad.",
+              "sentenceCn": "我的目标是出国留学。"
+            },
+            {
+              "word": "independent",
+              "phonetic": "ˌɪndɪˈpendənt",
+              "pos": "adj.",
+              "meaning": "独立的；自主的",
+              "audio": "/audio/sw/independent.mp3",
+              "sentence": "University life makes students more independent.",
+              "sentenceCn": "大学生活让学生更独立。"
+            },
+            {
+              "word": "responsible",
+              "phonetic": "rɪˈspɒnsəbl",
+              "pos": "adj.",
+              "meaning": "有责任的；可靠的",
+              "audio": "/audio/sw/responsible.mp3",
+              "sentence": "We should be responsible for our own study.",
+              "sentenceCn": "我们应该对自己的学习负责。"
+            },
+            {
+              "word": "explore",
+              "phonetic": "ɪkˈsplɔː(r)",
+              "pos": "v.",
+              "meaning": "探索；探究",
+              "audio": "/audio/sw/explore.mp3",
+              "sentence": "Let's explore different clubs.",
+              "sentenceCn": "我们来了解一下不同的社团吧。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "用情态动词 can / should / must 表达能力与建议：can 表能力，should 表建议，must 表必须。",
+              "example": "You should join a club to make friends.",
+              "exampleCn": "你应该加入一个社团来交朋友。"
+            },
+            {
+              "point": "祈使句用于提出请求或建议，常以动词原形开头；否定式在句首加 Don't。",
+              "example": "Don't be late for the first class.",
+              "exampleCn": "第一节课不要迟到。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "新学期你鼓励同学加入社团，最恰当的建议是：___",
+              "options": [
+                "You should join a club.",
+                "You must sleep all day.",
+                "Don't go to school."
+              ],
+              "answer": 0,
+              "analysis": "should 用于给出建议，加入社团是积极建议。"
+            },
+            {
+              "stem": "\"大一新生\" 对应的英文是：___",
+              "options": [
+                "freshman",
+                "teacher",
+                "worker"
+              ],
+              "answer": 0,
+              "analysis": "freshman 指中学或大学一年级新生。"
+            },
+            {
+              "stem": "— Can you concentrate on the lecture? — ___, it is very interesting.",
+              "options": [
+                "Yes, I can",
+                "No, I must",
+                "Don't"
+              ],
+              "answer": 0,
+              "analysis": "can 提问用 can 回答，表示能做到。"
+            },
+            {
+              "stem": "We should be ___ for our own learning.",
+              "options": [
+                "responsible",
+                "responsibility",
+                "respond"
+              ],
+              "answer": 0,
+              "analysis": "be 动词后接形容词 responsible（有责任的）。"
+            },
+            {
+              "stem": "He ___ at the school library every weekend.",
+              "options": [
+                "volunteers",
+                "volunteer",
+                "volunteering"
+              ],
+              "answer": 0,
+              "analysis": "主语 he 为第三人称单数，动词加 -s。"
+            },
+            {
+              "stem": "___ late for the meeting.",
+              "options": [
+                "Don't be",
+                "Not be",
+                "Be not"
+              ],
+              "answer": 0,
+              "analysis": "祈使句否定式以 Don't 开头。"
+            }
+          ]
+        },
+        {
+          "id": "b101",
+          "title": "Unit 1 Teenage Life",
+          "topic": "青少年生活 · 学习与社团",
+          "words": [
+            {
+              "word": "teenager",
+              "phonetic": "ˈtiːneɪdʒə(r)",
+              "pos": "n.",
+              "meaning": "青少年（13–19 岁）",
+              "audio": "/audio/sw/teenager.mp3",
+              "sentence": "Many teenagers like playing sports.",
+              "sentenceCn": "许多青少年喜欢运动。"
+            },
+            {
+              "word": "prefer",
+              "phonetic": "prɪˈfɜː(r)",
+              "pos": "v.",
+              "meaning": "更喜欢；宁愿",
+              "audio": "/audio/sw/prefer.mp3",
+              "sentence": "I prefer reading to watching TV.",
+              "sentenceCn": "比起看电视，我更喜欢阅读。"
+            },
+            {
+              "word": "suitable",
+              "phonetic": "ˈsuːtəbl",
+              "pos": "adj.",
+              "meaning": "合适的；适宜的",
+              "audio": "/audio/sw/suitable.mp3",
+              "sentence": "This club is suitable for beginners.",
+              "sentenceCn": "这个社团适合初学者。"
+            },
+            {
+              "word": "pressure",
+              "phonetic": "ˈpreʃə(r)",
+              "pos": "n.",
+              "meaning": "压力",
+              "audio": "/audio/sw/pressure.mp3",
+              "sentence": "Students often face study pressure.",
+              "sentenceCn": "学生常面临学习压力。"
+            },
+            {
+              "word": "debate",
+              "phonetic": "dɪˈbeɪt",
+              "pos": "n./v.",
+              "meaning": "辩论；讨论",
+              "audio": "/audio/sw/debate.mp3",
+              "sentence": "We had a debate about school rules.",
+              "sentenceCn": "我们就校规进行了一场辩论。"
+            },
+            {
+              "word": "attend",
+              "phonetic": "əˈtend",
+              "pos": "v.",
+              "meaning": "参加；出席",
+              "audio": "/audio/sw/attend.mp3",
+              "sentence": "She will attend the music club.",
+              "sentenceCn": "她将参加音乐社团。"
+            },
+            {
+              "word": "extra",
+              "phonetic": "ˈekstrə",
+              "pos": "adj.",
+              "meaning": "额外的；额外的",
+              "audio": "/audio/sw/extra.mp3",
+              "sentence": "He needs extra practice.",
+              "sentenceCn": "他需要额外的练习。"
+            },
+            {
+              "word": "quit",
+              "phonetic": "kwɪt",
+              "pos": "v.",
+              "meaning": "停止；放弃；离开",
+              "audio": "/audio/sw/quit.mp3",
+              "sentence": "He quit the team last month.",
+              "sentenceCn": "他上个月退出了团队。"
+            },
+            {
+              "word": "survive",
+              "phonetic": "səˈvaɪv",
+              "pos": "v.",
+              "meaning": "幸存；挺过",
+              "audio": "/audio/sw/survive.mp3",
+              "sentence": "We must learn to survive stress.",
+              "sentenceCn": "我们必须学会扛过压力。"
+            },
+            {
+              "word": "generation",
+              "phonetic": "ˌdʒenəˈreɪʃn",
+              "pos": "n.",
+              "meaning": "一代（人）；世代",
+              "audio": "/audio/sw/generation.mp3",
+              "sentence": "There is a gap between two generations.",
+              "sentenceCn": "两代人之间存在代沟。"
+            },
+            {
+              "word": "actually",
+              "phonetic": "ˈæktʃuəli",
+              "pos": "adv.",
+              "meaning": "实际上；事实上",
+              "audio": "/audio/sw/actually.mp3",
+              "sentence": "Actually, it is not difficult.",
+              "sentenceCn": "实际上，这并不难。"
+            },
+            {
+              "word": "obviously",
+              "phonetic": "ˈɒbviəsli",
+              "pos": "adv.",
+              "meaning": "显然；明显地",
+              "audio": "/audio/sw/obviously.mp3",
+              "sentence": "Obviously, he needs help.",
+              "sentenceCn": "显然，他需要帮助。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "宾语从句：由 that / whether / what 等引导，作动词的宾语；that 常可省略。",
+              "example": "I think (that) this club is fun.",
+              "exampleCn": "我认为这个社团很有趣。"
+            },
+            {
+              "point": "一般现在时与一般过去时：描述常态用一般现在时，描述过去动作用一般过去时。",
+              "example": "He joins the club. / He joined it last year.",
+              "exampleCn": "他加入社团。/ 他去年加入的。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "I ___ reading books to playing games.",
+              "options": [
+                "prefer",
+                "prefers",
+                "preferring"
+              ],
+              "answer": 0,
+              "analysis": "主语 I 后用动词原形 prefer。"
+            },
+            {
+              "stem": "This activity is ___ for new students.",
+              "options": [
+                "suitable",
+                "suit",
+                "suited"
+              ],
+              "answer": 0,
+              "analysis": "be suitable for 为固定搭配，意为\"适合…\"。"
+            },
+            {
+              "stem": "— Do you think ___ we should join the team? — Yes.",
+              "options": [
+                "that",
+                "what",
+                "who"
+              ],
+              "answer": 0,
+              "analysis": "think 后接 that 引导的宾语从句，that 可省略。"
+            },
+            {
+              "stem": "Teenagers often feel ___ from exams.",
+              "options": [
+                "pressure",
+                "press",
+                "pressed"
+              ],
+              "answer": 0,
+              "analysis": "feel 后接名词 pressure（压力）。"
+            },
+            {
+              "stem": "He ___ the club because he was too busy.",
+              "options": [
+                "quit",
+                "quits",
+                "quitting"
+              ],
+              "answer": 0,
+              "analysis": "由 was 可知用一般过去时 quit（quit 过去式同形）。"
+            },
+            {
+              "stem": "___, the homework is not so hard.",
+              "options": [
+                "Actually",
+                "Act",
+                "Active"
+              ],
+              "answer": 0,
+              "analysis": "actually 作状语，意为\"实际上\"。"
+            }
+          ]
+        },
+        {
+          "id": "b102",
+          "title": "Unit 2 Travelling Around",
+          "topic": "旅行计划 · 交通与预订",
+          "words": [
+            {
+              "word": "journey",
+              "phonetic": "ˈdʒɜːni",
+              "pos": "n.",
+              "meaning": "旅行；旅程",
+              "audio": "/audio/sw/journey.mp3",
+              "sentence": "We had a long journey by train.",
+              "sentenceCn": "我们乘火车进行了一次长途旅行。"
+            },
+            {
+              "word": "transport",
+              "phonetic": "trænˈspɔːt",
+              "pos": "n./v.",
+              "meaning": "交通；运输",
+              "audio": "/audio/sw/transport.mp3",
+              "sentence": "Public transport is convenient.",
+              "sentenceCn": "公共交通很方便。"
+            },
+            {
+              "word": "destination",
+              "phonetic": "ˌdestɪˈneɪʃn",
+              "pos": "n.",
+              "meaning": "目的地；终点",
+              "audio": "/audio/sw/destination.mp3",
+              "sentence": "Paris is our destination.",
+              "sentenceCn": "巴黎是我们的目的地。"
+            },
+            {
+              "word": "brochure",
+              "phonetic": "brəʊˈʃʊə(r)",
+              "pos": "n.",
+              "meaning": "小册子；指南",
+              "audio": "/audio/sw/brochure.mp3",
+              "sentence": "Take a travel brochure with you.",
+              "sentenceCn": "带一本旅行指南吧。"
+            },
+            {
+              "word": "rent",
+              "phonetic": "rent",
+              "pos": "v.",
+              "meaning": "租用；出租",
+              "audio": "/audio/sw/rent.mp3",
+              "sentence": "We can rent a car there.",
+              "sentenceCn": "我们可以在那儿租一辆车。"
+            },
+            {
+              "word": "hike",
+              "phonetic": "haɪk",
+              "pos": "v./n.",
+              "meaning": "徒步旅行；远足",
+              "audio": "/audio/sw/hike.mp3",
+              "sentence": "They hiked in the mountains.",
+              "sentenceCn": "他们在山里徒步。"
+            },
+            {
+              "word": "credit",
+              "phonetic": "ˈkredɪt",
+              "pos": "n.",
+              "meaning": "信用；赊账；学分",
+              "audio": "/audio/sw/credit.mp3",
+              "sentence": "I paid by credit card.",
+              "sentenceCn": "我用信用卡付款。"
+            },
+            {
+              "word": "contact",
+              "phonetic": "ˈkɒntækt",
+              "pos": "v./n.",
+              "meaning": "联系；联络",
+              "audio": "/audio/sw/contact.mp3",
+              "sentence": "Please contact us by email.",
+              "sentenceCn": "请通过邮件联系我们。"
+            },
+            {
+              "word": "budget",
+              "phonetic": "ˈbʌdʒɪt",
+              "pos": "n.",
+              "meaning": "预算",
+              "audio": "/audio/sw/budget.mp3",
+              "sentence": "We should plan a travel budget.",
+              "sentenceCn": "我们应该规划旅行预算。"
+            },
+            {
+              "word": "flight",
+              "phonetic": "flaɪt",
+              "pos": "n.",
+              "meaning": "航班；飞行",
+              "audio": "/audio/sw/flight.mp3",
+              "sentence": "The flight was delayed.",
+              "sentenceCn": "航班延误了。"
+            },
+            {
+              "word": "luggage",
+              "phonetic": "ˈlʌɡɪdʒ",
+              "pos": "n.",
+              "meaning": "行李",
+              "audio": "/audio/sw/luggage.mp3",
+              "sentence": "Check your luggage at the counter.",
+              "sentenceCn": "在柜台托运你的行李。"
+            },
+            {
+              "word": "accommodation",
+              "phonetic": "əˌkɒməˈdeɪʃn",
+              "pos": "n.",
+              "meaning": "住宿；膳宿",
+              "audio": "/audio/sw/accommodation.mp3",
+              "sentence": "The hotel offers good accommodation.",
+              "sentenceCn": "这家酒店住宿条件很好。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "将来时态：be going to 表计划，will 表意愿或预测，现在进行时表已确定的近期安排。",
+              "example": "I am going to visit Beijing.",
+              "exampleCn": "我打算去北京游玩。"
+            },
+            {
+              "point": "疑问词引导的宾语从句：what / where / how 等疑问词可引导宾语从句。",
+              "example": "Could you tell me where the station is?",
+              "exampleCn": "你能告诉我车站在哪儿吗？"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "We are ___ to take a trip next week.",
+              "options": [
+                "going",
+                "go",
+                "went"
+              ],
+              "answer": 0,
+              "analysis": "be going to 表计划中的将来。"
+            },
+            {
+              "stem": "Could you tell me ___ the museum is?",
+              "options": [
+                "where",
+                "that",
+                "what"
+              ],
+              "answer": 0,
+              "analysis": "where 引导宾语从句，询问地点。"
+            },
+            {
+              "stem": "We can ___ a car at the airport.",
+              "options": [
+                "rent",
+                "rents",
+                "renting"
+              ],
+              "answer": 0,
+              "analysis": "can 后接动词原形 rent。"
+            },
+            {
+              "stem": "The train ___ was cancelled because of the storm.",
+              "options": [
+                "journey",
+                "journeys",
+                "journeying"
+              ],
+              "answer": 0,
+              "analysis": "train journey 意为\"火车旅程\"，用名词原形。"
+            },
+            {
+              "stem": "Don't forget to pack your ___.",
+              "options": [
+                "luggage",
+                "lug",
+                "lugged"
+              ],
+              "answer": 0,
+              "analysis": "luggage 为不可数行李。"
+            },
+            {
+              "stem": "I paid for the ticket by ___ card.",
+              "options": [
+                "credit",
+                "credits",
+                "crediting"
+              ],
+              "answer": 0,
+              "analysis": "credit card 信用卡。"
+            }
+          ]
+        },
+        {
+          "id": "b103",
+          "title": "Unit 3 Sports and Fitness",
+          "topic": "运动与健康",
+          "words": [
+            {
+              "word": "fitness",
+              "phonetic": "ˈfɪtnəs",
+              "pos": "n.",
+              "meaning": "健康；健壮",
+              "audio": "/audio/sw/fitness.mp3",
+              "sentence": "Daily exercise improves fitness.",
+              "sentenceCn": "每天锻炼增强体质。"
+            },
+            {
+              "word": "sweat",
+              "phonetic": "swet",
+              "pos": "n./v.",
+              "meaning": "汗；出汗",
+              "audio": "/audio/sw/sweat.mp3",
+              "sentence": "He was covered in sweat.",
+              "sentenceCn": "他满身是汗。"
+            },
+            {
+              "word": "marathon",
+              "phonetic": "ˈmærəθən",
+              "pos": "n.",
+              "meaning": "马拉松赛跑",
+              "audio": "/audio/sw/marathon.mp3",
+              "sentence": "She finished the marathon.",
+              "sentenceCn": "她跑完了马拉松。"
+            },
+            {
+              "word": "compete",
+              "phonetic": "kəmˈpiːt",
+              "pos": "v.",
+              "meaning": "竞争；比赛",
+              "audio": "/audio/sw/compete.mp3",
+              "sentence": "They compete in the match.",
+              "sentenceCn": "他们在比赛中竞争。"
+            },
+            {
+              "word": "cheer",
+              "phonetic": "tʃɪə(r)",
+              "pos": "v.",
+              "meaning": "欢呼；加油",
+              "audio": "/audio/sw/cheer.mp3",
+              "sentence": "Fans cheered for the team.",
+              "sentenceCn": "球迷为球队欢呼。"
+            },
+            {
+              "word": "jog",
+              "phonetic": "dʒɒɡ",
+              "pos": "v.",
+              "meaning": "慢跑",
+              "audio": "/audio/sw/jog.mp3",
+              "sentence": "I jog in the park every morning.",
+              "sentenceCn": "我每天早晨在公园慢跑。"
+            },
+            {
+              "word": "athletic",
+              "phonetic": "æθˈletɪk",
+              "pos": "adj.",
+              "meaning": "运动的；运动员的",
+              "audio": "/audio/sw/athletic.mp3",
+              "sentence": "He has an athletic build.",
+              "sentenceCn": "他体格健壮。"
+            },
+            {
+              "word": "injury",
+              "phonetic": "ˈɪndʒəri",
+              "pos": "n.",
+              "meaning": "伤害；损伤",
+              "audio": "/audio/sw/injury.mp3",
+              "sentence": "He suffered a knee injury.",
+              "sentenceCn": "他膝盖受了伤。"
+            },
+            {
+              "word": "strengthen",
+              "phonetic": "ˈstreŋθn",
+              "pos": "v.",
+              "meaning": "加强；增强",
+              "audio": "/audio/sw/strengthen.mp3",
+              "sentence": "Yoga can strengthen your body.",
+              "sentenceCn": "瑜伽能增强体质。"
+            },
+            {
+              "word": "workout",
+              "phonetic": "ˈwɜːkaʊt",
+              "pos": "n.",
+              "meaning": "锻炼；训练",
+              "audio": "/audio/sw/workout.mp3",
+              "sentence": "A daily workout keeps you fit.",
+              "sentenceCn": "每天锻炼让你保持健康。"
+            },
+            {
+              "word": "diet",
+              "phonetic": "ˈdaɪət",
+              "pos": "n.",
+              "meaning": "日常饮食；节食",
+              "audio": "/audio/sw/diet.mp3",
+              "sentence": "A balanced diet is important.",
+              "sentenceCn": "均衡饮食很重要。"
+            },
+            {
+              "word": "determination",
+              "phonetic": "dɪˌtɜːmɪˈneɪʃn",
+              "pos": "n.",
+              "meaning": "决心；决定",
+              "audio": "/audio/sw/determination.mp3",
+              "sentence": "She won with great determination.",
+              "sentenceCn": "她凭着极大的决心获胜。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "现在完成时：have/has + 过去分词，表示过去发生并持续到现在的动作或影响。",
+              "example": "He has trained for two years.",
+              "exampleCn": "他已经训练两年了。"
+            },
+            {
+              "point": "形容词、副词的比较级与最高级：单音节加 -er/-est，多音节用 more/most。",
+              "example": "Running is healthier than sitting.",
+              "exampleCn": "跑步比久坐更健康。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "He has ___ every morning this month.",
+              "options": [
+                "jogged",
+                "jog",
+                "jogs"
+              ],
+              "answer": 0,
+              "analysis": "has + 过去分词 jogged 构成现在完成时。"
+            },
+            {
+              "stem": "Cycling is ___ than driving for short trips.",
+              "options": [
+                "healthier",
+                "healthy",
+                "healthiest"
+              ],
+              "answer": 0,
+              "analysis": "than 提示用比较级 healthier。"
+            },
+            {
+              "stem": "The players ___ for their team loudly.",
+              "options": [
+                "cheered",
+                "cheer",
+                "cheering"
+              ],
+              "answer": 0,
+              "analysis": "描述已发生的比赛用一般过去时 cheered。"
+            },
+            {
+              "stem": "You should keep a balanced ___ to stay fit.",
+              "options": [
+                "diet",
+                "die",
+                "dieting"
+              ],
+              "answer": 0,
+              "analysis": "balanced diet 均衡饮食。"
+            },
+            {
+              "stem": "She showed great ___ to finish the race.",
+              "options": [
+                "determination",
+                "determine",
+                "determined"
+              ],
+              "answer": 0,
+              "analysis": "great 后接名词 determination（决心）。"
+            },
+            {
+              "stem": "To ___ your body, try swimming twice a week.",
+              "options": [
+                "strengthen",
+                "strength",
+                "strong"
+              ],
+              "answer": 0,
+              "analysis": "不定式 to 后接动词原形 strengthen（增强）。"
+            }
+          ]
+        },
+        {
+          "id": "b104",
+          "title": "Unit 4 Natural Disasters",
+          "topic": "自然灾害 · 应急与报道",
+          "words": [
+            {
+              "word": "disaster",
+              "phonetic": "dɪˈzɑːstə(r)",
+              "pos": "n.",
+              "meaning": "灾难；灾害",
+              "audio": "/audio/sw/disaster.mp3",
+              "sentence": "The earthquake was a terrible disaster.",
+              "sentenceCn": "那场地震是可怕的灾难。"
+            },
+            {
+              "word": "earthquake",
+              "phonetic": "ˈɜːθkweɪk",
+              "pos": "n.",
+              "meaning": "地震",
+              "audio": "/audio/sw/earthquake.mp3",
+              "sentence": "The earthquake destroyed many houses.",
+              "sentenceCn": "地震摧毁了许多房屋。"
+            },
+            {
+              "word": "flood",
+              "phonetic": "flʌd",
+              "pos": "n./v.",
+              "meaning": "洪水；淹没",
+              "audio": "/audio/sw/flood.mp3",
+              "sentence": "The flood washed away the bridge.",
+              "sentenceCn": "洪水冲走了桥梁。"
+            },
+            {
+              "word": "hurricane",
+              "phonetic": "ˈhʌrɪkən",
+              "pos": "n.",
+              "meaning": "飓风",
+              "audio": "/audio/sw/hurricane.mp3",
+              "sentence": "A hurricane hit the coast.",
+              "sentenceCn": "飓风袭击了海岸。"
+            },
+            {
+              "word": "shelter",
+              "phonetic": "ˈʃeltə(r)",
+              "pos": "n.",
+              "meaning": "避难处；庇护",
+              "audio": "/audio/sw/shelter.mp3",
+              "sentence": "They found shelter in a school.",
+              "sentenceCn": "他们在学校找到了避难所。"
+            },
+            {
+              "word": "rescue",
+              "phonetic": "ˈreskjuː",
+              "pos": "v./n.",
+              "meaning": "营救；救援",
+              "audio": "/audio/sw/rescue.mp3",
+              "sentence": "Soldiers rescued the survivors.",
+              "sentenceCn": "士兵营救了幸存者。"
+            },
+            {
+              "word": "damage",
+              "phonetic": "ˈdæmɪdʒ",
+              "pos": "n./v.",
+              "meaning": "损害；毁坏",
+              "audio": "/audio/sw/damage.mp3",
+              "sentence": "The storm damaged the crops.",
+              "sentenceCn": "暴风雨毁坏了庄稼。"
+            },
+            {
+              "word": "destroy",
+              "phonetic": "dɪˈstrɔɪ",
+              "pos": "v.",
+              "meaning": "摧毁；毁灭",
+              "audio": "/audio/sw/destroy.mp3",
+              "sentence": "The fire destroyed the building.",
+              "sentenceCn": "大火烧毁了大楼。"
+            },
+            {
+              "word": "survivor",
+              "phonetic": "səˈvaɪvə(r)",
+              "pos": "n.",
+              "meaning": "幸存者",
+              "audio": "/audio/sw/survivor.mp3",
+              "sentence": "The survivors were sent to hospital.",
+              "sentenceCn": "幸存者被送医。"
+            },
+            {
+              "word": "buried",
+              "phonetic": "ˈberid",
+              "pos": "adj./v.",
+              "meaning": "被掩埋的（bury 的过去分词）",
+              "audio": "/audio/sw/buried.mp3",
+              "sentence": "Many houses were buried by the mud.",
+              "sentenceCn": "许多房屋被泥石流掩埋。"
+            },
+            {
+              "word": "effort",
+              "phonetic": "ˈefət",
+              "pos": "n.",
+              "meaning": "努力；尽力",
+              "audio": "/audio/sw/effort.mp3",
+              "sentence": "We should make an effort to help.",
+              "sentenceCn": "我们应尽力相助。"
+            },
+            {
+              "word": "supply",
+              "phonetic": "səˈplaɪ",
+              "pos": "n./v.",
+              "meaning": "供应；供给",
+              "audio": "/audio/sw/supply.mp3",
+              "sentence": "Food supplies were sent to the area.",
+              "sentenceCn": "食物补给被送往该地区。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "一般过去时被动语态：was/were + 过去分词，强调动作的承受者。",
+              "example": "The bridge was destroyed by the flood.",
+              "exampleCn": "桥被洪水冲毁了。"
+            },
+            {
+              "point": "定语从句：that / which 指物，who 指人，在从句中作主语或宾语。",
+              "example": "The soldiers who helped us were brave.",
+              "exampleCn": "帮助我们的士兵很勇敢。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "The old house ___ by the earthquake last night.",
+              "options": [
+                "was destroyed",
+                "destroyed",
+                "destroys"
+              ],
+              "answer": 0,
+              "analysis": "last night 用一般过去时；house 作主语用被动 was destroyed。"
+            },
+            {
+              "stem": "The man ___ saved the child was a firefighter.",
+              "options": [
+                "who",
+                "which",
+                "what"
+              ],
+              "answer": 0,
+              "analysis": "先行词 man 指人，用 who 引导定语从句。"
+            },
+            {
+              "stem": "After the flood, food ___ were sent to the village.",
+              "options": [
+                "supplies",
+                "supply",
+                "supplying"
+              ],
+              "answer": 0,
+              "analysis": "food supplies 意为\"食物补给\"，用复数。"
+            },
+            {
+              "stem": "The rescue team made every ___ to find survivors.",
+              "options": [
+                "effort",
+                "efforts",
+                "effect"
+              ],
+              "answer": 0,
+              "analysis": "make an effort / make every effort 努力。"
+            },
+            {
+              "stem": "Many people lost their homes in the ___.",
+              "options": [
+                "disaster",
+                "disastrous",
+                "destroy"
+              ],
+              "answer": 0,
+              "analysis": "in the disaster 在灾难中。"
+            },
+            {
+              "stem": "They found ___ in a nearby school.",
+              "options": [
+                "shelter",
+                "sheltered",
+                "sheltering"
+              ],
+              "answer": 0,
+              "analysis": "find shelter 找到避难处。"
+            }
+          ]
+        },
+        {
+          "id": "b105",
+          "title": "Unit 5 Languages Around the World",
+          "topic": "世界语言 · 文化与沟通",
+          "words": [
+            {
+              "word": "command",
+              "phonetic": "kəˈmɑːnd",
+              "pos": "n./v.",
+              "meaning": "掌握；命令",
+              "audio": "/audio/sw/command.mp3",
+              "sentence": "He has a good command of English.",
+              "sentenceCn": "他英语掌握得很好。"
+            },
+            {
+              "word": "request",
+              "phonetic": "rɪˈkwest",
+              "pos": "n./v.",
+              "meaning": "请求；要求",
+              "audio": "/audio/sw/request.mp3",
+              "sentence": "She made a polite request.",
+              "sentenceCn": "她提出了一个礼貌的请求。"
+            },
+            {
+              "word": "communicate",
+              "phonetic": "kəˈmjuːnɪkeɪt",
+              "pos": "v.",
+              "meaning": "交流；沟通",
+              "audio": "/audio/sw/communicate.mp3",
+              "sentence": "We communicate by email.",
+              "sentenceCn": "我们通过邮件沟通。"
+            },
+            {
+              "word": "variety",
+              "phonetic": "vəˈraɪəti",
+              "pos": "n.",
+              "meaning": "多样；种类",
+              "audio": "/audio/sw/variety.mp3",
+              "sentence": "English has a variety of accents.",
+              "sentenceCn": "英语有各种各样的口音。"
+            },
+            {
+              "word": "unique",
+              "phonetic": "juˈniːk",
+              "pos": "adj.",
+              "meaning": "独特的；唯一的",
+              "audio": "/audio/sw/unique.mp3",
+              "sentence": "Each language is unique.",
+              "sentenceCn": "每种语言都是独特的。"
+            },
+            {
+              "word": "civilization",
+              "phonetic": "ˌsɪvəlaɪˈzeɪʃn",
+              "pos": "n.",
+              "meaning": "文明",
+              "audio": "/audio/sw/civilization.mp3",
+              "sentence": "Language carries civilization.",
+              "sentenceCn": "语言承载文明。"
+            },
+            {
+              "word": "barrier",
+              "phonetic": "ˈbæriə(r)",
+              "pos": "n.",
+              "meaning": "障碍；屏障",
+              "audio": "/audio/sw/barrier.mp3",
+              "sentence": "Language can be a barrier.",
+              "sentenceCn": "语言可能成为障碍。"
+            },
+            {
+              "word": "fluent",
+              "phonetic": "ˈfluːənt",
+              "pos": "adj.",
+              "meaning": "流利的；流畅的",
+              "audio": "/audio/sw/fluent.mp3",
+              "sentence": "She is fluent in French.",
+              "sentenceCn": "她法语很流利。"
+            },
+            {
+              "word": "accent",
+              "phonetic": "ˈæksent",
+              "pos": "n.",
+              "meaning": "口音；重音",
+              "audio": "/audio/sw/accent.mp3",
+              "sentence": "He speaks with a British accent.",
+              "sentenceCn": "他说话带英国口音。"
+            },
+            {
+              "word": "dialect",
+              "phonetic": "ˈdaɪəlekt",
+              "pos": "n.",
+              "meaning": "方言",
+              "audio": "/audio/sw/dialect.mp3",
+              "sentence": "People there speak a local dialect.",
+              "sentenceCn": "那里的人说当地方言。"
+            },
+            {
+              "word": "transmit",
+              "phonetic": "trænzˈmɪt",
+              "pos": "v.",
+              "meaning": "传播；传递",
+              "audio": "/audio/sw/transmit.mp3",
+              "sentence": "Stories transmit culture.",
+              "sentenceCn": "故事传播文化。"
+            },
+            {
+              "word": "trend",
+              "phonetic": "trend",
+              "pos": "n.",
+              "meaning": "趋势；倾向",
+              "audio": "/audio/sw/trend.mp3",
+              "sentence": "English is a global trend.",
+              "sentenceCn": "英语是一种全球趋势。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "现在分词作定语或状语：表示主动、进行，如 speaking English（说英语的）。",
+              "example": "The boy speaking English is my cousin.",
+              "exampleCn": "那个说英语的男孩是我表弟。"
+            },
+            {
+              "point": "主谓一致：集合名词或单数主语用单数动词，并列主语用复数。",
+              "example": "English is useful. / Tom and Jerry are friends.",
+              "exampleCn": "英语很有用。/ 汤姆和杰瑞是朋友。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "The girl ___ French fluently is from Paris.",
+              "options": [
+                "speaking",
+                "spoken",
+                "speak"
+              ],
+              "answer": 0,
+              "analysis": "现在分词 speaking 作定语，表主动。"
+            },
+            {
+              "stem": "He has a good ___ of three languages.",
+              "options": [
+                "command",
+                "commanded",
+                "commanding"
+              ],
+              "answer": 0,
+              "analysis": "have a good command of 熟练掌握。"
+            },
+            {
+              "stem": "English, Chinese and Arabic ___ widely used.",
+              "options": [
+                "are",
+                "is",
+                "was"
+              ],
+              "answer": 0,
+              "analysis": "三个并列主语用复数 are。"
+            },
+            {
+              "stem": "A strong accent can be a communication ___.",
+              "options": [
+                "barrier",
+                "barriers",
+                "barring"
+              ],
+              "answer": 0,
+              "analysis": "barrier 障碍。"
+            },
+            {
+              "stem": "She is ___ in both English and Japanese.",
+              "options": [
+                "fluent",
+                "fluency",
+                "fluid"
+              ],
+              "answer": 0,
+              "analysis": "be fluent in 在…方面流利。"
+            },
+            {
+              "stem": "Each culture is ___ and worth respecting.",
+              "options": [
+                "unique",
+                "uniquely",
+                "union"
+              ],
+              "answer": 0,
+              "analysis": "unique 独特的，作表语。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "b2",
+      "title": "必修第二册",
+      "units": [
+        {
+          "id": "b201",
+          "title": "Unit 1 Cultural Heritage",
+          "topic": "文化遗产 · 保护与交流",
+          "words": [
+            {
+              "word": "heritage",
+              "phonetic": "ˈherɪtɪdʒ",
+              "pos": "n.",
+              "meaning": "遗产（文化、历史）",
+              "audio": "/audio/sw/heritage.mp3",
+              "sentence": "The Great Wall is a world heritage.",
+              "sentenceCn": "长城是世界遗产。"
+            },
+            {
+              "word": "preserve",
+              "phonetic": "prɪˈzɜːv",
+              "pos": "v.",
+              "meaning": "保护；保存",
+              "audio": "/audio/sw/preserve.mp3",
+              "sentence": "We must preserve old buildings.",
+              "sentenceCn": "我们必须保护老建筑。"
+            },
+            {
+              "word": "promote",
+              "phonetic": "prəˈməʊt",
+              "pos": "v.",
+              "meaning": "促进；推广",
+              "audio": "/audio/sw/promote.mp3",
+              "sentence": "The event promotes culture.",
+              "sentenceCn": "该活动推广文化。"
+            },
+            {
+              "word": "balance",
+              "phonetic": "ˈbæləns",
+              "pos": "n./v.",
+              "meaning": "平衡；权衡",
+              "audio": "/audio/sw/balance.mp3",
+              "sentence": "We need a balance between work and rest.",
+              "sentenceCn": "我们需要工作与休息的平衡。"
+            },
+            {
+              "word": "committee",
+              "phonetic": "kəˈmɪti",
+              "pos": "n.",
+              "meaning": "委员会",
+              "audio": "/audio/sw/committee.mp3",
+              "sentence": "A committee was set up.",
+              "sentenceCn": "成立了一个委员会。"
+            },
+            {
+              "word": "worthy",
+              "phonetic": "ˈwɜːði",
+              "pos": "adj.",
+              "meaning": "值得的；有价值的",
+              "audio": "/audio/sw/worthy.mp3",
+              "sentence": "The site is worthy of protection.",
+              "sentenceCn": "该遗址值得保护。"
+            },
+            {
+              "word": "recommend",
+              "phonetic": "ˌrekəˈmend",
+              "pos": "v.",
+              "meaning": "推荐；建议",
+              "audio": "/audio/sw/recommend.mp3",
+              "sentence": "I recommend this museum.",
+              "sentenceCn": "我推荐这家博物馆。"
+            },
+            {
+              "word": "contribute",
+              "phonetic": "kənˈtrɪbjuːt",
+              "pos": "v.",
+              "meaning": "贡献；捐献",
+              "audio": "/audio/sw/contribute.mp3",
+              "sentence": "Tourists contribute to the local economy.",
+              "sentenceCn": "游客为当地经济做贡献。"
+            },
+            {
+              "word": "prevent",
+              "phonetic": "prɪˈvent",
+              "pos": "v.",
+              "meaning": "阻止；防止",
+              "audio": "/audio/sw/prevent.mp3",
+              "sentence": "We should prevent damage.",
+              "sentenceCn": "我们应防止破坏。"
+            },
+            {
+              "word": "establish",
+              "phonetic": "ɪˈstæblɪʃ",
+              "pos": "v.",
+              "meaning": "建立；设立",
+              "audio": "/audio/sw/establish.mp3",
+              "sentence": "They established a fund.",
+              "sentenceCn": "他们设立了一个基金。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "介词 + which / whom 引导的定语从句：表物用 which，表人用 whom。",
+              "example": "The temple in which they prayed is old.",
+              "exampleCn": "他们祈祷的那座庙很古老。"
+            },
+            {
+              "point": "被动语态：be + 过去分词，强调承受者或动作本身。",
+              "example": "The site was protected by law.",
+              "exampleCn": "该遗址受法律保护。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "We must ___ our cultural heritage for the future.",
+              "options": [
+                "preserve",
+                "preserves",
+                "preserving"
+              ],
+              "answer": 0,
+              "analysis": "must 后接动词原形 preserve。"
+            },
+            {
+              "stem": "The museum ___ in 1950 is famous.",
+              "options": [
+                "established",
+                "establishes",
+                "establishing"
+              ],
+              "answer": 0,
+              "analysis": "过去分词 established 作定语，表被动完成。"
+            },
+            {
+              "stem": "This place is ___ of a visit.",
+              "options": [
+                "worthy",
+                "worth",
+                "worship"
+              ],
+              "answer": 0,
+              "analysis": "worthy of 值得…。"
+            },
+            {
+              "stem": "I ___ the local food to every visitor.",
+              "options": [
+                "recommend",
+                "recommends",
+                "recommending"
+              ],
+              "answer": 0,
+              "analysis": "主语 I 后用动词原形 recommend。"
+            },
+            {
+              "stem": "Tourists ___ a lot to the economy.",
+              "options": [
+                "contribute",
+                "contributes",
+                "contributing"
+              ],
+              "answer": 0,
+              "analysis": "复数主语用动词原形 contribute。"
+            },
+            {
+              "stem": "The old bridge was ___ by the flood.",
+              "options": [
+                "destroyed",
+                "destroy",
+                "destroying"
+              ],
+              "answer": 0,
+              "analysis": "被动语态 was destroyed。"
+            }
+          ]
+        },
+        {
+          "id": "b202",
+          "title": "Unit 2 Wildlife Protection",
+          "topic": "野生动物保护",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "b203",
+          "title": "Unit 3 The Internet",
+          "topic": "互联网与数字生活",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "b204",
+          "title": "Unit 4 History and Traditions",
+          "topic": "历史与传统",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "b205",
+          "title": "Unit 5 Music",
+          "topic": "音乐与情感",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        }
+      ]
+    },
+    {
+      "code": "b3",
+      "title": "必修第三册",
+      "units": [
+        {
+          "id": "b301",
+          "title": "Unit 1 Festivals and Celebrations",
+          "topic": "节日与庆典",
+          "words": [
+            {
+              "word": "festival",
+              "phonetic": "ˈfestɪvl",
+              "pos": "n.",
+              "meaning": "节日；节庆",
+              "audio": "/audio/sw/festival.mp3",
+              "sentence": "The Spring Festival is important.",
+              "sentenceCn": "春节很重要。"
+            },
+            {
+              "word": "celebrate",
+              "phonetic": "ˈselɪbreɪt",
+              "pos": "v.",
+              "meaning": "庆祝；庆贺",
+              "audio": "/audio/sw/celebrate.mp3",
+              "sentence": "We celebrate it with a big meal.",
+              "sentenceCn": "我们吃大餐庆祝。"
+            },
+            {
+              "word": "gather",
+              "phonetic": "ˈɡæðə(r)",
+              "pos": "v.",
+              "meaning": "聚集；集合",
+              "audio": "/audio/sw/gather.mp3",
+              "sentence": "Families gather at festivals.",
+              "sentenceCn": "节日里家人团聚。"
+            },
+            {
+              "word": "decorate",
+              "phonetic": "ˈdekəreɪt",
+              "pos": "v.",
+              "meaning": "装饰；布置",
+              "audio": "/audio/sw/decorate.mp3",
+              "sentence": "They decorate the house with lights.",
+              "sentenceCn": "他们用彩灯装饰房子。"
+            },
+            {
+              "word": "feast",
+              "phonetic": "fiːst",
+              "pos": "n.",
+              "meaning": "盛宴；宴会",
+              "audio": "/audio/sw/feast.mp3",
+              "sentence": "We had a feast at night.",
+              "sentenceCn": "我们晚上吃了一顿盛宴。"
+            },
+            {
+              "word": "gratitude",
+              "phonetic": "ˈɡrætɪtjuːd",
+              "pos": "n.",
+              "meaning": "感激；感恩",
+              "audio": "/audio/sw/gratitude.mp3",
+              "sentence": "We show gratitude to guests.",
+              "sentenceCn": "我们向客人表达感激。"
+            },
+            {
+              "word": "origin",
+              "phonetic": "ˈɒrɪdʒɪn",
+              "pos": "n.",
+              "meaning": "起源；起因",
+              "audio": "/audio/sw/origin.mp3",
+              "sentence": "What is the origin of this festival?",
+              "sentenceCn": "这个节日的起源是什么？"
+            },
+            {
+              "word": "custom",
+              "phonetic": "ˈkʌstəm",
+              "pos": "n.",
+              "meaning": "习俗；习惯",
+              "audio": "/audio/sw/custom.mp3",
+              "sentence": "It is a local custom.",
+              "sentenceCn": "这是当地习俗。"
+            },
+            {
+              "word": "harvest",
+              "phonetic": "ˈhɑːvɪst",
+              "pos": "n./v.",
+              "meaning": "收获；收割",
+              "audio": "/audio/sw/harvest.mp3",
+              "sentence": "The harvest festival thanks the land.",
+              "sentenceCn": "丰收节感谢大地。"
+            },
+            {
+              "word": "lantern",
+              "phonetic": "ˈlæntən",
+              "pos": "n.",
+              "meaning": "灯笼；提灯",
+              "audio": "/audio/sw/lantern.mp3",
+              "sentence": "Children carry lanterns.",
+              "sentenceCn": "孩子们提着灯笼。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "情态动词表推测：must 表肯定推测，can't 表否定推测，may 表可能。",
+              "example": "He must be tired after the trip.",
+              "exampleCn": "旅途后他一定累了。"
+            },
+            {
+              "point": "名词性从句：what 引导主语/宾语/表语从句，表示\"…的事物\"。",
+              "example": "What we need is time.",
+              "exampleCn": "我们需要的是时间。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "Families ___ together during the Spring Festival.",
+              "options": [
+                "gather",
+                "gathers",
+                "gathering"
+              ],
+              "answer": 0,
+              "analysis": "复数主语用动词原形 gather。"
+            },
+            {
+              "stem": "He ___ be the owner — I saw him leave.",
+              "options": [
+                "can't",
+                "must",
+                "may"
+              ],
+              "answer": 0,
+              "analysis": "can't 表否定推测，意为\"不可能\"。"
+            },
+            {
+              "stem": "They ___ the street with red flags.",
+              "options": [
+                "decorated",
+                "decorate",
+                "decorating"
+              ],
+              "answer": 0,
+              "analysis": "描述已发生用过去时 decorated。"
+            },
+            {
+              "stem": "___ we need most is a plan.",
+              "options": [
+                "What",
+                "That",
+                "Which"
+              ],
+              "answer": 0,
+              "analysis": "what 引导主语从句，表\"…的事物\"。"
+            },
+            {
+              "stem": "The ___ of the festival is a harvest thanks.",
+              "options": [
+                "origin",
+                "original",
+                "originate"
+              ],
+              "answer": 0,
+              "analysis": "origin 起源。"
+            },
+            {
+              "stem": "We show ___ to our teachers.",
+              "options": [
+                "gratitude",
+                "grateful",
+                "grade"
+              ],
+              "answer": 0,
+              "analysis": "show gratitude 表达感激。"
+            }
+          ]
+        },
+        {
+          "id": "b302",
+          "title": "Unit 2 Healthy Eating",
+          "topic": "健康饮食",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "b303",
+          "title": "Unit 3 Diverse Cultures",
+          "topic": "多元文化",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "b304",
+          "title": "Unit 4 Space Exploration",
+          "topic": "太空探索",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "b305",
+          "title": "Unit 5 The Value of Money",
+          "topic": "金钱的价值",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        }
+      ]
+    },
+    {
+      "code": "x1",
+      "title": "选择性必修第一册",
+      "units": [
+        {
+          "id": "x101",
+          "title": "Unit 1 People of Achievement",
+          "topic": "杰出人物 · 传记与成就",
+          "words": [
+            {
+              "word": "achieve",
+              "phonetic": "əˈtʃiːv",
+              "pos": "v.",
+              "meaning": "实现；达成",
+              "audio": "/audio/sw/achieve.mp3",
+              "sentence": "She achieved her dream.",
+              "sentenceCn": "她实现了梦想。"
+            },
+            {
+              "word": "contribution",
+              "phonetic": "ˌkɒntrɪˈbjuːʃn",
+              "pos": "n.",
+              "meaning": "贡献",
+              "audio": "/audio/sw/contribution.mp3",
+              "sentence": "His contribution was great.",
+              "sentenceCn": "他的贡献很大。"
+            },
+            {
+              "word": "devote",
+              "phonetic": "dɪˈvəʊt",
+              "pos": "v.",
+              "meaning": "致力于；奉献",
+              "audio": "/audio/sw/devote.mp3",
+              "sentence": "He devoted his life to science.",
+              "sentenceCn": "他毕生奉献于科学。"
+            },
+            {
+              "word": "exceptional",
+              "phonetic": "ɪkˈsepʃənl",
+              "pos": "adj.",
+              "meaning": "杰出的；异常的",
+              "audio": "/audio/sw/exceptional.mp3",
+              "sentence": "She has exceptional talent.",
+              "sentenceCn": "她才华出众。"
+            },
+            {
+              "word": "determined",
+              "phonetic": "dɪˈtɜːmɪnd",
+              "pos": "adj.",
+              "meaning": "下定决心的；坚定的",
+              "audio": "/audio/sw/determined.mp3",
+              "sentence": "He was determined to win.",
+              "sentenceCn": "他下定决心要赢。"
+            },
+            {
+              "word": "intelligent",
+              "phonetic": "ɪnˈtelɪdʒənt",
+              "pos": "adj.",
+              "meaning": "聪明的；有智力的",
+              "audio": "/audio/sw/intelligent.mp3",
+              "sentence": "The child is highly intelligent.",
+              "sentenceCn": "这孩子非常聪明。"
+            },
+            {
+              "word": "generous",
+              "phonetic": "ˈdʒenərəs",
+              "pos": "adj.",
+              "meaning": "慷慨的；大方的",
+              "audio": "/audio/sw/generous.mp3",
+              "sentence": "He is generous with his time.",
+              "sentenceCn": "他慷慨地付出时间。"
+            },
+            {
+              "word": "acquire",
+              "phonetic": "əˈkwaɪə(r)",
+              "pos": "v.",
+              "meaning": "获得；习得",
+              "audio": "/audio/sw/acquire.mp3",
+              "sentence": "She acquired many skills.",
+              "sentenceCn": "她习得了许多技能。"
+            },
+            {
+              "word": "inspire",
+              "phonetic": "ɪnˈspaɪə(r)",
+              "pos": "v.",
+              "meaning": "激励；启发",
+              "audio": "/audio/sw/inspire.mp3",
+              "sentence": "His story inspired us.",
+              "sentenceCn": "他的故事激励了我们。"
+            },
+            {
+              "word": "outstanding",
+              "phonetic": "aʊtˈstændɪŋ",
+              "pos": "adj.",
+              "meaning": "杰出的；出色的",
+              "audio": "/audio/sw/outstanding.mp3",
+              "sentence": "She is an outstanding scientist.",
+              "sentenceCn": "她是位杰出的科学家。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "非谓语动词：不定式 to do、动名词 doing、分词作状语/定语，使句子更简洁。",
+              "example": "To succeed, you must work hard.",
+              "exampleCn": "要成功，你必须努力。"
+            },
+            {
+              "point": "定语从句：who / whom / whose 指人，在从句中分别作主、宾、定语。",
+              "example": "The scientist whose theory changed the world was Einstein.",
+              "exampleCn": "改变世界的那位科学家是爱因斯坦。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "He ___ his life to helping others.",
+              "options": [
+                "devoted",
+                "devotes",
+                "devoting"
+              ],
+              "answer": 0,
+              "analysis": "devote...to... 奉献于…；此处作谓语用过去时 devoted。"
+            },
+            {
+              "stem": "___ succeed, you need to keep trying.",
+              "options": [
+                "To",
+                "For",
+                "Of"
+              ],
+              "answer": 0,
+              "analysis": "不定式 To succeed 作目的状语。"
+            },
+            {
+              "stem": "The writer ___ book won a prize is my friend.",
+              "options": [
+                "whose",
+                "who",
+                "which"
+              ],
+              "answer": 0,
+              "analysis": "whose 在定语从句中作定语，表\"…的\"。"
+            },
+            {
+              "stem": "She is an ___ student in every way.",
+              "options": [
+                "outstanding",
+                "outstand",
+                "outstood"
+              ],
+              "answer": 0,
+              "analysis": "outstanding 杰出的，作定语。"
+            },
+            {
+              "stem": "His ___ to medicine saved many lives.",
+              "options": [
+                "contribution",
+                "contribute",
+                "contributing"
+              ],
+              "answer": 0,
+              "analysis": "his 后接名词 contribution（贡献）。"
+            },
+            {
+              "stem": "We were ___ by her brave story.",
+              "options": [
+                "inspired",
+                "inspire",
+                "inspiring"
+              ],
+              "answer": 0,
+              "analysis": "被动语态 were inspired（被激励）。"
+            }
+          ]
+        },
+        {
+          "id": "x102",
+          "title": "Unit 2 Looking into the Future",
+          "topic": "展望未来",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x103",
+          "title": "Unit 3 Fascinating Parks",
+          "topic": "迷人的公园",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x104",
+          "title": "Unit 4 Body Language",
+          "topic": "肢体语言",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x105",
+          "title": "Unit 5 Working the Land",
+          "topic": "耕耘土地",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        }
+      ]
+    },
+    {
+      "code": "x2",
+      "title": "选择性必修第二册",
+      "units": [
+        {
+          "id": "x201",
+          "title": "Unit 1 Science and Scientists",
+          "topic": "科学家与科学精神",
+          "words": [
+            {
+              "word": "scientific",
+              "phonetic": "ˌsaɪənˈtɪfɪk",
+              "pos": "adj.",
+              "meaning": "科学的",
+              "audio": "/audio/sw/scientific.mp3",
+              "sentence": "We need a scientific method.",
+              "sentenceCn": "我们需要科学的方法。"
+            },
+            {
+              "word": "theory",
+              "phonetic": "ˈθɪəri",
+              "pos": "n.",
+              "meaning": "理论；学说",
+              "audio": "/audio/sw/theory.mp3",
+              "sentence": "His theory changed physics.",
+              "sentenceCn": "他的理论改变了物理学。"
+            },
+            {
+              "word": "discover",
+              "phonetic": "dɪˈskʌvə(r)",
+              "pos": "v.",
+              "meaning": "发现",
+              "audio": "/audio/sw/discover.mp3",
+              "sentence": "They discovered a new planet.",
+              "sentenceCn": "他们发现了一颗新行星。"
+            },
+            {
+              "word": "phenomenon",
+              "phonetic": "fəˈnɒmɪnən",
+              "pos": "n.",
+              "meaning": "现象",
+              "audio": "/audio/sw/phenomenon.mp3",
+              "sentence": "This is a natural phenomenon.",
+              "sentenceCn": "这是一种自然现象。"
+            },
+            {
+              "word": "evidence",
+              "phonetic": "ˈevɪdəns",
+              "pos": "n.",
+              "meaning": "证据；证明",
+              "audio": "/audio/sw/evidence.mp3",
+              "sentence": "We need solid evidence.",
+              "sentenceCn": "我们需要确凿的证据。"
+            },
+            {
+              "word": "hypothesis",
+              "phonetic": "haɪˈpɒθəsɪs",
+              "pos": "n.",
+              "meaning": "假说；假设",
+              "audio": "/audio/sw/hypothesis.mp3",
+              "sentence": "The hypothesis was tested.",
+              "sentenceCn": "该假说经过了检验。"
+            },
+            {
+              "word": "conduct",
+              "phonetic": "kənˈdʌkt",
+              "pos": "v.",
+              "meaning": "进行；实施",
+              "audio": "/audio/sw/conduct.mp3",
+              "sentence": "They conducted an experiment.",
+              "sentenceCn": "他们做了一项实验。"
+            },
+            {
+              "word": "publish",
+              "phonetic": "ˈpʌblɪʃ",
+              "pos": "v.",
+              "meaning": "出版；发表",
+              "audio": "/audio/sw/publish.mp3",
+              "sentence": "She published a paper.",
+              "sentenceCn": "她发表了一篇论文。"
+            },
+            {
+              "word": "breakthrough",
+              "phonetic": "ˈbreɪkθruː",
+              "pos": "n.",
+              "meaning": "突破；重大进展",
+              "audio": "/audio/sw/breakthrough.mp3",
+              "sentence": "The research made a breakthrough.",
+              "sentenceCn": "研究取得了突破。"
+            },
+            {
+              "word": "conclude",
+              "phonetic": "kənˈkluːd",
+              "pos": "v.",
+              "meaning": "得出结论；总结",
+              "audio": "/audio/sw/conclude.mp3",
+              "sentence": "We concluded the test was valid.",
+              "sentenceCn": "我们得出结论：测试有效。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "现在完成时被动语态：have/has been + 过去分词，强调已完成且影响延续。",
+              "example": "The theory has been proved.",
+              "exampleCn": "该理论已被证实。"
+            },
+            {
+              "point": "名词性从句作主语/宾语：what / that 引导，如 What he said is true.",
+              "example": "That he was right has been shown.",
+              "exampleCn": "他是对的这一点已被证明。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "The experiment has ___ successfully.",
+              "options": [
+                "been conducted",
+                "conducted",
+                "conducting"
+              ],
+              "answer": 0,
+              "analysis": "现在完成时被动 has been conducted。"
+            },
+            {
+              "stem": "They ___ a new way to treat the disease.",
+              "options": [
+                "discovered",
+                "discovers",
+                "discovering"
+              ],
+              "answer": 0,
+              "analysis": "描述已发生用过去时 discovered。"
+            },
+            {
+              "stem": "We need more ___ to support the claim.",
+              "options": [
+                "evidence",
+                "evident",
+                "evidently"
+              ],
+              "answer": 0,
+              "analysis": "more 后接名词 evidence（证据）。"
+            },
+            {
+              "stem": "His ___ changed how we see the universe.",
+              "options": [
+                "theory",
+                "theoretical",
+                "theorize"
+              ],
+              "answer": 0,
+              "analysis": "his 后接名词 theory（理论）。"
+            },
+            {
+              "stem": "The team ___ the study last year.",
+              "options": [
+                "conducted",
+                "conduct",
+                "conducts"
+              ],
+              "answer": 0,
+              "analysis": "last year 用过去时 conducted。"
+            },
+            {
+              "stem": "She ___ her findings in a journal.",
+              "options": [
+                "published",
+                "publishes",
+                "publishing"
+              ],
+              "answer": 0,
+              "analysis": "她发表了发现，用过去时 published。"
+            }
+          ]
+        },
+        {
+          "id": "x202",
+          "title": "Unit 2 Bridging Cultures",
+          "topic": "文化桥梁",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x203",
+          "title": "Unit 3 Food and Culture",
+          "topic": "饮食与文化",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x204",
+          "title": "Unit 4 Journey Across a Vast Land",
+          "topic": "穿越广袤大地",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x205",
+          "title": "Unit 5 First Aid",
+          "topic": "急救常识",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        }
+      ]
+    },
+    {
+      "code": "x3",
+      "title": "选择性必修第三册",
+      "units": [
+        {
+          "id": "x301",
+          "title": "Unit 1 Art",
+          "topic": "艺术形式与欣赏",
+          "words": [
+            {
+              "word": "gallery",
+              "phonetic": "ˈɡæləri",
+              "pos": "n.",
+              "meaning": "画廊；美术馆",
+              "audio": "/audio/sw/gallery.mp3",
+              "sentence": "We visited an art gallery.",
+              "sentenceCn": "我们参观了一家美术馆。"
+            },
+            {
+              "word": "sculpture",
+              "phonetic": "ˈskʌlptʃə(r)",
+              "pos": "n.",
+              "meaning": "雕塑；雕刻",
+              "audio": "/audio/sw/sculpture.mp3",
+              "sentence": "The sculpture is made of stone.",
+              "sentenceCn": "这座雕塑由石头制成。"
+            },
+            {
+              "word": "portrait",
+              "phonetic": "ˈpɔːtreɪt",
+              "pos": "n.",
+              "meaning": "肖像；画像",
+              "audio": "/audio/sw/portrait.mp3",
+              "sentence": "He painted a portrait of his mother.",
+              "sentenceCn": "他画了一幅母亲的肖像。"
+            },
+            {
+              "word": "exhibit",
+              "phonetic": "ɪɡˈzɪbɪt",
+              "pos": "v./n.",
+              "meaning": "展览；展品",
+              "audio": "/audio/sw/exhibit.mp3",
+              "sentence": "The museum exhibits old coins.",
+              "sentenceCn": "博物馆展出了古币。"
+            },
+            {
+              "word": "contemporary",
+              "phonetic": "kənˈtemprəri",
+              "pos": "adj.",
+              "meaning": "当代的；同时代的",
+              "audio": "/audio/sw/contemporary.mp3",
+              "sentence": "I like contemporary art.",
+              "sentenceCn": "我喜欢当代艺术。"
+            },
+            {
+              "word": "masterpiece",
+              "phonetic": "ˈmɑːstəpiːs",
+              "pos": "n.",
+              "meaning": "杰作；名著",
+              "audio": "/audio/sw/masterpiece.mp3",
+              "sentence": "This is a masterpiece.",
+              "sentenceCn": "这是一件杰作。"
+            },
+            {
+              "word": "convey",
+              "phonetic": "kənˈveɪ",
+              "pos": "v.",
+              "meaning": "传达；表达",
+              "audio": "/audio/sw/convey.mp3",
+              "sentence": "Art conveys feelings.",
+              "sentenceCn": "艺术传达情感。"
+            },
+            {
+              "word": "abstract",
+              "phonetic": "ˈæbstrækt",
+              "pos": "adj.",
+              "meaning": "抽象的",
+              "audio": "/audio/sw/abstract.mp3",
+              "sentence": "The painting is abstract.",
+              "sentenceCn": "这幅画是抽象的。"
+            },
+            {
+              "word": "realistic",
+              "phonetic": "ˌriːəˈlɪstɪk",
+              "pos": "adj.",
+              "meaning": "现实的；写实主义的",
+              "audio": "/audio/sw/realistic.mp3",
+              "sentence": "The drawing is very realistic.",
+              "sentenceCn": "这幅画非常写实。"
+            },
+            {
+              "word": "perspective",
+              "phonetic": "pəˈspektɪv",
+              "pos": "n.",
+              "meaning": "视角；透视",
+              "audio": "/audio/sw/perspective.mp3",
+              "sentence": "The artist changed perspective.",
+              "sentenceCn": "艺术家改变了视角。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "定语从句：that / which / who 引导，修饰名词，使描述更紧凑。",
+              "example": "The painting which won the prize is famous.",
+              "exampleCn": "获奖的那幅画很有名。"
+            },
+            {
+              "point": "非谓语动词作定语：现在分词表主动，过去分词表被动。",
+              "example": "The exhibited works attracted many visitors.",
+              "exampleCn": "展出的作品吸引了许多观众。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "The museum ___ works by local artists.",
+              "options": [
+                "exhibits",
+                "exhibit",
+                "exhibiting"
+              ],
+              "answer": 0,
+              "analysis": "主语 museum 单数，动词用 exhibits。"
+            },
+            {
+              "stem": "The painting ___ won a prize is by Picasso.",
+              "options": [
+                "which",
+                "who",
+                "what"
+              ],
+              "answer": 0,
+              "analysis": "先行词 painting 指物，用 which 引导定语从句。"
+            },
+            {
+              "stem": "Art can ___ deep feelings.",
+              "options": [
+                "convey",
+                "conveys",
+                "conveying"
+              ],
+              "answer": 0,
+              "analysis": "can 后接动词原形 convey（传达）。"
+            },
+            {
+              "stem": "This is a ___ of modern architecture.",
+              "options": [
+                "masterpiece",
+                "master",
+                "mastery"
+              ],
+              "answer": 0,
+              "analysis": "a masterpiece 杰作。"
+            },
+            {
+              "stem": "I prefer ___ art to classical art.",
+              "options": [
+                "contemporary",
+                "contemporaries",
+                "contemporarily"
+              ],
+              "answer": 0,
+              "analysis": "contemporary art 当代艺术。"
+            },
+            {
+              "stem": "The ___ works were painted in the 19th century.",
+              "options": [
+                "exhibited",
+                "exhibit",
+                "exhibiting"
+              ],
+              "answer": 0,
+              "analysis": "过去分词 exhibited 作定语，表被动。"
+            }
+          ]
+        },
+        {
+          "id": "x302",
+          "title": "Unit 2 Healthy Lifestyle",
+          "topic": "健康生活方式",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x303",
+          "title": "Unit 3 Environmental Protection",
+          "topic": "环境保护",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x304",
+          "title": "Unit 4 Adversity and Courage",
+          "topic": "逆境与勇气",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x305",
+          "title": "Unit 5 Poems",
+          "topic": "诗歌欣赏",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        }
+      ]
+    },
+    {
+      "code": "x4",
+      "title": "选择性必修第四册",
+      "units": [
+        {
+          "id": "x401",
+          "title": "Unit 1 Science Fiction",
+          "topic": "科幻文学与想象",
+          "words": [
+            {
+              "word": "fiction",
+              "phonetic": "ˈfɪkʃn",
+              "pos": "n.",
+              "meaning": "小说；虚构",
+              "audio": "/audio/sw/fiction.mp3",
+              "sentence": "Science fiction is popular.",
+              "sentenceCn": "科幻小说很受欢迎。"
+            },
+            {
+              "word": "alien",
+              "phonetic": "ˈeɪliən",
+              "pos": "n./adj.",
+              "meaning": "外星人；外国的",
+              "audio": "/audio/sw/alien.mp3",
+              "sentence": "The film is about aliens.",
+              "sentenceCn": "这部电影关于外星人。"
+            },
+            {
+              "word": "spacecraft",
+              "phonetic": "ˈspeɪskrɑːft",
+              "pos": "n.",
+              "meaning": "航天器；宇宙飞船",
+              "audio": "/audio/sw/spacecraft.mp3",
+              "sentence": "The spacecraft landed safely.",
+              "sentenceCn": "航天器安全着陆。"
+            },
+            {
+              "word": "dimension",
+              "phonetic": "daɪˈmenʃn",
+              "pos": "n.",
+              "meaning": "维度；方面",
+              "audio": "/audio/sw/dimension.mp3",
+              "sentence": "The story has another dimension.",
+              "sentenceCn": "这个故事另有维度。"
+            },
+            {
+              "word": "artificial",
+              "phonetic": "ˌɑːtɪˈfɪʃl",
+              "pos": "adj.",
+              "meaning": "人工的；人造的",
+              "audio": "/audio/sw/artificial.mp3",
+              "sentence": "AI is artificial intelligence.",
+              "sentenceCn": "AI 是人工智能。"
+            },
+            {
+              "word": "consciousness",
+              "phonetic": "ˈkɒnʃəsnəs",
+              "pos": "n.",
+              "meaning": "意识；知觉",
+              "audio": "/audio/sw/consciousness.mp3",
+              "sentence": "The robot gained consciousness.",
+              "sentenceCn": "机器人获得了意识。"
+            },
+            {
+              "word": "evolve",
+              "phonetic": "ɪˈvɒlv",
+              "pos": "v.",
+              "meaning": "进化；发展",
+              "audio": "/audio/sw/evolve.mp3",
+              "sentence": "Humans evolved over millions of years.",
+              "sentenceCn": "人类历经数百万年进化。"
+            },
+            {
+              "word": "narrative",
+              "phonetic": "ˈnærətɪv",
+              "pos": "n.",
+              "meaning": "叙事；叙述",
+              "audio": "/audio/sw/narrative.mp3",
+              "sentence": "The narrative is complex.",
+              "sentenceCn": "叙事很复杂。"
+            },
+            {
+              "word": "premise",
+              "phonetic": "ˈpremɪs",
+              "pos": "n.",
+              "meaning": "前提；假设",
+              "audio": "/audio/sw/premise.mp3",
+              "sentence": "The story's premise is interesting.",
+              "sentenceCn": "这个故事的前提很有趣。"
+            },
+            {
+              "word": "speculative",
+              "phonetic": "ˈspekjələtɪv",
+              "pos": "adj.",
+              "meaning": "推测的；思辨的",
+              "audio": "/audio/sw/speculative.mp3",
+              "sentence": "Sci-fi is speculative fiction.",
+              "sentenceCn": "科幻是思辨性小说。"
+            }
+          ],
+          "grammars": [
+            {
+              "point": "虚拟语气：if 引导的非真实条件句，表示与现在/过去事实相反的假设。",
+              "example": "If I were an alien, I would explore Earth.",
+              "exampleCn": "如果我是外星人，我会探索地球。"
+            },
+            {
+              "point": "定语从句：that / which 修饰物，who 修饰人，在从句中作成分。",
+              "example": "A world which has no war is our hope.",
+              "exampleCn": "没有战争的世界是我们的希望。"
+            }
+          ],
+          "questions": [
+            {
+              "stem": "If I ___ an alien, I would visit another planet.",
+              "options": [
+                "were",
+                "am",
+                "be"
+              ],
+              "answer": 0,
+              "analysis": "与现在事实相反的虚拟语气，be 用 were。"
+            },
+            {
+              "stem": "The ___ landed on a distant planet.",
+              "options": [
+                "spacecraft",
+                "space",
+                "spaceship's"
+              ],
+              "answer": 0,
+              "analysis": "spacecraft 航天器，单复数同形。"
+            },
+            {
+              "stem": "AI means ___ intelligence.",
+              "options": [
+                "artificial",
+                "artifice",
+                "artist"
+              ],
+              "answer": 0,
+              "analysis": "artificial intelligence 人工智能。"
+            },
+            {
+              "stem": "The novel's ___ is about time travel.",
+              "options": [
+                "premise",
+                "premises",
+                "premising"
+              ],
+              "answer": 0,
+              "analysis": "premise 前提。"
+            },
+            {
+              "stem": "Humans ___ from ancient apes.",
+              "options": [
+                "evolved",
+                "evolve",
+                "evolving"
+              ],
+              "answer": 0,
+              "analysis": "描述已发生用过去时 evolved。"
+            },
+            {
+              "stem": "A story ___ makes us think is good sci-fi.",
+              "options": [
+                "which",
+                "who",
+                "what"
+              ],
+              "answer": 0,
+              "analysis": "先行词 story 指物，用 which 引导定语从句。"
+            }
+          ]
+        },
+        {
+          "id": "x402",
+          "title": "Unit 2 Iconic Attractions",
+          "topic": "标志性景点",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x403",
+          "title": "Unit 3 Sea Exploration",
+          "topic": "海洋探索",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x404",
+          "title": "Unit 4 Sharing",
+          "topic": "分享与互助",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        },
+        {
+          "id": "x405",
+          "title": "Unit 5 Launching Your Career",
+          "topic": "职业生涯启航",
+          "words": [],
+          "grammars": [],
+          "questions": []
+        }
+      ]
+    }
+  ]
+};
+
+    if (path === "/api/senior-textbook" && method === "GET") {
+      const user = await uidOf(request, env);
+      if (!user) return err(401, "\u672A\u767B\u5F55\u6216\u767B\u5F55\u5DF2\u5931\u6548\uFF0C\u8BF7\u91CD\u65B0\u767B\u5F55");
+      const dev = getDev({}, request);
+      if (!parseDevices(user).includes(dev)) return err(403, "\u5F53\u524D\u8BBE\u5907\u672A\u6388\u6743\uFF0C\u8BF7\u91CD\u65B0\u767B\u5F55");
+      const authed = modAuthed(user, "primary");
+      const uid = q.get("unit");
+      if (uid) {
+        let uu = null;
+        for (const b of sbook_default.books) { const f = b.units.find((x) => x.id === uid); if (f) { uu = f; break; } }
+        if (!uu) return err(404, "\u5355\u5143\u4E0D\u5B58\u5728");
+        if (!authed && uid !== TRIAL_SU) return err(403, "\u4F53\u9A8C\u6A21\u5F0F\u4EC5\u53EF\u5B66\u4E60 " + TRIAL_SU + "\uFF0C\u8F93\u5165\u6388\u6743\u7801\u6216\u8054\u7CFB\u7BA1\u7406\u5458\u89E3\u9501\u5168\u90E8\u5355\u5143");
+        return ok(uu);
+      }
+      const list = sbook_default.books.map((b) => ({ code: b.code, title: b.title, units: b.units.map((un) => ({ id: un.id, title: un.title, topic: un.topic, words: un.words.length, grammars: un.grammars.length, questions: un.questions.length })) }));
+      if (authed) return ok({ books: list, trial: false });
+      const slim = list.map((b) => ({ ...b, units: b.units.filter((un) => un.id === TRIAL_SU) })).filter((b) => b.units.length > 0);
+      return ok({ books: slim, trial: true });
+    }
+
     if (path === "/api/junior-grammar" && method === "GET") {
       const user = await uidOf(request, env);
       if (!user) return err(401, "\u672A\u767B\u5F55\u6216\u767B\u5F55\u5DF2\u5931\u6548\uFF0C\u8BF7\u91CD\u65B0\u767B\u5F55");
