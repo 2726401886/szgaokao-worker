@@ -75201,6 +75201,38 @@ async function setSetting(DB, k, v) {
 
 }
 
+async function ensureStats(DB) {
+
+  await DB.prepare("CREATE TABLE IF NOT EXISTS stats (id INTEGER PRIMARY KEY AUTOINCREMENT, path TEXT, ip TEXT, ua TEXT, ref TEXT, day TEXT, ts INTEGER)").run();
+
+}
+
+function clientIp(request) {
+
+  return request.headers.get("cf-connecting-ip") || (request.headers.get("x-forwarded-for") || "").split(",")[0].trim() || "";
+
+}
+
+async function logVisit(DB, request, path, day) {
+
+  try {
+
+    await ensureStats(DB);
+
+    const ip = clientIp(request);
+
+    const ua = request.headers.get("user-agent") || "";
+
+    const ref = request.headers.get("referer") || "";
+
+    await DB.prepare("INSERT INTO stats (path, ip, ua, ref, day, ts) VALUES (?, ?, ?, ?, ?, ?)").bind(path, ip, ua, ref, day, Date.now()).run();
+
+  } catch (e) {
+
+  }
+
+}
+
 async function isAdmin(request, env) {
 
   const pt = await parseToken((request.headers.get("authorization") || "").replace(/^Bearer\s+/i, ""), env.APP_SECRET);
@@ -75316,7 +75348,7 @@ var hchinese_gd_default = {"product":"广东省高考语文 · 结构仿真卷�
 
 var worker_default = {
 
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
 
     const url = new URL(request.url);
 
@@ -75324,7 +75356,23 @@ var worker_default = {
 
     if (!path.startsWith("/api/")) {
 
-      return env.ASSETS.fetch(request);
+      const res = await env.ASSETS.fetch(request);
+
+      const ct = res.headers.get("content-type") || "";
+
+      if (res.status === 200 && ct.indexOf("text/html") >= 0) {
+
+        const day = new Date().toISOString().slice(0, 10);
+
+        const p = logVisit(env.DB, request, path, day);
+
+        if (ctx && ctx.waitUntil) ctx.waitUntil(p);
+
+        else { try { await p; } catch (e) {} }
+
+      }
+
+      return res;
 
     }
 
@@ -75853,6 +75901,48 @@ var worker_default = {
       await env.DB.prepare("UPDATE users SET authorized = 0, code = NULL, expiry = NULL, modules = ?, session_seq = ? WHERE id = ?").bind(JSON.stringify({}), seq, row.id).run();
 
       return ok({ ok: true });
+
+    }
+
+    // —— 访问统计：聚合（管理员）——
+    if (path === "/api/admin/stats" && method === "GET") {
+
+      if (!await isAdmin(request, env)) return err(403, "无权限");
+
+      await ensureStats(env.DB);
+
+      const total = await env.DB.prepare("SELECT COUNT(*) AS pv, COUNT(DISTINCT ip) AS uv FROM stats").first();
+
+      const today = new Date().toISOString().slice(0, 10);
+
+      const tday = await env.DB.prepare("SELECT COUNT(*) AS pv, COUNT(DISTINCT ip) AS uv FROM stats WHERE day = ?").bind(today).first();
+
+      const fromDay = new Date(Date.now() - 13 * 864e5).toISOString().slice(0, 10);
+
+      const dailyRows = await env.DB.prepare("SELECT day, COUNT(*) AS pv, COUNT(DISTINCT ip) AS uv FROM stats WHERE day >= ? GROUP BY day ORDER BY day").bind(fromDay).all();
+
+      const dayMap = {};
+
+      (dailyRows.results || []).forEach((r) => {
+        dayMap[r.day] = { pv: Number(r.pv || 0), uv: Number(r.uv || 0) };
+      });
+
+      const daily = [];
+
+      for (let i = 13; i >= 0; i--) {
+        const d = new Date(Date.now() - i * 864e5).toISOString().slice(0, 10);
+        const m = dayMap[d] || { pv: 0, uv: 0 };
+        daily.push({ day: d, pv: m.pv, uv: m.uv });
+      }
+
+      const topRows = await env.DB.prepare("SELECT path, COUNT(*) AS pv, COUNT(DISTINCT ip) AS uv FROM stats GROUP BY path ORDER BY pv DESC LIMIT 10").all();
+
+      return ok({
+        total: { pv: Number(total.pv || 0), uv: Number(total.uv || 0) },
+        today: { pv: Number(tday.pv || 0), uv: Number(tday.uv || 0) },
+        daily,
+        top: (topRows.results || []).map((r) => ({ path: r.path, pv: Number(r.pv || 0), uv: Number(r.uv || 0) }))
+      });
 
     }
 
