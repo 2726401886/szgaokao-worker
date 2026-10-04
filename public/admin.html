@@ -319,16 +319,17 @@ async function loadUsers() {
           <label class="mod-chk on"><input type="checkbox" id="gmod-${i}-middle" checked>🎧 中考英语</label>
           <label class="mod-chk on"><input type="checkbox" id="gmod-${i}-gk" checked>🎓 高考英语</label>
           <label class="mod-chk on"><input type="checkbox" id="gmod-${i}-math" checked>🧮 数学</label>
+          <label class="mod-chk on"><input type="checkbox" id="gmod-${i}-vocab" checked>🧠 专业单词记忆</label>
         </div>
         <button class="btn sm" onclick="doGrant(${i})">确认授权</button>
       </div>
     </div>`;
   }).join('');
 }
-const MOD_LABEL = { kids: '🧸 幼儿英语', primary: '📖 小学英语', junior: '🎒 初中英语', middle: '🎧 中考英语', gk: '🎓 高考英语', math: '🧮 数学' };
+const MOD_LABEL = { kids: '🧸 幼儿英语', primary: '📖 小学英语', junior: '🎒 初中英语', middle: '🎧 中考英语', gk: '🎓 高考英语', math: '🧮 数学', vocab: '🧠 专业单词记忆' };
 function modTags(u) {
   const mods = u.modules || {};
-  return ['kids', 'primary', 'junior', 'middle', 'gk', 'math'].map(m => {
+  return ['kids', 'primary', 'junior', 'middle', 'gk', 'math', 'vocab'].map(m => {
     const on = m === 'junior' ? !!mods.primary : !!mods[m];   // 初中随小学授权
     return '<span class="mod-tag' + (on ? ' on' : '') + '">' + (on ? '✓ ' : '✗ ') + MOD_LABEL[m] + '</span>';
   }).join('');
@@ -337,7 +338,7 @@ function toggleGrant(i) {
   const p = $('gp-' + i); p.style.display = p.style.display === 'none' ? '' : 'none';
   const u = LAST_USERS[i], mods = u.modules || {};
   const defAll = !u.authorized || !mods.kids && !mods.primary && !mods.middle && !mods.gk && !mods.math; // 未授权/全空 → 默认全选
-  ['kids', 'primary', 'junior', 'middle', 'gk', 'math'].forEach(m => {
+  ['kids', 'primary', 'junior', 'middle', 'gk', 'math', 'vocab'].forEach(m => {
     const c = $('gmod-' + i + '-' + m); if (!c) return;
     c.checked = m === 'junior' ? ($('gmod-' + i + '-primary') || { checked: defAll }).checked : (defAll ? true : !!mods[m]);
     c.dispatchEvent(new Event('change'));
@@ -347,7 +348,7 @@ function gplanChanged(i) { $('gdays-' + i).style.display = $('gplan-' + i).value
 async function doGrant(i) {
   const u = LAST_USERS[i];
   const plan = $('gplan-' + i).value, days = $('gdays-' + i).value;
-  const mods = ['kids', 'primary', 'middle', 'gk', 'math'].filter(m => { const c = $('gmod-' + i + '-' + m); return c && c.checked; });
+  const mods = ['kids', 'primary', 'middle', 'gk', 'math', 'vocab'].filter(m => { const c = $('gmod-' + i + '-' + m); return c && c.checked; });
   if (!mods.length) { alert('请至少勾选一个授权模块'); return; }
   const r = await api('/api/admin/users/grant', { method: 'POST', headers: H(), body: JSON.stringify({ username: u.username, plan, days, modules: mods }) });
   if (r.s === 200) { alert('已授权' + (r.j.expiry ? '，到期 ' + new Date(r.j.expiry).toLocaleDateString() : '（永久）') + '｜模块：' + mods.map(m => MOD_LABEL[m]).join('、')); loadUsers(); }

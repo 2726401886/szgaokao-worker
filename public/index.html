@@ -136,6 +136,13 @@
       <div><span class="state" id="st-primary">加载中</span></div>
       <button class="go" id="go-primary" onclick="enterMod('primary')">进入模块</button>
     </div>
+    <div class="mod-card" id="mod-vocab">
+      <div class="icon">🧠</div>
+      <div class="name">专业英语单词记忆</div>
+      <div class="desc">全学段 7 套词书 1656 词 · FSRS 智能间隔重复 · 8 种记忆题型</div>
+      <div><span class="state" id="st-vocab">加载中</span></div>
+      <button class="go" id="go-vocab" onclick="enterMod('vocab')">进入模块</button>
+    </div>
     <div class="mod-card" id="mod-junior">
       <div class="icon">🎒</div>
       <div class="name">初中英语 · 课本同步</div>
@@ -246,6 +253,7 @@ const H = () => ({ 'Content-Type': 'application/json', 'X-Device': DEVFP, ...(TO
 const MODINFO = {
   kids:    { url: './kids.html', name: '幼儿启蒙英语 · 听读背记' },
   primary: { url: './words.html', name: '小学英语 · 听读背记' },
+  vocab:   { url: './vocab.html',   name: '专业英语单词记忆 · 全学段词汇' },
   junior:  { url: './junior.html', name: '初中英语 · 课本同步' },
   middle:  { url: './quiz.html',  name: '中考英语 · 听说专项' },
   gk:      { url: './gaokao.html', name: '高考英语 · 三问五答' },
@@ -353,7 +361,7 @@ function renderHome() {
     show('actCard', false);
     show('wxCard', true);
   }
-  ['kids', 'primary', 'junior', 'middle', 'gk', 'math', 'senior', 'senior-grammar', 'senior-exam', 'chinese', 'jchinese', 'hchinese'].forEach(m => renderMod(m));
+  ['kids', 'primary', 'vocab', 'junior', 'middle', 'gk', 'math', 'senior', 'senior-grammar', 'senior-exam', 'chinese', 'jchinese', 'hchinese'].forEach(m => renderMod(m));
 }
 
 async function afterLogin() {
