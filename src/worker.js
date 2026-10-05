@@ -45195,7 +45195,7 @@ var worker_default = {
 
       const b = await readBody(request);
 
-      const { username, password } = b;
+      const { username, password, is_test } = b;
 
       if (!username || !password) return err(400, "\u7528\u6237\u540D\u548C\u5BC6\u7801\u5FC5\u586B");
 
@@ -45215,7 +45215,8 @@ var worker_default = {
 
       const pw = await hashPw(password);
 
-      await env.DB.prepare("INSERT INTO users (id, username, pw, authorized, code, expiry, modules, session_seq, devices, created_at) VALUES (?,?,?,0,NULL,NULL,?,1,?,?)").bind(id, username, pw, JSON.stringify({}), JSON.stringify(devices), Date.now()).run();
+      const isTest = is_test ? 1 : 0;
+      await env.DB.prepare("INSERT INTO users (id, username, pw, authorized, code, expiry, modules, session_seq, devices, created_at, is_test) VALUES (?,?,?,0,NULL,NULL,?,1,?,?,?)").bind(id, username, pw, JSON.stringify({}), JSON.stringify(devices), Date.now(), isTest).run();
 
       // 体验授权开关：开启则新注册用户自动获得 N 天全部模块全功能（N 可配置，默认 7）
 
@@ -45597,9 +45598,18 @@ var worker_default = {
 
       if (!await isAdmin(request, env)) return err(403, "\u65E0\u6743\u9650");
 
-      const { results } = await env.DB.prepare("SELECT id, username, authorized, code, expiry, modules, devices, created_at FROM users ORDER BY created_at").all();
+      const filter = (new URL(request.url).searchParams.get("filter") || "all");
+      let sql = "SELECT id, username, authorized, code, expiry, modules, devices, created_at, is_test FROM users";
+      if (filter === "test") sql += " WHERE is_test = 1";
+      else if (filter === "real") sql += " WHERE is_test = 0 OR is_test IS NULL";
+      sql += " ORDER BY created_at DESC";
+      const { results } = await env.DB.prepare(sql).all();
+      const cnt = await env.DB.prepare("SELECT COUNT(*) AS total, SUM(CASE WHEN is_test = 1 THEN 1 ELSE 0 END) AS test FROM users").first();
+      const total = cnt.total || 0;
+      const testCount = cnt.test || 0;
+      const realCount = total - testCount;
 
-      return ok({ users: results.map((u) => ({ id: u.id, username: u.username, authorized: !!u.authorized, code: u.code, expiry: u.expiry, modules: (() => {
+      return ok({ users: results.map((u) => ({ id: u.id, username: u.username, authorized: !!u.authorized, code: u.code, expiry: u.expiry, isTest: !!u.is_test, modules: (() => {
 
         try {
 
@@ -45611,7 +45621,20 @@ var worker_default = {
 
         }
 
-      })(), devices: parseDevices(u), createdAt: u.created_at })) });
+      })(), devices: parseDevices(u), createdAt: u.created_at })), total, realCount, testCount, filter });
+
+    }
+
+    if (path === "/api/admin/users/set-test" && method === "POST") {
+
+      if (!await isAdmin(request, env)) return err(403, "\u65E0\u6743\u9650");
+      const b = await readBody(request);
+      const uname = b.username || "";
+      const v = b.isTest ? 1 : 0;
+      const row = await env.DB.prepare("SELECT id FROM users WHERE username = ?").bind(uname).first();
+      if (!row) return err(404, "\u7528\u6237\u4E0D\u5B58\u5728");
+      await env.DB.prepare("UPDATE users SET is_test = ? WHERE id = ?").bind(v, row.id).run();
+      return ok({ username: uname, isTest: !!v });
 
     }
 
