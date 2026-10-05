@@ -32,6 +32,14 @@
   .tag.annual { background:#fff7e8; color:#b8860b; }
   .tag.ok { background:#e8f8ee; color:#2a8; }
   .tag.used { background:#f0f0f0; color:#999; }
+  /* 用户类型筛选 + 测试/真实徽章 */
+  .u-tabs { display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; }
+  .u-tabs .ut { border:1px solid #e0e0e0; background:#fff; border-radius:9px; padding:6px 12px; cursor:pointer; font-size:13px; color:#555; }
+  .u-tabs .ut.active { background:#ff5e62; color:#fff; border-color:#ff5e62; }
+  .u-tabs .ut b { font-weight:700; margin-left:2px; }
+  .tag.test { background:#fff3e0; color:#e07b00; }
+  .tag.real { background:#eaf6ff; color:#1a7fb8; }
+  .u-actions .ttest { background:#fff3e0; color:#e07b00; }
   /* 用户卡片 */
   .user { border:1.5px solid #f0f0f0; border-radius:12px; padding:12px; margin-bottom:10px; }
   .user .u-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
@@ -172,6 +180,11 @@
     <!-- 用户管理 -->
     <div class="card">
       <h3>👥 用户与设备管理 <button class="btn sm gray" style="float:right" onclick="loadUsers()">刷新</button></h3>
+      <div class="u-tabs" id="uTabs">
+        <button class="ut active" onclick="setFilter('all')">全部 <b id="cntAll">0</b></button>
+        <button class="ut" onclick="setFilter('real')">真实 <b id="cntReal">0</b></button>
+        <button class="ut" onclick="setFilter('test')">测试 <b id="cntTest">0</b></button>
+      </div>
       <div id="userList" style="clear:both"><div class="msg">加载中…</div></div>
       <div class="tip">设备解绑：用户换手机/达到设备上限时，点对应设备「解绑」释放名额；撤销授权会立即把用户踢下线。</div>
     </div>
@@ -275,10 +288,18 @@ async function loadCodes() {
 
 // —— 用户管理 ——
 let LAST_USERS = [];
+let USER_FILTER = 'all';
+function setFilter(f) { USER_FILTER = f; loadUsers(); }
 async function loadUsers() {
-  const r = await api('/api/admin/users', { headers: H() });
+  document.querySelectorAll('#uTabs .ut').forEach(b => b.classList.toggle('active', b.getAttribute('onclick').indexOf("'" + USER_FILTER + "'") >= 0));
+  const r = await api('/api/admin/users?filter=' + USER_FILTER, { headers: H() });
   const box = $('userList');
   if (r.s !== 200) { box.innerHTML = '<div class="msg err">' + esc(r.j.error || '加载失败') + '</div>'; return; }
+  if (r.j.total != null) {
+    $('cntAll').textContent = r.j.total;
+    $('cntReal').textContent = r.j.realCount;
+    $('cntTest').textContent = r.j.testCount;
+  }
   if (!r.j.users.length) { box.innerHTML = '<div class="msg">暂无用户</div>'; return; }
   LAST_USERS = r.j.users;
   box.innerHTML = r.j.users.map((u, i) => {
@@ -294,13 +315,14 @@ async function loadUsers() {
       `<div class="dev-line"><code>${esc(d)}</code><button onclick="unbind(${i},'${esc(d)}')">解绑</button></div>`
     ).join('') || '<div class="dev-line" style="color:#bbb">暂无绑定设备</div>';
     return `<div class="user">
-      <div class="u-head"><span class="u-name">${esc(u.username)}</span>${auth}</div>
+      <div class="u-head"><span class="u-name">${esc(u.username)}</span>${auth}${u.isTest ? '<span class="tag test">🧪 测试</span>' : '<span class="tag real">👤 真实</span>'}</div>
       <div class="u-meta">授权码 ${esc(u.code || '—')}${exp} · 绑定设备 ${(u.devices || []).length} 台</div>
       <div class="mod-tags">${modTags(u)}</div>
       ${devs}
       <div class="u-actions">
         <button class="grant" onclick="toggleGrant(${i})">${u.authorized ? '调整授权' : '授予授权'}</button>
         ${u.authorized ? `<button class="revoke" onclick="revoke(${i})">撤销授权（踢下线）</button>` : ''}
+        <button class="ttest" onclick="toggleTest(${i})">${u.isTest ? '取消测试' : '标为测试'}</button>
       </div>
       <div class="grant-panel" id="gp-${i}" style="display:none">
         <div class="gp-row">
@@ -380,6 +402,12 @@ async function revoke(i) {
   if (!confirm('确认撤销 ' + u.username + ' 的授权？该用户会被立即踢下线，需重新激活授权码。')) return;
   const r = await api('/api/admin/users/revoke', { method: 'POST', headers: H(), body: JSON.stringify({ username: u.username }) });
   alert(r.s === 200 ? '已撤销' : (r.j.error || '操作失败'));
+  loadUsers();
+}
+async function toggleTest(i) {
+  const u = LAST_USERS[i];
+  const r = await api('/api/admin/users/set-test', { method: 'POST', headers: H(), body: JSON.stringify({ username: u.username, isTest: !u.isTest }) });
+  alert(r.s === 200 ? (r.j.isTest ? '已标记为测试用户' : '已取消测试标记') : (r.j.error || '操作失败'));
   loadUsers();
 }
 
