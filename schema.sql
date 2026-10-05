@@ -8,7 +8,8 @@ CREATE TABLE IF NOT EXISTS users (
   expiry INTEGER,
   session_seq INTEGER NOT NULL DEFAULT 0,
   devices TEXT NOT NULL DEFAULT '[]',
-  created_at INTEGER
+  created_at INTEGER,
+  is_test INTEGER NOT NULL DEFAULT 0
 );
 CREATE TABLE IF NOT EXISTS codes (
   code TEXT PRIMARY KEY,
