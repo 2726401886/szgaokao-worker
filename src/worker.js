@@ -45706,6 +45706,22 @@ var worker_default = {
 
     }
 
+    if (path === "/api/admin/users/reset-pw" && method === "POST") {
+
+      if (!await isAdmin(request, env)) return err(403, "\u65E0\u6743\u9650");
+      const b = await readBody(request);
+      const uname = b.username || "";
+      const newPw = String(b.newPassword || "");
+      if (!uname) return err(400, "\u7F3A\u5C11\u7528\u6237\u540D");
+      if (newPw.length < 6) return err(400, "\u65B0\u5BC6\u7801\u81F3\u5C11 6 \u4F4D");
+      const row = await env.DB.prepare("SELECT id FROM users WHERE username = ?").bind(uname).first();
+      if (!row) return err(404, "\u7528\u6237\u4E0D\u5B58\u5728");
+      const pw = await hashPw(newPw);
+      await env.DB.prepare("UPDATE users SET pw = ? WHERE id = ?").bind(pw, row.id).run();
+      return ok({ username: uname, updated: true });
+
+    }
+
     if (path === "/api/admin/users/unbind" && method === "POST") {
 
       if (!await isAdmin(request, env)) return err(403, "\u65E0\u6743\u9650");

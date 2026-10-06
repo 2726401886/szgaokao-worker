@@ -32,14 +32,6 @@
   .tag.annual { background:#fff7e8; color:#b8860b; }
   .tag.ok { background:#e8f8ee; color:#2a8; }
   .tag.used { background:#f0f0f0; color:#999; }
-  /* 用户类型筛选 + 测试/真实徽章 */
-  .u-tabs { display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; }
-  .u-tabs .ut { border:1px solid #e0e0e0; background:#fff; border-radius:9px; padding:6px 12px; cursor:pointer; font-size:13px; color:#555; }
-  .u-tabs .ut.active { background:#ff5e62; color:#fff; border-color:#ff5e62; }
-  .u-tabs .ut b { font-weight:700; margin-left:2px; }
-  .tag.test { background:#fff3e0; color:#e07b00; }
-  .tag.real { background:#eaf6ff; color:#1a7fb8; }
-  .u-actions .ttest { background:#fff3e0; color:#e07b00; }
   /* 用户卡片 */
   .user { border:1.5px solid #f0f0f0; border-radius:12px; padding:12px; margin-bottom:10px; }
   .user .u-head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
@@ -177,14 +169,36 @@
       <div id="codeList" style="clear:both"><div class="msg">加载中…</div></div>
     </div>
 
+    <!-- 注册用户统计表 -->
+    <div class="card">
+      <h3>📊 注册用户统计表 <button class="btn sm gray" style="float:right" onclick="loadRegStats()">刷新</button></h3>
+      <div id="regSummary" style="clear:both"></div>
+      <div style="overflow-x:auto;clear:both">
+        <table id="regTable" style="width:100%;border-collapse:collapse;font-size:13px;min-width:920px">
+          <thead>
+            <tr style="background:#f7f8fa;color:#555;font-weight:700">
+              <th style="text-align:left;padding:9px 10px;border-bottom:2px solid #eee;white-space:nowrap">用户名</th>
+              <th style="text-align:left;padding:9px 10px;border-bottom:2px solid #eee;white-space:nowrap">注册时间</th>
+              <th style="text-align:left;padding:9px 10px;border-bottom:2px solid #eee;white-space:nowrap">密码</th>
+              <th style="text-align:left;padding:9px 10px;border-bottom:2px solid #eee;white-space:nowrap">授权状态</th>
+              <th style="text-align:left;padding:9px 10px;border-bottom:2px solid #eee;white-space:nowrap">到期时间</th>
+              <th style="text-align:left;padding:9px 10px;border-bottom:2px solid #eee">已授权模块</th>
+              <th style="text-align:center;padding:9px 10px;border-bottom:2px solid #eee;white-space:nowrap">设备数</th>
+              <th style="text-align:center;padding:9px 10px;border-bottom:2px solid #eee;white-space:nowrap">标记</th>
+              <th style="text-align:center;padding:9px 10px;border-bottom:2px solid #eee;white-space:nowrap">操作</th>
+            </tr>
+          </thead>
+          <tbody id="regBody"><tr><td colspan="9" style="padding:20px;text-align:center;color:#999">加载中…</td></tr></tbody>
+        </table>
+      </div>
+      <div class="tip">
+        🔒 <b>密码说明</b>：用户密码以 <b>PBKDF2-SHA256（10 万次迭代 + 16 字节随机盐）</b>单向哈希存储，<b>数据库中没有原始密码，任何人都无法反推</b>（含管理员）。如需让用户登录，请用右侧「重置密码」直接设置新密码。
+      </div>
+    </div>
+
     <!-- 用户管理 -->
     <div class="card">
       <h3>👥 用户与设备管理 <button class="btn sm gray" style="float:right" onclick="loadUsers()">刷新</button></h3>
-      <div class="u-tabs" id="uTabs">
-        <button class="ut active" onclick="setFilter('all')">全部 <b id="cntAll">0</b></button>
-        <button class="ut" onclick="setFilter('real')">真实 <b id="cntReal">0</b></button>
-        <button class="ut" onclick="setFilter('test')">测试 <b id="cntTest">0</b></button>
-      </div>
       <div id="userList" style="clear:both"><div class="msg">加载中…</div></div>
       <div class="tip">设备解绑：用户换手机/达到设备上限时，点对应设备「解绑」释放名额；撤销授权会立即把用户踢下线。</div>
     </div>
@@ -211,7 +225,7 @@ function enterPanel() {
   $('loginCard').style.display = 'none';
   $('panel').style.display = '';
   $('btnLogout').style.display = '';
-  loadCodes(); loadUsers(); loadTrial(); loadStats();
+  loadCodes(); loadUsers(); loadTrial(); loadStats(); loadRegStats();
 }
 
 // —— 访问统计 ——
@@ -286,20 +300,92 @@ async function loadCodes() {
   }).join('');
 }
 
+// —— 注册用户统计表 ——
+const MOD_NAME = {
+  kids:'🧸幼儿', primary:'📖小学', junior:'🎒初中', middle:'🎧中考', gk:'🎓高考',
+  math:'🧮数学', senior:'📗高中', 'senior-grammar':'📘语法', 'senior-exam':'📝题库',
+  chinese:'📚小学语文', jchinese:'📕初中语文', hchinese:'📗高中语文',
+  politics:'🏛️政治', geography:'🌍地理', chemistry:'⚗️化学', history:'🏛️历史',
+  vocab:'📖单词', english:'🔤英语', 'english-gd':'📄高考英语卷',
+  'hchinese-kwd':'📖语文拓展', 'politics-gd':'📄政治卷', 'geography-gd':'📄地理卷',
+  'chemistry-gd':'📄化学卷', 'history-gd':'📄历史卷',
+};
+function fmtTime(ts) {
+  if (!ts) return '—';
+  const d = new Date(ts);
+  const p = n => String(n).padStart(2, '0');
+  return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + ' ' + p(d.getHours()) + ':' + p(d.getMinutes());
+}
+function modText(mods) {
+  const on = Object.keys(mods || {}).filter(k => mods[k]);
+  if (!on.length) return '<span style="color:#bbb">—</span>';
+  return on.map(k => '<span class="tag used" style="margin:1px 2px">' + esc(MOD_NAME[k] || k) + '</span>').join('');
+}
+let REG_ROWS = [];
+async function loadRegStats() {
+  const r = await api('/api/admin/users', { headers: H() });
+  const body = $('regBody'), sum = $('regSummary');
+  if (r.s !== 200) { body.innerHTML = '<tr><td colspan="9" style="padding:20px;text-align:center;color:#e23">' + esc(r.j.error || '加载失败') + '</td></tr>'; return; }
+  const us = r.j.users || [];
+  REG_ROWS = us;
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const t0 = today.getTime();
+  const nToday = us.filter(u => (u.createdAt || 0) >= t0).length;
+  const nAuth = us.filter(u => u.authorized).length;
+  const nTest = us.filter(u => u.isTest).length;
+  const nReal = us.length - nTest;
+  sum.innerHTML =
+    '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px">' +
+      statBox(us.length, '注册总人数', '#c0392b') +
+      statBox(nToday, '今日新增', '#b8791f') +
+      statBox(nAuth, '已授权', '#2a8') +
+      statBox(nReal, '真实用户', '#1a56db') +
+      statBox(nTest, '测试账号', '#888') +
+    '</div>';
+  if (!us.length) { body.innerHTML = '<tr><td colspan="9" style="padding:20px;text-align:center;color:#999">暂无用户</td></tr>'; return; }
+  body.innerHTML = us.map((u, i) => {
+    const auth = u.authorized ? '<span class="tag ok">已授权</span>' : '<span class="tag used">未授权</span>';
+    let exp = '<span style="color:#bbb">—</span>';
+    if (u.authorized) exp = u.expiry ? esc(fmtTime(u.expiry)) : '永久';
+    return '<tr style="border-bottom:1px solid #f2f3f5">' +
+      '<td style="padding:8px 10px;font-weight:700">' + esc(u.username) + '</td>' +
+      '<td style="padding:8px 10px;color:#666;white-space:nowrap">' + fmtTime(u.createdAt) + '</td>' +
+      '<td style="padding:8px 10px;white-space:nowrap"><span title="PBKDF2-SHA256 单向哈希，不可逆">🔒 已加密</span></td>' +
+      '<td style="padding:8px 10px">' + auth + '</td>' +
+      '<td style="padding:8px 10px;color:#666;white-space:nowrap">' + exp + '</td>' +
+      '<td style="padding:8px 10px">' + modText(u.modules) + '</td>' +
+      '<td style="padding:8px 10px;text-align:center">' + ((u.devices || []).length) + '</td>' +
+      '<td style="padding:8px 10px;text-align:center">' + (u.isTest ? '<span class="tag used">测试</span>' : '') + '</td>' +
+      '<td style="padding:8px 10px;text-align:center;white-space:nowrap">' +
+        '<button class="btn sm" onclick="openResetPw(' + i + ')">重置密码</button>' +
+      '</td></tr>';
+  }).join('');
+}
+function statBox(n, label, color) {
+  return '<div style="flex:1 1 120px;background:#fff;border:1.5px solid #eee;border-radius:12px;padding:12px;text-align:center">' +
+    '<div style="font-size:24px;font-weight:800;color:' + color + '">' + n + '</div>' +
+    '<div style="font-size:12px;color:#999;margin-top:2px">' + label + '</div></div>';
+}
+function openResetPw(i) {
+  const u = REG_ROWS[i]; if (!u) return;
+  const v = prompt('为用户「' + u.username + '」设置新密码（至少 6 位）：\n\n注意：会直接覆盖原密码，用户需用新密码重新登录。');
+  if (v === null) return;
+  if (v.length < 6) { alert('新密码至少 6 位'); return; }
+  if (!confirm('确认将「' + u.username + '」的密码重置为新密码？')) return;
+  doResetPw(u.username, v);
+}
+async function doResetPw(username, newPassword) {
+  const r = await api('/api/admin/users/reset-pw', { method: 'POST', headers: H(), body: JSON.stringify({ username, newPassword }) });
+  if (r.s === 200) { alert('✅ 已重置「' + username + '」的密码'); loadRegStats(); loadUsers(); }
+  else alert('❌ ' + (r.j.error || '重置失败'));
+}
+
 // —— 用户管理 ——
 let LAST_USERS = [];
-let USER_FILTER = 'all';
-function setFilter(f) { USER_FILTER = f; loadUsers(); }
 async function loadUsers() {
-  document.querySelectorAll('#uTabs .ut').forEach(b => b.classList.toggle('active', b.getAttribute('onclick').indexOf("'" + USER_FILTER + "'") >= 0));
-  const r = await api('/api/admin/users?filter=' + USER_FILTER, { headers: H() });
+  const r = await api('/api/admin/users', { headers: H() });
   const box = $('userList');
   if (r.s !== 200) { box.innerHTML = '<div class="msg err">' + esc(r.j.error || '加载失败') + '</div>'; return; }
-  if (r.j.total != null) {
-    $('cntAll').textContent = r.j.total;
-    $('cntReal').textContent = r.j.realCount;
-    $('cntTest').textContent = r.j.testCount;
-  }
   if (!r.j.users.length) { box.innerHTML = '<div class="msg">暂无用户</div>'; return; }
   LAST_USERS = r.j.users;
   box.innerHTML = r.j.users.map((u, i) => {
@@ -315,14 +401,13 @@ async function loadUsers() {
       `<div class="dev-line"><code>${esc(d)}</code><button onclick="unbind(${i},'${esc(d)}')">解绑</button></div>`
     ).join('') || '<div class="dev-line" style="color:#bbb">暂无绑定设备</div>';
     return `<div class="user">
-      <div class="u-head"><span class="u-name">${esc(u.username)}</span>${auth}${u.isTest ? '<span class="tag test">🧪 测试</span>' : '<span class="tag real">👤 真实</span>'}</div>
+      <div class="u-head"><span class="u-name">${esc(u.username)}</span>${auth}</div>
       <div class="u-meta">授权码 ${esc(u.code || '—')}${exp} · 绑定设备 ${(u.devices || []).length} 台</div>
       <div class="mod-tags">${modTags(u)}</div>
       ${devs}
       <div class="u-actions">
         <button class="grant" onclick="toggleGrant(${i})">${u.authorized ? '调整授权' : '授予授权'}</button>
         ${u.authorized ? `<button class="revoke" onclick="revoke(${i})">撤销授权（踢下线）</button>` : ''}
-        <button class="ttest" onclick="toggleTest(${i})">${u.isTest ? '取消测试' : '标为测试'}</button>
       </div>
       <div class="grant-panel" id="gp-${i}" style="display:none">
         <div class="gp-row">
@@ -341,17 +426,16 @@ async function loadUsers() {
           <label class="mod-chk on"><input type="checkbox" id="gmod-${i}-middle" checked>🎧 中考英语</label>
           <label class="mod-chk on"><input type="checkbox" id="gmod-${i}-gk" checked>🎓 高考英语</label>
           <label class="mod-chk on"><input type="checkbox" id="gmod-${i}-math" checked>🧮 数学</label>
-          <label class="mod-chk on"><input type="checkbox" id="gmod-${i}-vocab" checked>🧠 专业单词记忆</label>
         </div>
         <button class="btn sm" onclick="doGrant(${i})">确认授权</button>
       </div>
     </div>`;
   }).join('');
 }
-const MOD_LABEL = { kids: '🧸 幼儿英语', primary: '📖 小学英语', junior: '🎒 初中英语', middle: '🎧 中考英语', gk: '🎓 高考英语', math: '🧮 数学', vocab: '🧠 专业单词记忆' };
+const MOD_LABEL = { kids: '🧸 幼儿英语', primary: '📖 小学英语', junior: '🎒 初中英语', middle: '🎧 中考英语', gk: '🎓 高考英语', math: '🧮 数学' };
 function modTags(u) {
   const mods = u.modules || {};
-  return ['kids', 'primary', 'junior', 'middle', 'gk', 'math', 'vocab'].map(m => {
+  return ['kids', 'primary', 'junior', 'middle', 'gk', 'math'].map(m => {
     const on = m === 'junior' ? !!mods.primary : !!mods[m];   // 初中随小学授权
     return '<span class="mod-tag' + (on ? ' on' : '') + '">' + (on ? '✓ ' : '✗ ') + MOD_LABEL[m] + '</span>';
   }).join('');
@@ -360,7 +444,7 @@ function toggleGrant(i) {
   const p = $('gp-' + i); p.style.display = p.style.display === 'none' ? '' : 'none';
   const u = LAST_USERS[i], mods = u.modules || {};
   const defAll = !u.authorized || !mods.kids && !mods.primary && !mods.middle && !mods.gk && !mods.math; // 未授权/全空 → 默认全选
-  ['kids', 'primary', 'junior', 'middle', 'gk', 'math', 'vocab'].forEach(m => {
+  ['kids', 'primary', 'junior', 'middle', 'gk', 'math'].forEach(m => {
     const c = $('gmod-' + i + '-' + m); if (!c) return;
     c.checked = m === 'junior' ? ($('gmod-' + i + '-primary') || { checked: defAll }).checked : (defAll ? true : !!mods[m]);
     c.dispatchEvent(new Event('change'));
@@ -370,7 +454,7 @@ function gplanChanged(i) { $('gdays-' + i).style.display = $('gplan-' + i).value
 async function doGrant(i) {
   const u = LAST_USERS[i];
   const plan = $('gplan-' + i).value, days = $('gdays-' + i).value;
-  const mods = ['kids', 'primary', 'middle', 'gk', 'math', 'vocab'].filter(m => { const c = $('gmod-' + i + '-' + m); return c && c.checked; });
+  const mods = ['kids', 'primary', 'middle', 'gk', 'math'].filter(m => { const c = $('gmod-' + i + '-' + m); return c && c.checked; });
   if (!mods.length) { alert('请至少勾选一个授权模块'); return; }
   const r = await api('/api/admin/users/grant', { method: 'POST', headers: H(), body: JSON.stringify({ username: u.username, plan, days, modules: mods }) });
   if (r.s === 200) { alert('已授权' + (r.j.expiry ? '，到期 ' + new Date(r.j.expiry).toLocaleDateString() : '（永久）') + '｜模块：' + mods.map(m => MOD_LABEL[m]).join('、')); loadUsers(); }
@@ -402,12 +486,6 @@ async function revoke(i) {
   if (!confirm('确认撤销 ' + u.username + ' 的授权？该用户会被立即踢下线，需重新激活授权码。')) return;
   const r = await api('/api/admin/users/revoke', { method: 'POST', headers: H(), body: JSON.stringify({ username: u.username }) });
   alert(r.s === 200 ? '已撤销' : (r.j.error || '操作失败'));
-  loadUsers();
-}
-async function toggleTest(i) {
-  const u = LAST_USERS[i];
-  const r = await api('/api/admin/users/set-test', { method: 'POST', headers: H(), body: JSON.stringify({ username: u.username, isTest: !u.isTest }) });
-  alert(r.s === 200 ? (r.j.isTest ? '已标记为测试用户' : '已取消测试标记') : (r.j.error || '操作失败'));
   loadUsers();
 }
 
