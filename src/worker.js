@@ -45278,6 +45278,20 @@ var worker_default = {
 
         else { try { await p; } catch (e) {} }
 
+        // === BAIDU_TONGJI_START ===
+        // 百度统计（百度统计站长平台获取站点ID）：在 wrangler.jsonc 的 vars 配置 BAIDU_TONGJI_ID。
+        // 为空则不注入（安全无副作用）。注入点为 </head> 前，覆盖全部 HTML 页面。
+        const baiduId = env.BAIDU_TONGJI_ID || "";
+        if (baiduId) {
+          const html = await res.text();
+          const snip = '<script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?' + baiduId + '";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script>';
+          const body = html.indexOf("</head>") >= 0 ? html.replace("</head>", snip + "</head>") : html + snip;
+          const h = new Headers(res.headers);
+          h.delete("content-length");
+          return new Response(body, { status: res.status, headers: h });
+        }
+        // === BAIDU_TONGJI_END ===
+
       }
 
       return res;
@@ -45452,6 +45466,32 @@ var worker_default = {
       await env.DB.prepare("UPDATE users SET devices = ? WHERE id = ?").bind(JSON.stringify(rest), user.id).run();
 
       return ok({ ok: true, devices: rest.length, maxDevices: MAX });
+
+    }
+
+    if (path === "/api/device/reset" && method === "POST") {
+
+      // 「解绑全部设备并重绑本机」：校验账号密码后清空全部已绑定设备，只绑定当前设备，
+      // 并递增 session_seq 使所有旧设备的已登录 token 同时失效（真正的全部解绑）。
+      const b = await readBody(request);
+
+      if (!b.username || !b.password) return err(400, "请填写账号和密码");
+
+      const row = await env.DB.prepare("SELECT * FROM users WHERE username = ?").bind(b.username || "").first();
+
+      if (!row || !await verifyPw(b.password || "", row.pw)) return err(401, "账号或密码错误");
+
+      const dev = getDev(b, request);
+
+      const devices = [dev];
+
+      const seq = Number(row.session_seq || 0) + 1;
+
+      await env.DB.prepare("UPDATE users SET session_seq = ?, devices = ? WHERE id = ?").bind(seq, JSON.stringify(devices), row.id).run();
+
+      const token = await makeToken(row.id, seq, env.APP_SECRET);
+
+      return ok({ token, username: row.username, devices: devices.length, maxDevices: MAX });
 
     }
 

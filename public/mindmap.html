@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>学习思维导图 · 深圳高考通</title>
+<script src="./device.js"></script>
+<style>
+  :root{
+    --brand:#6a5cff; --brand2:#9b6cff; --ok:#2a8; --ink:#222; --sub:#777;
+    --line:#e6e3ff; --chip:#f1eeff; --bg:#f6f5fb;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);}
+  header{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;padding:22px 18px 16px;}
+  header .wrap{max-width:1080px;margin:0 auto;}
+  header h1{margin:0;font-size:22px;display:flex;align-items:center;gap:10px;}
+  header p{margin:6px 0 0;font-size:13px;opacity:.92;}
+  .back{display:inline-block;margin-top:12px;padding:7px 14px;border-radius:14px;background:rgba(255,255,255,.2);
+    color:#fff;text-decoration:none;font-size:13px;font-weight:700;}
+  main{max-width:1080px;margin:0 auto;padding:16px;}
+  .tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;border-bottom:1px solid #eee;position:sticky;top:0;
+    background:var(--bg);z-index:5;}
+  .tab{flex:0 0 auto;padding:8px 14px;border:none;border-radius:14px;background:#fff;color:#555;cursor:pointer;
+    font-size:13px;font-weight:600;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.04);}
+  .tab.on{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;}
+  .bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0;}
+  .bar input{flex:1;min-width:180px;padding:10px 14px;border:1px solid #ddd;border-radius:12px;font-size:14px;outline:none;}
+  .bar input:focus{border-color:var(--brand);}
+  .stat{font-size:13px;color:var(--sub);}
+  .enter{margin-left:auto;padding:9px 16px;border:none;border-radius:12px;background:var(--brand);color:#fff;
+    cursor:pointer;font-size:13px;font-weight:700;text-decoration:none;}
+  /* 总览卡片 */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;}
+  .mcard{background:#fff;border-radius:16px;padding:16px;box-shadow:0 4px 16px rgba(0,0,0,.05);
+    border:1px solid #f0eefb;cursor:pointer;transition:.15s;}
+  .mcard:hover{border-color:var(--brand);transform:translateY(-2px);}
+  .mcard h3{margin:0 0 6px;font-size:16px;}
+  .mcard .mnote{font-size:12px;color:var(--sub);line-height:1.5;min-height:34px;}
+  .mcard .mtag{margin-top:10px;font-size:12px;color:var(--brand);font-weight:700;}
+  /* 树 */
+  .tree{padding:4px 0;}
+  .node{margin:2px 0;}
+  .row{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:10px;cursor:pointer;user-select:none;}
+  .row:hover{background:#f3f1ff;}
+  .tw{width:18px;height:18px;flex:0 0 auto;border-radius:6px;background:var(--chip);color:var(--brand);
+    font-size:12px;line-height:18px;text-align:center;transition:.15s;font-weight:700;}
+  .tw.leaf{background:transparent;color:#bbb;}
+  .lbl{font-size:14px;flex:1;}
+  .lbl .s{font-size:11px;color:var(--sub);margin-left:8px;}
+  .cnt{font-size:11px;color:#fff;background:var(--brand);border-radius:10px;padding:1px 8px;font-weight:700;}
+  .cnt.zero{background:#ddd;color:#888;}
+  .children{margin-left:14px;padding-left:12px;border-left:2px solid var(--line);}
+  .children.hidden{display:none;}
+  mark{background:#fff2a8;padding:0 2px;border-radius:3px;}
+  .hint{font-size:12px;color:var(--sub);margin:8px 2px;}
+  .guide{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border-radius:14px;
+    padding:14px 16px;font-size:13px;line-height:1.75;margin:10px 0;box-shadow:0 6px 18px rgba(106,92,255,.25);}
+  .guide b{background:rgba(255,255,255,.22);padding:1px 7px;border-radius:8px;}
+  .mtip{font-size:12px;color:#5b4bcc;background:#f1eeff;border-left:3px solid var(--brand);
+    padding:6px 10px;margin:2px 0 6px 26px;border-radius:0 8px 8px 0;line-height:1.55;}
+  .mtip::before{content:"💡 学法点拨：";font-weight:700;}
+  .node.nom{display:none;}
+  .mtoggle{display:flex;align-items:center;gap:6px;font-size:13px;color:#555;cursor:pointer;user-select:none;
+    background:#fff;padding:8px 12px;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.04);}
+  .mtoggle input{accent-color:var(--brand);width:16px;height:16px;}
+  footer{text-align:center;color:#aaa;font-size:12px;padding:24px;}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>🧠 学习思维导图</h1>
+    <p>一图看懂每个模块的知识结构：章节 · 专题 · 题型 · 题量，随课程内容自动更新。</p>
+    <a class="back" href="./index.html">← 返回首页</a>
+  </div>
+</header>
+<main>
+  <div class="tabs" id="tabs"></div>
+  <div id="content"></div>
+</main>
+<footer>深圳高考通 · szgaokao.toolshe.cn · 思维导图由课程内容自动生成</footer>
+
+<script>
+let DATA = null;
+let activeId = "__overview__";
+let filterText = "";
+
+const $ = (s, r=document) => r.querySelector(s);
+
+async function load(){
+  try{
+    const r = await fetch('./mindmap.json', { cache:'no-cache' });
+    DATA = await r.json();
+  }catch(e){
+    $('#content').innerHTML = '<p class="hint">思维导图数据加载失败，请稍后重试或返回首页。</p>';
+    return;
+  }
+  renderTabs();
+  render();
+}
+
+function renderTabs(){
+  const tabs = $('#tabs');
+  tabs.innerHTML = '';
+  const mk = (id, label) => {
+    const b = document.createElement('button');
+    b.className = 'tab' + (id===activeId ? ' on':'');
+    b.textContent = label;
+    b.onclick = () => { activeId = id; filterText=''; render(); };
+    return b;
+  };
+  tabs.appendChild(mk('__overview__', '🗺 总览'));
+  DATA.modules.forEach(m => tabs.appendChild(mk(m.id, m.name)));
+}
+
+function render(){
+  const c = $('#content');
+  if(activeId === '__overview__'){ renderOverview(c); return; }
+  const m = DATA.modules.find(x => x.id === activeId);
+  if(!m){ c.innerHTML=''; return; }
+  let html = '';
+  html += '<div class="bar">';
+  html += `<input id="search" placeholder="筛选：${m.name} 内的章节 / 专题 / 题型…" value="${filterText.replace(/"/g,'&quot;')}" />`;
+  html += `<span class="stat">${m.count} 个板块 · ${m.items} 项内容</span>`;
+  html += `<label class="mtoggle"><input type="checkbox" id="mtog" /> 只看学法点拨</label>`;
+  if(m.page) html += `<a class="enter" href="./${m.page}">进入该模块学习 →</a>`;
+  html += '</div>';
+  if(m.guide) html += `<div class="guide">${esc(m.guide).replace(/①|②|③|④|⑤/g,'<b>$&</b>')}</div>`;
+  if(m.note) html += `<p class="hint">${esc(m.note)}</p>`;
+  html += '<div class="tree" id="tree"></div>';
+  c.innerHTML = html;
+
+  const treeEl = $('#tree');
+  const root = buildNode({t:m.name, s:'', c:m.items, kids:m.tree, m:''}, 0, true);
+  treeEl.appendChild(root);
+
+  const search = $('#search');
+  search.oninput = () => { filterText = search.value.trim().toLowerCase(); applyFilter(root); };
+  const mtog = $('#mtog');
+  mtog.onchange = () => { applyMethodFilter(root, mtog.checked); };
+  applyFilter(root);
+}
+
+function renderOverview(c){
+  let html = '<div class="bar"><span class="stat">共 ' + DATA.moduleCount + ' 个学习模块，点击下方卡片查看对应思维导图</span></div>';
+  html += '<div class="grid">';
+  DATA.modules.forEach(m=>{
+    html += `<div class="mcard" data-id="${m.id}">`
+      + `<h3>${esc(m.name)}</h3>`
+      + `<div class="mnote">${esc(m.note||m.product||'')}</div>`
+      + `<div class="mtag">${m.count} 板块 · ${m.items} 内容 →</div>`
+      + `</div>`;
+  });
+  html += '</div>';
+  c.innerHTML = html;
+  c.querySelectorAll('.mcard').forEach(el=>{
+    el.onclick = () => { activeId = el.getAttribute('data-id'); render();
+      document.querySelector('.tabs').scrollLeft = 9999; renderTabs(); };
+  });
+}
+
+// 返回是否命中（自身或后代命中）
+function buildNode(node, depth, forceOpen){
+  const wrap = document.createElement('div');
+  wrap.className = 'node';
+  if(node.m) wrap.setAttribute('data-m', '1');
+  const row = document.createElement('div');
+  row.className = 'row';
+  const hasKids = node.kids && node.kids.length;
+  const tw = document.createElement('div');
+  tw.className = 'tw' + (hasKids ? '' : ' leaf');
+  tw.textContent = hasKids ? (depth < 1 ? '−' : '+') : '·';
+  const lbl = document.createElement('div');
+  lbl.className = 'lbl';
+  lbl.setAttribute('data-raw', node.t || '');
+  lbl.innerHTML = labelHTML(node);
+  const cnt = document.createElement('div');
+  cnt.className = 'cnt' + (node.c ? '' : ' zero');
+  cnt.textContent = node.c || '';
+  row.appendChild(tw); row.appendChild(lbl); row.appendChild(cnt);
+
+  const kidsEl = document.createElement('div');
+  kidsEl.className = 'children' + ((forceOpen || depth < 1) ? '' : ' hidden');
+
+  if(hasKids){
+    node.kids.forEach(k => kidsEl.appendChild(buildNode(k, depth+1, false)));
+    row.onclick = () => {
+      const hidden = kidsEl.classList.toggle('hidden');
+      tw.textContent = hidden ? '+' : '−';
+    };
+  }
+  wrap.appendChild(row);
+  wrap.appendChild(kidsEl);
+  if(node.m) {
+    const tip = document.createElement('div');
+    tip.className = 'mtip';
+    tip.textContent = node.m;
+    wrap.appendChild(tip);
+  }
+  return wrap;
+}
+
+function labelHTML(node){
+  const raw = node.t || '';
+  if(!filterText) return esc(raw) + (node.s ? `<span class="s">${esc(node.s)}</span>` : '');
+  const t = filterText;
+  const lower = raw.toLowerCase();
+  let out = '', i = 0;
+  while(true){
+    const idx = lower.indexOf(t, i);
+    if(idx < 0){ out += esc(raw.slice(i)); break; }
+    out += esc(raw.slice(i, idx)) + '<mark>' + esc(raw.slice(idx, idx+t.length)) + '</mark>';
+    i = idx + t.length;
+  }
+  return out + (node.s ? `<span class="s">${esc(node.s)}</span>` : '');
+}
+
+function applyFilter(root){
+  // 先重渲染所有标签（含/不含高亮），再折叠
+  root.querySelectorAll('.lbl').forEach(lbl=>{
+    const raw = lbl.getAttribute('data-raw') || '';
+    lbl.innerHTML = labelHTML({ t: raw, s: lbl.querySelector('.s') ? lbl.querySelector('.s').textContent : '' });
+  });
+  if(!filterText){ resetOpen(root); return; }
+  markHits(root, filterText);
+}
+
+function resetOpen(root){
+  walk(root, (nodeEl, depth)=>{
+    const kids = nodeEl.querySelector(':scope > .children');
+    const tw = nodeEl.querySelector(':scope > .row > .tw');
+    if(kids){
+      const open = depth < 2;
+      kids.classList.toggle('hidden', !open);
+      if(tw && tw.className.indexOf('leaf') < 0) tw.textContent = open ? '−' : '+';
+    }
+  });
+}
+
+function walk(el, fn, depth=0){
+  fn(el, depth);
+  el.querySelectorAll(':scope > .children > .node').forEach(ch=>walk(ch, fn, depth+1));
+}
+
+// 返回自身或后代是否命中；命中则展开、并折叠未命中分支
+function markHits(nodeEl, term){
+  const raw = (nodeEl.querySelector(':scope > .row > .lbl').getAttribute('data-raw')||'').toLowerCase();
+  const hitSelf = raw.indexOf(term) >= 0;
+  const kids = nodeEl.querySelector(':scope > .children');
+  let childHit = false;
+  if(kids) kids.querySelectorAll(':scope > .node').forEach(ch=>{ if(markHits(ch, term)) childHit = true; });
+  const hit = hitSelf || childHit;
+  if(hit){
+    if(kids){
+      kids.classList.remove('hidden');
+      const tw = nodeEl.querySelector(':scope > .row > .tw');
+      if(tw && tw.className.indexOf('leaf') < 0) tw.textContent = '−';
+    }
+  }else if(kids){
+    kids.classList.add('hidden');
+  }
+  return hit;
+}
+
+function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+// 「只看学法点拨」：仅显示自身或后代含学法点拨(m)的节点
+function applyMethodFilter(root, on){
+  if(!on){
+    root.querySelectorAll('.node.nom').forEach(el=>el.classList.remove('nom'));
+    return;
+  }
+  const mark = (el) => {
+    const self = !!el.getAttribute('data-m');
+    const kids = el.querySelector(':scope > .children');
+    let childHas = false;
+    if(kids) kids.querySelectorAll(':scope > .node').forEach(ch=>{ if(mark(ch)) childHas = true; });
+    const show = self || childHas;
+    el.classList.toggle('nom', !show);
+    if(show && kids) kids.classList.remove('hidden'); // 展开以露出学法点拨
+    return show;
+  };
+  mark(root);
+}
+
+load();
+</script>
+</body>
+</html>
