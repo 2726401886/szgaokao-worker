@@ -58,6 +58,10 @@
   .gd2-ans { background:#f8f9fc; border:1px solid #eceef3; border-radius:10px; padding:9px 11px; font-size:12.5px; color:#444; line-height:1.8; margin-top:6px; white-space:pre-wrap; }
   .gd2-reveal { border:none; background:#eef2ff; color:#4f46e5; font-size:12.5px; font-weight:700; padding:6px 12px; border-radius:12px; cursor:pointer; margin-top:4px; }
   .gd2-reveal:hover { background:#e0e7ff; }
+  .gd2-play { border:none; background:#4f46e5; color:#fff; font-size:13px; font-weight:700; padding:8px 14px; border-radius:12px; cursor:pointer; margin:6px 0 10px; display:inline-flex; align-items:center; gap:6px; }
+  .gd2-play:hover { background:#4338ca; }
+  .gd2-play.playing { background:#e23; }
+  .gd2-audio-note { font-size:12px; color:#1e40af; background:#eff6ff; border:1px solid #c9d6ff; border-radius:10px; padding:8px 12px; margin:4px 0 10px; line-height:1.7; }
   .empty { background:#fff; border-radius:16px; padding:60px 20px; text-align:center; color:#b0b0b0; font-size:15px; box-shadow:0 4px 16px rgba(0,0,0,.05); }
   .err-msg { color:#e23; font-size:14px; text-align:center; padding:40px 10px; }
 </style>
@@ -109,7 +113,7 @@
   function renderList() {
     const m = EG.meta;
     const warn = m.notice ? '<div class="gd2-warn">⚠️ ' + esc(m.notice.replace(/\*\*/g, '')) + '</div>' : '';
-    const tip = '<div class="gd2-tip">本卷为广东省高考英语 <b>新高考Ⅰ卷真题</b>。<b>2021–2024 为官方原版</b>题干与选项；<b>2025–2026 为考生回忆整理版</b>（无官方完整原文）。<b>听力无音频</b>，仅保留题干/答案（2021 含完整选项）；<b>答案均非官方标准答案</b>，建议核对官方答案册。</div>';
+    const tip = '<div class="gd2-tip">本卷为广东省高考英语 <b>新高考Ⅰ卷真题</b>。<b>2021–2024 为官方原版</b>题干与选项；<b>2025–2026 为考生回忆整理版</b>（无官方完整原文）。<b>2021 年听力支持浏览器语音朗读</b>（点击题目下方 🔊 播放题干与选项）；<b>2022–2026 仅含答案、无原文，暂不支持音频</b>。<b>答案均非官方标准答案</b>，建议核对官方答案册。</div>';
     const struct = m.structure ? '<div class="gd2-st-h">📋 试卷结构</div><div class="gd2-box">' + esc(m.structure) + '</div>' : '';
     const cards = '<div class="gd2-st-h">📚 可选试卷（' + EG.papers.length + ' 套）</div><div class="gd2-cards">' +
       EG.papers.map(p => '<div class="gd2-card" data-p="' + p.id + '"><div class="gd2-card-y">' + p.year + '</div>' +
@@ -172,12 +176,18 @@
     }
     if (q.type === 'listen') {
       if (q.options && q.options.length) {
+        const txt = (q.q || '') + '. ' + (q.options || []).map((o, oi) => optLetter(oi) + '. ' + o).join('. ');
+        const player = q.audio
+          ? '<audio class="gd2-audio" controls preload="none" src="' + esc(q.audio) + '"></audio>'
+          : '<button class="gd2-play" data-play="' + key + '">🔊 播放听力</button>' +
+            '<div class="gd2-audio-note">点击上方按钮，浏览器将朗读本题题干与选项（Web Speech 语音合成，无需联网下载）。</div>';
         return '<div class="gd2-q" data-q="' + key + '"><div class="gd2-q-h"><b>' + q.no + '.</b> ' + esc(q.q) + '<span class="gd2-q-tag">听力</span></div>' +
+          player +
           q.options.map((o, oi) => '<div class="gd2-opt" data-o="' + oi + '">' + optLetter(oi) + '. ' + esc(o) + '</div>').join('') +
           '<div class="gd2-res" id="r-' + key + '"></div><div class="gd2-ans" id="a-' + key + '" style="display:none"></div></div>';
       }
       return '<div class="gd2-q" data-q="' + key + '"><div class="gd2-q-h"><b>' + q.no + '.</b> ' + esc(q.q) + '<span class="gd2-q-tag">听力·无音频</span></div>' +
-        '<div class="gd2-res bad" style="background:#fffbe8;color:#7a5c00">（听力无音频，本题仅提供答案：' + optLetter(q.answer) + '）</div></div>';
+        '<div class="gd2-res bad" style="background:#fffbe8;color:#7a5c00">（本题仅提供答案：' + optLetter(q.answer) + '，回忆版无原文故暂不支持音频）</div></div>';
     }
     if (q.type === 'fill') {
       const acc = (q.accept && q.accept.length) ? ('　可接受：' + q.accept.map(esc).join(' / ')) : '';
@@ -214,6 +224,10 @@
       if (!interactive) return;
       const box = document.querySelector('.gd2-q[data-q="' + key + '"]');
       if (!box) return;
+      if (q.type === 'listen' && q.options && q.options.length) {
+        const pbtn = box.querySelector('.gd2-play');
+        if (pbtn) pbtn.addEventListener('click', () => playListen(q, pbtn));
+      }
       const picked = [];
       box.querySelectorAll('.gd2-opt').forEach(el => el.addEventListener('click', () => {
         if (EG.showKey[key]) return;
@@ -242,6 +256,31 @@
     res.className = 'gd2-res ' + (ok ? 'ok' : 'bad');
     res.textContent = ok ? '✅ 回答正确' : '❌ 回答错误，正确答案：' + optLetter(q.answer);
     if (ans && q.analysis) { ans.style.display = ''; ans.textContent = '【参考解析】' + q.analysis; }
+  }
+
+  // ===== 听力语音朗读（浏览器 Web Speech API，无需服务端音频文件，规避 GFW/代理限制）=====
+  let egVoices = [];
+  if ('speechSynthesis' in window) {
+    try { egVoices = speechSynthesis.getVoices(); } catch (e) { egVoices = []; }
+    speechSynthesis.onvoiceschanged = () => { try { egVoices = speechSynthesis.getVoices(); } catch (e) {} };
+  }
+  function pickEnVoice() {
+    if (!egVoices || !egVoices.length) return null;
+    return egVoices.find(v => /en[-_]US/i.test(v.lang) && /(Google|Natural|Zira|Samantha|Aria|Guy|Jenny|David|Emma|Andrew)/i.test(v.name))
+      || egVoices.find(v => /^en/i.test(v.lang)) || null;
+  }
+  function playListen(q, btn) {
+    if (!('speechSynthesis' in window)) { alert('当前浏览器不支持语音朗读，请使用 Chrome / Edge / Safari 打开本页'); return; }
+    speechSynthesis.cancel();
+    const text = (q.q || '') + '. ' + (q.options || []).map((o, oi) => optLetter(oi) + '. ' + o).join('. ');
+    const u = new SpeechSynthesisUtterance(text);
+    const v = pickEnVoice();
+    if (v) u.voice = v;
+    u.lang = 'en-US'; u.rate = 0.95; u.pitch = 1;
+    u.onstart = () => { if (btn) { btn.classList.add('playing'); btn.textContent = '⏹ 停止播放'; } };
+    u.onend = () => { if (btn) { btn.classList.remove('playing'); btn.textContent = '🔊 播放听力'; } };
+    u.onerror = () => { if (btn) { btn.classList.remove('playing'); btn.textContent = '🔊 播放听力'; } };
+    speechSynthesis.speak(u);
   }
 
   init();
