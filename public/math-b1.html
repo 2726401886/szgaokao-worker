@@ -391,6 +391,113 @@ const COURSE = {
             { q:"f(0)=2, f(2)=−1，则在(0,2)内（ ）", opts:["无零点","至少有一个零点","恰有两个零点","零点在0处"], ans:1 }
           ] }
       ]
+    },
+    { id:"ch4", name:"第四章 指数函数与对数函数", status:"ready",
+      sections:[
+        { id:"4.1", name:"4.1 实数指数幂及其运算", points:[
+          { t:"根式与分数指数幂（数形结合）", tag:"概念",
+            ex:"正整数指数幂 a^n=a·a·…·a（n个）。n 次方根：若 x^n=a，则 x 叫 a 的 n 次方根——正数有两个偶次根（±），负数无实偶次根，任何实数有唯一奇次根。分数指数幂把根式写成幂：a^(m/n)=ⁿ√aᵐ（a>0，m,n为正整数，n>1），负指数 a^(−p)=1/a^p。根式与分数指数幂是同一对象的两种写法，可互相转化（见配图）。",
+            sum:"a^(m/n)=ⁿ√aᵐ（a>0）；a^(−p)=1/a^p。根式与分数指数幂等价互化。",
+            eg:[{q:"8^(2/3) 等于多少？", a:"=(8^(1/3))²=2²=4，或 (8²)^(1/3)=64^(1/3)=4。"}],
+            exs:[
+              { q:"分数指数幂 a^(m/n)（a>0）等于（ ）", opts:["n 次根号下 a 的 m 次方","m 次根号下 a 的 n 次方","a 的 m+n 次方","a 的 m−n 次方"], ans:0, tip:"定义 a^(m/n)=ⁿ√aᵐ，即 n 次根号下 a 的 m 次方。" },
+              { q:"2^(−1) 等于（ ）", opts:["−2","1/2","−1/2","2"], ans:1, tip:"负指数表示倒数：a^(−p)=1/a^p。" }
+            ] },
+          { t:"实数指数幂的运算性质", tag:"运算",
+            ex:"当 a>0,b>0，实数 r,s 时：① a^r·a^s=a^(r+s)；② (a^r)^s=a^(rs)；③ (ab)^r=a^r·b^r。这些性质把乘方、乘除统一成指数加减，化简根式与分数指数幂全靠它们。注意底数必须为正，避免偶次根下出现负数。",
+            sum:"a^r·a^s=a^(r+s)；(a^r)^s=a^(rs)；(ab)^r=a^r·b^r（a,b>0）。",
+            eg:[{q:"化简 a²·a³", a:"=a^(2+3)=a⁵。"}],
+            exs:[
+              { q:"(a³)² 等于（ ）", opts:["a⁵","a⁶","a⁹","a^(3/2)"], ans:1, tip:"(a^r)^s=a^(rs)，3×2=6。" },
+              { q:"a²·a³ 等于（ ）", opts:["a⁵","a⁶","a⁹","a^(2/3)"], ans:0, tip:"同底数幂相乘，指数相加 2+3=5。" }
+            ] }
+        ]},
+        { id:"4.2", name:"4.2 指数函数", points:[
+          { t:"指数函数的概念", tag:"概念",
+            ex:"形如 y=a^x（a>0 且 a≠1）的函数叫指数函数，自变量 x 在指数位置，定义域为 R。a 叫底数。a>1 时函数随 x 增大而增大（增长型）；0<a<1 时随 x 增大而减小（衰减型）。指数函数是刻画复利、放射性衰变、细胞分裂等“倍数变化”现象的核心模型。",
+            sum:"指数函数 y=a^x（a>0,a≠1），定义域 R；a>1 增，0<a<1 减。",
+            eg:[{q:"y=2^x 是指数函数吗？", a:"是，底数 2>0 且≠1，符合 y=a^x 形式。"}],
+            exs:[
+              { q:"下列是指数函数的是（ ）", opts:["y=x²","y=2^x","y=x","y=2x"], ans:1, tip:"指数函数形如 y=a^x，自变量在指数上。" },
+              { q:"指数函数 y=a^x 的定义域是（ ）", opts:["(0,+∞)","R","(1,+∞)","[0,+∞)"], ans:1, tip:"x 可取任意实数，定义域 R。" }
+            ] },
+          { t:"指数函数的图象与性质（数形结合）", tag:"图象",
+            ex:"y=a^x 图象恒过点 (0,1)（因 a⁰=1），以 x 轴为水平渐近线（x→−∞ 时趋近 0）。a>1 图象上升、值域 (0,+∞)、在 R 上递增；0<a<1 图象下降、同样值域 (0,+∞)、在 R 上递减。底数 a 越大，a>1 时上升越陡；a 越小（接近0），0<a<1 时下降越陡。这些是数形结合判断单调性的依据（见配图）。",
+            sum:"y=a^x 过(0,1)，渐近线 x轴，值域(0,+∞)；a>1↑、0<a<1↓。",
+            eg:[{q:"y=2^x 与 y=(1/2)^x 都过哪点？", a:"都过(0,1)：2⁰=1，(1/2)⁰=1。"}],
+            exs:[
+              { q:"指数函数 y=a^x 必过点（ ）", opts:["(0,0)","(0,1)","(1,0)","(1,1)"], ans:1, tip:"a⁰=1，故恒过(0,1)。" },
+              { q:"y=(1/2)^x 在 R 上（ ）", opts:["递增","递减","常函数","无单调"], ans:1, tip:"底数 0<1/2<1，图象下降，递减。" }
+            ] }
+        ]},
+        { id:"4.3", name:"4.3 对数", points:[
+          { t:"对数的概念", tag:"概念",
+            ex:"若 a^b=N（a>0,a≠1），则幂指数 b 叫以 a 为底 N 的对数，记作 b=log_a N。即 log_a N 是“a 的多少次方等于 N”。对数是指数的逆运算。常用对数 lg N=log_10 N；自然对数 ln N=log_e N（e≈2.718）。真数 N 必须 >0。",
+            sum:"a^b=N ⇔ b=log_a N（a>0,a≠1,N>0）。lg=log_10，ln=log_e。",
+            eg:[{q:"log_2 8 等于多少？", a:"因为 2³=8，所以 log_2 8=3。"}],
+            exs:[
+              { q:"log_2 8 等于（ ）", opts:["2","3","4","8"], ans:1, tip:"2³=8，故 log_2 8=3。" },
+              { q:"log_a N 中真数 N 须满足（ ）", opts:["N>0","N≥0","N≠0","N<0"], ans:0, tip:"对数真数必须大于 0。" }
+            ] },
+          { t:"对数的运算性质", tag:"运算",
+            ex:"设 M,N>0，a>0,a≠1：① log_a(MN)=log_a M+log_a N（积变和）；② log_a(M/N)=log_a M−log_a N（商变差）；③ log_a(M^n)=n·log_a M（幂提出）。换底公式：log_a N=ln N/ln a（常用 ln 或 lg 作桥梁）。这些性质把乘除、乘方化为加减，是化简对数式的利器。",
+            sum:"log_a(MN)=log_a M+log_a N；log_a(M/N)=log_a M−log_a N；log_a(M^n)=n·log_a M；换底 log_a N=ln N/ln a。",
+            eg:[{q:"化简 log_2(4×8)", a:"=log_2 4+log_2 8=2+3=5（也因 4×8=32=2⁵）。"}],
+            exs:[
+              { q:"log_2(8/2) 等于（ ）", opts:["log_2 8÷log_2 2","log_2 8−log_2 2","log_2 8×log_2 2","log_2 8+log_2 2"], ans:1, tip:"商变差：log_a(M/N)=log_a M−log_a N。" },
+              { q:"log_2(2³) 等于（ ）", opts:["3·log_2 2","log_2 2/3","(log_2 2)³","3+log_2 2"], ans:0, tip:"幂提出：log_a(M^n)=n·log_a M，3×1=3。" }
+            ] }
+        ]},
+        { id:"4.4", name:"4.4 对数函数", points:[
+          { t:"对数函数的概念", tag:"概念",
+            ex:"函数 y=log_a x（a>0,a≠1）叫对数函数，是指数函数 y=a^x 的反函数。定义域 (0,+∞)（真数 >0），值域 R。a>1 时递增，0<a<1 时递减。它刻画“已知总量求倍数/时间”的问题，如 pH 值、里氏震级、声音分贝都是对数刻度。",
+            sum:"对数函数 y=log_a x（a>0,a≠1），定义域(0,+∞)，值域 R；是指数函数的反函数。",
+            eg:[{q:"y=log_2 x 的定义域？", a:"真数 x>0，故定义域 (0,+∞)。"}],
+            exs:[
+              { q:"y=log_a x 的定义域是（ ）", opts:["R","(0,+∞)","[0,+∞)","(1,+∞)"], ans:1, tip:"真数必须大于 0，定义域(0,+∞)。" },
+              { q:"对数函数与（ ）互为反函数", opts:["幂函数","指数函数","一次函数","二次函数"], ans:1, tip:"y=log_a x 与 y=a^x 互为反函数。" }
+            ] },
+          { t:"对数函数的图象与性质（数形结合）", tag:"图象",
+            ex:"y=log_a x 图象恒过点 (1,0)（因 log_a 1=0），以 y 轴为垂直渐近线（x→0⁺ 时趋近 −∞）。a>1 图象上升、在 (0,+∞) 递增；0<a<1 图象下降、在 (0,+∞) 递减。与指数函数对比：指数过(0,1)水平渐近，对数过(1,0)垂直渐近，二者关于 y=x 对称（见配图）。",
+            sum:"y=log_a x 过(1,0)，渐近线 y轴，定义域(0,+∞)；a>1↑、0<a<1↓。",
+            eg:[{q:"y=log_2 x 与 y=log_(1/2) x 都过哪点？", a:"都过(1,0)：log_2 1=0，log_(1/2) 1=0。"}],
+            exs:[
+              { q:"对数函数 y=log_a x 必过点（ ）", opts:["(0,1)","(1,0)","(0,0)","(−1,0)"], ans:1, tip:"log_a 1=0，恒过(1,0)。" },
+              { q:"y=log_2 x 在 (0,+∞) 上（ ）", opts:["递增","递减","常函数","先增后减"], ans:0, tip:"底数 2>1，图象上升，递增。" }
+            ] }
+        ]},
+        { id:"4.5", name:"4.5 函数的应用", points:[
+          { t:"反函数关系：指数与对数关于 y=x 对称（数形结合）", tag:"关系",
+            ex:"指数函数 y=a^x 与对数函数 y=log_a x 互为反函数。在坐标系中，把 y=a^x 上每点 (x,y) 横纵坐标互换得到 (y,x)，这些点恰好落在 y=log_a x 上。因此两图象关于直线 y=x 轴对称——这是“逆运算”的几何体现，也是对照记忆两组性质（过(0,1)↔过(1,0)，水平渐近↔垂直渐近）的钥匙（见配图）。",
+            sum:"y=a^x 与 y=log_a x 互为反函数，图象关于直线 y=x 对称。",
+            eg:[{q:"若点(2,4)在 y=2^x 上，其对称点？", a:"(4,2) 应在 y=log_2 x 上：log_2 4=2，成立。"}],
+            exs:[
+              { q:"y=2^x 与 y=log_2 x 的图象（ ）", opts:["关于x轴对称","关于y=x对称","重合","关于y轴对称"], ans:1, tip:"互为反函数，图象关于 y=x 对称。" },
+              { q:"若(3,8)在 y=2^x 上，则关于 y=x 的对称点落在（ ）", opts:["y=2^x","y=log_2 x","y=x²","y=2x"], ans:1, tip:"对称点(8,3)满足 log_2 8=3，在 y=log_2 x 上。" }
+            ] },
+          { t:"不同函数增长的差异（数形结合）", tag:"比较",
+            ex:"当 x 很大时，三类函数增长天差地别：指数函数 y=a^x（a>1）“爆炸式”增长，最终远超一切多项式；幂函数 y=x^n 居中，按次数增长；对数函数 y=log_a x 增长最慢，x 增大很多它才挪一点。这就是“指数爆炸、对数平缓”。实际选型：长期预测用指数（人口、病毒），规模度量用对数（分贝、pH），物理规律常用幂次。",
+            sum:"大 x 时：指数爆炸 >> 幂函数 >> 对数平缓。分别用于预测、规律、刻度。",
+            eg:[{q:"x 很大时，2^x、x^10、log_2 x 谁最大？", a:"2^x 最大（指数爆炸），其次 x^10，log_2 x 最小。"}],
+            exs:[
+              { q:"下列增长最慢的是（ ）", opts:["2^x","x³","log_2 x","x^10"], ans:2, tip:"对数增长最平缓。" },
+              { q:"“指数爆炸”描述的是（ ）", opts:["y=log_2 x","y=2^x","y=x","y=√x"], ans:1, tip:"y=a^x（a>1）呈爆炸式增长。" }
+            ] }
+        ]},
+        { id:"quiz", name:"本章考核", isQuiz:true,
+          quiz:[
+            { q:"8^(2/3) 等于（ ）", opts:["2","4","6","8"], ans:1 },
+            { q:"(a³)² 等于（ ）", opts:["a⁵","a⁶","a⁹","a^(3/2)"], ans:1 },
+            { q:"下列是指数函数的是（ ）", opts:["y=x²","y=2^x","y=log_2 x","y=x"], ans:1 },
+            { q:"y=a^x 图象恒过（ ）", opts:["(0,0)","(0,1)","(1,0)","(1,1)"], ans:1 },
+            { q:"log_2 8 等于（ ）", opts:["2","3","4","8"], ans:1 },
+            { q:"log_a(MN) 等于（ ）", opts:["log_a M·log_a N","log_a M+log_a N","log_a M−log_a N","log_a M/log_a N"], ans:1 },
+            { q:"y=log_a x 定义域（ ）", opts:["R","(0,+∞)","[0,+∞)","(1,+∞)"], ans:1 },
+            { q:"y=log_2 x 图象恒过（ ）", opts:["(0,1)","(1,0)","(0,0)","(−1,0)"], ans:1 },
+            { q:"y=2^x 与 y=log_2 x 图象（ ）", opts:["关于x轴对称","关于y=x对称","重合","无关"], ans:1 },
+            { q:"大 x 时增长最慢的是（ ）", opts:["2^x","x^10","log_2 x","x³"], ans:2 }
+          ] }
+      ]
     }
   ]
 };
@@ -625,6 +732,71 @@ const FIGS = {
   <text x="160" y="112" text-anchor="middle" font-size="11" fill="#888">取中点 m，缩半区间继续逼近</text>
 </svg>
 <div class="figcap">若 f(a) 与 f(b) 异号（图象跨过 x 轴），中点 m 把区间一分为二，含零点的半区间长度减半，重复即得近似解。</div>`
+,
+"根式与分数指数幂（数形结合）": `<svg viewBox="0 0 380 210" width="380" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="55" width="100" height="40" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="70" y="80" text-anchor="middle" font-size="15" font-weight="bold" fill="#4338ca">a^(m/n)</text>
+  <text x="135" y="80" font-size="18" fill="#333">=</text>
+  <rect x="150" y="55" width="100" height="40" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="200" y="80" text-anchor="middle" font-size="15" font-weight="bold" fill="#4338ca">ⁿ√aᵐ</text>
+  <text x="265" y="80" font-size="18" fill="#333">=</text>
+  <rect x="280" y="55" width="100" height="40" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="330" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#4338ca">(ⁿ√a)^m</text>
+  <line x1="70" y1="95" x2="70" y2="120" stroke="#888" stroke-width="1"/>
+  <text x="70" y="138" text-anchor="middle" font-size="12" fill="#666">同一对象</text>
+  <text x="70" y="156" text-anchor="middle" font-size="12" fill="#666">两种写法</text>
+  <rect x="40" y="165" width="300" height="34" rx="6" fill="#f5f6ff" stroke="#9aa" stroke-width="1"/>
+  <text x="190" y="187" text-anchor="middle" font-size="13" fill="#1a7">例：8^(2/3)=(8^(1/3))²=2²=4</text>
+</svg>
+<div class="figcap">分数指数幂 a^(m/n) 与根式 ⁿ√aᵐ 是同一对象的两种写法，可互相转化（a&gt;0）。</div>`,
+"指数函数的图象与性质（数形结合）": `<svg viewBox="0 0 360 250" width="360" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="210" x2="340" y2="210" stroke="#333" stroke-width="1.5"/>
+  <line x1="180" y1="20" x2="180" y2="210" stroke="#333" stroke-width="1.5"/>
+  <text x="332" y="225" font-size="11" fill="#666">x</text>
+  <text x="186" y="32" font-size="11" fill="#666">y</text>
+  <path d="M 50 208 C 120 207, 165 206, 180 165 C 200 110, 260 70, 330 42" fill="none" stroke="#e23" stroke-width="2.5"/>
+  <path d="M 330 208 C 260 207, 215 206, 180 165 C 160 110, 100 70, 30 42" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="180" cy="165" r="4.5" fill="#111"/>
+  <text x="186" y="160" font-size="12" fill="#111">过(0,1)</text>
+  <text x="250" y="60" font-size="12" fill="#e23" font-weight="bold">a&gt;1 递增</text>
+  <text x="30" y="60" font-size="12" fill="#2563eb" font-weight="bold">0&lt;a&lt;1 递减</text>
+</svg>
+<div class="figcap">y=a^x 恒过(0,1)，以 x 轴为渐近线，值域(0,+∞)：a&gt;1 时上升递增，0&lt;a&lt;1 时下降递减。</div>`,
+"对数函数的图象与性质（数形结合）": `<svg viewBox="0 0 360 250" width="360" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="210" x2="340" y2="210" stroke="#333" stroke-width="1.5"/>
+  <line x1="60" y1="20" x2="60" y2="235" stroke="#333" stroke-width="1.5"/>
+  <text x="332" y="225" font-size="11" fill="#666">x</text>
+  <text x="66" y="30" font-size="11" fill="#666">y</text>
+  <path d="M 62 50 C 70 110, 95 178, 110 210 C 160 208, 230 185, 260 120 C 290 95, 320 85, 335 82" fill="none" stroke="#e23" stroke-width="2.5"/>
+  <path d="M 62 50 C 70 110, 95 178, 110 210 C 160 214, 250 224, 335 230" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="110" cy="210" r="4.5" fill="#111"/>
+  <text x="116" y="205" font-size="12" fill="#111">过(1,0)</text>
+  <text x="255" y="78" font-size="12" fill="#e23" font-weight="bold">a&gt;1 递增</text>
+  <text x="200" y="232" font-size="12" fill="#2563eb" font-weight="bold">0&lt;a&lt;1 递减</text>
+</svg>
+<div class="figcap">y=log_a x 恒过(1,0)，以 y 轴为渐近线，定义域(0,+∞)：a&gt;1 时上升递增，0&lt;a&lt;1 时下降递减。</div>`,
+"反函数关系：指数与对数关于 y=x 对称（数形结合）": `<svg viewBox="0 0 300 300" width="300" xmlns="http://www.w3.org/2000/svg">
+  <line x1="40" y1="260" x2="260" y2="40" stroke="#999" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="232" y="60" font-size="11" fill="#999">y=x</text>
+  <path d="M 43 213 C 80 208, 110 200, 120 200 C 150 180, 175 140, 190 110 C 210 80, 230 62, 250 40" fill="none" stroke="#e23" stroke-width="2.5"/>
+  <path d="M 87 257 C 95 210, 100 185, 130 140 C 160 115, 200 110, 240 70 C 250 60, 255 55, 260 50" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="190" cy="110" r="4" fill="#111"/>
+  <text x="118" y="198" font-size="12" fill="#e23" font-weight="bold">y=a^x</text>
+  <text x="150" y="250" font-size="12" fill="#2563eb" font-weight="bold">y=log_a x</text>
+  <text x="100" y="125" font-size="11" fill="#666">关于 y=x 对称</text>
+</svg>
+<div class="figcap">指数函数 y=a^x 与对数函数 y=log_a x 互为反函数，图象关于直线 y=x 对称（红蓝两曲线镜像）。</div>`,
+"不同函数增长的差异（数形结合）": `<svg viewBox="0 0 360 250" width="360" xmlns="http://www.w3.org/2000/svg">
+  <line x1="30" y1="215" x2="340" y2="215" stroke="#333" stroke-width="1.5"/>
+  <line x1="40" y1="20" x2="40" y2="215" stroke="#333" stroke-width="1.5"/>
+  <path d="M 40 213 C 120 211, 175 205, 200 198 C 235 175, 290 110, 335 35" fill="none" stroke="#e23" stroke-width="2.5"/>
+  <path d="M 40 213 C 120 208, 160 195, 200 175 C 255 140, 300 95, 335 60" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M 42 120 C 70 180, 110 208, 160 213 C 240 215, 300 215, 335 215" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="250" y="40" font-size="12" fill="#e23" font-weight="bold">y=2^x 指数爆炸</text>
+  <text x="250" y="78" font-size="12" fill="#2563eb" font-weight="bold">y=x² 幂函数</text>
+  <text x="250" y="208" font-size="12" fill="#16a34a" font-weight="bold">y=log_2 x 对数平缓</text>
+</svg>
+<div class="figcap">自变量很大时：指数函数“爆炸”远超幂函数，对数函数增长最慢——指数爆炸 &gt;&gt; 幂函数 &gt;&gt; 对数平缓。</div>`
 };
 
 const $ = s => document.querySelector(s);
