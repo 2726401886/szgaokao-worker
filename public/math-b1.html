@@ -64,6 +64,15 @@
   .toast { position:fixed; left:50%; bottom:24px; transform:translateX(-50%); background:#222; color:#fff; padding:10px 18px; border-radius:20px; font-size:13px; opacity:0; transition:opacity .25s; pointer-events:none; z-index:99; }
   .toast.show { opacity:.92; }
   @media (max-width:760px){ .wrap{flex-direction:column;} .side{position:static;flex:auto;} }
+  .fig { margin:14px 0; text-align:center; }
+  .fig svg { max-width:100%; height:auto; vertical-align:middle; }
+  .figbox { display:inline-block; background:#fff; border:1px solid #e6e8f0; border-radius:12px; padding:10px 14px; box-shadow:0 2px 10px rgba(0,0,0,.03); vertical-align:top; }
+  .figcap { font-size:12.5px; color:#666; margin-top:8px; line-height:1.6; }
+  .ttable { border-collapse:collapse; margin:6px auto; font-size:13px; }
+  .ttable th, .ttable td { border:1px solid #d8def0; padding:5px 12px; text-align:center; }
+  .ttable th { background:#eef2ff; color:#4338ca; font-weight:700; }
+  .ttable td.t { color:var(--ok); font-weight:700; }
+  .ttable td.f { color:var(--err); font-weight:700; }
 </style>
 </head>
 <body>
@@ -194,6 +203,109 @@ const COURSE = {
   ]
 };
 
+/* ---------- 各知识点配图（内联 SVG / 真值表），按知识点标题索引 ---------- */
+const FIGS = {
+"集合的概念与元素的三特性": `<svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="140" cy="85" r="58" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="140" y="38" text-anchor="middle" font-size="16" font-weight="bold" fill="#4338ca">A</text>
+  <circle cx="140" cy="85" r="5.5" fill="#e23"/>
+  <text x="152" y="89" font-size="13" fill="#e23" font-weight="bold">a∈A</text>
+  <circle cx="250" cy="45" r="5.5" fill="#888"/>
+  <text x="250" y="68" font-size="13" fill="#888" font-weight="bold">b∉A</text>
+</svg>
+<div class="figcap">圈内元素属于集合（a∈A），圈外元素不属于（b∉A）。</div>`,
+
+"常用数集及其符号": `<svg viewBox="0 0 300 170" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="15" width="260" height="140" rx="10" fill="#f5f6ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="30" y="33" font-size="13" font-weight="bold" fill="#4338ca">R 实数集</text>
+  <rect x="50" y="44" width="200" height="92" rx="9" fill="#f5f6ff" stroke="#5b54e8" stroke-width="2"/>
+  <text x="60" y="60" font-size="13" font-weight="bold" fill="#4338ca">Q 有理数集</text>
+  <rect x="78" y="68" width="144" height="56" rx="8" fill="#f5f6ff" stroke="#6d67ec" stroke-width="2"/>
+  <text x="88" y="84" font-size="13" font-weight="bold" fill="#4338ca">Z 整数集</text>
+  <rect x="106" y="90" width="88" height="26" rx="7" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="116" y="107" font-size="13" font-weight="bold" fill="#4338ca">N 自然数集</text>
+  <circle cx="150" cy="103" r="4" fill="#e23"/>
+  <text x="160" y="107" font-size="12" fill="#e23">0∈N</text>
+  <circle cx="262" cy="38" r="4" fill="#e23"/>
+  <text x="244" y="54" font-size="12" fill="#e23">π∈R，π∉Q</text>
+</svg>
+<div class="figcap">N ⊂ Z ⊂ Q ⊂ R：自然数⊂整数⊂有理数⊂实数；注意 0∈N，而 π∈R 但 π∉Q。</div>`,
+
+"集合间的基本关系：子集、真子集、相等": `<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+  <div class="figbox"><svg viewBox="0 0 110 100"><circle cx="55" cy="52" r="36" fill="none" stroke="#4f46e5" stroke-width="2"/><circle cx="55" cy="52" r="17" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/><text x="55" y="56" text-anchor="middle" font-size="11" fill="#4338ca">A</text></svg><div class="figcap">A⊆B<br>子集</div></div>
+  <div class="figbox"><svg viewBox="0 0 110 100"><circle cx="55" cy="52" r="36" fill="none" stroke="#4f46e5" stroke-width="2"/><circle cx="50" cy="52" r="13" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/></svg><div class="figcap">A⊊B<br>真子集</div></div>
+  <div class="figbox"><svg viewBox="0 0 110 100"><circle cx="55" cy="52" r="32" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/><text x="55" y="56" text-anchor="middle" font-size="11" fill="#4338ca">A=B</text></svg><div class="figcap">A=B<br>相等</div></div>
+</div>
+<div class="figcap">子集 A⊆B（A 可等于 B）；真子集 A⊊B（A≠B，严格更小）；相等 A=B（互相包含）。</div>`,
+
+"集合的基本运算：交集、并集、补集": `<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+  <div class="figbox"><svg viewBox="0 0 120 95"><circle cx="48" cy="45" r="30" fill="#4f46e5" fill-opacity="0.25" stroke="#4f46e5" stroke-width="1.5"/><circle cx="72" cy="45" r="30" fill="#4f46e5" fill-opacity="0.25" stroke="#4f46e5" stroke-width="1.5"/></svg><div class="figcap">A∩B 交集<br>两圆公共部分<br>（重叠更深色）</div></div>
+  <div class="figbox"><svg viewBox="0 0 120 95"><circle cx="48" cy="45" r="30" fill="#4f46e5" fill-opacity="0.25" stroke="#4f46e5" stroke-width="1.5"/><circle cx="72" cy="45" r="30" fill="#4f46e5" fill-opacity="0.25" stroke="#4f46e5" stroke-width="1.5"/><text x="60" y="90" text-anchor="middle" font-size="11" fill="#4338ca">整体即并集</text></svg><div class="figcap">A∪B 并集<br>两圆整体</div></div>
+  <div class="figbox"><svg viewBox="0 0 120 95"><rect x="14" y="14" width="92" height="66" rx="7" fill="#fff" stroke="#4f46e5" stroke-width="2"/><path d="M14 14 H106 V80 H14 Z M60 32 m-18 0 a18 18 0 1 0 36 0 a18 18 0 1 0 -36 0 Z" fill="#6366f1" fill-opacity="0.3" fill-rule="evenodd"/><circle cx="60" cy="50" r="18" fill="none" stroke="#4f46e5" stroke-width="2"/><text x="100" y="26" font-size="11" fill="#4338ca">U</text><text x="60" y="54" text-anchor="middle" font-size="11" fill="#4338ca">A</text></svg><div class="figcap">∁_U A 补集<br>矩形内、圆外</div></div>
+</div>`,
+
+"集合运算的应用：容斥原理": `<svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="78" cy="62" r="38" fill="#4f46e5" fill-opacity="0.16" stroke="#4f46e5" stroke-width="1.5"/>
+  <circle cx="122" cy="62" r="38" fill="#4f46e5" fill-opacity="0.16" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="50" y="66" font-size="12" fill="#4338ca">A</text>
+  <text x="142" y="66" font-size="12" fill="#4338ca">B</text>
+  <text x="100" y="58" text-anchor="middle" font-size="12" font-weight="bold" fill="#4338ca">A∩B</text>
+  <text x="62" y="40" font-size="11" fill="#4338ca">A\\B</text>
+  <text x="138" y="40" font-size="11" fill="#4338ca">B\\A</text>
+</svg>
+<div class="figcap">|A∪B| = |A| + |B| − |A∩B|（并集 = 两集元素数相加，减去重复计数的交集）。</div>`,
+
+"命题与真命题、假命题": `<svg viewBox="0 0 270 150" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="70" height="32" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="45" y="31" text-anchor="middle" font-size="12" fill="#4338ca">一个语句</text>
+  <line x1="80" y1="26" x2="118" y2="26" stroke="#888"/>
+  <rect x="118" y="10" width="78" height="32" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="157" y="31" text-anchor="middle" font-size="11" fill="#4338ca">是陈述句？</text>
+  <line x1="157" y1="42" x2="157" y2="66" stroke="#888"/>
+  <rect x="118" y="66" width="78" height="30" rx="8" fill="#fee" stroke="#e23" stroke-width="1.5"/>
+  <text x="157" y="86" text-anchor="middle" font-size="11" fill="#e23">非命题</text>
+  <line x1="196" y1="26" x2="222" y2="26" stroke="#888"/>
+  <rect x="222" y="10" width="40" height="32" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="242" y="31" text-anchor="middle" font-size="13" fill="#4338ca">？</text>
+  <line x1="242" y1="42" x2="242" y2="66" stroke="#888"/>
+  <rect x="204" y="66" width="76" height="30" rx="8" fill="#eef2ff" stroke="#2a8" stroke-width="1.5"/>
+  <text x="242" y="86" text-anchor="middle" font-size="11" fill="#2a8">命题</text>
+</svg>
+<div class="figcap">只有「能判断真假的陈述句」才是命题；疑问句、祈使句、含未定量（如 x&gt;1）的语句都不是命题。</div>`,
+
+"全称量词、存在量词与命题的否定": `<svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="15" width="100" height="40" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="60" y="40" text-anchor="middle" font-size="12" fill="#4338ca">∀x, p(x)</text>
+  <text x="118" y="41" text-anchor="middle" font-size="18" fill="#888">→</text>
+  <rect x="130" y="15" width="100" height="40" rx="8" fill="#fee" stroke="#e23" stroke-width="1.5"/>
+  <text x="180" y="40" text-anchor="middle" font-size="12" fill="#e23">∃x, ¬p(x)</text>
+  <text x="120" y="78" text-anchor="middle" font-size="12" fill="#4338ca">量词 ∀↔∃ 互换，结论取反</text>
+  <rect x="10" y="70" width="100" height="40" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="60" y="95" text-anchor="middle" font-size="12" fill="#4338ca">∃x, q(x)</text>
+  <text x="118" y="95" text-anchor="middle" font-size="18" fill="#888">→</text>
+  <rect x="130" y="70" width="100" height="40" rx="8" fill="#fee" stroke="#e23" stroke-width="1.5"/>
+  <text x="180" y="95" text-anchor="middle" font-size="12" fill="#e23">∀x, ¬q(x)</text>
+</svg>
+<div class="figcap">命题否定规则：全称量词 ∀ 与存在量词 ∃ 互换，并且结论取否定。例：「所有矩形都是平行四边形」的否定是「存在一个矩形不是平行四边形」。</div>`,
+
+"逻辑联结词：且、或、非": `<table class="ttable">
+<tr><th>p</th><th>q</th><th>p∧q<br>（且）</th><th>p∨q<br>（或）</th><th>¬p<br>（非）</th></tr>
+<tr><td class="t">真</td><td class="t">真</td><td class="t">真</td><td class="t">真</td><td class="f">假</td></tr>
+<tr><td class="t">真</td><td class="f">假</td><td class="f">假</td><td class="t">真</td><td class="f">假</td></tr>
+<tr><td class="f">假</td><td class="t">真</td><td class="f">假</td><td class="t">真</td><td class="t">真</td></tr>
+<tr><td class="f">假</td><td class="f">假</td><td class="f">假</td><td class="f">假</td><td class="t">真</td></tr>
+</table>
+<div class="figcap">且（∧）：同真才真；或（∨）：一真即真；非（¬）：对真假取反。</div>`,
+
+"充分条件、必要条件、充要条件": `<svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="110" cy="66" r="48" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="110" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#4338ca">B = {x | q(x)}</text>
+  <circle cx="110" cy="72" r="24" fill="#c7d2fe" stroke="#4338ca" stroke-width="2"/>
+  <text x="110" y="76" text-anchor="middle" font-size="11" fill="#312e81">A = {x | p(x)}</text>
+</svg>
+<div class="figcap">若 A⊆B（即 p⇒q）：p 是 q 的<b>充分条件</b>，q 是 p 的<b>必要条件</b>；当 A=B 时 p、q 互为<b>充要条件</b>。</div>`
+};
+
 const $ = s => document.querySelector(s);
 const LS_KEY = "mathb1_progress_v1";
 let state = { ch:"ch1", sec:null };
@@ -261,7 +373,8 @@ function renderPoint(ch, sec, p){
     '<div class="pt-h '+(done?"done":"")+'" data-p="'+pid(ch,sec,p.t)+'"><span class="chk">'+(done?"✔ ":"○ ")+'</span>'+p.t+' <span class="pt-tag">'+p.tag+'</span></div>'+
     '<button class="play" data-sp="#sp-'+pid(ch,sec,p.t)+'">🔊 朗读讲解</button>'+
     '<div class="explain" id="sp-'+pid(ch,sec,p.t)+'">'+esc(p.ex)+'</div>'+
-    '<div class="sum"><b>归纳总结：</b>'+p.sum+'</div>';
+    '<div class="sum"><b>归纳总结：</b>'+p.sum+'</div>'+
+    (FIGS[p.t]?'<div class="fig">'+FIGS[p.t]+'</div>':'');
   // 例题
   (p.eg||[]).forEach(e=>{
     const d=document.createElement("div"); d.className="eg";
