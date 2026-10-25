@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高中数学 B版 必修第一册 · 培训程序</title>
+<style>
+  :root { --brand:#4f46e5; --brand2:#6366f1; --ok:#15803d; --err:#e23; --bg:#f3f5fb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:#222; line-height:1.8; }
+  .topbar { background:linear-gradient(135deg,#4f46e5,#6366f1); color:#fff; padding:14px 16px; border-radius:16px; margin:12px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .topbar h1 { font-size:17px; font-weight:800; }
+  .topbar .spacer { flex:1; }
+  .topbar a.back { color:#fff; text-decoration:none; background:rgba(255,255,255,.22); padding:6px 12px; border-radius:20px; font-size:13px; }
+  .prog { background:#fff; border:1px solid #e6e8f0; border-radius:12px; margin:0 12px 12px; padding:10px 14px; font-size:13px; }
+  .prog-bar { height:8px; background:#e6e8f0; border-radius:6px; overflow:hidden; margin-top:6px; }
+  .prog-bar > i { display:block; height:100%; background:linear-gradient(90deg,#4f46e5,#6366f1); width:0; transition:width .3s; }
+  .tabs { display:flex; gap:8px; flex-wrap:wrap; padding:0 12px 8px; }
+  .tab { border:none; background:#fff; color:#555; font-size:14px; font-weight:700; padding:9px 14px; border-radius:14px; cursor:pointer; border:1.5px solid #e0e7ff; }
+  .tab.active { background:var(--brand); color:#fff; border-color:var(--brand); }
+  .tab.locked { opacity:.55; cursor:not-allowed; }
+  .wrap { display:flex; gap:14px; padding:0 12px 28px; align-items:flex-start; }
+  .side { flex:0 0 210px; background:#fff; border:1px solid #e6e8f0; border-radius:14px; padding:10px; position:sticky; top:12px; }
+  .side h3 { font-size:13px; color:#888; margin:6px 8px; }
+  .sec { display:block; width:100%; text-align:left; border:none; background:transparent; padding:9px 10px; border-radius:10px; cursor:pointer; font-size:13.5px; color:#333; }
+  .sec:hover { background:#eef2ff; }
+  .sec.active { background:#eef2ff; color:var(--brand); font-weight:700; }
+  .sec .pct { float:right; font-size:11px; color:#aaa; }
+  .main { flex:1; min-width:0; }
+  .card { background:#fff; border:1px solid #e6e8f0; border-radius:16px; padding:18px; margin-bottom:14px; box-shadow:0 4px 16px rgba(0,0,0,.04); }
+  .pt-h { font-size:16.5px; font-weight:800; display:flex; align-items:center; gap:8px; }
+  .pt-h .chk { font-size:13px; color:#bbb; }
+  .pt-h.done .chk { color:var(--ok); }
+  .pt-tag { font-size:11px; font-weight:700; color:#6366f1; background:#eef2ff; padding:2px 9px; border-radius:10px; }
+  .explain { font-size:14px; color:#333; background:#f8faff; border:1px solid #e6ebfb; border-radius:10px; padding:12px 14px; margin:10px 0; white-space:pre-wrap; }
+  .sum { font-size:13.5px; color:#1e40af; background:#eff6ff; border:1px solid #c9d6ff; border-radius:10px; padding:10px 14px; margin:10px 0; }
+  .sum b { color:#1e3a8a; }
+  .play { border:none; background:var(--brand); color:#fff; font-size:13px; font-weight:700; padding:7px 13px; border-radius:11px; cursor:pointer; margin:8px 0; }
+  .play:hover { background:#4338ca; }
+  .play.playing { background:var(--err); }
+  .eg { font-size:13.5px; margin:8px 0; border-left:3px solid #c7d2fe; padding:6px 12px; background:#fafbff; }
+  .eg .q { font-weight:700; }
+  .eg .a { color:#444; margin-top:4px; display:none; }
+  .eg .toggle { font-size:12.5px; color:var(--brand); cursor:pointer; user-select:none; }
+  .ex { margin:10px 0; padding:10px 12px; border:1px solid #eee; border-radius:10px; }
+  .ex .q { font-size:13.5px; font-weight:600; margin-bottom:8px; }
+  .opt { display:block; padding:7px 10px; border:1.5px solid #eee; border-radius:9px; margin:5px 0; cursor:pointer; font-size:13.5px; }
+  .opt:hover { border-color:#a5b4fc; background:#f6f8ff; }
+  .opt.right { border-color:#2a8; background:#eefaf5; }
+  .opt.wrong { border-color:var(--err); background:#fdeeee; }
+  .opt.picked { border-color:var(--brand); background:#eef2ff; }
+  .ex .fb { font-size:12.5px; margin-top:6px; display:none; }
+  .ex .fb.ok { color:var(--ok); }
+  .ex .fb.bad { color:var(--err); }
+  .quiz-btn { border:none; background:linear-gradient(135deg,#4f46e5,#6366f1); color:#fff; font-size:15px; font-weight:800; padding:12px 20px; border-radius:14px; cursor:pointer; margin:6px 0 14px; }
+  .quiz-wrap { display:none; }
+  .qitem { margin:12px 0; padding:12px; border:1px solid #e6e8f0; border-radius:12px; }
+  .qitem .q { font-weight:700; font-size:14px; margin-bottom:8px; }
+  .qitem .res { font-size:13px; margin-top:6px; }
+  .qitem .res.ok { color:var(--ok); }
+  .qitem .res.bad { color:var(--err); }
+  .score { font-size:16px; font-weight:800; padding:12px; border-radius:12px; background:#eef2ff; color:var(--brand); margin:10px 0; text-align:center; }
+  .soon { text-align:center; color:#999; padding:50px 10px; font-size:15px; }
+  .toast { position:fixed; left:50%; bottom:24px; transform:translateX(-50%); background:#222; color:#fff; padding:10px 18px; border-radius:20px; font-size:13px; opacity:0; transition:opacity .25s; pointer-events:none; z-index:99; }
+  .toast.show { opacity:.92; }
+  @media (max-width:760px){ .wrap{flex-direction:column;} .side{position:static;flex:auto;} }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>📘 高中数学 B版 必修第一册 · 培训程序</h1>
+    <div class="spacer"></div>
+    <a class="back" href="./index.html">← 返回首页</a>
+  </div>
+  <div class="prog">
+    学习进度：<span id="progTxt">0 / 0</span> 个知识点已掌握 · 本章测验最佳 <span id="quizBest">—</span>
+    <div class="prog-bar"><i id="progBar"></i></div>
+  </div>
+  <div class="tabs" id="tabs"></div>
+  <div class="wrap">
+    <div class="side" id="side"><h3>本章知识点</h3><div id="secList"></div></div>
+    <div class="main" id="main"></div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+<script>
+const COURSE = {
+  title: "高中数学 B版 必修第一册",
+  chapters: [
+    {
+      id:"ch1", name:"第一章 集合与常用逻辑用语", status:"ready",
+      sections:[
+        { id:"1.1", name:"1.1 集合", points:[
+          { t:"集合的概念与元素的三特性", tag:"概念",
+            ex:"集合：把确定的、互不相同的对象作为一个整体来考虑，这个整体就叫做集合，其中的每个对象叫做集合的元素。\n\n元素与集合的关系：若 a 是集合 A 的元素，记作 a∈A（属于）；若不是，记作 a∉A（不属于）。集合用大写字母 A,B,C 表示，元素用小写字母 a,b,c 表示。\n\n集合元素的三个特性：\n① 确定性——给定一个集合，任何一个对象是不是它的元素，都能明确判断；\n② 互异性——集合中的任意两个元素都不同，重复对象只算一个；\n③ 无序性——集合中的元素排列顺序无关紧要。",
+            sum:"<b>三特性</b>：确定性、互异性、无序性。<b>符号</b>：a∈A（属于）、a∉A（不属于）。",
+            eg:[{q:"下列对象中，能组成集合的是？", a:"“身高不低于 175cm 的同学”能（确定）；“高个子同学”不能（不确定，违反确定性）；“不等式 x−2>1 的所有解”能。"}],
+            exs:[
+              { q:"下列各组对象中，能组成一个集合的是（ ）", opts:["班上高个子的同学","小于 10 的自然数","很大的实数","附近好看的花"], ans:1, tip:"“高个子/很大/好看”都不确定，只有“小于10的自然数”满足确定性。" },
+              { q:"已知 A={1,2,3}，则下列说法正确的是（ ）", opts:["2∉A","4∈A","2∈A","0∈A"], ans:2, tip:"2 是 A 的元素，故 2∈A 正确。" }
+            ] },
+          { t:"常用数集及其符号", tag:"符号",
+            ex:"常用的数集有专门符号：\nN —— 自然数集（包含 0）；\nN⁺ 或 N* —— 正整数集（自然数集去掉 0）；\nZ —— 整数集；\nQ —— 有理数集；\nR —— 实数集。\n\n关系：N ⊊ Z ⊊ Q ⊊ R。注意 0∈N，但 0∉N⁺；π 是无理数，所以 π∉Q 但 π∈R。",
+            sum:"<b>数集</b>：N(含0)⊂N⁺(正整)⊂Z⊂Q⊂R。0∈N，π∉Q，π∈R。",
+            eg:[{q:"用符号表示“π 不是有理数”", a:"π∉Q。"}],
+            exs:[
+              { q:"下列写法正确的是（ ）", opts:["0∈N⁺","√2∈Q","0∈N","−1∈N"], ans:2, tip:"0 是自然数，故 0∈N 正确；0∉N⁺，√2 是无理数∉Q。" },
+              { q:"数集关系 N⊂Z⊂Q⊂R 中，正确的是（ ）", opts:["√2∈Q","π∈Q","−3∈Z","0∉N"], ans:2, tip:"−3 是整数，属于 Z；其余均错。" }
+            ] },
+          { t:"集合的表示方法：列举法与描述法", tag:"表示",
+            ex:"列举法：把集合的元素一一列举，写在花括号内，如 {1,2,3}。元素不重复、无顺序。\n\n描述法：用集合所含元素的共同特征表示，形如 {x | P(x)} 或 {x∈A | P(x)}。如“小于 3 的正整数解”可写为 {x∈N | x<3} = {1,2}。\n\n注意区分：∅ 是空集（不含任何元素）；{∅} 是以“空集”为唯一元素的集合，含 1 个元素，二者不同。",
+            sum:"<b>列举法</b> {a,b,c}；<b>描述法</b> {x | 条件}。<b>∅≠{∅}</b>（前者 0 元素，后者 1 元素）。",
+            eg:[{q:"方程 x²=1 的实数解集", a:"{−1, 1}，也可写作 {x∈R | x²−1=0}。"}],
+            exs:[
+              { q:"小于 3 的正整数的集合用列举法表示为（ ）", opts:["{1,2}","{0,1,2}","{1,2,3}","{2,3}"], ans:0, tip:"正整数从 1 开始且小于 3，只有 1、2。" },
+              { q:"集合 {x∈R | x²+1=0} 是（ ）", opts:["空集 ∅","{i,−i}","R","{0}"], ans:0, tip:"实数范围内 x²+1=0 无解，故为空集。" }
+            ] },
+          { t:"集合间的基本关系：子集、真子集、相等", tag:"关系",
+            ex:"子集：若集合 A 的任意一个元素都是集合 B 的元素，称 A⊆B（A 包含于 B）。\n真子集：A⊆B 且 A≠B，记作 A⊊B。\n相等：A=B ⇔ A⊆B 且 B⊆A。\n\n规定：空集是任何集合的子集，即 ∅⊆A；空集是任何非空集合的真子集。\n若集合 A 有 n 个元素，则它有 2ⁿ 个子集、2ⁿ−1 个真子集。",
+            sum:"<b>⊆</b>子集、<b>⊊</b>真子集、<b>=</b>相等。<b>∅⊆A</b> 恒成立。n 元素→2ⁿ 子集、2ⁿ−1 真子集。",
+            eg:[{q:"A={1,2}, B={1,2,3}，则 A 与 B 的关系", a:"A⊊B（A 是 B 的真子集）。"}],
+            exs:[
+              { q:"集合 {1,2} 的子集个数是（ ）", opts:["2","3","4","8"], ans:2, tip:"n=2，子集数 2²=4：∅,{1},{2},{1,2}。" },
+              { q:"下列命题正确的是（ ）", opts:["∅⊆{1,2}","∅∈{1,2}","{1,2}⊆∅","∅={∅}"], ans:0, tip:"空集是任何集合的子集，∅⊆{1,2} 正确。" }
+            ] },
+          { t:"集合的基本运算：交集、并集、补集", tag:"运算",
+            ex:"交集：A∩B = {x | x∈A 且 x∈B}（公共元素）。\n并集：A∪B = {x | x∈A 或 x∈B}（所有元素）。\n补集：设 U 为全集，∁_U A = {x | x∈U 且 x∉A}。\n可用 Venn 图直观表示这三种运算。",
+            sum:"<b>A∩B</b> 公共；<b>A∪B</b> 全部；<b>∁_U A</b> 全集中去掉 A。配合 Venn 图理解。",
+            eg:[{q:"A={1,2,3}, B={2,3,4}", a:"A∩B={2,3}，A∪B={1,2,3,4}。"}],
+            exs:[
+              { q:"上例中 A∩B =（ ）", opts:["{2,3}","{1,4}","{1,2,3,4}","∅"], ans:0, tip:"两集合公共元素是 2、3。" },
+              { q:"设 U={1,2,3,4}, A={1,2}，则 ∁_U A =（ ）", opts:["{3,4}","{1,2}","{1,2,3,4}","∅"], ans:0, tip:"全集中去掉 A 的元素 1、2，剩下 3、4。" }
+            ] },
+          { t:"集合运算的应用：容斥原理", tag:"应用",
+            ex:"两个有限集合的并集元素个数满足容斥原理：\n|A∪B| = |A| + |B| − |A∩B|。\n即先加后减重叠部分，避免重复计数。可推广到三个集合。",
+            sum:"<b>容斥</b>：|A∪B| = |A|+|B|−|A∩B|。",
+            eg:[{q:"全班 50 人，30 人数学好，25 人英语好，20 人两科都好，至少一科好的人数", a:"30+25−20 = 35 人。"}],
+            exs:[
+              { q:"|A|=8, |B|=6, |A∩B|=3，则 |A∪B|=（ ）", opts:["11","14","17","5"], ans:0, tip:"8+6−3=11。" },
+              { q:"两集合容斥公式是（ ）", opts:["|A∪B|=|A|+|B|","|A∪B|=|A|+|B|−|A∩B|","|A∩B|=|A|+|B|","|A∪B|=|A|−|B|"], ans:1, tip:"必须减去交集的重复计数。" }
+            ] }
+        ]},
+        { id:"1.2", name:"1.2 常用逻辑用语", points:[
+          { t:"命题与真命题、假命题", tag:"逻辑",
+            ex:"命题：可以判断真假的陈述句叫做命题。判断为真的叫真命题，判断为假的叫假命题。\n含变量的语句（如“x>1”）无法判断真假，不是命题；疑问句、祈使句也不是命题。",
+            sum:"<b>命题</b>＝可判断真假的陈述句。真命题/假命题依判断而定。",
+            eg:[{q:"“相等的角是对顶角”是真还是假？", a:"假命题（如等腰三角形的两底角相等，但不是对顶角）。"}],
+            exs:[
+              { q:"下列语句中是命题的是（ ）", opts:["x+1=2","你好！","π>3","过点 P 作直线 l"], ans:2, tip:"只有“π>3”是可判断真假的陈述句。" },
+              { q:"“相等的角是对顶角”是（ ）", opts:["真命题","假命题","不是命题","无法判断"], ans:1, tip:"存在相等但不对顶的角，故为假命题。" }
+            ] },
+          { t:"全称量词、存在量词与命题的否定", tag:"量词",
+            ex:"全称量词“任意”，符号 ∀；存在量词“存在”，符号 ∃。\n全称命题：∀x∈M, p(x)；存在命题：∃x∈M, p(x)。\n命题的否定：∀ 与 ∃ 互换，并且结论 p(x) 取否定 ¬p(x)。例如“所有矩形都是平行四边形”的否定是“存在一个矩形不是平行四边形”。",
+            sum:"<b>∀</b>任意、<b>∃</b>存在。否定规则：量词互换 + 结论取反。",
+            eg:[{q:"“∃x∈R, x²<0”的真假", a:"假命题（实数平方非负，不存在平方小于 0 的实数）。"}],
+            exs:[
+              { q:"命题“∀x∈R, x²≥0”的否定是（ ）", opts:["∃x∈R, x²<0","∀x∈R, x²<0","∃x∈R, x²≥0","∀x∈R, x²≤0"], ans:0, tip:"∀ 变 ∃，结论 x²≥0 取反为 x²<0。" },
+              { q:"“∃x∈N, x 是偶数”的否定是（ ）", opts:["∀x∈N, x 是奇数","∃x∈N, x 是奇数","∀x∈N, x 不是偶数","∀x∈N, x 是偶数"], ans:2, tip:"∃ 变 ∀，结论“x 是偶数”取反为“x 不是偶数”。" }
+            ] },
+          { t:"逻辑联结词：且、或、非", tag:"联结词",
+            ex:"设 p、q 为两个命题：\np∧q（p 且 q）：p、q 同真时才真，一假则假；\np∨q（p 或 q）：p、q 一真即真，同假才假；\n¬p（非 p）：p 真则 ¬p 假，p 假则 ¬p 真。\n这就是三个联结词的真值规则。",
+            sum:"<b>∧且</b>：同真才真；<b>∨或</b>：一真即真；<b>¬非</b>：取反。",
+            eg:[{q:"p:2>1(真), q:1>2(假)，求 p∧q、p∨q、¬q", a:"p∧q 假，p∨q 真，¬q 真。"}],
+            exs:[
+              { q:"已知 p 真、q 假，则 p∧q 为（ ）", opts:["真","假","无法确定","与 p∨q 相同"], ans:1, tip:"“且”要求同真，有一假即为假。" },
+              { q:"已知 p 假、q 假，则 p∨q 为（ ）", opts:["真","假","真或假均可","与 ¬p 相同"], ans:1, tip:"“或”需一真才真，二者皆假则假。" }
+            ] },
+          { t:"充分条件、必要条件、充要条件", tag:"条件",
+            ex:"若 p⇒q，则称 p 是 q 的<b>充分条件</b>，q 是 p 的<b>必要条件</b>。\n若 p⇒q 且 q⇒p（即 p⇔q），则 p 是 q 的<b>充要条件</b>。\n集合法判断：设 A={x|p(x)}, B={x|q(x)}，若 A⊆B，则 p 是 q 的充分条件（也是 q 的必要条件当 B⊆A）。",
+            sum:"<b>p⇒q</b>：p 充分、q 必要。<b>p⇔q</b>：充要。集合法：A⊆B ⇒ p 对 q 充分。",
+            eg:[{q:"“x>2”是“x>1”的什么条件？", a:"充分不必要条件（x>2⇒x>1，但 x>1⇏x>2）。"}],
+            exs:[
+              { q:"“x>3”是“x>1”的（ ）", opts:["充分不必要条件","必要不充分条件","充要条件","既不充分也不必要"], ans:0, tip:"x>3⇒x>1，反之不成立。" },
+              { q:"“a=b”是“a²=b²”的（ ）", opts:["充分不必要条件","必要不充分条件","充要条件","既不充分也不必要"], ans:0, tip:"a=b⇒a²=b²；但 a²=b²⇏a=b（如 a=1,b=−1），故充分不必要。" }
+            ] }
+        ]},
+        { id:"quiz", name:"本章考核", isQuiz:true,
+          quiz:[
+            { q:"下列能组成集合的是（ ）", opts:["高个子同学","小于 10 的自然数","很大的数","附近好看的花"], ans:1 },
+            { q:"下列符号使用正确的是（ ）", opts:["0∈N⁺","√2∈Q","0∈N","−1∈N"], ans:2 },
+            { q:"集合 {x∈R | x²+1=0} 是（ ）", opts:["空集","{i,−i}","R","{0}"], ans:0 },
+            { q:"集合 {1,2,3} 的子集个数是（ ）", opts:["3","4","6","8"], ans:1 },
+            { q:"设 U={1,2,3,4}, A={1,2}，则 ∁_U A=（ ）", opts:["{3,4}","{1,2}","{1,2,3,4}","∅"], ans:0 },
+            { q:"|A|=5,|B|=4,|A∩B|=2，则 |A∪B|=（ ）", opts:["7","9","11","3"], ans:0 },
+            { q:"下列是命题的是（ ）", opts:["x+1=2","π>3","画一条直线","你好"], ans:1 },
+            { q:"命题“∀x∈R, x>0”的否定是（ ）", opts:["∃x∈R, x≤0","∀x∈R, x≤0","∃x∈R, x>0","∀x∈R, x<0"], ans:0 },
+            { q:"p 假、q 真，则 p∨q 为（ ）", opts:["真","假","与 p∧q 同","无法确定"], ans:0 },
+            { q:"“x>5”是“x>3”的（ ）", opts:["充分不必要","必要不充分","充要","既不充分也不必要"], ans:0 }
+          ] }
+      ]
+    },
+    { id:"ch2", name:"第二章 等式与不等式", status:"soon" },
+    { id:"ch3", name:"第三章 函数", status:"soon" }
+  ]
+};
+
+const $ = s => document.querySelector(s);
+const LS_KEY = "mathb1_progress_v1";
+let state = { ch:"ch1", sec:null };
+let progress = loadProgress();
+
+function loadProgress(){ try { return JSON.parse(localStorage.getItem(LS_KEY)) || {done:[], quizBest:{}}; } catch(e){ return {done:[], quizBest:{}}; } }
+function saveProgress(){ localStorage.setItem(LS_KEY, JSON.stringify(progress)); }
+function toast(m){ const t=$("#toast"); t.textContent=m; t.classList.add("show"); clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove("show"),1600); }
+
+/* ---------- 渲染章 tabs ---------- */
+function renderTabs(){
+  const el = $("#tabs"); el.innerHTML = "";
+  COURSE.chapters.forEach(c=>{
+    const b = document.createElement("button");
+    b.className = "tab" + (c.id===state.ch?" active":"") + (c.status==="soon"?" locked":"");
+    b.textContent = c.name;
+    if(c.status!=="soon") b.onclick = ()=>{ state.ch=c.id; state.sec=null; render(); };
+    else b.title = "敬请期待";
+    el.appendChild(b);
+  });
+}
+
+/* ---------- 渲染侧栏 + 主区 ---------- */
+function render(){
+  renderTabs();
+  const ch = COURSE.chapters.find(c=>c.id===state.ch);
+  if(ch.status==="soon"){ $("#secList").innerHTML=""; $("#main").innerHTML = '<div class="soon">🚧 '+ch.name+' 正在制作中，敬请期待。<br>当前已上线：第一章 集合与常用逻辑用语。</div>'; updateProg(); return; }
+  if(!state.sec) state.sec = ch.sections[0].id;
+  // sidebar
+  const sl = $("#secList"); sl.innerHTML="";
+  ch.sections.forEach(s=>{
+    const b=document.createElement("button");
+    b.className="sec"+(s.id===state.sec?" active":"");
+    const total = s.points?s.points.length:0;
+    const done = s.points? s.points.filter(p=>progress.done.includes(pid(ch.id,s.id,p.t))).length:0;
+    b.innerHTML = s.name + (total?('<span class="pct">'+done+'/'+total+'</span>'):'');
+    b.onclick=()=>{ state.sec=s.id; render(); };
+    sl.appendChild(b);
+  });
+  // main
+  const sec = ch.sections.find(s=>s.id===state.sec);
+  const m = $("#main"); m.innerHTML="";
+  if(sec.isQuiz){ m.appendChild(renderQuiz(sec)); }
+  else {
+    sec.points.forEach(p=> m.appendChild(renderPoint(ch.id, sec.id, p)));
+    // 章节考核入口
+    const qsec = ch.sections.find(s=>s.isQuiz);
+    if(qsec){
+      const wrap=document.createElement("div"); wrap.className="card";
+      const btn=document.createElement("button"); btn.className="quiz-btn"; btn.textContent="📝 开始本章考核（"+qsec.quiz.length+" 题）";
+      btn.onclick=()=>{ state.sec=qsec.id; render(); window.scrollTo({top:0,behavior:"smooth"}); };
+      wrap.appendChild(btn); m.appendChild(wrap);
+    }
+  }
+  updateProg();
+}
+
+function pid(ch,sec,t){ return ch+"|"+sec+"|"+t; }
+
+/* ---------- 知识点卡片 ---------- */
+function renderPoint(ch, sec, p){
+  const card=document.createElement("div"); card.className="card";
+  const done = progress.done.includes(pid(ch,sec,p.t));
+  card.innerHTML =
+    '<div class="pt-h '+(done?"done":"")+'" data-p="'+pid(ch,sec,p.t)+'"><span class="chk">'+(done?"✔ ":"○ ")+'</span>'+p.t+' <span class="pt-tag">'+p.tag+'</span></div>'+
+    '<button class="play" data-sp="#sp-'+pid(ch,sec,p.t)+'">🔊 朗读讲解</button>'+
+    '<div class="explain" id="sp-'+pid(ch,sec,p.t)+'">'+esc(p.ex)+'</div>'+
+    '<div class="sum"><b>归纳总结：</b>'+p.sum+'</div>';
+  // 例题
+  (p.eg||[]).forEach(e=>{
+    const d=document.createElement("div"); d.className="eg";
+    d.innerHTML='<div class="q">💡 例题：'+esc(e.q)+'</div><span class="toggle">▸ 显示解答</span><div class="a">'+esc(e.a)+'</div>';
+    d.querySelector(".toggle").onclick=function(){ const a=d.querySelector(".a"); const open=a.style.display==="block"; a.style.display=open?"none":"block"; this.textContent=(open?"▸ 显示解答":"▾ 收起解答"); };
+    card.appendChild(d);
+  });
+  // 练习
+  (p.exs||[]).forEach((ex,i)=>{
+    const box=document.createElement("div"); box.className="ex";
+    let opts=""; ex.opts.forEach((o,oi)=>{ opts+='<div class="opt" data-o="'+oi+'">'+String.fromCharCode(65+oi)+'. '+esc(o)+'</div>'; });
+    box.innerHTML='<div class="q">✍️ 练习：'+esc(ex.q)+'</div>'+opts+'<div class="fb"></div>';
+    box.querySelectorAll(".opt").forEach(el=>el.onclick=function(){
+      if(box.dataset.done) return;
+      const oi=+this.dataset.o;
+      box.querySelectorAll(".opt").forEach(x=>x.classList.remove("picked"));
+      this.classList.add("picked");
+      const right = oi===ex.ans;
+      box.querySelectorAll(".opt").forEach(x=>{ const xi=+x.dataset.o; if(xi===ex.ans)x.classList.add("right"); else if(xi===oi)x.classList.add("wrong"); });
+      const fb=box.querySelector(".fb"); fb.style.display="block";
+      if(right){ fb.className="fb ok"; fb.textContent="✅ 正确！"+esc(ex.tip||""); box.dataset.done="1"; markDone(pid(ch,sec,p.t)); }
+      else { fb.className="fb bad"; fb.textContent="❌ 不对，"+esc(ex.tip||"再想想～"); }
+    });
+    card.appendChild(box);
+  });
+  // 朗读按钮
+  card.querySelector(".play").onclick=function(){ speak(p.ex, this); };
+  return card;
+}
+
+function markDone(id){
+  if(!progress.done.includes(id)){ progress.done.push(id); saveProgress(); updateProg();
+    const h=document.querySelector('.pt-h[data-p="'+CSS.escape(id)+'"]');
+    if(h){ h.classList.add("done"); h.querySelector(".chk").textContent="✔ "; }
+    toast("✅ 已掌握："+id.split("|")[2]);
+  }
+}
+
+/* ---------- 章节考核 ---------- */
+function renderQuiz(sec){
+  const wrap=document.createElement("div"); wrap.className="quiz-wrap"; wrap.style.display="block";
+  const card=document.createElement("div"); card.className="card";
+  card.innerHTML='<div class="pt-h">📝 本章考核（'+sec.quiz.length+' 题，单选，提交后显示成绩与解析）</div>';
+  const items=[];
+  sec.quiz.forEach((q,i)=>{
+    const it=document.createElement("div"); it.className="qitem"; it.dataset.i=i;
+    let opts=""; q.opts.forEach((o,oi)=>{ opts+='<div class="opt" data-o="'+oi+'">'+String.fromCharCode(65+oi)+'. '+esc(o)+'</div>'; });
+    it.innerHTML='<div class="q">'+(i+1)+'. '+esc(q.q)+'</div>'+opts+'<div class="res"></div>';
+    it.querySelectorAll(".opt").forEach(el=>el.onclick=function(){
+      if(it.dataset.lock) return;
+      it.querySelectorAll(".opt").forEach(x=>x.classList.remove("picked")); this.classList.add("picked"); it.dataset.pick=this.dataset.o;
+    });
+    items.push(it); card.appendChild(it);
+  });
+  const submit=document.createElement("button"); submit.className="quiz-btn"; submit.textContent="提交答卷";
+  submit.onclick=()=>{
+    let score=0;
+    items.forEach((it,i)=>{
+      const pick=it.dataset.pick; const ans=sec.quiz[i].ans;
+      it.dataset.lock="1";
+      it.querySelectorAll(".opt").forEach(x=>{ const xi=+x.dataset.o; if(xi===ans)x.classList.add("right"); else if(pick==xi)x.classList.add("wrong"); });
+      const right = pick!==undefined && +pick===ans;
+      const res=it.querySelector(".res");
+      if(right){ score++; res.className="res ok"; res.textContent="✅ 正确"; }
+      else { res.className="res bad"; res.textContent="❌ 正确答案："+String.fromCharCode(65+ans); }
+    });
+    const sc=document.createElement("div"); sc.className="score"; sc.textContent="本章考核得分："+score+" / "+sec.quiz.length+"（"+(Math.round(score/sec.quiz.length*100))+" 分）";
+    card.insertBefore(sc, submit);
+    const best=progress.quizBest[state.ch]||0;
+    if(score>best){ progress.quizBest[state.ch]=score; saveProgress(); updateProg(); }
+    submit.disabled=true; submit.textContent="已提交（可重做请刷新）";
+    window.scrollTo({top:0,behavior:"smooth"});
+  };
+  card.appendChild(submit); wrap.appendChild(card); return wrap;
+}
+
+/* ---------- 进度 ---------- */
+function updateProg(){
+  const ch=COURSE.chapters.find(c=>c.id===state.ch);
+  let total=0, done=0;
+  if(ch && ch.status==="ready"){
+    ch.sections.forEach(s=>{ if(s.points){ total+=s.points.length; done+=s.points.filter(p=>progress.done.includes(pid(ch.id,s.id,p.t))).length; } });
+  }
+  $("#progTxt").textContent = done+" / "+total;
+  $("#progBar").style.width = (total? Math.round(done/total*100):0)+"%";
+  $("#quizBest").textContent = progress.quizBest[state.ch]!=null ? (progress.quizBest[state.ch]+" 分") : "—";
+}
+
+/* ---------- TTS 朗读（浏览器内置，规避服务端 TTS 被墙）---------- */
+let voices=[];
+if('speechSynthesis' in window){ try{ voices=speechSynthesis.getVoices(); }catch(e){} speechSynthesis.onvoiceschanged=()=>{ try{voices=speechSynthesis.getVoices();}catch(e){} }; }
+function speak(text, btn){
+  if(!('speechSynthesis' in window)){ toast("当前浏览器不支持朗读，请用 Chrome/Edge"); return; }
+  speechSynthesis.cancel();
+  const plain = text.replace(/<[^>]+>/g,"").replace(/[●•·]/g,"");
+  const u=new SpeechSynthesisUtterance(plain);
+  const v=voices.find(v=>/zh[-_]?(CN|TW|Hans)/i.test(v.lang)) || voices.find(v=>/^zh/i.test(v.lang)) || null;
+  if(v) u.voice=v; u.lang="zh-CN"; u.rate=0.98; u.pitch=1;
+  u.onstart=()=>{ if(btn){ btn.classList.add("playing"); btn.textContent="⏹ 停止朗读"; } };
+  u.onend=()=>{ if(btn){ btn.classList.remove("playing"); btn.textContent="🔊 朗读讲解"; } };
+  u.onerror=()=>{ if(btn){ btn.classList.remove("playing"); btn.textContent="🔊 朗读讲解"; } };
+  speechSynthesis.speak(u);
+}
+
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+render();
+</script>
+</body>
+</html>
