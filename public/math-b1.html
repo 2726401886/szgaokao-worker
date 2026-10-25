@@ -198,8 +198,200 @@ const COURSE = {
           ] }
       ]
     },
-    { id:"ch2", name:"第二章 等式与不等式", status:"soon" },
-    { id:"ch3", name:"第三章 函数", status:"soon" }
+    { id:"ch2", name:"第二章 等式与不等式", status:"ready",
+      sections:[
+        { id:"2.1", name:"2.1 等式与方程求解", points:[
+          { t:"等式的性质", tag:"性质",
+            ex:"等式是用等号连接两个代数式所成的式子。等式具有三条基本性质：① 反身性 a=a；② 对称性 若 a=b 则 b=a；③ 传递性 若 a=b 且 b=c 则 a=c。此外，等式两边同时加、减、乘同一个数（或整式），或同除以一个非零数，所得仍为等式。这些是解方程的依据。",
+            sum:"等式性质：对称性、传递性；两边同加同减同乘（或同除以≠0）等式仍成立。",
+            eg:[{q:"由 3x+2=8 如何一步步求出 x？", a:"两边减2得 3x=6，两边除以3得 x=2。"}],
+            exs:[
+              { q:"下列变形依据正确的是（ ）", opts:["由 a=b 得 a+c=b−c","由 a=b 得 ac=bc","由 a=b 得 a/c=b/c（c可为0）","由 2x=6 得 x=3 依据等式没有性质"], ans:1, tip:"两边同乘 c 等式仍成立；同除以 c 要求 c≠0。" },
+              { q:"若 x=y，则下列各式一定成立的是（ ）", opts:["x+1=y−1","2x=2y","x/y=1","x²=y+1"], ans:1, tip:"两边同乘2：2x=2y 恒成立。" }
+            ] },
+          { t:"一元二次方程", tag:"方程",
+            ex:"形如 ax²+bx+c=0（a≠0）的方程叫一元二次方程。求根可用公式 x=[−b±√(b²−4ac)]/(2a)，其中 Δ=b²−4ac 叫判别式：Δ>0 有两个不等实根；Δ=0 有两个相等实根；Δ<0 无实根（有共轭复根）。根与系数关系（韦达定理）：x₁+x₂=−b/a，x₁x₂=c/a。",
+            sum:"求根公式 x=[−b±√Δ]/(2a)；Δ>0两不等根、Δ=0两等根、Δ<0无实根；韦达：x₁+x₂=−b/a，x₁x₂=c/a。",
+            eg:[{q:"解方程 x²−5x+6=0", a:"Δ=25−24=1>0，x=(5±1)/2，故 x₁=3，x₂=2。"}],
+            exs:[
+              { q:"方程 x²−4x+4=0 的根的情况是（ ）", opts:["两个不等实根","两个相等实根","无实根","无法确定"], ans:1, tip:"Δ=16−16=0，两根相等（x=2）。" },
+              { q:"方程 2x²−3x−2=0 的两根之和是（ ）", opts:["3/2","−3/2","2","−2"], ans:1, tip:"由韦达，x₁+x₂=−b/a=−(−3)/2=3/2。" }
+            ] },
+          { t:"二元一次方程组", tag:"方程",
+            ex:"含有两个未知数且未知数最高次数为 1 的方程组叫二元一次方程组。常用消元法求解：① 代入消元——从一个方程解出一个未知量代入另一个；② 加减消元——将两方程乘适当系数后相加减，消去一个未知量。解得的 (x,y) 同时满足两个方程。",
+            sum:"二元一次方程组用代入法或加减消元法，化为一元一次再求另一个未知量。",
+            eg:[{q:"解方程组 {x+y=5, x−y=1}", a:"两式相加得 2x=6→x=3，代入得 y=2，解为 (3,2)。"}],
+            exs:[
+              { q:"用加减法解方程组 {2x+y=7, x−y=2}，消 y 应（ ）", opts:["两式相加","两式相减","乘2后相加","无法消去"], ans:0, tip:"两式左边相加 y+(−y)=0，y 被消去。" },
+              { q:"方程组 {x+y=3, x−y=1} 的解是（ ）", opts:["(1,2)","(2,1)","(3,0)","(0,3)"], ans:1, tip:"相加得2x=4→x=2，y=1，即 (2,1)。" }
+            ] }
+        ]},
+        { id:"2.2", name:"2.2 不等式及其性质", points:[
+          { t:"不等式的基本性质", tag:"性质",
+            ex:"用不等号（<、>、≤、≥、≠）连接的式子叫不等式。基本性质：① 若 a<b 且 b<c，则 a<c（传递性）；② 若 a<b，则 a+c<b+c（同加不变）；③ 若 a<b 且 c>0，则 ac<bc；若 c<0 则 ac>bc（乘正数不变向，乘负数反向）。这些性质是不等式变形的依据。",
+            sum:"不等式性质：传递性；同加不变；乘正不变向、乘负反向。",
+            eg:[{q:"若 a<b，则下列一定成立的是（ ）", a:"a−3<b−3（两边同减3，不等号方向不变）。"}],
+            exs:[
+              { q:"若 x<y 且 m<0，则 mx 与 my 的大小关系是（ ）", opts:["mx<my","mx>my","mx=my","无法确定"], ans:1, tip:"不等式乘负数 m，不等号反向，故 mx>my。" },
+              { q:"由 a>b 能推出 2a>2b，依据是（ ）", opts:["同加性质","乘正数不变向","乘负数反向","传递性"], ans:1, tip:"两边同乘正数2，不等号方向不变。" }
+            ] },
+          { t:"区间与不等式的解集", tag:"表示",
+            ex:"实数集的子集常用区间表示：开区间 (a,b)={x|a<x<b}；闭区间 [a,b]={x|a≤x≤b}；半开半闭 [a,b)、半无穷 (−∞,b) 等。不等式的解集也用区间书写，如 x>2 的解集记作 (2,+∞)。注意 ∞ 不是数，开区间永不取等号。",
+            sum:"区间：(a,b)开、[a,b]闭、[a,b)半开；无穷用括号 ( −∞,a) 等，∞ 处恒开。",
+            eg:[{q:"不等式 x≥−1 的解集用区间表示", a:"[−1, +∞)。"}],
+            exs:[
+              { q:"区间 (2,5] 表示的集合是（ ）", opts:["{x|2<x<5}","{x|2≤x≤5}","{x|2<x≤5}","{x|2≤x<5}"], ans:2, tip:"左开右闭：2<x≤5。" },
+              { q:"不等式 x≤3 的区间表示是（ ）", opts:["(3,+∞)","[3,+∞)","(−∞,3)","(−∞,3]"], ans:3, tip:"x 不大于3，即 (−∞,3]，无穷处开。" }
+            ] }
+        ]},
+        { id:"2.3", name:"2.3 一元二次不等式", points:[
+          { t:"三个二次的关系（数形结合）", tag:"数形结合",
+            ex:"一元二次不等式 ax²+bx+c>0（a>0）的求解，核心是把二次函数 y=ax²+bx+c、一元二次方程 ax²+bx+c=0、一元二次不等式三者统一：先令 y=0 求抛物线与 x 轴的交点（即方程的根 x₁,x₂），再看抛物线在 x 轴上方还是下方的区间。图象直观告诉我们：ax²+bx+c>0 的解集就是抛物线在 x 轴上方的部分对应的 x 范围。",
+            sum:"三个二次统一：二次函数图象 ↔ 方程根 ↔ 不等式解集。求根得交点，看图定区间。",
+            eg:[{q:"已知 y=x²−x−2 与 x 轴交于 −1 和 2，求 x²−x−2>0 的解集", a:"抛物线开口向上，在两根外侧（x<−1 或 x>2）位于 x 轴上方，故解集 (−∞,−1)∪(2,+∞)。"}],
+            exs:[
+              { q:"二次函数 y=x²−4 与 x 轴交点为 −2, 2，则 x²−4<0 解集（ ）", opts:["(−∞,−2)∪(2,+∞)","(−2,2)","{−2,2}","R"], ans:1, tip:"开口向上，下方区间在两根之间：−2<x<2。" },
+              { q:"三个二次指（ ）", opts:["一次、二次、三次","二次函数、方程、不等式","数、式、方程","不等、相等、等式"], ans:1, tip:"一元二次的函数、方程、不等式三者联系。" }
+            ] },
+          { t:"一元二次不等式的解法", tag:"解法",
+            ex:"解 ax²+bx+c>0（a>0）的步骤：① 化标准形式（a>0）；② 算 Δ；③ 求根 x₁≤x₂；④ 据 Δ 与图象写解集：Δ>0 时 >0 解为 x<x₁或x>x₂，<0 解为 x₁<x<x₂；Δ=0 时 >0 解为 x≠x₁；Δ<0 时 a>0 则 >0 解为 R，<0 解为 ∅。口诀：大于取两边，小于取中间。",
+            sum:"解法：标准化→算Δ→求根→看图。Δ>0：>0取两边、<0取中间；Δ=0：>0取x≠根；Δ<0：a>0时>0解为R。",
+            eg:[{q:"解 x²−3x+2<0", a:"Δ=9−8=1>0，根1,2，开口向上，<0取中间：(1,2)。"}],
+            exs:[
+              { q:"不等式 x²−2x+1>0 的解集是（ ）", opts:["R","x≠1","(1,+∞)","∅"], ans:1, tip:"Δ=0，根x=1，(x−1)²>0 解为 x≠1。" },
+              { q:"不等式 x²+x+1>0 的解集（a>0,Δ<0）是（ ）", opts:["∅","R","(−1,0)","(0,1)"], ans:1, tip:"Δ=1−4=−3<0，开口向上恒正，解为全体实数R。" }
+            ] }
+        ]},
+        { id:"2.4", name:"2.4 基本不等式", points:[
+          { t:"基本不等式 (a+b)/2 ≥ √ab", tag:"不等式",
+            ex:"对任意正数 a,b，有算术平均数不小于几何平均数：(a+b)/2 ≥ √ab，当且仅当 a=b 时取等号。几何解释：以 a+b 为直径作半圆，半圆上的垂线段长 √ab，半径 (a+b)/2 不小于它。当 a,b 为任意实数时，更一般形式为 a²+b²≥2ab（a=b 取等）。",
+            sum:"基本不等式：a,b>0 时 (a+b)/2 ≥ √ab（a=b取等）；几何：半径≥半弦。",
+            eg:[{q:"已知 a,b>0 且 a+b=4，求 ab 的最大值", a:"由 √ab≤(a+b)/2=2 得 ab≤4，当 a=b=2 时取等，最大为4。"}],
+            exs:[
+              { q:"基本不等式成立的条件是（ ）", opts:["a,b为实数","a,b>0","a,b为整数","a≠b"], ans:1, tip:"基本不等式要求 a,b 均为正数。" },
+              { q:"若 x>0，则 x+1/x 的最小值是（ ）", opts:["0","1","2","4"], ans:2, tip:"由 x+1/x≥2√(x·1/x)=2，当 x=1 取等，最小值为2。" }
+            ] },
+          { t:"基本不等式求最值（一正二定三相等）", tag:"应用",
+            ex:"用基本不等式求最值须满足三点：① 一正——各项为正；② 二定——和或积为定值；③ 三相等——等号能取到。例如周长一定的矩形中，正方形面积最大；和为定值 s 时，两正数乘积在相等时最大为 s²/4。常见技巧：配凑出和为定或积为定的结构。",
+            sum:"求最值三要点：一正（各项>0）、二定（和/积定值）、三相等（等号可取）。",
+            eg:[{q:"用 20 m 篱笆围矩形菜地，怎样面积最大？", a:"设长x宽y，x+y=10（定），面积xy≤(x+y)²/4=25，x=y=5（正方形）时最大25 m²。"}],
+            exs:[
+              { q:"若 a,b>0 且 a+b=8，则 ab 的最大值为（ ）", opts:["8","16","32","64"], ans:1, tip:"ab≤(a+b)²/4=16，a=b=4 取等。" },
+              { q:"下列能用基本不等式求最小值的是（ ）", opts:["x+1/x (x<0)","x+1/x (x>0)","x²+1 (x∈R) 用 x·1","−x−1/x (x>0)"], ans:1, tip:"x>0 时各项为正、积为定值1，可求最小2。" }
+            ] }
+        ]},
+        { id:"quiz", name:"本章考核", isQuiz:true,
+          quiz:[
+            { q:"方程 x²−5x+6=0 的两根之和是（ ）", opts:["5","−5","6","−6"], ans:0 },
+            { q:"一元二次方程有两个相等实根的条件是（ ）", opts:["Δ>0","Δ=0","Δ<0","a=0"], ans:1 },
+            { q:"由 a<b 且 c<0 可得（ ）", opts:["ac<bc","ac>bc","a+c>b+c","无法确定"], ans:1 },
+            { q:"区间 [−2,3) 表示（ ）", opts:["−2<x<3","−2≤x<3","−2<x≤3","−2≤x≤3"], ans:1 },
+            { q:"y=x²−1 与 x 轴交点为 −1,1，则 x²−1<0 解集（ ）", opts:["(−∞,−1)∪(1,+∞)","(−1,1)","{−1,1}","R"], ans:1 },
+            { q:"x²+2x+3>0（a>0,Δ<0）解集（ ）", opts:["∅","R","(−1,3)","(1,3)"], ans:1 },
+            { q:"基本不等式 (a+b)/2≥√ab 要求（ ）", opts:["a,b∈R","a,b>0","a≠b","a,b<0"], ans:1 },
+            { q:"x>0 时 x+4/x 的最小值是（ ）", opts:["2","4","8","16"], ans:1 },
+            { q:"a,b>0 且 a+b=10，ab 最大（ ）", opts:["10","20","25","50"], ans:2 },
+            { q:"解 x²−3x+2>0，Δ>0 应（ ）", opts:["取中间 (1,2)","取两边 x<1或x>2","无解","全体实数"], ans:1 }
+          ] }
+      ]
+    },
+    { id:"ch3", name:"第三章 函数", status:"ready",
+      sections:[
+        { id:"3.1", name:"3.1 函数的概念与表示", points:[
+          { t:"函数的定义", tag:"概念",
+            ex:"设 A、B 是非空数集，若对集合 A 中任意一个实数 x，按照某种对应法则 f，在 B 中都有唯一确定的实数 y 与之对应，则称 f:A→B 为函数，记作 y=f(x)。x 叫自变量，x 的取值范围 A 叫定义域，函数值的集合叫值域。函数由定义域、对应法则、值域三要素决定（值域由前两者确定）。",
+            sum:"函数：非空数集 A 中每个 x，按法则 f 有唯一 y 对应（y=f(x)）。三要素：定义域、对应法则、值域。",
+            eg:[{q:"f(x)=x²，f(3) 等于多少？", a:"把 x=3 代入，f(3)=9。"}],
+            exs:[
+              { q:"函数的三要素是（ ）", opts:["自变量、因变量、常数","定义域、对应法则、值域","x、y、f","数集、图象、公式"], ans:1, tip:"定义域、对应法则、值域三者确定函数。" },
+              { q:"若 f(x)=2x+1，则 f(0)=（ ）", opts:["0","1","2","3"], ans:1, tip:"f(0)=2·0+1=1。" }
+            ] },
+          { t:"函数的表示法（数形结合）", tag:"表示",
+            ex:"函数常用三种方法表示：① 解析法——用式子 y=f(x) 表示（便于计算）；② 列表法——列 x 与 y 对应表（便于查值）；③ 图象法——在平面直角坐标系中描点 (x,f(x)) 连线（直观反映变化趋势，是数形结合的核心）。同一函数可用不同方法表示，图象法最能体现增减、对称等性质。",
+            sum:"表示法：解析法（算式）、列表法（数值表）、图象法（平面曲线，数形结合）。",
+            eg:[{q:"用图象法表示 f(x)=x，应得到什么图形？", a:"过原点、斜率为1的直线 y=x。"}],
+            exs:[
+              { q:"能直观反映函数增减变化趋势的表示法是（ ）", opts:["解析法","列表法","图象法","文字法"], ans:2, tip:"图象法把数值关系变成几何曲线，最直观。" },
+              { q:"函数 y=2x 的解析法表示中，对应法则是（ ）", opts:["乘以2","加2","平方","取倒"], ans:0, tip:"f(x)=2x 即把自变量乘以2。" }
+            ] },
+          { t:"函数的定义域与值域", tag:"定义域",
+            ex:"求定义域要使解析式有意义：① 分母 ≠0；② 偶次根号下 ≥0；③ 真数 >0（对数，后续学）；④ 实际问题受上下文限制。值域是函数在定义域内所有函数值的集合，可由解析式变形、配方法或观察图象得出。",
+            sum:"定义域：分母≠0、偶次根号下≥0、真数>0 等；值域由解析式或图象确定。",
+            eg:[{q:"求 f(x)=1/(x−1) 的定义域", a:"分母 x−1≠0，故 x≠1，即 (−∞,1)∪(1,+∞)。"}],
+            exs:[
+              { q:"函数 f(x)=√(x−2) 的定义域（ ）", opts:["x≥2","x>2","x≤2","x≠2"], ans:0, tip:"偶次根号下 x−2≥0，得 x≥2。" },
+              { q:"f(x)=1/x 中 x 不能取（ ）", opts:["0","1","−1","任意实数"], ans:0, tip:"分母不能为0。" }
+            ] }
+        ]},
+        { id:"3.2", name:"3.2 函数的基本性质", points:[
+          { t:"单调性（数形结合）", tag:"性质",
+            ex:"在函数单调区间 I 上，若 x₁<x₂ 总有 f(x₁)<f(x₂)，则 f 在 I 上递增（图象上升）；若 f(x₁)>f(x₂)，则递减（图象下降）。单调性描述函数随自变量增大而增大或减小的趋势，由图象的升降一眼可辨——这是数形结合判断性质的典型。",
+            sum:"递增：x₁<x₂⇒f(x₁)<f(x₂)（图象升）；递减：x₁<x₂⇒f(x₁)>f(x₂)（图象降）。",
+            eg:[{q:"f(x)=2x 在 R 上单调？", a:"斜率2>0，x 增大 f(x) 增大，故在 R 上递增。"}],
+            exs:[
+              { q:"函数 y=−x 在 R 上（ ）", opts:["递增","递减","先增后减","常函数"], ans:1, tip:"斜率−1<0，图象下降，递减。" },
+              { q:"图象从左到右上升，说明函数在该区间（ ）", opts:["递增","递减","无单调性","为常数"], ans:0, tip:"上升即 y 随 x 增大而增大，递增。" }
+            ] },
+          { t:"奇偶性（数形结合）", tag:"性质",
+            ex:"若函数定义域关于原点对称，且对定义域内任意 x 有 f(−x)=f(x)，则 f 为偶函数，图象关于 y 轴对称；若 f(−x)=−f(x)，则 f 为奇函数，图象关于原点中心对称。奇偶性是函数的整体对称性质，用图象对称性可快速判断。注意：定义域不对称则非奇非偶。",
+            sum:"偶函数 f(−x)=f(x)，图象关于y轴对称；奇函数 f(−x)=−f(x)，关于原点中心对称；前提：定义域关于原点对称。",
+            eg:[{q:"f(x)=x² 的奇偶性？", a:"f(−x)=(−x)²=x²=f(x)，故为偶函数，图象关于y轴对称。"}],
+            exs:[
+              { q:"f(x)=x³ 是（ ）", opts:["偶函数","奇函数","非奇非偶","既是奇又是偶"], ans:1, tip:"f(−x)=−x³=−f(x)，奇函数。" },
+              { q:"奇函数的图象特征（ ）", opts:["关于y轴对称","关于原点对称","关于x轴对称","无对称"], ans:1, tip:"奇函数图象关于原点中心对称。" }
+            ] }
+        ]},
+        { id:"3.3", name:"3.3 一次函数和二次函数", points:[
+          { t:"一次函数 y=kx+b（数形结合）", tag:"图象",
+            ex:"一次函数 y=kx+b（k≠0）的图象是一条直线：k 叫斜率，决定直线的倾斜方向与陡缓——k>0 直线上升，k<0 下降；b 叫截距，是直线与 y 轴交点的纵坐标（0,b）。两点即可确定一条直线，常取与坐标轴交点（−b/k,0）和（0,b）来画。",
+            sum:"y=kx+b 图象为直线：k斜率（>0升/<0降），b截距（y轴交点0,b）。两点定直线。",
+            eg:[{q:"y=2x−1 与 y 轴交点？", a:"令x=0，y=−1，交点 (0,−1)；斜率2>0，直线上升。"}],
+            exs:[
+              { q:"直线 y=−3x+6 的倾斜方向（ ）", opts:["上升","下降","水平","垂直"], ans:1, tip:"k=−3<0，直线下降。" },
+              { q:"y=2x+b 过点(0,4)，则 b=（ ）", opts:["0","2","4","8"], ans:2, tip:"x=0 时 y=b=4。" }
+            ] },
+          { t:"二次函数 y=ax²+bx+c（数形结合）", tag:"图象",
+            ex:"二次函数 y=ax²+bx+c（a≠0）的图象是抛物线：a 决定开口（a>0 向上，a<0 向下）与开口大小；对称轴 x=−b/(2a)；顶点 (−b/(2a), (4ac−b²)/(4a))；与 y 轴交于 (0,c)，与 x 轴交点由 Δ 决定。配方法是研究抛物线性质的核心工具。",
+            sum:"抛物线 y=ax²+bx+c：a定开口方向，对称轴x=−b/2a，顶点(−b/2a,(4ac−b²)/4a)，配方法求最值。",
+            eg:[{q:"y=x²−2x+3 的顶点与开口方向？", a:"配方 y=(x−1)²+2，a=1>0开口向上，顶点(1,2)，最小值2。"}],
+            exs:[
+              { q:"抛物线 y=−x²+2x 的开口（ ）", opts:["向上","向下","向左","向右"], ans:1, tip:"a=−1<0，开口向下。" },
+              { q:"y=x²−4x+5 配方后顶点为（ ）", opts:["(2,1)","(−2,1)","(2,−1)","(1,2)"], ans:0, tip:"y=(x−2)²+1，顶点(2,1)。" }
+            ] }
+        ]},
+        { id:"3.4", name:"3.4 函数与方程", points:[
+          { t:"函数的零点（数形结合）", tag:"概念",
+            ex:"使 f(x)=0 的实数 x 叫函数 y=f(x) 的零点。几何意义：零点就是函数图象与 x 轴交点的横坐标。方程 f(x)=0 的实根个数 = 函数零点个数 = 图象与 x 轴交点个数。因此判断零点存在，常看图象是否穿过 x 轴。",
+            sum:"零点：f(x)=0 的实根；即图象与 x 轴交点的横坐标。零点个数=方程实根个数=与x轴交点数。",
+            eg:[{q:"f(x)=x−1 的零点？", a:"令 x−1=0 得 x=1，即图象与x轴交点(1,0)。"}],
+            exs:[
+              { q:"函数零点的几何意义是（ ）", opts:["与y轴交点","与x轴交点横坐标","顶点","对称轴"], ans:1, tip:"零点是 f(x)=0 的解，对应图象与x轴交点横坐标。" },
+              { q:"f(x)=x²−1 的零点个数（ ）", opts:["0","1","2","3"], ans:2, tip:"x²−1=0 有 x=±1 两个根，两个零点。" }
+            ] },
+          { t:"二分法求零点近似解", tag:"方法",
+            ex:"若函数 y=f(x) 在区间 [a,b] 上连续，且 f(a)·f(b)<0（端点异号），则在 (a,b) 内至少有一个零点。二分法：取中点 m=(a+b)/2；若 f(m)=0 则 m 是零点；若 f(a)·f(m)<0 则零点在 [a,m]，否则在 [m,b]；重复将区间长度减半，逐步逼近零点。",
+            sum:"二分法：f(a)f(b)<0 则(a,b)内有零点；取中点不断缩半区间逼近。",
+            eg:[{q:"f(0)=−1, f(2)=3，用二分法第一个中点？", a:"m=(0+2)/2=1，算 f(1) 判断零点在(0,1)还是(1,2)。"}],
+            exs:[
+              { q:"二分法能用于 f(a)·f(b)<0 的区间，是因为（ ）", opts:["函数单调","零点存在定理","函数连续且端点异号","图象是直线"], ans:2, tip:"连续且端点异号⇒区间内至少有一个零点。" },
+              { q:"区间 [0,4] 经一次二分后变为（ ）", opts:["[0,2]或[2,4]","[0,1]","[1,4]","[2,2]"], ans:0, tip:"中点2，零点落在[0,2]或[2,4]之一。" }
+            ] }
+        ]},
+        { id:"quiz", name:"本章考核", isQuiz:true,
+          quiz:[
+            { q:"函数 y=f(x) 的三要素不含（ ）", opts:["定义域","对应法则","值域","常数"], ans:3 },
+            { q:"f(x)=√(x−1) 定义域（ ）", opts:["x≥1","x>1","x≤1","x≠1"], ans:0 },
+            { q:"f(x)=−2x 在 R 上（ ）", opts:["递增","递减","常函数","无单调"], ans:1 },
+            { q:"f(x)=x² 是（ ）", opts:["奇函数","偶函数","非奇非偶","既奇又偶"], ans:1 },
+            { q:"直线 y=3x−6 与 y 轴交点（ ）", opts:["(0,−6)","(2,0)","(0,3)","(−6,0)"], ans:0 },
+            { q:"抛物线 y=2x² 开口（ ）", opts:["向上","向下","向左","向右"], ans:0 },
+            { q:"y=x²−2x+1 顶点（ ）", opts:["(1,0)","(0,1)","(2,0)","(1,1)"], ans:0 },
+            { q:"f(x)=x+1 的零点（ ）", opts:["−1","0","1","无零点"], ans:0 },
+            { q:"零点个数等于（ ）", opts:["与y轴交点数","与x轴交点数","顶点数","对称轴数"], ans:1 },
+            { q:"f(0)=2, f(2)=−1，则在(0,2)内（ ）", opts:["无零点","至少有一个零点","恰有两个零点","零点在0处"], ans:1 }
+          ] }
+      ]
+    }
   ]
 };
 
@@ -303,7 +495,136 @@ const FIGS = {
   <circle cx="110" cy="72" r="24" fill="#c7d2fe" stroke="#4338ca" stroke-width="2"/>
   <text x="110" y="76" text-anchor="middle" font-size="11" fill="#312e81">A = {x | p(x)}</text>
 </svg>
-<div class="figcap">若 A⊆B（即 p⇒q）：p 是 q 的<b>充分条件</b>，q 是 p 的<b>必要条件</b>；当 A=B 时 p、q 互为<b>充要条件</b>。</div>`
+<div class="figcap">若 A⊆B（即 p⇒q）：p 是 q 的<b>充分条件</b>，q 是 p 的<b>必要条件</b>；当 A=B 时 p、q 互为<b>充要条件</b>。</div>`,
+
+"一元二次方程": `<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+  <div class="figbox"><svg viewBox="0 0 100 80" width="100">
+    <line x1="8" y1="70" x2="92" y2="70" stroke="#aaa" stroke-width="1"/>
+    <path d="M15 55 Q50 90 85 55" fill="none" stroke="#4f46e5" stroke-width="2"/>
+    <circle cx="32" cy="70" r="3" fill="#e23"/><circle cx="68" cy="70" r="3" fill="#e23"/>
+    <text x="50" y="78" text-anchor="middle" font-size="11" fill="#666">Δ&gt;0·两实根</text></svg></div>
+  <div class="figbox"><svg viewBox="0 0 100 80" width="100">
+    <line x1="8" y1="70" x2="92" y2="70" stroke="#aaa" stroke-width="1"/>
+    <path d="M15 55 Q50 70 85 55" fill="none" stroke="#4f46e5" stroke-width="2"/>
+    <circle cx="50" cy="70" r="3" fill="#e23"/>
+    <text x="50" y="78" text-anchor="middle" font-size="11" fill="#666">Δ=0·一实根</text></svg></div>
+  <div class="figbox"><svg viewBox="0 0 100 80" width="100">
+    <line x1="8" y1="70" x2="92" y2="70" stroke="#aaa" stroke-width="1"/>
+    <path d="M15 55 Q50 50 85 55" fill="none" stroke="#4f46e5" stroke-width="2"/>
+    <text x="50" y="78" text-anchor="middle" font-size="11" fill="#666">Δ&lt;0·无实根</text></svg></div>
+</div>
+<div class="figcap">抛物线 y=ax²+bx+c 与 x 轴交点个数由判别式 Δ 决定：Δ&gt;0 两交点（两实根）、Δ=0 相切（一个实根）、Δ&lt;0 无交点（无实根）。</div>`,
+
+"三个二次的关系（数形结合）": `<svg viewBox="0 0 320 160" width="340" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="120" x2="300" y2="120" stroke="#888" stroke-width="1.5"/>
+  <text x="295" y="114" font-size="12" fill="#888">x</text>
+  <path d="M40 120 Q160 -10 280 120" fill="#4f46e5" fill-opacity="0.15" stroke="#4f46e5" stroke-width="2"/>
+  <circle cx="100" cy="120" r="4" fill="#e23"/><circle cx="220" cy="120" r="4" fill="#e23"/>
+  <text x="100" y="138" text-anchor="middle" font-size="12" fill="#e23">x₁</text>
+  <text x="220" y="138" text-anchor="middle" font-size="12" fill="#e23">x₂</text>
+  <text x="160" y="30" text-anchor="middle" font-size="12" fill="#4338ca">y=ax²+bx+c</text>
+  <text x="160" y="152" text-anchor="middle" font-size="12" fill="#2a8">x&lt;x₁ 或 x&gt;x₂ 时 y&gt;0</text>
+</svg>
+<div class="figcap">一元二次方程的根 = 抛物线与 x 轴交点横坐标；不等式 ax²+bx+c&gt;0 的解集 = 图象在 x 轴上方的 x 区间（本例：x&lt;x₁ 或 x&gt;x₂）。</div>`,
+
+"一元二次不等式的解法": `<svg viewBox="0 0 320 110" width="340" xmlns="http://www.w3.org/2000/svg">
+  <line x1="30" y1="40" x2="290" y2="40" stroke="#333" stroke-width="1.5"/>
+  <circle cx="110" cy="40" r="4" fill="#fff" stroke="#e23" stroke-width="2"/>
+  <circle cx="210" cy="40" r="4" fill="#fff" stroke="#e23" stroke-width="2"/>
+  <text x="110" y="28" text-anchor="middle" font-size="12" fill="#e23">x₁</text>
+  <text x="210" y="28" text-anchor="middle" font-size="12" fill="#e23">x₂</text>
+  <text x="70" y="20" text-anchor="middle" font-size="11" fill="#2a8">y&gt;0</text>
+  <text x="160" y="64" text-anchor="middle" font-size="11" fill="#2a8">y&lt;0</text>
+  <text x="250" y="20" text-anchor="middle" font-size="11" fill="#2a8">y&gt;0</text>
+  <text x="160" y="92" text-anchor="middle" font-size="12" fill="#666">大于(＞)取两边：(-∞,x₁)∪(x₂,+∞)；小于(＜)取中间：(x₁,x₂)</text>
+</svg>
+<div class="figcap">画数轴标出两根 x₁&lt;x₂：&gt;0 取两根外侧（两边），&lt;0 取两根之间（中间）。口诀：大于取两边，小于取中间。</div>`,
+
+"基本不等式 (a+b)/2 ≥ √ab": `<svg viewBox="0 0 300 150" width="320" xmlns="http://www.w3.org/2000/svg">
+  <line x1="40" y1="120" x2="260" y2="120" stroke="#333" stroke-width="1.5"/>
+  <path d="M40 120 A110 110 0 0 1 260 120" fill="none" stroke="#4f46e5" stroke-width="2"/>
+  <line x1="150" y1="120" x2="150" y2="10" stroke="#2a8" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="110" y1="120" x2="110" y2="18" stroke="#e23" stroke-width="2"/>
+  <text x="75" y="136" font-size="11" fill="#4338ca">a</text>
+  <text x="185" y="136" font-size="11" fill="#4338ca">b</text>
+  <text x="156" y="62" font-size="11" fill="#2a8">(a+b)/2</text>
+  <text x="116" y="70" font-size="11" fill="#e23">√ab</text>
+</svg>
+<div class="figcap">以 a+b 为直径作半圆，半径 (a+b)/2 不小于半圆上的垂线段 √ab，故 (a+b)/2 ≥ √ab（a=b 时取等）。</div>`,
+
+"函数的定义": `<svg viewBox="0 0 280 130" width="300" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="50" cy="65" rx="34" ry="48" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <ellipse cx="230" cy="65" rx="34" ry="48" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="50" y="18" text-anchor="middle" font-size="12" fill="#4338ca">定义域 A</text>
+  <text x="230" y="18" text-anchor="middle" font-size="12" fill="#4338ca">值域 B</text>
+  <circle cx="50" cy="45" r="3" fill="#4f46e5"/><circle cx="50" cy="85" r="3" fill="#4f46e5"/>
+  <circle cx="230" cy="65" r="3" fill="#e23"/>
+  <path d="M53 45 Q140 30 227 62" fill="none" stroke="#888" stroke-width="1.5"/>
+  <path d="M53 85 Q140 100 227 68" fill="none" stroke="#888" stroke-width="1.5"/>
+  <text x="140" y="28" text-anchor="middle" font-size="13" fill="#4338ca">f</text>
+</svg>
+<div class="figcap">函数 f 把定义域 A 中每个 x 唯一对应到值域 B 中一个 y：A 中每个点都有箭头指向 B 中且仅一个终点。</div>`,
+
+"函数的表示法（数形结合）": `<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+  <div class="figbox"><div style="font-size:13px;font-weight:700;color:#4338ca">解析法</div><div style="font-family:monospace;font-size:16px;margin-top:6px">y = 2x+1</div><div class="figcap">算式</div></div>
+  <div class="figbox"><div style="font-size:13px;font-weight:700;color:#4338ca">列表法</div><table class="ttable"><tr><th>x</th><td>0</td><td>1</td><td>2</td></tr><tr><th>y</th><td>1</td><td>3</td><td>5</td></tr></table></div>
+  <div class="figbox"><div style="font-size:13px;font-weight:700;color:#4338ca">图象法</div><svg viewBox="0 0 90 70" width="100"><line x1="10" y1="60" x2="80" y2="60" stroke="#aaa"/><line x1="15" y1="65" x2="15" y2="10" stroke="#aaa"/><line x1="15" y1="55" x2="75" y2="15" stroke="#4f46e5" stroke-width="2"/></svg></div>
+</div>
+<div class="figcap">同一函数 y=2x+1 的三种表示：算式（便于算）、表格（便于查）、图象（便于看趋势，数形结合）。</div>`,
+
+"单调性（数形结合）": `<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+  <div class="figbox"><svg viewBox="0 0 110 80" width="120"><line x1="12" y1="68" x2="100" y2="68" stroke="#aaa"/><line x1="18" y1="72" x2="18" y2="12" stroke="#aaa"/><path d="M22 60 Q60 50 96 18" fill="none" stroke="#2a8" stroke-width="2"/><text x="55" y="78" text-anchor="middle" font-size="11" fill="#2a8">递增↑</text></svg></div>
+  <div class="figbox"><svg viewBox="0 0 110 80" width="120"><line x1="12" y1="68" x2="100" y2="68" stroke="#aaa"/><line x1="18" y1="72" x2="18" y2="12" stroke="#aaa"/><path d="M22 18 Q60 28 96 60" fill="none" stroke="#e23" stroke-width="2"/><text x="55" y="78" text-anchor="middle" font-size="11" fill="#e23">递减↓</text></svg></div>
+</div>
+<div class="figcap">递增：图象随 x 增大而上升（左低右高）；递减：图象随 x 增大而下降（左高右低）。</div>`,
+
+"奇偶性（数形结合）": `<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+  <div class="figbox"><svg viewBox="0 0 110 80" width="120"><line x1="55" y1="6" x2="55" y2="74" stroke="#aaa"/><line x1="10" y1="60" x2="100" y2="60" stroke="#aaa"/><path d="M30 60 Q55 20 80 60" fill="none" stroke="#4f46e5" stroke-width="2"/><text x="55" y="76" text-anchor="middle" font-size="10" fill="#4338ca">偶·y轴对称</text></svg></div>
+  <div class="figbox"><svg viewBox="0 0 110 80" width="120"><line x1="55" y1="6" x2="55" y2="74" stroke="#aaa"/><line x1="10" y1="40" x2="100" y2="40" stroke="#aaa"/><path d="M22 64 L88 16" fill="none" stroke="#4f46e5" stroke-width="2"/><text x="55" y="76" text-anchor="middle" font-size="10" fill="#4338ca">奇·原点对称</text></svg></div>
+</div>
+<div class="figcap">偶函数 f(−x)=f(x)，图象关于 y 轴对称；奇函数 f(−x)=−f(x)，图象关于原点中心对称。</div>`,
+
+"一次函数 y=kx+b（数形结合）": `<svg viewBox="0 0 300 170" width="320" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="150" x2="280" y2="150" stroke="#888" stroke-width="1.5"/>
+  <line x1="40" y1="160" x2="40" y2="20" stroke="#888" stroke-width="1.5"/>
+  <line x1="40" y1="120" x2="250" y2="40" stroke="#4f46e5" stroke-width="2.5"/>
+  <circle cx="40" cy="120" r="4" fill="#e23"/><text x="48" y="118" font-size="12" fill="#e23">b (0,b)</text>
+  <text x="200" y="40" font-size="12" fill="#4f46e5">k&gt;0 上升</text>
+  <text x="145" y="168" text-anchor="middle" font-size="12" fill="#666">k 决定倾斜方向，b 决定与 y 轴交点</text>
+</svg>
+<div class="figcap">直线 y=kx+b：斜率 k 控制倾斜（k&gt;0 升，k&lt;0 降），截距 b 是直线与 y 轴交点 (0,b)。</div>`,
+
+"二次函数 y=ax²+bx+c（数形结合）": `<svg viewBox="0 0 300 170" width="320" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="140" x2="280" y2="140" stroke="#888" stroke-width="1.5"/>
+  <line x1="150" y1="160" x2="150" y2="20" stroke="#aaa" stroke-dasharray="4"/>
+  <path d="M50 140 Q150 40 250 140" fill="#4f46e5" fill-opacity="0.12" stroke="#4f46e5" stroke-width="2.5"/>
+  <circle cx="150" cy="90" r="4" fill="#e23"/>
+  <text x="158" y="88" font-size="12" fill="#e23">顶点</text>
+  <text x="156" y="158" font-size="11" fill="#666">对称轴 x=−b/2a</text>
+  <text x="150" y="32" text-anchor="middle" font-size="12" fill="#4f46e5">a&gt;0 开口向上</text>
+</svg>
+<div class="figcap">抛物线 y=ax²+bx+c：a 定开口方向（a&gt;0 向上），对称轴 x=−b/(2a)，顶点为最值点（配方法求得）。</div>`,
+
+"函数的零点（数形结合）": `<svg viewBox="0 0 320 150" width="340" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="120" x2="300" y2="120" stroke="#888" stroke-width="1.5"/>
+  <line x1="40" y1="140" x2="40" y2="20" stroke="#888" stroke-width="1.5"/>
+  <path d="M50 80 Q150 200 250 80" fill="none" stroke="#4f46e5" stroke-width="2.5"/>
+  <circle cx="95" cy="120" r="4" fill="#e23"/><circle cx="205" cy="120" r="4" fill="#e23"/>
+  <text x="95" y="138" text-anchor="middle" font-size="12" fill="#e23">x₁</text>
+  <text x="205" y="138" text-anchor="middle" font-size="12" fill="#e23">x₂</text>
+  <text x="160" y="32" text-anchor="middle" font-size="12" fill="#666">零点 = 图象与 x 轴交点的横坐标</text>
+</svg>
+<div class="figcap">零点即 f(x)=0 的实根，对应图象与 x 轴交点（本例两个零点 x₁、x₂）。</div>`,
+
+"二分法求零点近似解": `<svg viewBox="0 0 320 120" width="340" xmlns="http://www.w3.org/2000/svg">
+  <line x1="30" y1="70" x2="290" y2="70" stroke="#333" stroke-width="1.5"/>
+  <circle cx="70" cy="70" r="4" fill="#4f46e5"/><text x="70" y="58" text-anchor="middle" font-size="12" fill="#4f46e5">a</text>
+  <circle cx="250" cy="70" r="4" fill="#4f46e5"/><text x="250" y="58" text-anchor="middle" font-size="12" fill="#4f46e5">b</text>
+  <circle cx="160" cy="70" r="4" fill="#e23"/><text x="160" y="90" text-anchor="middle" font-size="12" fill="#e23">中点 m</text>
+  <text x="160" y="40" text-anchor="middle" font-size="12" fill="#666">f(a)·f(b)&lt;0 → (a,b) 内有零点</text>
+  <text x="160" y="112" text-anchor="middle" font-size="11" fill="#888">取中点 m，缩半区间继续逼近</text>
+</svg>
+<div class="figcap">若 f(a) 与 f(b) 异号（图象跨过 x 轴），中点 m 把区间一分为二，含零点的半区间长度减半，重复即得近似解。</div>`
 };
 
 const $ = s => document.querySelector(s);
